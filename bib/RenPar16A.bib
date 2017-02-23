@@ -1,0 +1,18 @@
+
+@inproceedings{ren_cbufs:_2016,
+	address = {New York, NY, USA},
+	series = {{ISMM} 2016},
+	title = {{CBufs}: {Efficient}, {System}-wide {Memory} {Management} and {Sharing}},
+	isbn = {978-1-4503-4317-6},
+	shorttitle = {{CBufs}},
+	url = {http://doi.acm.org/10.1145/2926697.2926703},
+	doi = {10.1145/2926697.2926703},
+	abstract = {Modern systems are composed of many different protection domains separating privilege levels, subsystems, users, clients, and software of differing levels of assurance. System-wide memory management must consider not only allocation to single processes, but also efficient sharing of data across protection domains, and the allocation of memory based on the performance of applications that span multiple protection domains. This paper introduces the CBuf system for the global management of virtual and physical memory, including zero-copy sharing between protection domains. We present the design and implementation of both garbage collection techniques to enable efficient sharing, and policies that balance memory between protection domains specifically to satisfy system and application constraints such as quality of service. We show that a CBuf-enabled webserver achieves over a factor of 2.5 throughput speedup while using less processing time than Apache on Linux, and that the system can intentionally control system throughput through intelligent memory allocation.},
+	urldate = {2016-08-08},
+	booktitle = {Proceedings of the 2016 {ACM} {SIGPLAN} {International} {Symposium} on {Memory} {Management}},
+	publisher = {ACM},
+	author = {Ren, Yuxin and Parmer, Gabriel and Georgiev, Teo and Bloom, Gedare},
+	year = {2016},
+	keywords = {garbage collection, memory management, shared memory, zero-copy},
+	pages = {68--77}
+}

@@ -1,0 +1,15 @@
+
+@inproceedings{leontie_hardware-enforced_2009,
+	address = {Chicago, Illinois, {USA}},
+	title = {Hardware-enforced fine-grained isolation of untrusted code},
+	isbn = {978-1-60558-782-0},
+	url = {http://portal.acm.org/citation.cfm?id=1655077.1655082&coll=Portal&dl=GUIDE&CFID=68319311&CFTOKEN=97545801},
+	doi = {10.1145/1655077.1655082},
+	abstract = {We present a novel combination of hardware (architecture) and software (compiler) techniques to support the safe execution of untrusted code. While other efforts focus on isolating processes, our approach isolates code and data at a function (as in, C function) level, to enable fine-grained protection within a process as needed for downloaded plugins, libraries, andmodifications of open-source projects. Our solution also enforces timing restrictions to detect denial of service from untrusted code, and supports protection of dynamically allocated memory. Because bookkeeping data can become substantial (permission tables that at their finest granularity describe which memory words may be accessed by which functions), our solution employs a stack-structured bookkeeping mechanism that tracks the flow of execution and automatically dispenses with bookkeeping data when no longer needed. This approach also enables an architectural optimization to handle permissions for dynamically allocated memory, allowing heap blocks to be appropriately shared across the trust boundary. Tested across a suite of benchmarks, our solution had a worst case 12\% overhead and 3.5\% average overhead at the finest level of code granularity (every single function in its own unit of isolation). The overhead is easily reduced by using trace-driven analysis to combine functions into coarser-grained groups that share permissions.},
+	booktitle = {Proceedings of the first {ACM} workshop on Secure execution of untrusted code},
+	publisher = {{ACM}},
+	author = {Eugen Leontie and Gedare Bloom and Bhagirath Narahari and Rahul Simha and Joseph Zambreno},
+	year = {2009},
+	keywords = {architectural support for security, fine-grained protection, isolation, memory protection, software security},
+	pages = {11--18}
+}

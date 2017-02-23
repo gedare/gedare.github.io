@@ -1,0 +1,189 @@
+<html>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Gedare Bloom: Software</title>
+  <link type="text/css" rel="StyleSheet" href="css/style.css" />
+  <script language="JavaScript" type="text/javascript" src="bloom.js"> </script>
+</head>
+
+<div class="tabs">
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="research.html">Research</a></li>
+    <li><a href="teaching.html">Teaching</a></li>
+    <li><a href="cv.html">CV</a></li>
+    <li><a href="publications.html">Publications</a></li>
+    <li class="current"><a href="software.html">Software</a></li>
+    <li><a href="personal.html">Personal</a></li>
+   </ul>
+<br />
+</div>
+
+<div class="box">
+  <div class="boxtop">Overview</div>
+  <div class="boxp">
+    This page describes some of my open-source software projects and
+    contributed work. A lot of this software was written while conducting
+    various <a href="research.html">research</a> projects.
+  </div><br />
+
+  <div class="boxtop">More to come</div>
+  <div class="boxp">
+    I'm still working on organizing this material, and almost always writing
+    new code. Come back in awhile.
+  </div> <br />
+</div>
+
+<!-- Template ...................................
+<div class="box">
+  <div class="boxtop">PROJECT_TITLE</div>
+  <div class="boxp">
+    PARAGRAPH DESCRIBING PROJECT
+  </div> <br />
+  <div class="boxp">
+    OPTIONAL ADDL PARAGRAPH(S)
+  </div><br />
+</div>
+..............................................-->
+<div class="box">
+  <div class="boxtop">RTEMS</div>
+  <div class="boxp">
+    I am an active contributor and committer to the
+    <a href="www.rtems.org">RTEMS Project</a>, an
+    open-source real-time operating system in use by
+    industry, government, academia, and hobbyists.
+  </div> <br />
+  <div class="boxp">
+    Some of the larger projects I've done include:
+    <ul>
+      <li>
+      Porting RTEMS to the sparc64. I wrote a description on my
+      <a href="http://gedare-csphd.blogspot.com/2010/06/sparc-v9-sparc64-rtems.html">blog</a>.
+      The <a href="http://code.google.com/p/rtemssparc64/">code</a>
+      is available on Google Code, and it has been merged upstream.
+      </li>
+      <li>
+      Refactoring the thread scheduler. I wrote a description on my
+      <a href="http://gedare-csphd.blogspot.com/2010/12/rtems-adding-new-scheduler.html">blog</a>.
+      The <a href="http://code.google.com/p/rtems-sched/">code</a>
+      is available on Google Code, and it has been merged upstream.
+      </li>
+    </ul>
+  </div><br />
+
+  <div class="boxp">
+    Some unmerged or archival projects may be found as branches on my
+    <a href="https://github.com/gedare/rtems">github fork</a>.
+    </div><br />
+</div>
+
+<div class="box">
+  <div class="boxtop">gem5</div>
+  <div class="boxp">
+    I hack on and make contributions (mostly bug fixes) to the
+    <a href="http://www.m5sim.org/Main_Page">gem5</a> simulator.
+
+    My mirror of gem5 on
+    <a href="https://github.com/gedare/gem5">github</a> will hopefully
+    start to collect small projects.
+  </div><br />
+</div>
+
+<div class="box">
+  <div class="boxtop">C++ STL Data Structure Profiling</div>
+  <div class="boxp">
+    I implemented some timing and operation counting within the gcc 4.7.1
+    (libstdc++) STL profile mode. The code is available on
+    <a href="https://github.com/gedare/stlprof">github</a>, and it has not been
+    merged upstream yet. I updated some parts of it to 4.9.2, but the patch
+    fell through the cracks. I described this effort on my
+    <a href="http://gedare-csphd.blogspot.com/2013/01/profiling-c-applications-class.html">blog</a>.
+  </div> <br />
+</div>
+
+<div class="box">
+  <div class="boxtop">Fetch flagged email</div>
+  <div class="boxp">
+      I wrote a
+      <a href="http://code.google.com/p/fetch-flagged-email/">
+      Python script</a> to ease downloading and applying git patches from
+      gmail.
+    </ul>
+  </div> <br />
+</div>
+
+<div class="box">
+  <div class="boxtop">Secure Bulletin Board</div>
+  <div class="boxp">
+    Stefan Popoveniuc and I implemented a secure bulletin board service
+    for electronic voting. I implemented the back-end consisting of
+    cryptographic multisignatures and majority-rule consensus
+    among mutually untrusting servers in C with the
+    <a href="www.spread.org">Spread toolkit</a>.
+    Stefan implemented the front-end.
+    The code is not currently available, but I might drop it on github someday.
+  </div> <br />
+</div>
+
+<div class="box">
+  <div class="boxtop">Healthcare Informatics</div>
+  <div class="boxp">
+    As an applications analyst for <a href="http://www.bloomroad.com/">Bloom
+      Road Consulting Group LLC</a> I wrote a handful of C++ data processing
+    applications, along with a number of scripts and modules for Word, Excel,
+    and Base. This software was all proprietary, although I do retain the right
+    to produce derivative works in most cases.
+  </div> <br />
+</div>
+
+<div class="box">
+  <div class="boxtop">Particulate Matter Segregation</div>
+  <div class="boxp">
+    As an industry-funded undergraduate research project, Justin Ter Avest and I
+    implemented a
+    <a href="http://www.sciencedirect.com/science/article/pii/0032591086850057">
+      Monte Carlo simulation of particulate matter segregation</a> in
+    Unified Parallel C (UPC). I implemented the back-end physics engine and
+    collision detection algorithms, and Justin implemented the graphics and
+    networking subsystems.
+    The code is not currently available; I have it archived, but I am
+    not certain about my intellectual property rights to it. At any rate,
+    I doubt anyone would find it terribly useful, but if you are curious
+    drop me a line and I can find out if I can share any of it.
+  </div> <br />
+</div>
+
+<div class="box">
+  <div class="boxtop">Driving Simulator: Super X Racer</div>
+  <div class="boxp">
+    4 fellow students and I implemented &quot;Super X Racer&quot;, 
+    a 3-D driving simulation written in C++ with OpenGL and GLUT
+    as a semester-long project in a software development undergraduate class.
+    My primary responsibility was to implement the physics engine, which
+    included acceleration, braking, environment interaction (friction,
+    collision detection), and turning radius enforcement. We all participated
+    in the software requirements specification and design.
+    The code is not currently available, although I think I have it somewhere
+    on a CD.
+  </div> <br />
+</div>
+
+<div class="box">
+  <div class="boxtop">Diablo II Item Descriptor</div>
+  <div class="boxp">
+    My earliest released code was a relatively simple program that I wrote in
+    High School that let users explore the range of item modifiers in Diablo II.
+    I put the software up on some fan-site that collected such applications,
+    and it is still
+    <a href="http://www.gamefront.com/files/13476/Diablo_2_Item_Descriptor">
+      hosted today</a>.
+    It was downloaded over a thousand times, which made me feel pretty cool
+    at the time. Of course, the users were probably hoping it actually
+    was an item hack, which it was not. (Much h8 for cheaters.)
+    I never released the source code, although I do still have it; I don't
+    think it is particularly any good or useful.
+  </div> <br />
+</div>
+
+</body>
+</html>
