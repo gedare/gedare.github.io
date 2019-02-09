@@ -20,8 +20,10 @@
 	display:block;
 	margin:0px;
 	padding:0px;
+	border-bottom: 1px solid black;
+	background:#eeeeee;
 	z-index:99;
-	position:relative;
+	position:fixed;
 }
 .tabs li {
 	float:left;
