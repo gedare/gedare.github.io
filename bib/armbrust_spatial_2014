@@ -1,0 +1,8 @@
+
+@inproceedings{armbrust_spatial_2014,
+	title = {On {Spatial} {Isolation} for {Mixed} {Criticality}, {Embedded} {Systems}},
+	booktitle = {Proc. 2nd {Workshop} on {Mixed} {Criticality} {Systems} ({WMC}), {RTSS}},
+	author = {Armbrust, Eric and Song, Jiguo and Bloom, Gedare and Parmer, Gabriel},
+	year = {2014},
+	pages = {15--20}
+}
