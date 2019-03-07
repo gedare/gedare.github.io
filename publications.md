@@ -26,121 +26,47 @@ of the copyright holder.
 
 {% assign mypubs = site.data.pubs.references | reverse %}
 {% assign months = "January February March April May June July August September October November December &nbsp; " | split: ' ' %}
+{% assign types = "thesis chapter article-journal paper-conference" | split: ' ' %}
+{% assign type-sect = "Theses,Book Chapters,Journal Articles,Conference and Workshop Papers" | split: ',' %}
 
-# Theses
+{% assign t-index = -1 %}
+{% for type in types %}
+{% assign t-index = t-index | plus: 1 %}
+{% assign index = 0 %}
+# {{ type-sect[t-index] }}
 {% for pub in mypubs %}
-{%- if pub.type == 'thesis' -%}
+{%- if pub.type == type -%}
 {% assign index = index | plus: 1 %}
 {{ index }}. &nbsp; 
-  {%- for author in pub.author -%}
-    {%- if author.family == 'Bloom' -%}
-    **{{ author.given }} {{ author.family }}**, &nbsp;
-    {%- else -%}
-    {{ author.given }} {{ author.family }}, &nbsp;
-    {%- endif -%}
-  {%- endfor -%}
-  &nbsp; *
-  {%- if pub.URL -%}[{{ pub.title }}]({{ pub.URL }})
-  {%- elsif pub.DOI -%}[{{ pub.title }}](https://dx.doi.org/{{ pub.DOI }})
-  {%- else -%}{{ pub.title }}
-  {%- endif -%}
-  *,
-  {{ pub.publisher }},
-  {%- for date in pub.issued -%}
-    {% assign midx = date.month | plus: -1 %}
-    {{ months[midx] }}
-    {{ date.year }}.
-  {%- endfor -%}
+{%- for author in pub.author -%}
+{%- if author.family == 'Bloom' -%}
+**{{ author.given }} {{ author.family }}**, &nbsp;
+{%- else -%}
+{{ author.given }} {{ author.family }}, &nbsp;
+{%- endif -%}
+{%- endfor -%}
+&nbsp; *
+{%- if pub.URL -%} [{{ pub.title }}]({{ pub.URL }})
+{%- elsif pub.DOI -%} [{{ pub.title }}](https://dx.doi.org/{{ pub.DOI }})
+{%- else -%} {{ pub.title }}
+{%- endif -%}
+*,
+{%- if pub.container-title -%} &nbsp; in {{ pub.container-title }},{%- endif -%}
+{%- if pub.volume -%} &nbsp; vol. {{ pub.volume }},{%- endif -%}
+{%- if pub.issue -%} &nbsp; iss. {{ pub.issue }},{%- endif -%}
+{%- if pub.page -%} &nbsp; pp. {{ pub.page }},{%- endif -%}
+{%- if pub.publisher -%} &nbsp; {{ pub.publisher }},{%- endif -%}
+{%- for date in pub.issued -%}
+{% assign midx = date.month | plus: -1 %}
+{{ months[midx] }}
+{{ date.year }}.
+{%- endfor -%}
+{%- assign bibfile = "./bib/" | append: pub.id | append: ".bib" | remove: ":" -%}
+{%- assign pdffile = "./pdf/" | append: pub.id | append: ".pdf" | remove: ":" -%}
+&nbsp; [bib]({{bibfile}}) [pdf]({{pdffile}})
+{% assign mypubs = site.data.pubs.references | reverse %}
 {%- endif -%}
 {% endfor %}
-
-# Book Chapters
-{% for pub in mypubs %}
-{%- if pub.type == 'chapter' -%}
-{% assign index = index | plus: 1 %}
-{{ index }}. &nbsp; 
-  {%- for author in pub.author -%}
-    {%- if author.family == 'Bloom' -%}
-    **{{ author.given }} {{ author.family }}**, &nbsp;
-    {%- else -%}
-    {{ author.given }} {{ author.family }}, &nbsp;
-    {%- endif -%}
-  {%- endfor -%}
-  &nbsp; *
-  {%- if pub.URL -%}[{{ pub.title }}]({{ pub.URL }})
-  {%- elsif pub.DOI -%}[{{ pub.title }}](https://dx.doi.org/{{ pub.DOI }})
-  {%- else -%}{{ pub.title }}
-  {%- endif -%}
-  *,
-  {{ pub.container-title }},
-  pp. {{ pub.page }},
-  {{ pub.publisher }},
-  {%- for date in pub.issued -%}
-    {% assign midx = date.month | plus: -1 %}
-    {{ months[midx] }}
-    {{ date.year }}.
-  {%- endfor -%}
-{%- endif -%}
-{% endfor %}
-
-
-
-# Journals
-{% for pub in mypubs %}
-{%- if pub.type == 'article-journal' -%}
-{% assign index = index | plus: 1 %}
-{{ index }}. &nbsp; 
-  {%- for author in pub.author -%}
-    {%- if author.family == 'Bloom' -%}
-    **{{ author.given }} {{ author.family }}**, &nbsp;
-    {%- else -%}
-    {{ author.given }} {{ author.family }}, &nbsp;
-    {%- endif -%}
-  {%- endfor -%}
-  &nbsp; *
-  {%- if pub.URL -%}[{{ pub.title }}]({{ pub.URL }})
-  {%- elsif pub.DOI -%}[{{ pub.title }}](https://dx.doi.org/{{ pub.DOI }})
-  {%- else -%}{{ pub.title }}
-  {%- endif -%}
-  *,
-  {{ pub.container-title }},
-  vol. {{ pub.volume }},
-  iss. {{ pub.issue }},
-  pp. {{ pub.page }},
-  {%- for date in pub.issued -%}
-    {% assign midx = date.month | plus: -1 %}
-    {{ months[midx] }}
-    {{ date.year }}.
-  {%- endfor -%}
-{%- endif -%}
-{% endfor %}
-
-# Conferences and Workshops
-{% for pub in mypubs %}
-{%- if pub.type == 'paper-conference' -%}
-{% assign index = index | plus: 1 %}
-{{ index }}. &nbsp; 
-  {%- for author in pub.author -%}
-    {%- if author.family == 'Bloom' -%}
-    **{{ author.given }} {{ author.family }}**, &nbsp;
-    {%- else -%}
-    {{ author.given }} {{ author.family }}, &nbsp;
-    {%- endif -%}
-  {%- endfor -%}
-  &nbsp; *
-  {%- if pub.URL -%}[{{ pub.title }}]({{ pub.URL }})
-  {%- elsif pub.DOI -%}[{{ pub.title }}](https://dx.doi.org/{{ pub.DOI }})
-  {%- else -%}{{ pub.title }}
-  {%- endif -%}
-  *,
-  {{ pub.container-title }},
-  pp. {{ pub.page }},
-  {%- for date in pub.issued -%}
-    {% assign midx = date.month | plus: -1 %}
-    {{ months[midx] }}
-    {{ date.year }}.
-  {%- endfor -%}
-{%- endif -%}
 {% endfor %}
 
 
