@@ -1,12 +1,14 @@
-@INPROCEEDINGS{7939026, 
-author={C. Tessler and G. Bloom and N. Fisher}, 
-booktitle={2017 IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS)}, 
-title={Work-in-Progress: Reducing Cache Conflicts via Interrupts and BUNDLE Scheduling}, 
-year={2017}, 
-volume={}, 
-number={}, 
-pages={125-128}, 
-keywords={cache storage;interrupts;multi-threading;operating system kernels;scheduling;cache conflict reduction;interrupts;BUNDLE scheduling;real-time multi-threaded scheduling;cache contention reduction;instruction caches;real-time multithreaded tasks;thread-aware scheduling algorithm;anticipating execution;hardware modifications;ARM;gem5 simulator;RTEMS operating system;physical processors;Instruction sets;Scheduling algorithms;Registers;Hardware;Cache memory;Indexes;Scheduling algorithms;Cache Memory;Multithreading;Static Analysis}, 
-doi={10.1109/RTAS.2017.30}, 
-ISSN={}, 
-month={April},}
+
+@inproceedings{tessler_work--progress:_2017,
+	title = {Work-in-{Progress}: {Reducing} {Cache} {Conflicts} via {Interrupts} and {BUNDLE} {Scheduling}},
+	shorttitle = {Work-in-{Progress}},
+	doi = {10.1109/RTAS.2017.30},
+	abstract = {In "BUNDLE: Real-Time Multi-Threaded Scheduling to Reduce Cache Contention" Tessler and Fisher present a positive perspective of instruction caches for hard real-time multithreaded tasks. The thread-aware scheduling algorithm limits the execution of threads to sets of instructions that cannot result in cache conflicts. Identification of these sets result in conflict free regions which are used to identify scheduling groups called bundles in the BUNDLE scheduling algorithm. Placement of a thread in a particular bundle depends on, what the authors call, "anticipating execution". However, they do not define a complete mechanism to anticipate execution. In this work, we propose a method to anticipate execution that modifies cache hardware and introduces a new interrupt raised prior to a cache conflict. This new interrupt is combined with (a slightly modified version of) the BUNDLE scheduling algorithm. The intent is to implement these hardware modifications for ARM on the gem5 simulator with the scheduling algorithm integrated into the RTEMS operating system. The hope is this work serves as further motivation to bring the positive perspective of caches to physical processors and operating systems.},
+	booktitle = {2017 {IEEE} {Real}-{Time} and {Embedded} {Technology} and {Applications} {Symposium} ({RTAS})},
+	author = {Tessler, C. and Bloom, G. and Fisher, N.},
+	month = apr,
+	year = {2017},
+	keywords = {Hardware, Indexes, cache storage, multi-threading, operating system kernels, scheduling, Registers, interrupts, ARM, Scheduling algorithms, anticipating execution, BUNDLE scheduling, cache conflict reduction, cache contention reduction, Cache memory, Cache Memory, gem5 simulator, hardware modifications, instruction caches, Instruction sets, Multithreading, physical processors, real-time multi-threaded scheduling, real-time multithreaded tasks, RTEMS operating system, Static Analysis, thread-aware scheduling algorithm},
+	pages = {125--128},
+	file = {IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/YMESM2TK/7939026.html:text/html}
+}
