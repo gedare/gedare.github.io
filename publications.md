@@ -9,19 +9,9 @@ This page is presented in reverse chronological order.
 Please refer to my [Research](./research.html) page for a more
 cohesive and organized approach that highlights my publications in the context
 of the specific research problems that they address.
+*Some pdf links are broken because I cannot redistribute the text; feel free
+to ask me for an author copy and I will try to oblige.*
 
-<!--
-# Notice
-
-This material is presented to ensure timely dissemination of scholarly and
-technical work. Copyright and all rights therein are retained by authors or by
-other copyright holders. All persons copying this information are expected to
-adhere to the terms and constraints invoked by each author's copyright. In most
-cases, these works **may not be reposted** without the explicit permission
-of the copyright holder.
-
-# Publications
--->
 
 
 {% assign mypubs = site.data.pubs.references | reverse %}
@@ -70,4 +60,12 @@ of the copyright holder.
 {% endfor %}
 
 
+# Notice
+
+This material is presented to ensure timely dissemination of scholarly and
+technical work. Copyright and all rights therein are retained by authors or by
+other copyright holders. All persons copying this information are expected to
+adhere to the terms and constraints invoked by each author's copyright. In most
+cases, these works **may not be reposted** without the explicit permission
+of the copyright holder.
 
