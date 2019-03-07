@@ -2,7 +2,7 @@
 title: Curriculum Vitae
 nav_title: CV
 layout: default
-order: 5
+order: 4
 ---
 
 # Curriculum Vitae
