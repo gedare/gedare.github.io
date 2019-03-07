@@ -1,0 +1,527 @@
+
+@inproceedings{bloom_information_2009,
+	title = {Information {Leakage} in {Mix} {Networks} with {Randomized} {Partial} {Checking}},
+	booktitle = {International {Conference} on {Information} {Security} and {Privacy}},
+	author = {Bloom, Gedare and Popoveniuc, Stefan},
+	month = jul,
+	year = {2009}
+}
+
+@inproceedings{leontie_hardware-enforced_2009,
+	address = {Chicago, Illinois, USA},
+	title = {Hardware-enforced fine-grained isolation of untrusted code},
+	isbn = {978-1-60558-782-0},
+	url = {http://portal.acm.org/citation.cfm?id=1655077.1655082&coll=Portal&dl=GUIDE&CFID=68319311&CFTOKEN=97545801},
+	doi = {10.1145/1655077.1655082},
+	abstract = {We present a novel combination of hardware (architecture) and software (compiler) techniques to support the safe execution of untrusted code. While other efforts focus on isolating processes, our approach isolates code and data at a function (as in, C function) level, to enable fine-grained protection within a process as needed for downloaded plugins, libraries, andmodifications of open-source projects. Our solution also enforces timing restrictions to detect denial of service from untrusted code, and supports protection of dynamically allocated memory. Because bookkeeping data can become substantial (permission tables that at their finest granularity describe which memory words may be accessed by which functions), our solution employs a stack-structured bookkeeping mechanism that tracks the flow of execution and automatically dispenses with bookkeeping data when no longer needed. This approach also enables an architectural optimization to handle permissions for dynamically allocated memory, allowing heap blocks to be appropriately shared across the trust boundary. Tested across a suite of benchmarks, our solution had a worst case 12\% overhead and 3.5\% average overhead at the finest level of code granularity (every single function in its own unit of isolation). The overhead is easily reduced by using trace-driven analysis to combine functions into coarser-grained groups that share permissions.},
+	urldate = {2009-12-14},
+	booktitle = {Proceedings of the first {ACM} workshop on {Secure} execution of untrusted code},
+	publisher = {ACM},
+	author = {Leontie, Eugen and Bloom, Gedare and Narahari, Bhagirath and Simha, Rahul and Zambreno, Joseph},
+	year = {2009},
+	keywords = {isolation, memory protection, architectural support for security, fine-grained protection, software security},
+	pages = {11--18},
+	file = {ACM Snapshot:/home/gedare/Zotero/storage/WESG2SX5/citation.html:text/html}
+}
+
+@article{leontie_compiler-hardware_2010,
+	title = {A {Compiler}-{Hardware} {Technique} for {Protecting} {Against} {Buffer} {Overflow} {Attacks}},
+	volume = {5},
+	number = {1},
+	journal = {Journal of Information Assurance and Security},
+	author = {Leontie, Eugen and Bloom, Gedare and Gelbart, Olga and Narahari, Bhagirath and Simha, Rahul},
+	month = feb,
+	year = {2010},
+	pages = {1--8}
+}
+
+@article{bloom_providing_2009,
+	title = {Providing secure execution environments with a last line of defense against {Trojan} circuit attacks},
+	volume = {28},
+	url = {http://dx.doi.org/10.1016/j.cose.2009.03.002},
+	doi = {10.1016/j.cose.2009.03.002},
+	abstract = {Integrated circuits (ICs) are often produced in foundries that lack effective security controls. In these foundries, sophisticated attackers are able to insert malicious Trojan circuits that are easily hidden in the large, complex circuitry that comprises modern ICs. These so-called Trojan circuits are capable of launching attacks directly in hardware, or, more deviously, can facilitate software attacks. Current defense against Trojan circuits consists of statistical detection techniques to find such circuits before product deployment. The fact that statistical detection can result in false negatives raises the obvious questions: can attacks be detected post-deployment, and is secure execution nonetheless possible using chips with undetected Trojan circuits? In this paper we present the Secure Heartbeat And Dual-Encryption (SHADE) architecture, a compiler–hardware solution for detecting and preventing a subset of Trojan circuit attacks in deployed systems. Two layers of hardware encryption are combined with a heartbeat of off-chip accesses to provide a secure execution environment using untrusted hardware. The SHADE system is designed to complement pre-deployment detection techniques and to add a final, last-chance layer of security. Keywords: Trojan circuit; Dual-encryption; HW/SW co-design; IC trust; Information assurance},
+	number = {7},
+	urldate = {2009-04-13},
+	journal = {Computers \& Security},
+	author = {Bloom, Gedare and Narahari, Bhagirath and Simha, Rahul and Zambreno, Joseph},
+	month = oct,
+	year = {2009},
+	keywords = {Dual-encryption, HW/SW co-design, IC trust, Information assurance, Trojan circuit},
+	pages = {660--669}
+}
+
+@inproceedings{leontie_hardware_2009,
+	address = {Los Alamitos, CA, USA},
+	title = {Hardware {Containers} for {Software} {Components}: {A} {Trusted} {Platform} for {COTS}-{Based} {Systems}},
+	volume = {2},
+	isbn = {978-0-7695-3823-5},
+	shorttitle = {Hardware {Containers} for {Software} {Components}},
+	doi = {http://doi.ieeecomputersociety.org/10.1109/CSE.2009.56},
+	abstract = {Much of modern software development consists of assembling together existing software components and writing the glue code that integrates them into a unified application. The term COTS-Based System (CBS) is often used to describe such applications, for which the components assembled are understood to be Commercial-Off-The-Shelf (COTS) components written by a multitude of independent third parties. The manner of assembly in CBS includes full-source components that are integrated at compile-time, pure-binary libraries incorporated at load-time, and plugins that are loaded into the application at execution time by the user.Because components have access to system resources, applications may crash due to faulty components or may be compromised by malicious components. In this paper, we ask the question: can hardware support the development and deployment of CBS by providing applications with a trusted platform for managing components and their interactions?We present an architecture that places each CBS component in a hardware-enforced container. The hardware then detects improper usage of system resources (unauthorized memory accesses or denial-of-service) and enables applications to undertake a hardware-supervised recovery procedure. Furthermore, the hardware also maintains a violation record to enable developers to recreate the violation for the purpose of debugging and further development. Taken together, the purpose of the architecture we propose is to enable executing untrusted CBS code on trusted hardware.},
+	booktitle = {Computational {Science} and {Engineering}, {IEEE} {International} {Conference} on},
+	publisher = {IEEE Computer Society},
+	author = {Leontie, Eugen and Bloom, Gedare and Narahari, Bhagirath and Simha, Rahul and Zambreno, Joseph},
+	year = {2009},
+	keywords = {isolation, memory protection, architectural support for security, fine-grained protection, software security},
+	pages = {830--836},
+	annote = {Complete PDF document was either not available or accessible. Please make sure you're logged in to the digital library to retrieve the complete PDF document.},
+	file = {Hardware Containers for Software Components\: A Trusted Platform for COTS-Based Systems:/home/gedare/Zotero/storage/SRWIBTT5/CSE.2009.html:text/html}
+}
+
+@inproceedings{bloom_os_2009,
+	address = {Los Alamitos, CA, USA},
+	title = {{OS} support for detecting {Trojan} circuit attacks},
+	isbn = {978-1-4244-4805-0},
+	doi = {http://doi.ieeecomputersociety.org/10.1109/HST.2009.5224959},
+	abstract = {Rapid advances in integrated circuit (IC) development predicted by Moore's Law lead to increasingly complex, hard to verify IC designs. Design insiders or adversaries employed at untrusted locations can insert malicious Trojan circuits capable of launching attacks in hardware or supporting software-based attacks. In this paper, we provide a method for detecting Trojan circuit denial-of-service attacks using a simple, verifiable hardware guard external to the complex CPU. The operating system produces liveness checks, embedded in the software clock, to which the guard can respond. We also present a novel method for the OS to detect a hardware-software (HW/SW) Trojan privilege escalation attack by using OS-generated checks to test if the CPU hardware is enforcing memory protection (MP). Our implementation of fine-grained periodic checking of MP enforcement incurs only 2.2\% overhead using SPECint 2006.},
+	booktitle = {Hardware-{Oriented} {Security} and {Trust}, {IEEE} {International} {Workshop} on},
+	publisher = {IEEE Computer Society},
+	author = {Bloom, Gedare and Narahari, Bhagirath and Simha, Rahul},
+	year = {2009},
+	pages = {100--103},
+	annote = {Complete PDF document was either not available or accessible. Please make sure you're logged in to the digital library to retrieve the complete PDF document.},
+	file = {OS support for detecting Trojan circuit attacks:/home/gedare/Zotero/storage/BIZGJQ88/HST.2009.html:text/html}
+}
+
+@inproceedings{bloom_real-time_2010,
+	title = {Real-{Time} {Scheduling} with {Hardware} {Data} {Structures}},
+	booktitle = {Work-in-{Progress} {Session}. {IEEE} {Real}-{Time} {Systems} {Symposium}},
+	author = {Bloom, Gedare and Parmer, Gabriel and Narahari, Bhagirath and Simha, Rahul},
+	month = dec,
+	year = {2010}
+}
+
+@inproceedings{leontie_automation_2011,
+	title = {Automation for creating and configuring security manifests for hardware containers},
+	isbn = {978-1-4673-0401-6},
+	doi = {10.1109/SafeConfig.2011.6111677},
+	abstract = {Hardware containers provide fine-grained memory access control to isolate memory regions and sandbox memory references between components of an application. A hardware reference monitor enforces a security manifest of memory access permissions for the currently executing component. In this paper we discuss how automation tools can help software developers to create the security manifest that configures hardware containers. The goal of this work is to foster discussion about our proposals for automation tools: to date we know of no solutions for extracting the metadata (permissions) required for fine-grained memory access control.},
+	language = {English},
+	booktitle = {2011 4th {Symposium} on {Configuration} {Analytics} and {Automation} ({SAFECONFIG})},
+	publisher = {IEEE},
+	author = {Leontie, E. and Bloom, G. and Simha, R.},
+	month = oct,
+	year = {2011},
+	keywords = {Monitoring, software, Automation, Hardware, access control, authorisation, software developer, automation tool, Containers, fine-grained memory access control, hardware container, hardware reference monitor, memory access permission, memory region, sandbox memory reference, security manifest, software development management},
+	pages = {1--2}
+}
+
+@inproceedings{bloom_shared_2012,
+	address = {Tampere, Finland},
+	series = {{EMSOFT} '12},
+	title = {Shared hardware data structures for hard real-time systems},
+	isbn = {978-1-4503-1425-1},
+	url = {http://doi.acm.org/10.1145/2380356.2380382},
+	doi = {10.1145/2380356.2380382},
+	abstract = {Hardware support can reduce the time spent operating on data structures by exploiting circuit-level parallelism. Such hardware data structures (HWDSs) can reduce the latency and jitter of data structure operations, which can benefit real-time systems by reducing worst-case execution times (WCETs). For example, a hardware priority queue (HWPQ) can enqueue and dequeue prioritized items in constant time with low variance; the best software implementations are in logarithmic-time asymptotic complexity for at least one of the enqueue or dequeue operations. The main problems with HWDSs are the limited size of hardware and the complexity of sharing it. In this paper we show that software support can help circumvent the size and sharing limitations of hardware so that applications can benefit from a HWDS. We evaluate our work by showing how the choice of software or hardware affects schedulability of task sets that use multiple priority queues of varying sizes. We model task behavior on two applications that are important in real-time and embedded domains: the grey-weighted distance transform for topology mapping and Dijkstra's algorithm for GPS navigation. Our results indicate that HWDSs can reduce the WCET of applications even when a HWDS is shared by multiple data structures or when data structure sizes exceed HWDS size constraints.},
+	urldate = {2012-11-24},
+	booktitle = {Proceedings of the tenth {ACM} international conference on {Embedded} software},
+	publisher = {ACM},
+	author = {Bloom, Gedare and Parmer, Gabriel and Narahari, Bhagirath and Simha, Rahul},
+	year = {2012},
+	keywords = {priority queue, schedulability, hardware data structures},
+	pages = {133--142}
+}
+
+@phdthesis{bloom_operating_2013,
+	title = {Operating {System} {Support} for {Shared} {Hardware} {Data} {Structures}},
+	url = {http://gradworks.umi.com/35/46/3546645.html},
+	urldate = {2013-12-06},
+	school = {The George Washington University},
+	author = {Bloom, Gedare},
+	month = jan,
+	year = {2013},
+	keywords = {Computer science Operating System Support for Shared Hardware Data Structures THE GEORGE WASHINGTON UNIVERSITY Bhagirath Narahari, Rahul Simha Bloom, Gedare},
+	file = {Snapshot:/home/gedare/Zotero/storage/ADXMGU9X/3546645.html:text/html}
+}
+
+@inproceedings{leontie_no_2012,
+	title = {No {Principal} {Too} {Small}: {Memory} {Access} {Control} for {Fine}-{Grained} {Protection} {Domains}},
+	shorttitle = {No {Principal} {Too} {Small}},
+	doi = {10.1109/DSD.2012.89},
+	abstract = {Modern programs comprise multiple threads of execution inside a single principal – the process – with a single protection domain, usually a page table. We propose a hardware enforced, fine-grained memory protection mechanism to divide the process into smaller principals and multiple protection domains. Our approach supports modern software engineering better than traditional processes by enabling developers to align software components with protection mechanisms. We implemented our architecture using a cycle-accurate simulator of a complex out-of-order pipeline and evaluate our solution using open-source benchmarks and synthetic micro benchmarks designed specifically to stress our system.},
+	booktitle = {2012 15th {Euromicro} {Conference} on {Digital} {System} {Design} ({DSD})},
+	author = {Leontie, E. and Bloom, G. and Narahari, B. and Simha, R.},
+	year = {2012},
+	note = {00002},
+	keywords = {software, Context, Software engineering, Pipelines, isolation, memory protection, architectural support for security, fine-grained protection, software security, Permission, Containers, page table, complex out-of-order pipeline, cycle-accurate simulator, fine-grained memory protection mechanism, memory access control, modern software engineering, open-source benchmarks, random-access storage, single protection domain, software components, Switches, synthetic microbenchmarks},
+	pages = {163--170},
+	file = {IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/Q4P2539D/abs_all.html:text/html;IEEE Xplore Full Text PDF:/home/gedare/Zotero/storage/A655QD73/Leontie et al. - 2012 - No Principal Too Small Memory Access Control for .pdf:application/pdf}
+}
+
+@incollection{bloom_chapter_2012,
+	address = {Boston},
+	title = {Chapter 12 - {Hardware} and {Security}: {Vulnerabilities} and {Solutions}},
+	isbn = {978-0-12-415815-3},
+	shorttitle = {Chapter 12 - {Hardware} and {Security}},
+	url = {http://www.sciencedirect.com/science/article/pii/B9780124158153000121},
+	abstract = {This chapter explores cyber-physical system security as it relates to computer hardware. Cyber-physical systems must ensure that physical compromises do not automatically lead to cyber compromises. Attacks on the processor supply chain represent a serious threat to cyber-physical systems – more so than servers and desktops – because critical control systems rely on hardware's trustworthiness, without which catastrophe would result: trains, planes, and automobiles crashing, satellites failing, unmanned robots running amok – think of any real-time or embedded system and you will find a piece of hardware whose correctness and security is assumed implicitly. We discuss supply chain security for the design and fabrication of processor hardware in Section 12.2. Physical compromise of fielded devices offers an attacker with unique opportunities for studying, copying, and corrupting components of a cyber-physical system. If the hardware does not protect itself and its software, then little can be done against a sufficiently motivated and resourceful attack. In Section 12.3, we examine how hardware helps make software secure and consider in particular the challenging aspects of computer security for devices that are not physically secured.
+
+Keywords: Trojan circuit, design for hardware trust, memory protection, control flow integrity, secure coprocessing, encrypted execution, and data.},
+	urldate = {2012-02-15},
+	booktitle = {Handbook on {Securing} {Cyber}-{Physical} {Critical} {Infrastructure}},
+	publisher = {Morgan Kaufmann},
+	author = {Bloom, Gedare and Leontie, Eugen and Narahari, Bhagirath and Simha, Rahul},
+	year = {2012},
+	note = {00000},
+	pages = {305--331},
+	file = {ScienceDirect Snapshot:/home/gedare/Zotero/storage/75JDDEFA/Bloom et al. - 2012 - Chapter 12 - Hardware and Security Vulnerabilitie.html:text/html}
+}
+
+@inproceedings{leontie_hardware_2013,
+	address = {New York, NY, USA},
+	series = {{SPLASH} '13},
+	title = {Hardware and {Software} {Support} for {Fine}-grained {Memory} {Access} {Control} and {Encapsulation} in {C}++},
+	isbn = {978-1-4503-1995-9},
+	url = {http://doi.acm.org/10.1145/2508075.2508091},
+	doi = {10.1145/2508075.2508091},
+	urldate = {2015-06-15},
+	booktitle = {Proceedings of the 2013 {Companion} {Publication} for {Conference} on {Systems}, {Programming}, \& {Applications}: {Software} for {Humanity}},
+	publisher = {ACM},
+	author = {Leontie, Eugen and Bloom, Gedare and Simha, Rahul},
+	year = {2013},
+	keywords = {encapsulation, hardware containers},
+	pages = {81--82}
+}
+
+@inproceedings{cederman_rtems_2014,
+	address = {Warsaw, Poland},
+	title = {{RTEMS} {SMP} for {LEON}3/{LEON}4 {Multi}-{Processor} {Devices}},
+	booktitle = {Data {Systems} {In} {Aerospace}},
+	author = {Cederman, Daniel and Hellström, Daniel and Sherrill, Joel and Bloom, Gedare and Patte, Mathieu and Zulianello, Marco},
+	month = jun,
+	year = {2014}
+}
+
+@inproceedings{smith_pylom:_2013,
+	address = {New York, NY, USA},
+	series = {{SPLASH} '13},
+	title = {{PyLOM}: {A} {Language} and {Run}-time {System} for {Planning} {Applications}},
+	isbn = {978-1-4503-1995-9},
+	shorttitle = {{PyLOM}},
+	url = {http://doi.acm.org/10.1145/2508075.2522608},
+	doi = {10.1145/2508075.2522608},
+	abstract = {Controlling software systems autonomously has been a challenging research area. Modern autonomous systems are guided by a plan, which is a sequence of actions to take to achieve a goal. Many planning algorithms exist today to produce plans given a problem definition and goal. To ease programmability of autonomous systems, many languages have been developed for defining problems and goals. However, planning algorithms tend to need to be customized not only for the problem definition language, but also for the problem definition itself. This work presents a new problem definition language called PyLOM, an interpreted, object-oriented language. The PyLOM run-time system uses generic algorithms, which do not need to be customized for each problem definition. Thus, PyLOM separates problem definitions from planning algorithms to ease programmability and software reuse. The choice of an object-oriented language also is intended to aid programmability, since prior problem definition languages adopt a functional programming style.},
+	urldate = {2014-10-21},
+	booktitle = {Proceedings of the 2013 {Companion} {Publication} for {Conference} on {Systems}, {Programming}, \&\#38; {Applications}: {Software} for {Humanity}},
+	publisher = {ACM},
+	author = {Smith, Scotty and Bloom, Gedare and Simha, Rahul},
+	year = {2013},
+	keywords = {planning, pylom},
+	pages = {91--92}
+}
+
+@article{bloom_scheduling_2014,
+	title = {Scheduling and {Thread} {Management} with {RTEMS}},
+	volume = {11},
+	issn = {1551-3688},
+	url = {http://doi.acm.org/10.1145/2597457.2597459},
+	doi = {10.1145/2597457.2597459},
+	abstract = {The goal of a real-time operating system (RTOS) is to support real-time and embedded system (RT/ES) application development, which differ from general-purpose applications because of the size, weight, and power (SWaP) and timing constraints imposed by embedded applications. Useful RTOS features include real-time thread scheduling, thread communication, synchronization, interrupt handling, memory management, file systems, device drivers, networking, and debugging support. The Real-Time Executive for Multi-processor Systems (RTEMS) is a free and open-source RTOS that supports over a dozen processor architecture families and over 150 embedded system boards. RTEMS is designed to support embedded applications with stringent real-time requirements while being compatible with open standards such as POSIX. RTEMS includes optional services such as TCP/IP networking and file systems while still offering minimum executable sizes under 20 KB in useful configurations. One of the primary functions of an RTOS is to select threads that can obtain access to resources such as shared memory and processor time. RTEMS uses multiple algorithms to manage both waiting threads and those ready to execute. The thread execution schedulers include the traditional RTOS round robin and deterministic priority schedulers, rate monotonic, earliest deadline first (EDF), constant bandwidth server (CBS), and simple SMP scheduling algorithms. The RTEMS scheduling framework allows the application developer to select the thread scheduling algorithm that best meets the application's space and time requirements. ÂăWe will present how this framework can be used by researchers to integrate their own scheduling algorithm into RTEMS and test it using a scheduling simulator before deploying it on target hardware.},
+	number = {1},
+	urldate = {2014-10-21},
+	journal = {SIGBED Rev.},
+	author = {Bloom, Gedare and Sherrill, Joel},
+	month = feb,
+	year = {2014},
+	keywords = {scheduling, RTEMS},
+	pages = {20--25},
+	file = {ACM Full Text PDF:/home/gedare/Zotero/storage/GV58GCD2/Bloom and Sherrill - 2014 - Scheduling and Thread Management with RTEMS.pdf:application/pdf}
+}
+
+@inproceedings{bloom_hardware-enhanced_2014,
+	address = {New York, NY, USA},
+	series = {{SACMAT} '14},
+	title = {Hardware-enhanced {Distributed} {Access} {Enforcement} for {Role}-based {Access} {Control}},
+	isbn = {978-1-4503-2939-2},
+	url = {http://doi.acm.org/10.1145/2613087.2613096},
+	doi = {10.1145/2613087.2613096},
+	abstract = {The protection of information in enterprise and cloud platforms is growing more important and complex with increasing numbers of users who need to access resources with distinct permissions. Role-based access control (RBAC) eases administrative complexity for large-scale access control, while a client-server model can ease performance bottlenecks by distributing access enforcement across multiple servers that consult the centralized access decision policy server as needed. In this paper, we propose a new approach to access enforcement using an existing associative array hardware data structure (HWDS) to cache authorizations in a distributed system using RBAC. This HWDS approach uses hardware that has previous been demonstrated as useful for several application domains including access control, network packet routing, and generic comparison-based integer search algorithms. We reproduce experiments from prior work on distributed access enforcement for RBAC systems, and we design and conduct new experiments to evaluate HWDS-based access enforcement. Experimental data show the HWDS cuts session initiation time by about a third compared to existing solutions, while achieving similar performance to authorize access requests. These results suggest that distributed systems using RBAC could use HWDS-based access enforcement to increase session throughput or to decrease the number of access enforcement servers without losing performance.},
+	urldate = {2014-10-10},
+	booktitle = {Proceedings of the 19th {ACM} {Symposium} on {Access} {Control} {Models} and {Technologies}},
+	publisher = {ACM},
+	author = {Bloom, Gedare and Simha, Rahul},
+	year = {2014},
+	keywords = {access control, hardware data structures, enforcement},
+	pages = {5--16}
+}
+
+@inproceedings{felbinger_test_2015,
+	address = {Graz, Austria},
+	title = {Test {Suite} {Coverage} {Measurement} and {Reporting} for {Testing} an {Operating} {System} without {Instrumentation}},
+	booktitle = {17th {Real} {Time} {Linux} {Workshop}},
+	author = {Felbinger, Hermann and Sherrill, Joel and Bloom, Gedare and Wotawa, Franz},
+	month = oct,
+	year = {2015}
+}
+
+@inproceedings{gadia_verifying_2016,
+	title = {Verifying {Nested} {Lock} {Priority} {Inheritance} in {RTEMS} with {Java} {Pathfinder}},
+	url = {https://link.springer.com/chapter/10.1007/978-3-319-47846-3_26},
+	abstract = {Scheduling and synchronization algorithms for uniprocessor real-time systems benefit from the rich theory of schedulability analysis, and yet translating these algorithms to practical implementations can be challenging. This paper presents a Java model of the priority inheritance protocol for mutual exclusion, as implemented in the RTEMS open-source real-time operating system. We verified this model using Java Pathfinder to detect potential data races, deadlocks, and priority inversions. JPF detected a known bug in the RTEMS implementation, which we modified along with the Java model. Verification of the modified model showed the absence of data races, deadlocks, and established nine protocol-specific correctness properties.},
+	language = {en},
+	urldate = {2017-02-23},
+	booktitle = {Formal {Methods} and {Software} {Engineering}},
+	publisher = {Springer, Cham},
+	author = {Gadia, Saurabh and Artho, Cyrille and Bloom, Gedare},
+	month = nov,
+	year = {2016},
+	doi = {10.1007/978-3-319-47846-3_26},
+	pages = {417--432},
+	file = {Snapshot:/home/gedare/Zotero/storage/HRBHQQZK/978-3-319-47846-3_26.html:text/html}
+}
+
+@inproceedings{song_superglue:_2016,
+	title = {{SuperGlue}: {IDL}-{Based}, {System}-{Level} {Fault} {Tolerance} for {Embedded} {Systems}},
+	shorttitle = {{SuperGlue}},
+	doi = {10.1109/DSN.2016.29},
+	abstract = {As the processor feature sizes shrink, mitigating faults in low level system services has become a critical aspect of dependable system design. In this paper we introduce SuperGlue, an interface description language (IDL) and compiler for recovery from transient faults in a component-based operating system. SuperGlue generates code for interface-driven recovery that uses commodity hardware isolation, micro-rebooting, and interface-directed fault recovery to provide predictable and efficient recovery from faults that impact low-level system services. SuperGlue decreases the amount of recovery code system designers need to implement by an order of magnitude, and replaces it with declarative specifications. We evaluate SuperGlue with a fault injection campaign in low-level system components (e.g., memory mapping manager and scheduler). Additionally, we evaluate the performance of SuperGlue in a web-server application. Results show that SuperGlue improves system reliability with only a small performance degradation of 11.84\%.},
+	booktitle = {2016 46th {Annual} {IEEE}/{IFIP} {International} {Conference} on {Dependable} {Systems} and {Networks} ({DSN})},
+	author = {Song, J. and Bloom, G. and Parmer, G.},
+	month = jun,
+	year = {2016},
+	keywords = {fault tolerance, software fault tolerance, Hardware, servers, transient analysis, embedded systems, program compilers, object-oriented programming, code generation, instruction sets, operating systems (computers), commodity hardware isolation, component-based operating system, dependable system design, fault injection campaign, fault mitigation, Fault tolerant systems, IDL-based system-level fault tolerance, interface description language, interface-directed fault recovery, interface-driven recovery, low-level system services, microrebooting, recovery code system, specification languages, SuperGlue, system reliability, transient faults, Web-server application},
+	pages = {227--238},
+	file = {IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/GA7FHBEX/7579744.html:text/html}
+}
+
+@inproceedings{bloom_fab_2010,
+	address = {Waltham, MA},
+	title = {Fab {Forensics}: {Increasing} {Trust} in {IC} {Fabrication}},
+	booktitle = {2010 {IEEE} {International} {Conference} on {Technologies} for {Homeland} {Security}},
+	author = {Bloom, Gedare and Narahari, Bhagirath and Simha, Rahul},
+	month = nov,
+	year = {2010}
+}
+
+@inproceedings{bloom_fpga_2015,
+	title = {{FPGA} {SoC} architecture and runtime to prevent hardware {Trojans} from leaking secrets},
+	doi = {10.1109/HST.2015.7140235},
+	abstract = {Hardware Trojans compromise security by invalidating the assumption that hardware provides a root-of-trust for secure systems. We propose a novel approach for an FPGA system-on-chip (SoC) to ensure confidentiality of trusted software despite hardware Trojan attacks. Our approach employs defensive techniques that feature morphing on-chip resources for moving target defense against fabrication-time Trojans, onion-encryption for confidentiality, and replication of functionally-equivalent variants of processing elements with arbitrated voting for resilience to design-time Trojans. These techniques are enabled by partial runtime reconfiguration (PRR) and are managed by a hardware abstraction layer (HAL) that reduces developer burden. We call our approach the Morph Onion-encryption Replication PRR HAL, or MORPH. MORPH aims to provide a stable interface for embedded systems developers to use in deploying applications that are resilient to hardware Trojans.},
+	booktitle = {2015 {IEEE} {International} {Symposium} on {Hardware} {Oriented} {Security} and {Trust} ({HOST})},
+	author = {Bloom, G. and Narahari, B. and Simha, R. and Namazi, A. and Levy, R.},
+	month = may,
+	year = {2015},
+	keywords = {cryptography, Hardware, trusted computing, IP networks, system-on-chip, embedded systems, Trojan horses, Field programmable gate arrays, hardware Trojans, secure systems, Partial Runtime reconfiguration, arbitrated voting, design-time Trojans, embedded systems developers, fabrication-time trojans, FPGA SoC architecture, HAL, hardware abstraction layer, MORPH, morph onion-encryption replication PRR HAL, on-chip resource morphing, PRR, root-of-trust, secret leaking, trusted software},
+	pages = {48--51},
+	file = {IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/4493FBFT/login.html:text/html}
+}
+
+@inproceedings{bloom_lockdown:_2016,
+	address = {New York, NY, USA},
+	series = {{EuroSec} '16},
+	title = {{LockDown}: {An} {Operating} {System} for {Achieving} {Service} {Continuity} by {Quarantining} {Principals}},
+	isbn = {978-1-4503-4295-7},
+	shorttitle = {{LockDown}},
+	url = {http://doi.acm.org/10.1145/2905760.2905764},
+	doi = {10.1145/2905760.2905764},
+	abstract = {This paper introduces quarantine, a new security primitive for an operating system to use in order to protect information and isolate malicious behavior. Quarantine's core feature is the ability to fork a protection domain on-the-fly to isolate a specific principal's execution of untrusted code without risk of a compromise spreading. Forking enables the OS to ensure service continuity by permitting even high-risk operations to proceed, albeit subject to greater scrutiny and constraints. Quarantine even partitions executing threads that share resources into isolated protection domains. We discuss the design and implementation of quarantine within the LockDown OS, a security-focused evolution of the Composite component-based microkernel OS. Initial performance results for quarantine show that about 98\% of the overhead comes from the cost of copying memory to the new protection domain.},
+	urldate = {2016-08-08},
+	booktitle = {Proceedings of the 9th {European} {Workshop} on {System} {Security}},
+	publisher = {ACM},
+	author = {Bloom, Gedare and Parmer, Gabriel and Simha, Rahul},
+	year = {2016},
+	keywords = {protection, access control, confinement, microkernel},
+	pages = {7:1--7:6}
+}
+
+@inproceedings{ren_cbufs:_2016,
+	address = {New York, NY, USA},
+	series = {{ISMM} 2016},
+	title = {{CBufs}: {Efficient}, {System}-wide {Memory} {Management} and {Sharing}},
+	isbn = {978-1-4503-4317-6},
+	shorttitle = {{CBufs}},
+	url = {http://doi.acm.org/10.1145/2926697.2926703},
+	doi = {10.1145/2926697.2926703},
+	abstract = {Modern systems are composed of many different protection domains separating privilege levels, subsystems, users, clients, and software of differing levels of assurance. System-wide memory management must consider not only allocation to single processes, but also efficient sharing of data across protection domains, and the allocation of memory based on the performance of applications that span multiple protection domains. This paper introduces the CBuf system for the global management of virtual and physical memory, including zero-copy sharing between protection domains. We present the design and implementation of both garbage collection techniques to enable efficient sharing, and policies that balance memory between protection domains specifically to satisfy system and application constraints such as quality of service. We show that a CBuf-enabled webserver achieves over a factor of 2.5 throughput speedup while using less processing time than Apache on Linux, and that the system can intentionally control system throughput through intelligent memory allocation.},
+	urldate = {2016-08-08},
+	booktitle = {Proceedings of the 2016 {ACM} {SIGPLAN} {International} {Symposium} on {Memory} {Management}},
+	publisher = {ACM},
+	author = {Ren, Yuxin and Parmer, Gabriel and Georgiev, Teo and Bloom, Gedare},
+	year = {2016},
+	keywords = {memory management, shared memory, garbage collection, zero-copy},
+	pages = {68--77}
+}
+
+@inproceedings{cederman_rtems_2015,
+	address = {Barcelona, Spain},
+	title = {{RTEMS} {SMP} and {MTAPI} for {Efficient} {Multi}-{Core} {Space} {Applications} on {LEON}3/{LEON}4 {Processors}},
+	booktitle = {Data {Systems} {In} {Aerospace}},
+	author = {Cederman, Daniel and Hellström, Daniel and Sherrill, Joel and Bloom, Gedare and Patte, Mathieu and Zulianello, Marco},
+	month = may,
+	year = {2015}
+}
+
+@article{bloom_aligning_2018,
+	title = {Aligning {Deos} and {RTEMS} with the {FACE} {Safety} {Base} {Operating} {System} {Profile}},
+	volume = {15},
+	issn = {1551-3688},
+	url = {http://doi.acm.org/10.1145/3199610.3199612},
+	doi = {10.1145/3199610.3199612},
+	number = {1},
+	journal = {SIGBED Rev.},
+	author = {Bloom, Gedare and Sherrill, Joel and Gilliland, Gary},
+	month = mar,
+	year = {2018},
+	keywords = {POSIX, paravirtualization, avionics, RTEMS, Deos, FACE},
+	pages = {15--21}
+}
+
+@inproceedings{bloom_optimized_2017,
+	title = {Optimized event notification in {CAN} through in-frame replies and {Bloom} filters},
+	doi = {10.1109/WFCS.2017.7991963},
+	abstract = {Thanks to its distributed and asynchronous medium access control mechanism, CAN is the ideal choice for interconnecting devices in event-driven systems. When timing requirements of applications are not particularly demanding, as in the case of, e.g., reactive and proactive maintenance, constraints on event delivery can be relaxed, so that their notification may rely on best-effort approaches. In this paper, a number of techniques are taken into account for notifying events in such a kind of systems, and their performance has been evaluated. Besides conventional CAN, a recent proposal for extending this protocol, termed CAN XR, is considered. Moreover, the adoption of Bloom filters to cope with rare events in very large systems has also been evaluated.},
+	booktitle = {2017 {IEEE} 13th {International} {Workshop} on {Factory} {Communication} {Systems} ({WFCS})},
+	author = {Bloom, G. and Cena, G. and Bertolotti, I. C. and Hu, T. and Valenzano, A.},
+	month = may,
+	year = {2017},
+	keywords = {data structures, controller area networks, Payloads, Electronic mail, access protocols, Real-time systems, asynchronous medium access control mechanism, Bloom filters, CAN XR, distributed medium access control mechanism, event-driven systems, in-frame replies, Media Access Protocol, optimized event notification, Proposals, protocol, Timing},
+	pages = {1--10},
+	file = {IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/8WJFWTAG/7991963.html:text/html}
+}
+
+@inproceedings{bloom_supporting_2017,
+	title = {Supporting security protocols on {CAN}-based networks},
+	doi = {10.1109/ICIT.2017.7915557},
+	abstract = {The ever-increasing variety of services built on top of the Controller Area Network (CAN), along with the recent discovery of vulnerabilities in CAN-based automotive systems (some of them demonstrated in practice), stimulated a renewed attention to security-oriented enhancements of the CAN protocol. The issue is further compounded nowadays because, unlike in the past, security can no longer be enforced by physical bus segregation. This paper describes how CAN XR, a recently proposed extension of the CAN data-link layer, can effectively support the distributed calculation of arbitrary binary Boolean functions, which are the foundation of most security protocols, without necessarily disclosing their operands on the bus. The feasibility of the approach is then shown through experimental evaluation and by confirming its applicability to a shared key generation protocol proposed in literature.},
+	booktitle = {2017 {IEEE} {International} {Conference} on {Industrial} {Technology} ({ICIT})},
+	author = {Bloom, G. and Cena, G. and Bertolotti, I. C. and Hu, T. and Valenzano, A.},
+	month = mar,
+	year = {2017},
+	keywords = {computer network security, Boolean functions, security protocols, Security, cryptographic protocols, controller area networks, Payloads, Electronic mail, Protocols, Network security, Cryptographic protocols, Standards, CAN XR, arbitrary binary Boolean functions, CAN data-link layer, CAN protocol security-oriented enhancements, CAN-based automotive systems, CAN-based networks, controller area network, Controller area network (CAN), Observers, physical bus segregation, shared key generation protocol},
+	pages = {1334--1339},
+	file = {IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/3LUP77HF/7915557.html:text/html}
+}
+
+@inproceedings{young_towards_2016,
+	title = {Towards a {Fail}-{Operational} {Intrusion} {Detection} {System} for {In}-{Vehicle} {Networks}},
+	abstract = {The landscape of automotive in-vehicle networks is changing driven by the vast options for infotainment features and progress toward fully-autonomous vehicles. However, the security of automotive networks is lagging behind feature-driven technologies, and new vulnerabilities are constantly being discovered. In this paper, we introduce a road map towards a security solution for in-vehicle networks that can detect anomalous and failed states of the network and adaptively respond in real-time to maintain a fail-operational system.},
+	booktitle = {Proceedings of the {Workshop} on {Security} and {Dependability} of {Critical} {Embedded} {Real}-{Time} {Systems} ({CERTS})},
+	author = {Young, Clinton and Zambreno, Joseph and Bloom, Gedare},
+	month = nov,
+	year = {2016}
+}
+
+@inproceedings{nwafor_anomaly-based_2018,
+	address = {Orlando, Florida, USA},
+	title = {Anomaly-based {Intrusion} {Detection} of {IoT} {Device} {Sensor} {Data} using {Provenance} {Graphs}},
+	booktitle = {1st {International} {Workshop} on {Security} and {Privacy} for the {Internet}-of-{Things}},
+	author = {Nwafor, Ebelechukwu and Campbell, Andre and Bloom, Gedare},
+	month = apr,
+	year = {2018}
+}
+
+@inproceedings{armbrust_spatial_2014,
+	title = {On {Spatial} {Isolation} for {Mixed} {Criticality}, {Embedded} {Systems}},
+	booktitle = {Proc. 2nd {Workshop} on {Mixed} {Criticality} {Systems} ({WMC}), {RTSS}},
+	author = {Armbrust, Eric and Song, Jiguo and Bloom, Gedare and Parmer, Gabriel},
+	year = {2014},
+	pages = {15--20}
+}
+
+@inproceedings{marshall_n-modular_2016,
+	title = {n-{Modular} {Redundant} {Real}-{Time} {Middleware}: {Design} and {Implementation}},
+	booktitle = {{EWiLi} 2016},
+	author = {Marshall, James and Parmer, Gabriel and Simha, Rahul and Bloom, Gedare},
+	year = {2016}
+}
+
+@inproceedings{nwafor_towards_2017,
+	title = {Towards a provenance collection framework for {Internet} of {Things} devices},
+	doi = {10.1109/UIC-ATC.2017.8397531},
+	abstract = {The Internet of Things (IoT) offers immense benefits by enabling devices to leverage networked resources thereby making intelligent decisions. The numerous heterogeneous connected devices that exist throughout the IoT system creates new security and privacy concerns. Some of these concerns can be overcome through trust, transparency, and integrity, which can be achieved with data provenance. Data provenance, also known as data lineage, provides a history of transformations that occurs on a data object from the time it was created to its current state. Data provenance has been explored in the areas of scientific computing, business, forensic analysis, and intrusion detection. Data provenance can help in detecting and mitigating malicious cyber attacks. In this paper, we explore the integration of provenance within the IoT. We introduce Provenance Aware Internet of Things System (PAIoTS), a provenance collection framework for IoT devices. We evaluate the effectiveness of our framework by developing a prototype system for proof of concept.},
+	booktitle = {2017 {IEEE} {SmartWorld}, {Ubiquitous} {Intelligence} {Computing}, {Advanced} {Trusted} {Computed}, {Scalable} {Computing} {Communications}, {Cloud} {Big} {Data} {Computing}, {Internet} of {People} and {Smart} {City} {Innovation} ({SmartWorld}/{SCALCOM}/{UIC}/{ATC}/{CBDCom}/{IOP}/{SCI})},
+	author = {Nwafor, E. and Campbell, A. and Hill, D. and Bloom, G.},
+	month = aug,
+	year = {2017},
+	keywords = {Computational modeling, Internet of Things, Security, Data models, Temperature sensors, History, Cloud computing},
+	pages = {1--6},
+	file = {IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/U2RIM25L/8397531.html:text/html}
+}
+
+@inproceedings{bloom_design_2018,
+	title = {Design patterns for the industrial {Internet} of {Things}},
+	doi = {10.1109/WFCS.2018.8402353},
+	abstract = {The Internet of Things (IoT) is a vast collection of interconnected sensors, devices, and services that share data and information over the Internet with the objective of leveraging multiple information sources to optimize related systems. The technologies associated with the IoT have significantly improved the quality of many existing applications by reducing costs, improving functionality, increasing access to resources, and enhancing automation. The adoption of IoT by industries has led to the next industrial revolution: Industry 4.0. The rise of the Industrial IoT (IIoT) promises to enhance factory management, process optimization, worker safety, and more. However, the rollout of the IIoT is not without significant issues, and many of these act as major barriers that prevent fully achieving the vision of Industry 4.0. One major area of concern is the security and privacy of the massive datasets that are captured and stored, which may leak information about intellectual property, trade secrets, and other competitive knowledge. As a way forward toward solving security and privacy concerns, we aim in this paper to identify common input-output (I/O) design patterns that exist in applications of the IIoT. These design patterns enable constructing an abstract model representation of data flow semantics used by such applications, and therefore better understand how to secure the information related to IIoT operations. In this paper, we describe communication protocols and identify common I/O design patterns for IIoT applications with an emphasis on data flow in edge devices, which, in the industrial control system (ICS) setting, are most often involved in process control or monitoring.},
+	booktitle = {2018 14th {IEEE} {International} {Workshop} on {Factory} {Communication} {Systems} ({WFCS})},
+	author = {Bloom, G. and Alsulami, B. and Nwafor, E. and Bertolotti, I. C.},
+	month = jun,
+	year = {2018},
+	keywords = {Internet of Things, Security, IIoT, Industry 4.0, Sensors, Cloud computing, Wireless sensor networks, Design Patterns, Industrial Internet of Things, Industries},
+	pages = {1--10},
+	file = {IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/365NH2CQ/8402353.html:text/html}
+}
+
+@inproceedings{tessler_work--progress:_2017,
+	title = {Work-in-{Progress}: {Reducing} {Cache} {Conflicts} via {Interrupts} and {BUNDLE} {Scheduling}},
+	shorttitle = {Work-in-{Progress}},
+	doi = {10.1109/RTAS.2017.30},
+	abstract = {In "BUNDLE: Real-Time Multi-Threaded Scheduling to Reduce Cache Contention" Tessler and Fisher present a positive perspective of instruction caches for hard real-time multithreaded tasks. The thread-aware scheduling algorithm limits the execution of threads to sets of instructions that cannot result in cache conflicts. Identification of these sets result in conflict free regions which are used to identify scheduling groups called bundles in the BUNDLE scheduling algorithm. Placement of a thread in a particular bundle depends on, what the authors call, "anticipating execution". However, they do not define a complete mechanism to anticipate execution. In this work, we propose a method to anticipate execution that modifies cache hardware and introduces a new interrupt raised prior to a cache conflict. This new interrupt is combined with (a slightly modified version of) the BUNDLE scheduling algorithm. The intent is to implement these hardware modifications for ARM on the gem5 simulator with the scheduling algorithm integrated into the RTEMS operating system. The hope is this work serves as further motivation to bring the positive perspective of caches to physical processors and operating systems.},
+	booktitle = {2017 {IEEE} {Real}-{Time} and {Embedded} {Technology} and {Applications} {Symposium} ({RTAS})},
+	author = {Tessler, C. and Bloom, G. and Fisher, N.},
+	month = apr,
+	year = {2017},
+	keywords = {Hardware, Indexes, cache storage, multi-threading, operating system kernels, scheduling, Registers, interrupts, ARM, Scheduling algorithms, anticipating execution, BUNDLE scheduling, cache conflict reduction, cache contention reduction, Cache memory, Cache Memory, gem5 simulator, hardware modifications, instruction caches, Instruction sets, Multithreading, physical processors, real-time multi-threaded scheduling, real-time multithreaded tasks, RTEMS operating system, Static Analysis, thread-aware scheduling algorithm},
+	pages = {125--128},
+	file = {IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/YMESM2TK/7939026.html:text/html}
+}
+
+@inproceedings{bloom_design_2018-1,
+	title = {Design patterns for the industrial {Internet} of {Things}},
+	doi = {10.1109/WFCS.2018.8402353},
+	abstract = {The Internet of Things (IoT) is a vast collection of interconnected sensors, devices, and services that share data and information over the Internet with the objective of leveraging multiple information sources to optimize related systems. The technologies associated with the IoT have significantly improved the quality of many existing applications by reducing costs, improving functionality, increasing access to resources, and enhancing automation. The adoption of IoT by industries has led to the next industrial revolution: Industry 4.0. The rise of the Industrial IoT (IIoT) promises to enhance factory management, process optimization, worker safety, and more. However, the rollout of the IIoT is not without significant issues, and many of these act as major barriers that prevent fully achieving the vision of Industry 4.0. One major area of concern is the security and privacy of the massive datasets that are captured and stored, which may leak information about intellectual property, trade secrets, and other competitive knowledge. As a way forward toward solving security and privacy concerns, we aim in this paper to identify common input-output (I/O) design patterns that exist in applications of the IIoT. These design patterns enable constructing an abstract model representation of data flow semantics used by such applications, and therefore better understand how to secure the information related to IIoT operations. In this paper, we describe communication protocols and identify common I/O design patterns for IIoT applications with an emphasis on data flow in edge devices, which, in the industrial control system (ICS) setting, are most often involved in process control or monitoring.},
+	booktitle = {2018 14th {IEEE} {International} {Workshop} on {Factory} {Communication} {Systems} ({WFCS})},
+	author = {Bloom, G. and Alsulami, B. and Nwafor, E. and Bertolotti, I. C.},
+	month = jun,
+	year = {2018},
+	keywords = {industrial control, security, data privacy, industrial property, object-oriented programming, design patterns, Internet of Things, Security, IIoT, Industry 4.0, production engineering computing, Sensors, Cloud computing, Wireless sensor networks, industrial Internet of Things, Design Patterns, Industrial Internet of Things, Industries, cost reduction, data flow semantics, industrial control system setting, Industrial IoT, industrial revolution, interconnected sensors, leveraging multiple information sources, privacy concerns, process control, process optimization},
+	pages = {1--10},
+	file = {IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/53EEGDZ7/8402353.html:text/html}
+}
+
+@inproceedings{mohan_special_2018,
+	title = {Special {Session}: {The} {Future} of {IoT} {Security}},
+	shorttitle = {Special {Session}},
+	doi = {10.1109/EMSOFT.2018.8537206},
+	abstract = {The Internet-of-Things (IoT) is a large and complex domain. These systems are often constructed using a very diverse set of hardware, software and protocols. This, combined with the ever increasing number of IoT solutions/services that are rushed to market means that most such systems are rife with security holes. Recent incidents (e.g., the Mirai botnet) further highlight such security issues. With emerging technologies such as blockchain and software-defined networks (SDNs), new security solutions are possible in the IoT domain. In this paper we will explore future trends in IoT security: (a) the use of blockchains in IoT security, (b) data provenance for sensor information, (c) reliable and secure transport mechanisms using SDNs (d) scalable authentication and remote attestation mechanisms for IoT devices and (e) threat modeling and risk/maturity assessment frameworks for the domain.},
+	booktitle = {2018 {International} {Conference} on {Embedded} {Software} ({EMSOFT})},
+	author = {Mohan, S. and Asplund, M. and Bloom, G. and Sadeghi, A. and Ibrahim, A. and Salajageh, N. and Griffioen, P. and Sinipoli, B.},
+	month = sep,
+	year = {2018},
+	keywords = {data integrity, sensor fusion, Resilience, message authentication, Internet of Things, security solutions, data provenance, Cryptography, Software, IoT domain, IoT devices, Reliability, IoT security, authentication mechanism, IoT solutions/services, Quality of service, remote attestation mechanism, sensor information, transport mechanisms},
+	pages = {1--7},
+	file = {IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/78EX8FPP/8537206.html:text/html}
+}
+
+@incollection{olufowobi_chapter_2019,
+	title = {Chapter 16 - {Connected} {Cars}: {Automotive} {Cybersecurity} and {Privacy} for {Smart} {Cities}},
+	isbn = {978-0-12-815032-0},
+	shorttitle = {Chapter 16 - {Connected} {Cars}},
+	url = {http://www.sciencedirect.com/science/article/pii/B9780128150320000160},
+	abstract = {This chapter examines the cybersecurity and privacy of the twin notions of smart transportation and intelligent transportation systems with a focus on the role of personal automobiles. Smart transportation encompasses the individual and joint capabilities of connected cars, or more generally, vehicles, and so comprises the internal workings of autonomous vehicles and the complex interdependencies introduced by vehicle-to-vehicle communications. An intelligent transportation system introduces smart technology to civil transportation infrastructure, and the connected car further creates the opportunity for vehicle-to-infrastructure communications. We identify threats and attacks enabled by smart transportation and intelligent transportation systems, and survey methods for providing security and privacy.},
+	urldate = {2019-03-05},
+	booktitle = {Smart {Cities} {Cybersecurity} and {Privacy}},
+	publisher = {Elsevier},
+	author = {Olufowobi, Habeeb and Bloom, Gedare},
+	editor = {Rawat, Danda B. and Ghafoor, Kayhan Zrar},
+	month = jan,
+	year = {2019},
+	doi = {10.1016/B978-0-12-815032-0.00016-0},
+	keywords = {Cybersecurity, Connected cars, Intelligent transportation system, Smart transportation, V2I, V2V},
+	pages = {227--240},
+	file = {ScienceDirect Snapshot:/home/gedare/Zotero/storage/73JSMDMG/B9780128150320000160.html:text/html}
+}
+
+@article{young_survey_2019,
+	title = {Survey of {Automotive} {Controller} {Area} {Network} {Intrusion} {Detection} {Systems}},
+	issn = {2168-2356},
+	doi = {10.1109/MDAT.2019.2899062},
+	abstract = {Novel attacks continue to appear against in-vehicle networks due to the increasing complexity of heterogeneous software and hardware components used in vehicles. These new components introduce challenges when developing efficient and adaptable security mechanisms. Several intrusion detection systems (IDS) have been proposed to identify and protect in-vehicle networks against malicious activities. We describe the stateof- the-art intrusion detection methods for securing automotive networks, with special focus on the Controller Area Network (CAN). We provide a description of vulnerabilities, highlight threat models, identify known attack vectors present in CAN, and discuss the advantages and disadvantages of suggested solutions.},
+	journal = {IEEE Design Test},
+	author = {Young, C. and Zambreno, J. and Olufowobi, H. and Bloom, G.},
+	year = {2019},
+	keywords = {Automotive engineering, Computer hacking, Controller area network, Engines, in-vehicle network, Intrusion detection, intrusion detection system, Monitoring, Timing},
+	pages = {1--1},
+	file = {IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/AID7CGMD/8640808.html:text/html}
+}
