@@ -1,379 +1,147 @@
-<html>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<head>
-  <title>Gedare Bloom: Publications</title>
-  <link type="text/css" rel="StyleSheet" href="css/style.css" />
-  <script language="JavaScript" type="text/javascript" src="bloom.js"></script>
-</head>
+---
+title: Publications
+nav_title: Pubs
+layout: default
+order: 4
+---
 
-<div class="tabs">
-   <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="research.html">Research</a></li>
-    <li><a href="teaching.html">Teaching</a></li>
-    <li><a href="cv.html">CV</a></li>
-    <li class="current"><a href="publications.html">Publications</a></li>
-    <li><a href="software.html">Software</a></li>
-    <li><a href="students.html">Students</a></li>
-    <li><a href="personal.html">Personal</a></li>
-   </ul>
-<br />
-</div>
-
-<div class="box">
-  <div class="boxtop"><a name="pubs">Publications</a></div>
-
-  <div class="box">
-    <div class="boxtop">Organized View</a></div>
-  <div class="boxp">
-Please refer to my <a href="research.html">Research</a> page for a 
+This page is presented in reverse chronological order. 
+Please refer to my [Research](./research.html) page for a more
 cohesive and organized approach that highlights my publications in the context
-of the specific research problems that they address.  I also go into more 
-depth on unpublished work that interests me.
-    </div>
-  </div>
+of the specific research problems that they address.
 
-  <div class="box">
-  <div class="boxtop">Notice</a></div>
-  <div class="boxp">
-This material is presented to ensure timely dissemination of scholarly and technical work. Copyright and all rights therein are retained by authors or by other copyright holders. All persons copying this information are expected to adhere to the terms and constraints invoked by each author's copyright. In most cases, these works <b>may not be reposted</b> without the explicit permission of the copyright holder.
-  </div>
-  </div>
+<!--
+# Notice
 
-  <div class="box">
-  <div class="boxtop">Theses</a></div>
-  <div class="boxp">
-    <ul>
-    <li><b>Gedare Bloom</b>. 
-    "Operating System Support for Shared Hardware Data Structures", 
-    Dissertation Thesis, The George Washington University, 2012.
-        [<a href="pdf/BloomThesis.pdf">PDF</a>]
-    [<a href="slides/thesis.pdf">slides</a>]
-    [<a href="bib/BloomThesis.bib">bibtex</a>]
-    <!--
-    [<a href="files/BloomThesis.epub">EPUB</a>]
-        [<a href="files/BloomThesis.mobi">MOBI</a>]
-    -->
-    </ul>
-  </div>
-  </div>
+This material is presented to ensure timely dissemination of scholarly and
+technical work. Copyright and all rights therein are retained by authors or by
+other copyright holders. All persons copying this information are expected to
+adhere to the terms and constraints invoked by each author's copyright. In most
+cases, these works **may not be reposted** without the explicit permission
+of the copyright holder.
 
-  <div class="box">
-  <div class="boxtop">Journals</a></div>
-  <div class="boxp">
-    <ul>
-      <li><b>G. Bloom</b>, G. Cena, I. Cibrario Bertolotti, T. Hu, and A. Valenzano.
-      <i>Event Notification in CAN-based Sensor Networks</i>,
-      accepted to appear in IEEE Transactions on Industrial Informatics, 2019.
-      </li>
- 
-      <li>C. Young, J. Zambreno, H. Olufowobi, and <b>G. Bloom</b>.
-      <i>Survey of Automotive Controller Area Network Intrusion Detection Systems</i>,
-      accepted to appear in IEEE Design &amp; Test, SI: Secure Automotive Systems 17, 2019.
-      </li>
-         
-      <li><b>G. Bloom</b>, J. Sherrill, and G. Gilliland.
-      <i>Aligning Deos and RTEMS with the FACE Safety Base Operating System Profile</i>,
-      ACM SIGBED Review, vol. 15, no. 1, pp. 15--21, March 2018.
-      [<a href="pdf/BloShe18A.pdf">PDF</a>]
-      [<a href="bib/BloShe18A.bib">bibtex</a>]
-      </li>
-
-      <li><b>G. Bloom</b>, J. Sherrill.
-      <i>Scheduling and Thread Management with RTEMS</i>,
-      ACM SIGBED Review, vol. 11, no. 1, pp. 20--25, February 2014.
-      [<a href="pdf/BloShe14A.pdf">PDF</a>]
-      [<a href="bib/BloShe14A.bib">bibtex</a>]
-      </li>
-
-      <li>E. Leontie, <b>G. Bloom</b>, O. Gelbart, B. Narahari, and R. Simha. 
-      <i>A Compiler-Hardware Technique for Protecting Against Buffer Overflow Attacks</i>, 
-      Journal of Information Assurance and Security (JIAS), vol. 5, no. 1, pp. 1-8, 2010.
-      [<a href="pdf/LeoBlo09C.pdf">PDF</a>]
-      [<a href="bib/LeoBlo09C.bib">bibtex</a>]
-      </li>
-
-      <li><b>G. Bloom</b>, B. Narahari, R. Simha, and J. Zambreno. 
-      <i>Providing secure execution environments with a last line of defense 
-      against Trojan circuit attacks</i>, Computers &amp; Security, vol. 28, no. 7, pp. 660-669,
-      October 2009. 
-      <a href="http://dx.doi.org/10.1016/j.cose.2009.03.002"
-      target="_blank">doi:10.1016/j.cose.2009.03.002</a>. 
-      [<a href="pdf/BloNar09A.pdf">PDF</a>]
-      [<a href="bib/BloNar09A.bib">bibtex</a>]
-    </li>
-    </ul>
-  </div>
-  </div>
-  <div class="box">
-  <div class="boxtop">Refereed Conferences and Workshops</a></div>
-  <div class="boxp">
-    <ul>
-      <li>M. Nasri, T. Chantem, <b>G. Bloom</b>, and R. Gerdes.
-      <i>On the Limitations and Vulnerabilities of Schedule Randomization against Schedule-Based Attacks</i>,
-      25th IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS'19), April 2019.
-      </li>
-      
-      <li>H. Olufowobi, U. Ezeobi, E. Muhati, G. Robinson, C. Young, J. Zambreno, and <b>G. Bloom</b>. 
-      <i>Anomaly Detection Approach Using Adaptive Cumulative Sum Algorithm for Controller Area Network</i>,
-       ACM Workshop on Automotive Cybersecurity (AutoSec), Dallas, TX, March 2019.
-       </li>
-       
-      <li>C. Young, H. Olufowobi, <b>G. Bloom</b>, and J. Zambreno.
-      <i>Automotive Intrusion Detection Based on Constant CAN Message Frequencies Across Vehicle Driving Modes</i>,
-      ACM Workshop on Automotive Cybersecurity (AutoSec), Dallas, TX, March 2019.
-      </li>
-       
-      <li>H. Olufowobi, <b>G. Bloom</b>, C. Young, and J. Zambreno.
-      <i>Work-in-Progress: Real-Time Modeling for Intrusion Detection in Automotive Controller Area Network</i>,
-      2018 IEEE Real-Time Systems Symposium (RTSS), Nashville, TN, December 2018.
-      </li>
-              
-      <li>U. K. Agarwal, V. P. Ashokbai, <b>G. Bloom</b>, C. Mauderer, and J. Sherrill
-      <i>Comparison of File Systems in RTEMS</i>,
-      2018 Embedded Operating Systems Workshop (EWiLi 2018), Turin, Italy, October 2018.
-      </li>
-       
-      <li><b>G. Bloom</b>, B. Alsulami, E. Nwafor, and I. C. Bertolotti,
-      <i>Design Patterns for the Industrial Internet of Things</i>,
-      14th IEEE International Workshop on Factory Communication Systems (WFCS),
-      Imperia, Italy, June 2018.
-      [<a href="pdf/BloAls18A.pdf">PDF</a>]
-      [<a href="bib/BloAls18A.bib">bibtex</a>]
-      </li>
-
-      <li>E. Nwafor, A. Campbell, and <b>G. Bloom</b>,
-      <i>Anomaly-based Intrusion Detection of IoT Device Sensor Data
-         using Provenance Graphs</i>, 1st International Workshop on
-      Security and Privacy for the Internet-of-Things (IoTSec),
-      Orlando, April 2018.
-      [<a href="pdf/NwaCam18A.pdf">PDF</a>]
-      [<a href="bib/NwaCam18A.bib">bibtex</a>]
-      </li>
-
-      <li>E. Nwafor, A. Campbell, D. Hill, and <b>G. Bloom</b>,
-      <i>Towards a Provenance Collection Framework for Internet of Things
-      Devices</i>, 14th IEEE International Conference on Ubiquitous
-      Intelligence and Computing (UIC), San Francisco, August 2017.
-      [<a href="pdf/NwaCam17A.pdf">PDF</a>]
-      [<a href="bib/NwaCam17A.bib">bibtex</a>]
-      </li>
-
-      <li><b>G. Bloom</b>,  G. Cena, I. Cibrario Bertolotti, T. Hu,
-      and A. Valenzano, <i>Optimized event notification in CAN through
-      in-frame replies and Bloom filters</i>, 2017 IEEE 13th International
-      Workshop on Factory Communication Systems (WFCS), Trondheim, June 2017.
-      [<a href="pdf/BloCen17B.pdf">PDF</a>]
-      [<a href="bib/BloCen17B.bib">bibtex</a>]
-      </li>
-
-      <li>C. Tessler, <b>G. Bloom</b>, and N. Fisher,
-      <i>Work-In-Progress: Reducing Cache Conflicts via
-        Interrupts and BUNDLE Scheduling</i>,
-      2017 IEEE Real-Time and Embedded Technology and Applications
-      Symposium, RTAS '17, April 2017.
-      [<a href="pdf/TesBlo17A.pdf">PDF</a>]
-      [<a href="bib/TesBlo17A.bib">bibtex</a>]
-      </li>
-
-      <li><b>G. Bloom</b>, G. Cena, I. Cibrario Bertolotti, T. Hu,
-      and A. Valenzano, <i>Supporting Security Protocols on CAN-Based
-      Networks</i>, 18th Annual IEEE International Conference on
-      Industrial Technology, IEEE ICIT '17, March 2017.
-      [<a href="pdf/BloCen17A.pdf">PDF</a>]
-      [<a href="bib/BloCen17A.bib">bibtex</a>]
-      </li>
-
-      <li>C. Young, J. Zambreno, and <b>G. Bloom</b>, <i>Towards a
-      Fail-Operational Intrusion Detection System for In-Vehicle Networks</i>,
-      1st Workshop on Security and Dependability of Critical
-      Embedded Real-Time Systems, CERTS '16, November 2016.
-      [<a href="pdf/YouZam16A.pdf">PDF</a>]
-      [<a href="bib/YouZam16A.bib">bibtex</a>]
-      </li>
-
-      <li>S. Gadia, C. Artho, and <b>G. Bloom</b>, <i>Verifying Nested Lock
-        Priority Inheritance in RTEMS with Java Pathfinder</i>,
-      18th International Conference on Formal Engineering Methods,
-      ICFEM '16, November 2016.
-      [<a href="pdf/GadArt16A.pdf">PDF</a>]
-      [<a href="bib/GadArt16A.bib">bibtex</a>]
-      </li>
-
-      <li>Y. Ren, G. Parmer, T. Georgiev, and <b>G. Bloom</b> 
-      <i>CBufs: Efficient, System-wide Memory Management and Sharing</i>,
-      2016 ACM SIGPLAN International Symposium on Memory Management,
-      ISMM'16, June 2016.
-      [<a href="pdf/RenPar16A.pdf">PDF</a>]
-      [<a href="bib/RenPar16A.bib">bibtex</a>]
-      </li>
-
-      <li>J. Song, <b>G. Bloom</b>, and G. Parmer.
-      <i>SuperGlue: IDL-Based, System-Level
-      Fault Tolerance for Embedded Systems</i>,
-      Proceedings of the 46th IEEE/IFIP International
-      Conference on Dependable Systems and Networks,
-      <b>DSN '16 (22% acceptance)</b>
-      [<a href="pdf/SonBlo16A.pdf">PDF</a>]
-      [<a href="bib/SonBlo16A.bib">bibtex</a>]
-      </li>
-
-      <li>J. Marshall, <b>G. Bloom</b>, G. Parmer, and R. Simha.
-      <i>n-Modular Redundant Real-Time Middleware: Design and
-      Implementation,</i> 6th Embedded Operating System Workshop, EWiLi'16,
-      October 2016.
-      </li>
+# Publications
+-->
 
 
-      <li><b>G. Bloom</b>, G. Parmer, and R. Simha.
-      <i>LockDown: an operating system for
-      achieving service continuity by quarantining principals</i>,
-      9th European Workshop on System Security, EuroSec '16, April 2016.
-      [<a href="pdf/BloPar16A.pdf">PDF</a>]
-      [<a href="bib/BloPar16A.bib">bibtex</a>]
+{% assign mypubs = site.data.pubs.references | reverse %}
+{% assign months = "January February March April May June July August September October November December &nbsp; " | split: ' ' %}
 
-      <li>H. Felbinger, J. Sherrill, <b>G. Bloom</b>, and F. Wotawa,
-      <i>Test Suite Coverage
-        Measurement and Reporting for Testing an Operating System without
-        Instrumentation</i>, 17th Real-Time Linux Workshop, RTLWS17,
-      October 2015.
-      [<a href="pdf/FelShe15A.pdf">PDF</a>]
-      [<a href="bib/FelShe15A.bib">bibtex</a>]
+# Theses
+{% for pub in mypubs %}
+{%- if pub.type == 'thesis' -%}
+{% assign index = index | plus: 1 %}
+{{ index }}. &nbsp; 
+  {%- for author in pub.author -%}
+    {%- if author.family == 'Bloom' -%}
+    **{{ author.given }} {{ author.family }}**, &nbsp;
+    {%- else -%}
+    {{ author.given }} {{ author.family }}, &nbsp;
+    {%- endif -%}
+  {%- endfor -%}
+  &nbsp; *
+  {%- if pub.URL -%}[{{ pub.title }}]({{ pub.URL }})
+  {%- elsif pub.DOI -%}[{{ pub.title }}](https://dx.doi.org/{{ pub.DOI }})
+  {%- else -%}{{ pub.title }}
+  {%- endif -%}
+  *,
+  {{ pub.publisher }},
+  {%- for date in pub.issued -%}
+    {% assign midx = date.month | plus: -1 %}
+    {{ months[midx] }}
+    {{ date.year }}.
+  {%- endfor -%}
+{%- endif -%}
+{% endfor %}
 
-      <li><b>G. Bloom</b>, B. Narahari, R. Simha, A. Namazi, and R. Levy,
-      <i>FPGA SoC Architecture and Runtime to Prevent Hardware Trojans
-            from Leaking Secrets</i>,
-      IEEE International Symposium on Hardware-Oriented Security and Trust,
-      HOST, May 2015.
-      [<a href="pdf/BloNar15A.pdf">PDF</a>]
-      [<a href="bib/BloNar15A.bib">bibtex</a>]
-      </li>
+# Book Chapters
+{% for pub in mypubs %}
+{%- if pub.type == 'chapter' -%}
+{% assign index = index | plus: 1 %}
+{{ index }}. &nbsp; 
+  {%- for author in pub.author -%}
+    {%- if author.family == 'Bloom' -%}
+    **{{ author.given }} {{ author.family }}**, &nbsp;
+    {%- else -%}
+    {{ author.given }} {{ author.family }}, &nbsp;
+    {%- endif -%}
+  {%- endfor -%}
+  &nbsp; *
+  {%- if pub.URL -%}[{{ pub.title }}]({{ pub.URL }})
+  {%- elsif pub.DOI -%}[{{ pub.title }}](https://dx.doi.org/{{ pub.DOI }})
+  {%- else -%}{{ pub.title }}
+  {%- endif -%}
+  *,
+  {{ pub.container-title }},
+  pp. {{ pub.page }},
+  {{ pub.publisher }},
+  {%- for date in pub.issued -%}
+    {% assign midx = date.month | plus: -1 %}
+    {{ months[midx] }}
+    {{ date.year }}.
+  {%- endfor -%}
+{%- endif -%}
+{% endfor %}
 
-      <li>E. Armbrust, J. Song, <b>G. Bloom</b>, and G. Parmer
-      <i>On Spatial Isolation for Mixed Criticality, Embedded Systems</i>,
-      2nd International Workshop on Mixed Criticality Systems, WMC, Dec. 2014.
-      [<a href="pdf/ArmSon14A.pdf">PDF</a>]
-      [<a href="bib/ArmSon14A.bib">bibtex</a>]
-      </li>
 
-      <li><b>G. Bloom</b> and R. Simha.
-      <i>Hardware-Enhanced Distributed Access Enforcement for
-        Role-Based Access Control</i>,
-      Proceedings of the 19th ACM Symposium on Access Control Models
-      and Technologies, SACMAT '14, June 2014.
-      [<a href="pdf/BloSim14A.pdf">PDF</a>]
-      [<a href="bib/BloSim14A.bib">bibtex</a>]
-      </li>
 
-      <li>D. Cederman, D. Hellstr&#246;m, J, Sherrill, <b>G. Bloom</b>,
-      M. Patte, and M. Zulianello.
-      <i>RTEMS SMP for LEON3/LEON4 Multi-Processor Devices</i>,
-      Data Systems In Aerospace, DASIA '14, June 2014.
-      [<a href="pdf/CedHel14A.pdf">PDF</a>]
-      [<a href="bib/CedHel14A.bib">bibtex</a>]
-      </li>
+# Journals
+{% for pub in mypubs %}
+{%- if pub.type == 'article-journal' -%}
+{% assign index = index | plus: 1 %}
+{{ index }}. &nbsp; 
+  {%- for author in pub.author -%}
+    {%- if author.family == 'Bloom' -%}
+    **{{ author.given }} {{ author.family }}**, &nbsp;
+    {%- else -%}
+    {{ author.given }} {{ author.family }}, &nbsp;
+    {%- endif -%}
+  {%- endfor -%}
+  &nbsp; *
+  {%- if pub.URL -%}[{{ pub.title }}]({{ pub.URL }})
+  {%- elsif pub.DOI -%}[{{ pub.title }}](https://dx.doi.org/{{ pub.DOI }})
+  {%- else -%}{{ pub.title }}
+  {%- endif -%}
+  *,
+  {{ pub.container-title }},
+  vol. {{ pub.volume }},
+  iss. {{ pub.issue }},
+  pp. {{ pub.page }},
+  {%- for date in pub.issued -%}
+    {% assign midx = date.month | plus: -1 %}
+    {{ months[midx] }}
+    {{ date.year }}.
+  {%- endfor -%}
+{%- endif -%}
+{% endfor %}
 
-      <li>E. Leontie, <b>G. Bloom</b>, R. Simha,
-      <i>Hardware and Software Support for Fine-Grained Memory Access Control
-      and Encapsulation in C++</i>,
-      ACM SIGPLAN Systems, Programming, Languages and Applications: Software
-      for Humanity (SPLASH 2013), October 2013.
-      [<a href="pdf/LeoBlo13A.pdf">PDF</a>]
-      [<a href="bib/LeoBlo13A.bib">bibtex</a>]
-      </li>
+# Conferences and Workshops
+{% for pub in mypubs %}
+{%- if pub.type == 'paper-conference' -%}
+{% assign index = index | plus: 1 %}
+{{ index }}. &nbsp; 
+  {%- for author in pub.author -%}
+    {%- if author.family == 'Bloom' -%}
+    **{{ author.given }} {{ author.family }}**, &nbsp;
+    {%- else -%}
+    {{ author.given }} {{ author.family }}, &nbsp;
+    {%- endif -%}
+  {%- endfor -%}
+  &nbsp; *
+  {%- if pub.URL -%}[{{ pub.title }}]({{ pub.URL }})
+  {%- elsif pub.DOI -%}[{{ pub.title }}](https://dx.doi.org/{{ pub.DOI }})
+  {%- else -%}{{ pub.title }}
+  {%- endif -%}
+  *,
+  {{ pub.container-title }},
+  pp. {{ pub.page }},
+  {%- for date in pub.issued -%}
+    {% assign midx = date.month | plus: -1 %}
+    {{ months[midx] }}
+    {{ date.year }}.
+  {%- endfor -%}
+{%- endif -%}
+{% endfor %}
 
-      <li>S. Smith, <b>G. Bloom</b>, R. Simha,
-      <i>PyLOM: A language and Run-Time System for Planning Applications</i>,
-      ACM SIGPLAN Systems, Programming, Languages and Applications: Software
-      for Humanity (SPLASH 2013), October 2013.
-      [<a href="bib/SmiBlo13A.bib">bibtex</a>]
-      </li>
 
-      <li><b>G. Bloom</b>, G. Parmer, B. Narahari, and R. Simha.
-      <i>Shared Hardware Data Structures for Hard Real-Time Systems</i>,
-      12th International Conference on Embedded Software, EMSOFT 2012,
-      October 2012. [<a href="pdf/BloPar12A.pdf">PDF</a>]
-      [<a href="bib/BloPar12A.bib">bibtex</a>]
-      </li>
 
-      <li>E. Leontie, <b>G. Bloom</b>, B. Narahari, and R. Simha.
-      <i>No Principal Too Small: Memory Access Control for Fine-Grained
-        Protection Domains</i>,
-      15th Euromicro Conference on Digital System Design, DSD 2012,
-      September 2012. [<a href="pdf/LeoBlo12A.pdf">PDF</a>]
-      [<a href="bib/LeoBlo12A.bib">bibtex</a>]
-      </li>
-
-      <li>E. Leontie, <b>G. Bloom</b>, and R. Simha.
-      <i>Automation for Creating and Configuring 
-        Security Manifests for Hardware Containers</i>,
-      4th Symposium on Configuration Analytics and Automation, SafeConfig 2011,
-      October 2011. [<a href="pdf/LeoBlo11A.pdf">PDF</a>]
-      [<a href="bib/LeoBlo11A.bib">bibtex</a>]
-      </li>
-
-      <li><b>G. Bloom</b>, G. Parmer, B. Narahari, and R. Simha. 
-        <i>Real-Time Scheduling with Hardware Data Structures</i>,
-        Work-in-Progress Session, IEEE Real-Time Systems Symposium, 2010. 
-        RTSS 2010. December 2010. 
-        [<a href="pdf/BloPar10A.pdf">PDF</a>]
-        [<a href="bib/BloPar10A.bib">bibtex</a>]
-    </li>
-    <li><b>G. Bloom</b>, B. Narahari, and R. Simha. 
-        <i> Fab Forensics: Increasing Trust in IC Fabrication</i>, 
-        IEEE International Conference on Technologies for Homeland Security, 
-        2010. HST '10. November 2010. 
-        [<a href="pdf/BloNar10A.pdf">PDF</a>]
-        [<a href="bib/BloNar10A.bib">bibtex</a>]
-    </li>
-    <li>E. Leontie, <b>G. Bloom</b>, B. Narahari, R. Simha, and J. Zambreno. 
-    <i>Hardware-enforced Fine-grained Isolation of Untrusted Code</i>, 
-    Proceedings of the Workshop on Secure Execution of Untrusted Code 
-    (SecuCode), November 2009. 
-    [<a href="pdf/LeoBlo09B.pdf">PDF</a>]
-    [<a href="bib/LeoBlo09B.bib">bibtex</a>]
-    </li>
-    <li>E. Leontie, <b>G. Bloom</b>, B. Narahari, R. Simha, and J. Zambreno. 
-    <i>Hardware Containers for Software Components: 
-      A Trusted Platform for COTS-Based Systems</i>, 
-    2009 IEEE/IFIP International Symposium on Trusted Computing and 
-    Communications, TRUSTCOM 2009, August 2009. 
-    [<a href="pdf/LeoBlo09A.pdf">PDF</a>]
-    [<a href="bib/LeoBlo09A.bib">bibtex</a>]
-    </li>
-    <li><b>G. Bloom</b>, B. Narahari, and R. Simha.
-    <i>OS Support for Detecting Trojan Circuit Attacks</i>, hst, pp. 100-103,
-    2009 IEEE International Workshop on Hardware-Oriented Security and Trust, 
-    HOST 2009. 
-    [<a href="pdf/BloNar09B.pdf">PDF</a>]
-    [<a href="bib/BloNar09B.bib">bibtex</a>]
-    </li>
-    <li><b>G. Bloom</b> and S. Popoveniuc. 
-    <i>Information Leakage in Mix Networks with Randomized Partial Checking</i>,
-    2009 International Conference on Information Security and Privacy, ISP-09, 
-    July 2009.
-    [<a href="pdf/BloPop09A.pdf">PDF</a>]
-    [<a href="bib/BloPop09A.bib">bibtex</a>]
-    </li>
-    </ul>
-  </div>
-  </div>
-  <div class="box">
-  <div class="boxtop">Book Chapters</div>
-  <div class="boxp">
-    <ul>
-      <li>
-      <b>G. Bloom</b>, E. Leontie, B. Narahari, and R. Simha.
-      "Chapter 12 - Hardware and Security: Vulnerabilities and Solutions", 
-          in <i>Handbook on Security Cyber-Physical Critical Infrastructure - 
-      Foundations and Challenges</i>, Boston: Morgan Kaufmann, 2012,
-      pp 305-331. ISBN: 978-0-12-415815-3.
-      [<a href="bib/BloLeo12A.bib">bibtex</a>]
-      </li>
-    </ul>
-  </div>
-  </div>
-</div>
-
-</body>
-</html>

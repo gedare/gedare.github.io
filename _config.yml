@@ -1,1 +1,5 @@
-theme: jekyll-theme-slate
+title: Gedare Bloom
+description: 
+show_downloads: false
+google_analytics: UA-20146582-1
+theme: jekyll-theme-leap-day
