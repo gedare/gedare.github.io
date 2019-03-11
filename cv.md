@@ -7,5 +7,5 @@ order: 4
 
 # Curriculum Vitae
 
-Download my [CV (PDF)](./vitae-gedare.pdf)
+Download my [full CV (PDF)](./vitae-gedare.pdf)
 
