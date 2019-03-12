@@ -1,0 +1,46 @@
+
+events:
+- date: 2019-04-05
+  type: event
+  title: Truck Hackathon
+  url:
+  description: We are hosting a Truck Cybersecurity Hackathon at Howard University in conjunction with Cummins.
+
+- date: 2019-03-27
+  type: event
+  title: AutoSec2019
+  url: http://www.codaspy.org/AutoSec2019/
+  description: Eight students from ESSL will attend CODASPY and AutoSec in Dallas, and we will present two papers at AutoSec.
+
+- date: 2019-03-21
+  type: event
+  title: Visit Northrop Grumman
+  url:
+  description: Members of the ESSL will visit an IoT innovation lab operated by Northrop Grumman Mission Systems.
+
+pubs:
+- date: 2019-03-12
+  title: Event Notification in CAN-based Sensor Networks
+  url: https://ieeexplore.ieee.org/document/8664114
+  venue: IEEE Transactions on Industrial Informatics
+
+- date: 2019-02-12
+  title: Survey of Automotive Controller Area Network Intrusion Detection Systems
+  url: https://ieeexplore.ieee.org/document/8640808
+  venue: IEEE Design &amp; Test
+
+- date: 2019-01-15
+  title: Anomaly Detection Approach Using Adaptive Cumulative Sum Algorithm for Controller Area Network
+  url:
+  venue: ACM Workshop on Automotive Cybersecurity (AutoSec)
+
+- date: 2019-01-15
+  title: Automotive Intrusion Detection Based on Constant CAN Message Frequencies Across Vehicle Driving Modes
+  url:
+  venue: ACM Workshop on Automotive Cybersecurity (AutoSec)
+
+- date: 2018-12-05
+  title: "Chapter 16 - Connected Cars: Automotive Cybersecurity and Privacy for Smart Cities"
+  url: https://www.sciencedirect.com/science/article/pii/B9780128150320000160 
+  venue: Smart Cities Cybersecurity and Privacy (Book)
+
