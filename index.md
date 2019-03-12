@@ -51,6 +51,7 @@ See more on my [publications page](./publications.html),
   [PDF](./pdf/BloPar12A.pdf)
   [bibtex](./bib/BloPar12A.bib)
 
+<!--
 ## Recently Accepted Papers
 {% for pub in site.data.news.pubs %}
 * {{ pub.date | date: "%B, %Y" }} &nbsp; 
@@ -59,6 +60,7 @@ See more on my [publications page](./publications.html),
 &nbsp; is accepted to appear in {{ pub.venue }}.
 {%- endfor -%}
 <br />
+-->
 
 # Teaching
 
@@ -67,6 +69,7 @@ architecture, operating systems, real-time embedded systems, and security.
 
 See more on my [teaching page](./teaching.html)
 
+<!--
 # Upcoming Events
 
 {% assign now = "now" | date: '%s' %}
@@ -79,4 +82,5 @@ See more on my [teaching page](./teaching.html)
 &nbsp; {{ event.description}}
 {%- endif -%}
 {%- endfor -%}
+-->
 
