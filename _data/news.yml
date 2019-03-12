@@ -18,7 +18,7 @@ events:
   url:
   description: Members of the ESSL will visit an IoT innovation lab operated by Northrop Grumman Mission Systems.
 
-pubs:
+recent-pubs:
 - date: 2019-03-12
   title: Event Notification in CAN-based Sensor Networks
   url: https://ieeexplore.ieee.org/document/8664114
