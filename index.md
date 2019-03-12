@@ -60,6 +60,26 @@ See more on my [publications page](./publications.html),
 {%- endfor -%}
 <br />
 
+## Funding
+* 01/01/2019-12/31/2019, $50,000, Northrop Grumman,
+  *Resilient Internet of Things (IOT) Real-time /Embedded Systems*,
+  PI.
+* 10/01/2018-09/30/2021, $999,951, NSF OAC-1839321,
+  *[CICI: SSC: Real-Time Operating System and Network Security for
+  Scientific Middleware](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1839321)*,
+  PI.
+* 01/01/2018-12/31/2018, $25,000, Northrop Grumman,
+  *Resilient Internet of Things (IOT) Real-time /Embedded Systems*,
+  PI.
+* 08/09/2017-07/31/2022, $1,198,627, DHS,
+  *Security Engineering for Resilient Networked Critical Infrastructure*,
+  PI.
+* 10/01/2016-09/30/2019, $250,551, NSF CNS-1646317,
+  *[CPS: Breakthrough: Collaborative Research: Track and Fallback:
+  Intrusion Detection to Counteract Carjack Hacks with Fail-Operational
+  Feedback](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1646317)*,
+  PI.
+
 # Teaching
 
 I develop and teach practical, hands-on courses in systems areas including
@@ -70,7 +90,8 @@ See more on my [teaching page](./teaching.html)
 # Upcoming Events
 
 {% assign now = "now" | date: '%s' %}
-{% for event in site.data.news.events %}
+{% assign evts = site.data.news.events | sort:"date" %} 
+{% for event in evts %}
 {% assign ed = event.date | date: '%s' %}
 {%- if ed > now -%}
 * {{ event.date | date: "%B %-d, %Y" }} &nbsp; 
