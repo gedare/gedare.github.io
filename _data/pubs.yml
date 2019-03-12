@@ -1303,9 +1303,46 @@ references:
     a description of vulnerabilities, highlight threat models, identify known attack
     vectors present in CAN, and discuss the advantages and disadvantages of suggested
     solutions.
-  keyword: Automotive engineering, Computer hacking, Controller area network, Engines,
-    in-vehicle network, Intrusion detection, intrusion detection system, Monitoring,
-    Timing
+  keyword: Intrusion detection, Monitoring, intrusion detection system, Engines, in-vehicle
+    network, Controller area network, Computer hacking, Automotive engineering, Timing
   DOI: 10.1109/MDAT.2019.2899062
   ISSN: '2168-2356'
+
+- id: bloom_event_2019
+  type: article-journal
+  author:
+  - family: Bloom
+    given: G.
+  - family: Cena
+    given: G.
+  - family: Bertolotti
+    given: I. Cibrario
+  - family: Hu
+    given: T.
+  - family: Navet
+    given: N.
+  - family: Valenzano
+    given: A.
+  issued:
+  - year: '2019'
+  title: Event Notification in CAN-based Sensor Networks
+  container-title: IEEE Transactions on Industrial Informatics
+  page: '1-1'
+  abstract: Preventive and reactive maintenance require the collection of an ever-increasing
+    amount of information from industrial plants and other complex systems, like those
+    based on robotized cells, a need that can be fulfilled by means of a suitable
+    event notification mechanism. At the same time, timing and delivery reliability
+    requirements in those scenarios are typically less demanding than in other cases,
+    thus enabling the adoption of best-effort notification approaches. This paper
+    presents, evaluates, and compares some of those approaches, based on either standard
+    CAN messaging or a recently proposed protocol extension called CAN XR. In the
+    second case, the combined use of Bloom filters is also envisaged to increase flexibility.
+    Results show that the latter approaches are advantageous in a range of event generation
+    rates and network topologies of practical relevance.
+  keyword: Bloom Filter, Controller Area Network (CAN), CPAL, Cyber-Physical Systems,
+    Industrial Internet of Things, Industrial plants, Industry 4.0, Informatics, Maintenance
+    engineering, Protocols, Safety, Transceivers, Wired Sensor Networks, Wireless
+    sensor networks
+  DOI: 10.1109/TII.2019.2904082
+  ISSN: '1551-3203'
 ...
