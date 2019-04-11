@@ -3,25 +3,25 @@ events:
 - date: 2019-04-10
   type: event
   title: Dissertation Defense
-  description: Habeeb Olufowobi will be defending his dissertation at Howard University.
+  description: Habeeb Olufowobi defended his dissertation at Howard University. Congratulations Dr. Olufowobi!
 
 - date: 2019-04-05
   type: event
   title: Truck Hackathon
   url:
-  description: We are hosting a Truck Cybersecurity Hackathon at Howard University in conjunction with Cummins.
+  description: We hosted a Truck Cybersecurity Hackathon at Howard University in conjunction with Cummins.
 
 - date: 2019-03-27
   type: event
   title: AutoSec2019
   url: http://www.codaspy.org/AutoSec2019/
-  description: Eight students from ESSL will attend CODASPY and AutoSec in Dallas, and we will present two papers at AutoSec.
+  description: Eight students from ESSL attended CODASPY and AutoSec in Dallas, and we presented two papers at AutoSec.
 
 - date: 2019-03-21
   type: event
   title: Visit Northrop Grumman
   url:
-  description: Members of the ESSL will visit an IoT innovation lab operated by Northrop Grumman Mission Systems.
+  description: Members of the ESSL visited an IoT innovation lab operated by Northrop Grumman Mission Systems.
 
 recent-pubs:
 - date: 2019-03-12
