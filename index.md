@@ -84,17 +84,14 @@ architecture, operating systems, real-time embedded systems, and security.
 
 See more on my [teaching page](./teaching.html)
 
-# Upcoming Events
+# News and Events
 
-{% assign now = "now" | date: '%s' %}
 {% assign evts = site.data.news.events | sort:"date" %} 
 {% for event in evts %}
 {% assign ed = event.date | date: '%s' %}
-{%- if ed > now -%}
 * {{ event.date | date: "%B %-d, %Y" }} &nbsp; 
 {%- if event.url -%} [**{{ event.title }}**]({{event.url}})
 {%- else -%} **{{ event.title }}** {%- endif -%}
 &nbsp; {{ event.description}}
-{%- endif -%}
 {%- endfor -%}
 
