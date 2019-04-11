@@ -86,7 +86,7 @@ See more on my [teaching page](./teaching.html)
 
 # News and Events
 
-{% assign evts = site.data.news.events | sort:"date" %} 
+{% assign evts = site.data.news.events | sort:"date" | reverse %} 
 {% for event in evts %}
 {% assign ed = event.date | date: '%s' %}
 * {{ event.date | date: "%B %-d, %Y" }} &nbsp; 
