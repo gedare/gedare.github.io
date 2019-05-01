@@ -1,5 +1,10 @@
 
 events:
+- date: 2019-04-13
+  type: event
+  title: IEEE Senior Member
+  description: I was elevated to the grade of IEEE Senior Member!
+
 - date: 2019-04-10
   type: event
   title: Dissertation Defense
@@ -22,6 +27,11 @@ events:
   title: Visit Northrop Grumman
   url:
   description: Members of the ESSL visited an IoT innovation lab operated by Northrop Grumman Mission Systems.
+
+- date: 2019-03-19
+  type: event
+  title: ACM Senior Member
+  description: I was elevated to Senior Member of the ACM!
 
 recent-pubs:
 - date: 2019-03-12
