@@ -51,7 +51,6 @@ to ask me for an author copy and I will try to oblige.*
 {{ months[midx] }}
 {{ date.year }}
 {%- endfor -%}
-{%- assign bibfile = "./bib/" | append: pub.id | append: ".bib" | remove: ":" -%}
 {%- assign pdffile = "./pdf/" | append: pub.id | append: ".pdf" | remove: ":" -%}
 &nbsp; 
 {%- if pdffile -%} [pdf]({{pdffile}}){%- endif -%}
