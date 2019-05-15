@@ -53,7 +53,7 @@ to ask me for an author copy and I will try to oblige.*
 {%- endfor -%}
 {%- assign pdffile = "./pdf/" | append: pub.id | append: ".pdf" | remove: ":" -%}
 &nbsp; 
-{%- if pdffile -%} [pdf]({{pdffile}}){%- endif -%}
+{%- if pdffile -%} &#91; pdf &#93;({{pdffile}}){%- endif -%}
 {% assign mypubs = site.data.pubs.references | reverse %}
 {%- endif -%}
 {% endfor %}
