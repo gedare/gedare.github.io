@@ -47,13 +47,12 @@ to ask me for an author copy and I will try to oblige.*
 {%- if pub.page -%} &nbsp; pp. {{ pub.page }},{%- endif -%}
 {%- if pub.publisher -%} &nbsp; {{ pub.publisher }},{%- endif -%}
 {%- for date in pub.issued -%}
-{% assign midx = date.month | plus: -1 %}
+{%- assign midx = date.month | plus: -1 -%}
 {{ months[midx] }}
 {{ date.year }}
 {%- endfor -%}
 {%- assign pdffile = "./pdf/" | append: pub.id | append: ".pdf" | remove: ":" -%}
 [&#91; pdf &#93;]({{pdffile}})
-{% assign mypubs = site.data.pubs.references | reverse %}
 {%- endif -%}
 {% endfor %}
 {% endfor %}
