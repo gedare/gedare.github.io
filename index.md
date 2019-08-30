@@ -7,10 +7,11 @@ order: 1
 
 # Gedare Bloom
 
-Assistant Professor of Computer Science  
+Assistant Professor 
 Director, Embedded Systems Security Lab  
-Department of Electrical Engineering and Computer Science  
-Howard University
+Department of Computer Science  
+University of Colorado at Colorado Springs
+gbloom uccs edu
 
 # Education
 
