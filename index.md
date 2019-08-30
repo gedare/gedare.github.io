@@ -10,7 +10,7 @@ order: 1
 Assistant Professor 
 Director, Embedded Systems Security Lab  
 Department of Computer Science  
-University of Colorado at Colorado Springs
+University of Colorado at Colorado Springs 
 gbloom uccs edu
 
 # Education
