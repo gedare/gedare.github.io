@@ -61,17 +61,6 @@ See more on my [publications page](./publications.html),
 {%- endfor -%}
 <br />
 
-## Active Funding
-* 10/01/2018-09/30/2021, $999,951, NSF OAC-1839321,
-  *[CICI: SSC: Real-Time Operating System and Network Security for
-  Scientific Middleware](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1839321)*,
-  PI.
-* 10/01/2016-09/30/2019, $250,551, NSF CNS-1646317,
-  *[CPS: Breakthrough: Collaborative Research: Track and Fallback:
-  Intrusion Detection to Counteract Carjack Hacks with Fail-Operational
-  Feedback](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1646317)*,
-  PI.
-
 # Teaching
 
 I develop and teach practical, hands-on courses in systems areas including
