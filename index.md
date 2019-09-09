@@ -62,15 +62,9 @@ See more on my [publications page](./publications.html),
 <br />
 
 ## Active Funding
-* 01/01/2019-12/31/2019, $50,000, Northrop Grumman,
-  *Resilient Internet of Things (IOT) Real-time /Embedded Systems*,
-  PI.
 * 10/01/2018-09/30/2021, $999,951, NSF OAC-1839321,
   *[CICI: SSC: Real-Time Operating System and Network Security for
   Scientific Middleware](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1839321)*,
-  PI.
-* 08/09/2017-07/31/2022, $1,198,627, DHS,
-  *Security Engineering for Resilient Networked Critical Infrastructure*,
   PI.
 * 10/01/2016-09/30/2019, $250,551, NSF CNS-1646317,
   *[CPS: Breakthrough: Collaborative Research: Track and Fallback:
