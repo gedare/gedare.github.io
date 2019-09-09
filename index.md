@@ -7,7 +7,7 @@ order: 1
 
 # Gedare Bloom
 
-Assistant Professor 
+Assistant Professor   
 Director, Embedded Systems Security Lab  
 Department of Computer Science  
 University of Colorado at Colorado Springs  
