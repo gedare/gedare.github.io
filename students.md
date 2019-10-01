@@ -7,22 +7,24 @@ order: 5
 
 # Alumni
 * [Ebelechukwu Nwafor, Ph.D.](https://ebelenwaf.github.io/) (2018):
-  <i>Trace-Based Data Provenance for Cyber-Physical Systems.
+  *Trace-Based Data Provenance for Cyber-Physical Systems.*
+* [Habeeb Olufowobi, Ph.D.](https://dipupo.github.io/) (2019): 
+  *Fail-Operational Intrusion Detection System (FO-IDS):
+  A Mechanism for Securing Automotive In-Vehicle Networks.*
 
 # Current Ph.D. Students
 
-* Habeeb Olufowobi <i> (Automotive Security)</i>
-* Eric Muhati <i>(CPS Security)</i>
-* Prajjwal Dangal <i>(CPS Security)</i>
-* Uchenna Ezeobi <i>(IoT Security)</i>
-* Abiola Ogundeko <i>(CPS Security)</i>
+* Prajjwal Dangal *(CPS Security)*
+* Uchenna Ezeobi *(IoT/CPS Security)*
+* Abiola Ogundeko *(CPS Security)*
+* Mark Stidd *(IoT/CPS Security)*
+* Chun-Hao James Peng *(CPS Security)*
       
 # Current M.S. Students
 
 * Katrina Rosemond
 * Mikel Kengni
-* David Hill Jr.
-* DeMarcus Edwards
+* Mark Pizzolatto
 
 # Undergraduate Research Assistants
 
@@ -34,12 +36,12 @@ order: 5
 * Sam Raymond, Block Programming for the IoT, B.S. '18
 * D'Mariee Hanson, Block Programming for the IoT, B.S. '18
 * Saurav Aryal, Automotive Security, B.S. '18
-* Pratyush Thapa, Automotive Security, B.S. '19 (est.)
-* Keenah Mays, Block Programming for the IoT, B.S. '19 (est.)
-* Andriana Burgess, Block Programming for the IoT, B.S. '19 (est.)
-* David Hill Jr., IoT-in-a-Rack, B.S. '19 (est.)
-* Andre Carter, Tracing Provenance, B.S. '19 (est.)
+* Pratyush Thapa, Automotive Security, B.S. '19 
+* Keenah Mays, Block Programming for the IoT, B.S. '19 
+* Andriana Burgess, Block Programming for the IoT, B.S. '19 
+* David Hill Jr., IoT-in-a-Rack, B.S. '19 
+* Andre Carter, Tracing Provenance, B.S. '19 
+* Cynthia Jules, Spoofing Facial Recognition, B.S. '19 
 * Gaylon Robinson, Automotive Security, B.S. '20 (est.)
-* Cynthia Jules, Spoofing Facial Recognition, B.S. '19 (est.)
 * Hannah Leonard, Spoofing Facial Recognition, B.S. '21 (est.)
 
