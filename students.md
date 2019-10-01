@@ -8,7 +8,7 @@ order: 5
 # Alumni
 * [Ebelechukwu Nwafor, Ph.D.](https://ebelenwaf.github.io/) (2018):
   *Trace-Based Data Provenance for Cyber-Physical Systems.*
-* [Habeeb Olufowobi, Ph.D.](https://dipupo.github.io/) (2019): 
+* [Habeeb Olufowobi, Ph.D.](https://dipupo.github.io/index/) (2019): 
   *Fail-Operational Intrusion Detection System (FO-IDS):
   A Mechanism for Securing Automotive In-Vehicle Networks.*
 
