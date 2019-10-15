@@ -49,9 +49,12 @@ to ask me for an author copy and I will try to oblige.*
 {%- if pub.issue -%} &nbsp; iss. {{ pub.issue }},{%- endif -%}
 {%- if pub.page -%} &nbsp; pp. {{ pub.page }},{%- endif -%}
 {%- if pub.publisher -%} &nbsp; {{ pub.publisher }},{%- endif -%}
+{%- if pub.issued.month -%}
 {%- assign midx = issued.month | plus: -1 -%}
 &nbsp; {{ months[midx] }}
-{{ issued.year }}
+{%- endif -%}
+{%- if pub.issued.year -%} &nbsp; {{ issued.year }}{%- endif -%}
+.
 {%- assign pdffile = "./pdf/" | append: pub.id | append: ".pdf" | remove: ":" -%}
 &nbsp; [&#91; pdf &#93;]({{pdffile}})
 {%- endif -%}
