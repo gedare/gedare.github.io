@@ -382,8 +382,9 @@ references:
   keyword: schedulability, priority queue, hardware data structures
 - URL: http://gradworks.umi.com/35/46/3546645.html
   author:
-    family: Bloom
-    given: Gedare
+    - family: Bloom
+      given:
+      - Gedare
   id: bloom_operating_2013
   accessed:
     day: 6
