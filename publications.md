@@ -18,6 +18,7 @@ to ask me for an author copy and I will try to oblige.*
 
 
 {% assign mypubs = site.data.pubs.references | reverse %}
+{% assign years = {"2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019" | split: ' ' %}
 {% assign months = "January February March April May June July August September October November December &nbsp; " | split: ' ' %}
 {% assign types = "thesis chapter article-journal paper-conference" | split: ' ' %}
 {% assign type-sect = "Theses,Book Chapters,Journal Articles,Conference and Workshop Papers" | split: ',' %}
@@ -27,8 +28,11 @@ to ask me for an author copy and I will try to oblige.*
 {% assign t-index = t-index | plus: 1 %}
 {% assign index = 0 %}
 # {{ type-sect[t-index] }}
+{% for year in years %}
+## {{ year }}
 {% for pub in mypubs %}
 {%- if pub.type == type -%}
+{%- if pub.issued.year == year -%}
 {% assign index = index | plus: 1 %}
 {{ index }}. &nbsp; 
 {%- for author in pub.author -%}
@@ -58,6 +62,8 @@ to ask me for an author copy and I will try to oblige.*
 {%- assign pdffile = "./pdf/" | append: pub.id | append: ".pdf" | remove: ":" -%}
 &nbsp; [&#91; pdf &#93;]({{pdffile}})
 {%- endif -%}
+{%- endif -%}
+{% endfor %}
 {% endfor %}
 {% endfor %}
 
