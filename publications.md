@@ -49,13 +49,11 @@ to ask me for an author copy and I will try to oblige.*
 {%- if pub.issue -%} &nbsp; iss. {{ pub.issue }},{%- endif -%}
 {%- if pub.page -%} &nbsp; pp. {{ pub.page }},{%- endif -%}
 {%- if pub.publisher -%} &nbsp; {{ pub.publisher }},{%- endif -%}
-{%- for date in pub.issued -%}
-{%- assign midx = date.month | plus: -1 -%}
-{{ months[midx] }}
-{{ date.year }}
-{%- endfor -%}
+{%- assign midx = issued.month | plus: -1 -%}
+&nbsp; {{ months[midx] }}
+{{ issued.year }}
 {%- assign pdffile = "./pdf/" | append: pub.id | append: ".pdf" | remove: ":" -%}
-[&#91; pdf &#93;]({{pdffile}})
+&nbsp; [&#91; pdf &#93;]({{pdffile}})
 {%- endif -%}
 {% endfor %}
 {% endfor %}
