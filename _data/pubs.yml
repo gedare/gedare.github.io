@@ -390,9 +390,9 @@ references:
     day: 6
     year: 2013
     month: 12
-  date:
-    year: 2013
-    month: 1
+  issued:
+    - year: 2013
+      month: 1
   title: Operating System Support for Shared Hardware Data Structures
   type: thesis
   genre: PhD thesis
