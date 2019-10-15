@@ -53,7 +53,7 @@ to ask me for an author copy and I will try to oblige.*
 {%- assign midx = pub.issued.month | plus: -1 -%}
 &nbsp; {{ months[midx] }}
 {%- endif -%}
-{%- if pub.issued.year -%} &nbsp; {{ issued.year }}{%- endif -%}
+{%- if pub.issued.year -%} &nbsp; {{ pub.issued.year }}{%- endif -%}
 .
 {%- assign pdffile = "./pdf/" | append: pub.id | append: ".pdf" | remove: ":" -%}
 &nbsp; [&#91; pdf &#93;]({{pdffile}})
