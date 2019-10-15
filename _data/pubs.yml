@@ -389,7 +389,7 @@ references:
     day: 6
     year: 2013
     month: 12
-  issued:
+  date:
     year: 2013
     month: 1
   title: Operating System Support for Shared Hardware Data Structures
