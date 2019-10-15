@@ -36,7 +36,7 @@ to ask me for an author copy and I will try to oblige.*
 {%- assign yidx = pub.issued.year | plus: -2009 -%}
 {%- if years[yidx] == year -%}
 {%- if printed-year == false -%}
-<h4><center> {{ year }} </center></h4>
+#### {{ year }}
 {%- assign printed-year = true -%}
 {%- endif -%}
 {% assign index = index | plus: 1 %}
