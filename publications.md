@@ -66,7 +66,8 @@ to ask me for an author copy and I will try to oblige.*
 {%- if pub.issued.year -%} &nbsp; {{ pub.issued.year }}{%- endif -%}
 .
 {%- assign pdffile = "./pdf/" | append: pub.id | append: ".pdf" | remove: ":" -%}
-&nbsp; [&#91; pdf &#93;]({{pdffile}})
+&nbsp; [&#91; pdf &#93;]({{pdffile}}) 
+
 {%- endif -%}
 {%- endif -%}
 {% endfor %}
