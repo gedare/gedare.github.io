@@ -9,6 +9,9 @@ This page is presented in reverse chronological order.
 Please refer to my [Research](./research.html) page for a more
 cohesive and organized approach that highlights my publications in the context
 of the specific research problems that they address.
+See also my 
+[Google Scholar](https://scholar.google.com/citations?user=8ZBnSl4AAAAJ)
+page.
 *Some pdf links are broken because I cannot redistribute the text; feel free
 to ask me for an author copy and I will try to oblige.*
 
