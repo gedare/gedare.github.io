@@ -50,7 +50,7 @@ to ask me for an author copy and I will try to oblige.*
 {%- if pub.page -%} &nbsp; pp. {{ pub.page }},{%- endif -%}
 {%- if pub.publisher -%} &nbsp; {{ pub.publisher }},{%- endif -%}
 {%- if pub.issued.month -%}
-{%- assign midx = issued.month | plus: -1 -%}
+{%- assign midx = pub.issued.month | plus: -1 -%}
 &nbsp; {{ months[midx] }}
 {%- endif -%}
 {%- if pub.issued.year -%} &nbsp; {{ issued.year }}{%- endif -%}
