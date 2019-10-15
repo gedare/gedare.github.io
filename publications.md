@@ -30,10 +30,15 @@ to ask me for an author copy and I will try to oblige.*
 {% assign index = 0 %}
 # {{ type-sect[t-index] }}
 {% for year in reverse-years %}
+{%- assign printed-year = false -%}
 {% for pub in mypubs %}
 {%- if pub.type == type -%}
 {%- assign yidx = pub.issued.year | plus: -2009 -%}
 {%- if years[yidx] == year -%}
+{%- if printed-year == false -%}
+## {{ year }}
+{%- assign printed-year = true -%}
+{%- endif -%}
 {% assign index = index | plus: 1 %}
 {{ index }}. &nbsp; 
 {%- for author in pub.author -%}
