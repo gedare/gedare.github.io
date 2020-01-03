@@ -31,6 +31,9 @@ See more on my [research page](./research.html).
 See more on my [publications page](./publications.html),
 [CV (PDF)](./vitae-gedare.pdf), or on
 [Google Scholar](https://scholar.google.com/citations?user=8ZBnSl4AAAAJ).
+* H. Olufowobi, C. Young, J. Zambreno, and **G. Bloom**.
+  *SAIDuCANT: Specification-based Automotive Intrusion Detection using Controller Area Network (CAN) Timing*,
+  IEEE Transactions on Vehicular Technology, **IEEE TVT (JIF: 5.339)**
 * M. Nasri, T. Chantem, **G. Bloom**, and R. Gerdes.
   *On the Limitations and Vulnerabilities of Schedule Randomization against Schedule-Based Attacks*,
   25th IEEE Real-Time and Embedded Technology and Applications Symposium,
