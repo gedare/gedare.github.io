@@ -33,7 +33,8 @@ to ask me for an author copy and I will try to oblige.*
 {%- assign printed-year = false -%}
 {% for pub in mypubs %}
 {%- if pub.type == type -%}
-{%- assign yidx = pub.issued.year | plus: -2009 -%}
+{%- for issue in pub.issued -%}
+{%- assign yidx = issue.year | plus: -2009 -%}
 {%- if years[yidx] == year -%}
 {% assign index = index | plus: 1 %}
 {{ index }}. &nbsp; 
@@ -56,15 +57,16 @@ to ask me for an author copy and I will try to oblige.*
 {%- if pub.page -%} &nbsp; pp. {{ pub.page }},{%- endif -%}
 {%- if pub.publisher -%} &nbsp; {{ pub.publisher }},{%- endif -%}
 {%- if pub.issued.month -%}
-{%- assign midx = pub.issued.month | plus: -1 -%}
+{%- assign midx = issue.month | plus: -1 -%}
 &nbsp; {{ months[midx] }}
 {%- endif -%}
-{%- if pub.issued.year -%} &nbsp; {{ pub.issued.year }}{%- endif -%}
+{%- if issue.year -%} &nbsp; {{ issue.year }}{%- endif -%}
 .
 {%- assign pdffile = "./pdf/" | append: pub.id | append: ".pdf" | remove: ":" -%}
 &nbsp; [&#91; pdf &#93;]({{pdffile}}) 
 
 {%- endif -%}
+{%- endfor -%}
 {%- endif -%}
 {% endfor %}
 {% endfor %}
