@@ -1446,4 +1446,48 @@ references:
   keyword: CAN bus, intrusion detection system, real-time systems, timing model
   DOI: 10.1109/TVT.2019.2961344
   ISSN: '1939-9359'
+
+- id: nasri_pitfalls_2019
+  type: paper-conference
+  author:
+  - family: Nasri
+    given: Mitra
+  - family: Chantem
+    given: Thidapat
+  - family: Bloom
+    given: Gedare
+  - family: Gerdes
+    given: Ryan M.
+  issued:
+  - year: '2019'
+    month: '4'
+  title: On the Pitfalls and Vulnerabilities of Schedule Randomization Against Schedule-Based
+    Attacks
+  container-title: 2019 IEEE Real-Time and Embedded Technology and Applications Symposium
+    (RTAS)
+  page: '103-116'
+  note: 'ISSN: 1545-3421'
+  abstract: Schedule randomization is one of the recently introduced security defenses
+    against schedule-based attacks, i.e., attacks whose success depends on a particular
+    ordering between the execution window of an attacker and a victim task within
+    the system. It falls into the category of information hiding (as opposed to deterministic
+    isolation-based defenses) and is designed to reduce the attacker’s ability to
+    infer the future schedule. This paper aims to investigate the limitations and
+    vulnerabilities of schedule randomization-based defenses in real-time systems.
+    We first provide definitions, categorization, and examples of schedule-based attacks,
+    and then discuss the challenges of employing schedule randomization in real-time
+    systems. Further, we provide a preliminary security test to determine whether
+    a certain timing relation between the attacker and victim tasks will never happen
+    in systems scheduled by a fixed-priority scheduling algorithm. Finally, we compare
+    fixed-priority scheduling against schedule-randomization techniques in terms of
+    the success rate of various schedule-based attacks for both synthetic and real-world
+    applications. Our results show that, in many cases, schedule randomization either
+    has no security benefits or can even increase the success rate of the attacker
+    depending on the priority relation between the attacker and victim tasks.
+  keyword: cyber physical systems, deterministic isolation-based defenses, fixed-priority
+    scheduling algorithm, random forests, random functions, real-time systems, Real-time
+    systems security, schedule randomization, schedule randomization-based defenses,
+    schedule-based attack, schedule-based attacks, schedule-randomization techniques,
+    scheduling, security of data, victim task
+  DOI: 10.1109/RTAS.2019.00017
 ...
