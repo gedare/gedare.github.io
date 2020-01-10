@@ -1443,7 +1443,7 @@ references:
   title-short: SAIDuCANT
   container-title: IEEE Transactions on Vehicular Technology
   page: '1-11'
-  keyword: CAN bus, intrusion detection system, real-time systems, timing model
+  keyword: intrusion detection system, real-time systems, CAN bus, timing model
   DOI: 10.1109/TVT.2019.2961344
   ISSN: '1939-9359'
 
@@ -1484,10 +1484,35 @@ references:
     applications. Our results show that, in many cases, schedule randomization either
     has no security benefits or can even increase the success rate of the attacker
     depending on the priority relation between the attacker and victim tasks.
-  keyword: cyber physical systems, deterministic isolation-based defenses, fixed-priority
-    scheduling algorithm, random forests, random functions, real-time systems, Real-time
-    systems security, schedule randomization, schedule randomization-based defenses,
-    schedule-based attack, schedule-based attacks, schedule-randomization techniques,
-    scheduling, security of data, victim task
+  keyword: security of data, real-time systems, cyber physical systems, scheduling,
+    deterministic isolation-based defenses, fixed-priority scheduling algorithm, random
+    forests, random functions, Real-time systems security, schedule randomization,
+    schedule randomization-based defenses, schedule-based attack, schedule-based attacks,
+    schedule-randomization techniques, victim task
   DOI: 10.1109/RTAS.2019.00017
+
+- id: agarwal_comparison_2019
+  type: article-journal
+  author:
+  - family: Agarwal
+    given: Udit Kumar
+  - family: Ashokbhai
+    given: Vara Punit
+  - family: Bloom
+    given: Gedare
+  - family: Mauderer
+    given: Christian
+  - family: Sherrill
+    given: Joel
+  issued:
+  - year: '2019'
+    month: '11'
+  title: Comparison of File Systems in RTEMS
+  container-title: SIGBED Rev.
+  page: '39-44'
+  volume: '16'
+  issue: '3'
+  keyword: benchmarking, RTEMS, filesystems
+  URL: https://doi.org/10.1145/3373400.3373406
+  DOI: 10.1145/3373400.3373406
 ...
