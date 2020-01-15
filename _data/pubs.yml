@@ -541,7 +541,7 @@ references:
     this framework can be used by researchers to integrate their own scheduling algorithm
     into RTEMS and test it using a scheduling simulator before deploying it on target
     hardware.
-  keyword: scheduling, RTEMS
+  keyword: RTEMS, scheduling
   URL: http://doi.acm.org/10.1145/2597457.2597459
   DOI: 10.1145/2597457.2597459
   ISSN: '1551-3688'
@@ -864,7 +864,7 @@ references:
   page: '15-21'
   volume: '15'
   issue: '1'
-  keyword: POSIX, paravirtualization, avionics, RTEMS, Deos, FACE
+  keyword: avionics, Deos, FACE, paravirtualization, POSIX, RTEMS
   URL: http://doi.acm.org/10.1145/3199610.3199612
   DOI: 10.1145/3199610.3199612
   ISSN: '1551-3688'
@@ -1229,75 +1229,6 @@ references:
   DOI: 10.1016/B978-0-12-815032-0.00016-0
   ISBN: '978-0-12-815032-0'
 
-- id: young_survey_2019
-  type: article-journal
-  author:
-  - family: Young
-    given: C.
-  - family: Zambreno
-    given: J.
-  - family: Olufowobi
-    given: H.
-  - family: Bloom
-    given: G.
-  issued:
-  - year: '2019'
-  title: Survey of Automotive Controller Area Network Intrusion Detection Systems
-  container-title: IEEE Design Test
-  page: '1-1'
-  abstract: Novel attacks continue to appear against in-vehicle networks due to the
-    increasing complexity of heterogeneous software and hardware components used in
-    vehicles. These new components introduce challenges when developing efficient
-    and adaptable security mechanisms. Several intrusion detection systems (IDS) have
-    been proposed to identify and protect in-vehicle networks against malicious activities.
-    We describe the stateof- the-art intrusion detection methods for securing automotive
-    networks, with special focus on the Controller Area Network (CAN). We provide
-    a description of vulnerabilities, highlight threat models, identify known attack
-    vectors present in CAN, and discuss the advantages and disadvantages of suggested
-    solutions.
-  keyword: Intrusion detection, Monitoring, intrusion detection system, Engines, in-vehicle
-    network, Controller area network, Computer hacking, Automotive engineering, Timing
-  DOI: 10.1109/MDAT.2019.2899062
-  ISSN: '2168-2356'
-
-- id: bloom_event_2019
-  type: article-journal
-  author:
-  - family: Bloom
-    given: G.
-  - family: Cena
-    given: G.
-  - family: Bertolotti
-    given: I. Cibrario
-  - family: Hu
-    given: T.
-  - family: Navet
-    given: N.
-  - family: Valenzano
-    given: A.
-  issued:
-  - year: '2019'
-  title: Event Notification in CAN-based Sensor Networks
-  container-title: IEEE Transactions on Industrial Informatics
-  page: '1-1'
-  abstract: Preventive and reactive maintenance require the collection of an ever-increasing
-    amount of information from industrial plants and other complex systems, like those
-    based on robotized cells, a need that can be fulfilled by means of a suitable
-    event notification mechanism. At the same time, timing and delivery reliability
-    requirements in those scenarios are typically less demanding than in other cases,
-    thus enabling the adoption of best-effort notification approaches. This paper
-    presents, evaluates, and compares some of those approaches, based on either standard
-    CAN messaging or a recently proposed protocol extension called CAN XR. In the
-    second case, the combined use of Bloom filters is also envisaged to increase flexibility.
-    Results show that the latter approaches are advantageous in a range of event generation
-    rates and network topologies of practical relevance.
-  keyword: Informatics, Cyber-Physical Systems, Safety, Protocols, Industry 4.0, Wireless
-    sensor networks, Industrial Internet of Things, Bloom Filter, Controller Area
-    Network (CAN), CPAL, Industrial plants, Maintenance engineering, Transceivers,
-    Wired Sensor Networks
-  DOI: 10.1109/TII.2019.2904082
-  ISSN: '1551-3203'
-
 - id: young_automotive_2019
   type: paper-conference
   author:
@@ -1512,7 +1443,89 @@ references:
   page: '39-44'
   volume: '16'
   issue: '3'
-  keyword: benchmarking, RTEMS, filesystems
+  keyword: benchmarking, filesystems, RTEMS
   URL: https://doi.org/10.1145/3373400.3373406
   DOI: 10.1145/3373400.3373406
+
+- id: young_survey_2019
+  type: article-journal
+  author:
+  - family: Young
+    given: Clinton
+  - family: Zambreno
+    given: Joseph
+  - family: Olufowobi
+    given: Habeeb
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: '2019'
+    month: '12'
+  title: Survey of Automotive Controller Area Network Intrusion Detection Systems
+  container-title: IEEE Design Test
+  page: '48-55'
+  volume: '36'
+  issue: '6'
+  abstract: 'Editor’s note: Control Area Network (CAN) is one of the most popular
+    targets for malicious attacks and exploitations in modern automotive systems.
+    The goal of intrusion detection systems (IDS) is to identify and mitigate security
+    attacks; consequently, they are of paramount importance to automotive security.
+    This article surveys the state of the art in IDS, with special emphasis on techniques
+    for detecting attacks on CAN modules. -Sandip Ray, University of Florida'
+  keyword: automotive controller area network intrusion detection systems, automotive
+    engineering, Automotive engineering, automotive security, Computer hacking, Controller
+    area network, controller area networks, Engines, IDS, in-vehicle network, Intrusion
+    detection, intrusion detection system, malicious attacks, Monitoring, security
+    attacks, security of data, Timing
+  DOI: 10.1109/MDAT.2019.2899062
+  ISSN: '2168-2364'
+
+- id: bloom_event_2019
+  type: article-journal
+  author:
+  - family: Bloom
+    given: Gedare
+  - family: Cena
+    given: Gianluca
+  - family: Bertolotti
+    given: Ivan Cibrario
+  - family: Hu
+    given: Tingting
+  - family: Navet
+    given: Nicolas
+  - family: Valenzano
+    given: Adriano
+  issued:
+  - year: '2019'
+    month: '10'
+  title: Event Notification in CAN-Based Sensor Networks
+  container-title: IEEE Transactions on Industrial Informatics
+  page: '5613-5625'
+  volume: '15'
+  issue: '10'
+  abstract: Preventive and reactive maintenance require the collection of an ever-increasing
+    amount of information from industrial plants and other complex systems such as
+    those based on robotized cells, a need that can be fulfilled by means of a suitable
+    event notification mechanism. At the same time, timing and delivery reliability
+    requirements in those scenarios are typically less demanding than those in other
+    cases, thus enabling the adoption of best-effort notification approaches. This
+    paper presents, evaluates, and compares some of those approaches, based on either
+    standard Controller Area Network (CAN) messaging or a recently proposed protocol
+    extension called CAN with eXtensible in-frame Reply (CAN XR). In the second case,
+    the combined use of Bloom filters is also envisaged to increase flexibility. Results
+    show that the latter approaches are advantageous in a range of event generation
+    rates and network topologies of practical relevance.
+  keyword: Bloom filter, CAN-based sensor networks, complex systems, Controller Area
+    Network (CAN), controller area networks, Cyber-Physical Action Language (CPAL),
+    Cyber-Physical Systems, data structures, delivery reliability requirements, event
+    generation rates, event notification, Industrial Internet of Things (IIoT), industrial
+    plants, Industrial plants, Industry 4.0, Informatics, Maintenance engineering,
+    network topologies, preventive maintenance, protocol extension, protocols, Protocols,
+    reactive maintenance, real-time systems, robotized cells, Safety, standard Controller
+    Area Network messaging, suitable event notification mechanism, telecommunication
+    computing, telecommunication network reliability, telecommunication network topology,
+    Transceivers, wired sensor networks, wireless sensor networks, Wireless sensor
+    networks
+  DOI: 10.1109/TII.2019.2904082
+  ISSN: '1941-0050'
 ...

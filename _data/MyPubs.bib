@@ -225,7 +225,7 @@ Keywords: Trojan circuit, design for hardware trust, memory protection, control 
 	author = {Bloom, Gedare and Sherrill, Joel},
 	month = feb,
 	year = {2014},
-	keywords = {scheduling, RTEMS},
+	keywords = {RTEMS, scheduling},
 	pages = {20--25},
 	file = {ACM Full Text PDF:/home/gedare/Zotero/storage/GV58GCD2/Bloom and Sherrill - 2014 - Scheduling and Thread Management with RTEMS.pdf:application/pdf}
 }
@@ -364,7 +364,7 @@ Keywords: Trojan circuit, design for hardware trust, memory protection, control 
 	author = {Bloom, Gedare and Sherrill, Joel and Gilliland, Gary},
 	month = mar,
 	year = {2018},
-	keywords = {POSIX, paravirtualization, avionics, RTEMS, Deos, FACE},
+	keywords = {avionics, Deos, FACE, paravirtualization, POSIX, RTEMS},
 	pages = {15--21}
 }
 
@@ -500,32 +500,6 @@ Keywords: Trojan circuit, design for hardware trust, memory protection, control 
 	file = {ScienceDirect Snapshot:/home/gedare/Zotero/storage/73JSMDMG/B9780128150320000160.html:text/html}
 }
 
-@article{young_survey_2019,
-	title = {Survey of {Automotive} {Controller} {Area} {Network} {Intrusion} {Detection} {Systems}},
-	issn = {2168-2356},
-	doi = {10.1109/MDAT.2019.2899062},
-	abstract = {Novel attacks continue to appear against in-vehicle networks due to the increasing complexity of heterogeneous software and hardware components used in vehicles. These new components introduce challenges when developing efficient and adaptable security mechanisms. Several intrusion detection systems (IDS) have been proposed to identify and protect in-vehicle networks against malicious activities. We describe the stateof- the-art intrusion detection methods for securing automotive networks, with special focus on the Controller Area Network (CAN). We provide a description of vulnerabilities, highlight threat models, identify known attack vectors present in CAN, and discuss the advantages and disadvantages of suggested solutions.},
-	journal = {IEEE Design Test},
-	author = {Young, C. and Zambreno, J. and Olufowobi, H. and Bloom, G.},
-	year = {2019},
-	keywords = {Intrusion detection, Monitoring, intrusion detection system, Engines, in-vehicle network, Controller area network, Computer hacking, Automotive engineering, Timing},
-	pages = {1--1},
-	file = {IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/AID7CGMD/8640808.html:text/html}
-}
-
-@article{bloom_event_2019,
-	title = {Event {Notification} in {CAN}-based {Sensor} {Networks}},
-	issn = {1551-3203},
-	doi = {10.1109/TII.2019.2904082},
-	abstract = {Preventive and reactive maintenance require the collection of an ever-increasing amount of information from industrial plants and other complex systems, like those based on robotized cells, a need that can be fulfilled by means of a suitable event notification mechanism. At the same time, timing and delivery reliability requirements in those scenarios are typically less demanding than in other cases, thus enabling the adoption of best-effort notification approaches. This paper presents, evaluates, and compares some of those approaches, based on either standard CAN messaging or a recently proposed protocol extension called CAN XR. In the second case, the combined use of Bloom filters is also envisaged to increase flexibility. Results show that the latter approaches are advantageous in a range of event generation rates and network topologies of practical relevance.},
-	journal = {IEEE Transactions on Industrial Informatics},
-	author = {Bloom, G. and Cena, G. and Bertolotti, I. Cibrario and Hu, T. and Navet, N. and Valenzano, A.},
-	year = {2019},
-	keywords = {Informatics, Cyber-Physical Systems, Safety, Protocols, Industry 4.0, Wireless sensor networks, Industrial Internet of Things, Bloom Filter, Controller Area Network (CAN), CPAL, Industrial plants, Maintenance engineering, Transceivers, Wired Sensor Networks},
-	pages = {1--1},
-	file = {IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/ZP6DZTJL/8664114.html:text/html}
-}
-
 @inproceedings{young_automotive_2019,
 	address = {New York, NY, USA},
 	series = {{AutoSec} '19},
@@ -613,6 +587,38 @@ Keywords: Trojan circuit, design for hardware trust, memory protection, control 
 	author = {Agarwal, Udit Kumar and Ashokbhai, Vara Punit and Bloom, Gedare and Mauderer, Christian and Sherrill, Joel},
 	month = nov,
 	year = {2019},
-	keywords = {benchmarking, RTEMS, filesystems},
+	keywords = {benchmarking, filesystems, RTEMS},
 	pages = {39--44}
+}
+
+@article{young_survey_2019,
+	title = {Survey of {Automotive} {Controller} {Area} {Network} {Intrusion} {Detection} {Systems}},
+	volume = {36},
+	issn = {2168-2364},
+	doi = {10.1109/MDAT.2019.2899062},
+	abstract = {Editor's note: Control Area Network (CAN) is one of the most popular targets for malicious attacks and exploitations in modern automotive systems. The goal of intrusion detection systems (IDS) is to identify and mitigate security attacks; consequently, they are of paramount importance to automotive security. This article surveys the state of the art in IDS, with special emphasis on techniques for detecting attacks on CAN modules. -Sandip Ray, University of Florida},
+	number = {6},
+	journal = {IEEE Design Test},
+	author = {Young, Clinton and Zambreno, Joseph and Olufowobi, Habeeb and Bloom, Gedare},
+	month = dec,
+	year = {2019},
+	keywords = {automotive controller area network intrusion detection systems, automotive engineering, Automotive engineering, automotive security, Computer hacking, Controller area network, controller area networks, Engines, IDS, in-vehicle network, Intrusion detection, intrusion detection system, malicious attacks, Monitoring, security attacks, security of data, Timing},
+	pages = {48--55},
+	file = {IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/MSCV4AVV/8640808.html:text/html}
+}
+
+@article{bloom_event_2019,
+	title = {Event {Notification} in {CAN}-{Based} {Sensor} {Networks}},
+	volume = {15},
+	issn = {1941-0050},
+	doi = {10.1109/TII.2019.2904082},
+	abstract = {Preventive and reactive maintenance require the collection of an ever-increasing amount of information from industrial plants and other complex systems such as those based on robotized cells, a need that can be fulfilled by means of a suitable event notification mechanism. At the same time, timing and delivery reliability requirements in those scenarios are typically less demanding than those in other cases, thus enabling the adoption of best-effort notification approaches. This paper presents, evaluates, and compares some of those approaches, based on either standard Controller Area Network (CAN) messaging or a recently proposed protocol extension called CAN with eXtensible in-frame Reply (CAN XR). In the second case, the combined use of Bloom filters is also envisaged to increase flexibility. Results show that the latter approaches are advantageous in a range of event generation rates and network topologies of practical relevance.},
+	number = {10},
+	journal = {IEEE Transactions on Industrial Informatics},
+	author = {Bloom, Gedare and Cena, Gianluca and Bertolotti, Ivan Cibrario and Hu, Tingting and Navet, Nicolas and Valenzano, Adriano},
+	month = oct,
+	year = {2019},
+	keywords = {Bloom filter, CAN-based sensor networks, complex systems, Controller Area Network (CAN), controller area networks, Cyber-Physical Action Language (CPAL), Cyber-Physical Systems, data structures, delivery reliability requirements, event generation rates, event notification, Industrial Internet of Things (IIoT), industrial plants, Industrial plants, Industry 4.0, Informatics, Maintenance engineering, network topologies, preventive maintenance, protocol extension, protocols, Protocols, reactive maintenance, real-time systems, robotized cells, Safety, standard Controller Area Network messaging, suitable event notification mechanism, telecommunication computing, telecommunication network reliability, telecommunication network topology, Transceivers, wired sensor networks, wireless sensor networks, Wireless sensor networks},
+	pages = {5613--5625},
+	file = {Full Text:/home/gedare/Zotero/storage/TFUFH9ER/Bloom et al. - 2019 - Event Notification in CAN-Based Sensor Networks.pdf:application/pdf;IEEE Xplore Abstract Record:/home/gedare/Zotero/storage/3NR99MAZ/8664114.html:text/html}
 }
