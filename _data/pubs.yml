@@ -1528,4 +1528,29 @@ references:
     networks
   DOI: 10.1109/TII.2019.2904082
   ISSN: '1941-0050'
+
+- id: olufowobi_controller_2019
+  type: paper-conference
+  author:
+  - family: Olufowobi
+    given: Habeeb
+  - family: Hounsinou
+    given: Sena
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: '2019'
+  title: Controller Area Network Intrusion Prevention System Leveraging Fault Recovery
+  container-title: Proceedings of the ACM Workshop on Cyber-Physical Systems Security
+    & Privacy
+  collection-title: CPS-SPC’19
+  publisher: Association for Computing Machinery
+  publisher-place: New York, NY, USA
+  page: '63-73'
+  note: 'event-place: London, United Kingdom'
+  keyword: intrusion detection systems, can, data injection, automotive security,
+    intrusion prevention system, reboot recovery
+  URL: https://doi.org/10.1145/3338499.3357360
+  DOI: 10.1145/3338499.3357360
+  ISBN: '978-1-4503-6831-5'
 ...
