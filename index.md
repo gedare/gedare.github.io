@@ -55,15 +55,6 @@ See more on my [publications page](./publications.html),
   [PDF](./pdf/BloPar12A.pdf)
   [bibtex](./bib/BloPar12A.bib)
 
-## Recently Accepted Papers
-{% for pub in site.data.news.recent-pubs %}
-* {{ pub.date | date: "%B, %Y" }} &nbsp; 
-{%- if pub.url -%} [*{{ pub.title }}*]({{pub.url}})
-{%- else -%} *{{ pub.title }}* {%- endif -%}
-&nbsp; is accepted to appear in {{ pub.venue }}.
-{%- endfor -%}
-<br />
-
 # Teaching
 
 I develop and teach practical, hands-on courses in systems areas including
