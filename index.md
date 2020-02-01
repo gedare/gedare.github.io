@@ -23,13 +23,21 @@ gbloom uccs edu
 
 I investigate security problems in real-time embedded systems
 and apply solutions across the hardware-software interface.
+My research has been supported by
+federal grants from the
+Department of Homeland Security,
+National Science Foundation, and
+Office of Naval Research, and
+and by industry gifts from
+Leidos, Northrop Grumman, Texas Instruments, and Xilinx.
 
-See more on my [research page](./research.html).
+See more on my [research page](./research.html) and
+[CV (PDF)](./vitae-gedare.pdf)
 
 ## Selected Publications
 
-See more on my [publications page](./publications.html),
-[CV (PDF)](./vitae-gedare.pdf), or on
+See more on my
+[publications](./publications.html) page and
 [Google Scholar](https://scholar.google.com/citations?user=8ZBnSl4AAAAJ).
 * H. Olufowobi, C. Young, J. Zambreno, and **G. Bloom**.
   *SAIDuCANT: Specification-based Automotive Intrusion Detection using Controller Area Network (CAN) Timing*,
