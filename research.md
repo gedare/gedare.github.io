@@ -72,7 +72,7 @@ This project investigates security protocols and mechanisms that maintain safe o
 &nbsp; [&#91; pdf &#93;]({{pdffile}}) 
 
 {%- endif -%}
-{%- endfor -%}
+{% endfor %}
 
 
 # Hardware Data Structures
