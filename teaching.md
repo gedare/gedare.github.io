@@ -5,10 +5,12 @@ layout: default
 order: 3
 ---
 
+<!--
 See my **teaching statement
 [(HTML)](./bloom-teaching-statement.html)
 [(PDF)](./bloom-teaching-statement.pdf)**
 for insight to my teaching philosophy.
+-->
 
 This page lists some of my
 teaching experiences.

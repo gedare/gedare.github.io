@@ -5,9 +5,11 @@ layout: default
 order: 2
 ---
 
+<!--
 See also my **research statement
 [(HTML)](./bloom-research-statement.html)
 [(PDF)](./bloom-research-statement.pdf)**.
+-->
 
 This page describes my research projects more-or-less in
 reverse chronological order. See also my
