@@ -16,6 +16,11 @@ See my [CV (PDF)](./vitae-gedare.pdf) for more.
 
 # Teaching Experience
 
+## University of Colorado Colorado Springs (Assistant Professor)
+* System Security, Spring 2020
+* Computer Architecture (Undergraduate), Fall 2019
+* Computer Architecture (Graduate), Fall 2019
+
 ## Howard University (Assistant Professor)
 * Computer Organization I, Fall 2015, Fall 2016, Spring 2018.
 * Computer Organization II, Spring 2016, Spring 2017, Spring 2018, Spring 2019.
