@@ -40,7 +40,7 @@ This project investigates security protocols and mechanisms that maintain safe o
 
 ### Papers
 {% assign mypubs = site.data.pubs.references | reverse %}
-{% for pub in mypubs %}
+{%- for pub in mypubs -%}
 {%- assign keywords = pub.keyword | split: ", " -%}
 {% if keywords contains "automotive security" %}
 * &nbsp;
@@ -71,37 +71,8 @@ This project investigates security protocols and mechanisms that maintain safe o
 {%- assign pdffile = "./pdf/" | append: pub.id | append: ".pdf" | remove: ":" -%}
 &nbsp; [&#91; pdf &#93;]({{pdffile}}) 
 
-{% endif %}
-{% endfor %}
-
-
-* C. Young, J. Zambreno, H. Olufowobi, and <b>G. Bloom</b>.
-  <i>Survey of Automotive Controller Area Network Intrusion Detection Systems</i>,
-      accepted to appear in IEEE Design &amp; Test, SI: Secure Automotive Systems 17, 2019.
-* H. Olufowobi, U. Ezeobi, E. Muhati, G. Robinson, C. Young, J. Zambreno, and <b>G. Bloom</b>. 
-      <i>Anomaly Detection Approach Using Adaptive Cumulative Sum Algorithm for Controller Area Network</i>,
-       ACM Workshop on Automotive Cybersecurity (AutoSec), Dallas, TX, March 2019.
-* C. Young, H. Olufowobi, <b>G. Bloom</b>, and J. Zambreno.
-      <i>Automotive Intrusion Detection Based on Constant CAN Message Frequencies Across Vehicle Driving Modes</i>,
-      ACM Workshop on Automotive Cybersecurity (AutoSec), Dallas, TX, March 2019.
-       
-* H. Olufowobi, <b>G. Bloom</b>, C. Young, and J. Zambreno.
-      <i>Work-in-Progress: Real-Time Modeling for Intrusion Detection in Automotive Controller Area Network</i>,
-      2018 IEEE Real-Time Systems Symposium (RTSS), Nashville, TN, December 2018.
-* <b>G. Bloom</b>,  G. Cena, I. Cibrario Bertolotti, T. Hu,
-      and A. Valenzano, <i>Optimized event notification in CAN through
-      in-frame replies and Bloom filters</i>, 2017 IEEE 13th International
-      Workshop on Factory Communication Systems (WFCS), Trondheim, June 2017.
-
-* <b>G. Bloom</b>, G. Cena, I. Cibrario Bertolotti, T. Hu,
-      and A. Valenzano, <i>Supporting Security Protocols on CAN-Based
-      Networks</i>, 18th Annual IEEE International Conference on
-      Industrial Technology, IEEE ICIT '17, March 2017.
-
-* C. Young, J. Zambreno, and <b>G. Bloom</b>, <i>Towards a
-      Fail-Operational Intrusion Detection System for In-Vehicle Networks</i>,
-      1st Workshop on Security and Dependability of Critical
-      Embedded Real-Time Systems, CERTS '16, November 2016.
+{%- endif -%}
+{%- endfor -%}
 
 
 # Hardware Data Structures
