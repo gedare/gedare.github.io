@@ -7,14 +7,13 @@ order: 10
 
 # A bit more about me
 I was born and raised outside of
-[Eagle River, WI](https://www.google.com/maps/place/Eagle+River,+WI+54521/),
-a small resort town in the Northwoods of Wisconsin.
-I graduated high school in Brentwood, TN, college at
-Michigan Tech in Houghton, MI
+[a small resort town in the Northwoods of Wisconsin](https://www.google.com/maps/place/Eagle+River,+WI+54521/).
+I graduated high school in the suburbs of Nashville, undergraduate college at
+Michigan Tech in 
 ([Da U.P.](http://en.wikipedia.org/wiki/Upper_Peninsula_of_Michigan)),
 and graduate school at GWU in our nation's capital.
 
-I got my Ph.D. in order to become a professor like my role model, my
+I got my Ph.D. inspired by my role model, my
 grandfather, the late Laird W. Heal
 [Google Scholar](http://scholar.google.com/scholar?q=author%3A%22LW+Heal%22&btnG=&hl=en&as_sdt=1%2C47&as_vis=1").
   	  
