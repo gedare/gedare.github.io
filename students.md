@@ -17,14 +17,16 @@ order: 5
 * Prajjwal Dangal *(CPS Security)*
 * Uchenna Ezeobi *(IoT/CPS Security)*
 * Abiola Ogundeko *(CPS Security)*
-* Mark Stidd *(IoT/CPS Security)*
+* Ijeoma Olawale *TBD*
 * Chun-Hao James Peng *(CPS Security)*
+* Mark Stidd *(IoT/CPS Security)*
       
 # Current M.S. Students
 
-* Katrina Rosemond
+* Justis Hsieh
 * Mikel Kengni
 * Mark Pizzolatto
+* Katrina Rosemond
 
 # Undergraduate Research Assistants
 
