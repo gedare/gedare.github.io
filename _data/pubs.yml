@@ -541,7 +541,7 @@ references:
     this framework can be used by researchers to integrate their own scheduling algorithm
     into RTEMS and test it using a scheduling simulator before deploying it on target
     hardware.
-  keyword: RTEMS, scheduling
+  keyword: scheduling, RTEMS
   URL: http://doi.acm.org/10.1145/2597457.2597459
   DOI: 10.1145/2597457.2597459
   ISSN: '1551-3688'
@@ -864,7 +864,7 @@ references:
   page: '15-21'
   volume: '15'
   issue: '1'
-  keyword: avionics, Deos, FACE, paravirtualization, POSIX, RTEMS
+  keyword: POSIX, paravirtualization, avionics, RTEMS, Deos, FACE
   URL: http://doi.acm.org/10.1145/3199610.3199612
   DOI: 10.1145/3199610.3199612
   ISSN: '1551-3688'
@@ -968,6 +968,7 @@ references:
     paper, we introduce a road map towards a security solution for in-vehicle networks
     that can detect anomalous and failed states of the network and adaptively respond
     in real-time to maintain a fail-operational system.
+  keyword: automotive security
 
 - id: nwafor_anomaly-based_2018
   type: paper-conference
@@ -1224,7 +1225,7 @@ references:
     and intelligent transportation systems, and survey methods for providing security
     and privacy.
   keyword: Cybersecurity, Connected cars, Intelligent transportation system, Smart
-    transportation, V2I, V2V
+    transportation, V2I, V2V, automotive security
   URL: http://www.sciencedirect.com/science/article/pii/B9780128150320000160
   DOI: 10.1016/B978-0-12-815032-0.00016-0
   ISBN: '978-0-12-815032-0'
@@ -1267,7 +1268,8 @@ references:
     with very limited computational resources. Test results with the proposed method
     against two different vehicles and a frequency domain analysis are also presented
     in the paper.
-  keyword: controller area network, automotive anomaly detection, frequency detection
+  keyword: controller area network, automotive anomaly detection, frequency detection,
+    automotive security
   URL: http://doi.acm.org/10.1145/3309171.3309179
   DOI: 10.1145/3309171.3309179
   ISBN: '978-1-4503-6180-4'
@@ -1316,7 +1318,7 @@ references:
     and detection delay. Using real dataset generated from a car in normal operation,
     we evaluate our detection approach on three different kinds of attack scenarios.
   keyword: intrusion detection, can, change-point detection, cusum, data injection,
-    sequential methods
+    sequential methods, automotive security
   URL: http://doi.acm.org/10.1145/3309171.3309178
   DOI: 10.1145/3309171.3309178
   ISBN: '978-1-4503-6180-4'
@@ -1353,7 +1355,7 @@ references:
     anomaly-based supervised learning, automotive controller area network, Intrusion
     Detection, real-time modeling, Response Time Analysis, sedan car, specification-based
     intrusion detection system, supervised learning, Timing Model, traffic information
-    systems, vehicular network security
+    systems, vehicular network security, automotive security
   DOI: 10.1109/RTSS.2018.00030
 
 - id: olufowobi_saiducant_2019
@@ -1374,7 +1376,8 @@ references:
   title-short: SAIDuCANT
   container-title: IEEE Transactions on Vehicular Technology
   page: '1-11'
-  keyword: intrusion detection system, real-time systems, CAN bus, timing model
+  keyword: intrusion detection system, real-time systems, CAN bus, timing model, automotive
+    security
   DOI: 10.1109/TVT.2019.2961344
   ISSN: '1939-9359'
 
@@ -1443,7 +1446,7 @@ references:
   page: '39-44'
   volume: '16'
   issue: '3'
-  keyword: benchmarking, filesystems, RTEMS
+  keyword: benchmarking, RTEMS, filesystems
   URL: https://doi.org/10.1145/3373400.3373406
   DOI: 10.1145/3373400.3373406
 
@@ -1472,11 +1475,11 @@ references:
     attacks; consequently, they are of paramount importance to automotive security.
     This article surveys the state of the art in IDS, with special emphasis on techniques
     for detecting attacks on CAN modules. -Sandip Ray, University of Florida'
-  keyword: automotive controller area network intrusion detection systems, automotive
-    engineering, Automotive engineering, automotive security, Computer hacking, Controller
-    area network, controller area networks, Engines, IDS, in-vehicle network, Intrusion
-    detection, intrusion detection system, malicious attacks, Monitoring, security
-    attacks, security of data, Timing
+  keyword: Intrusion detection, Monitoring, security of data, intrusion detection
+    system, malicious attacks, IDS, security attacks, Engines, controller area networks,
+    in-vehicle network, Controller area network, Computer hacking, Automotive engineering,
+    Timing, automotive security, automotive controller area network intrusion detection
+    systems, automotive engineering
   DOI: 10.1109/MDAT.2019.2899062
   ISSN: '2168-2364'
 
@@ -1515,17 +1518,17 @@ references:
     the combined use of Bloom filters is also envisaged to increase flexibility. Results
     show that the latter approaches are advantageous in a range of event generation
     rates and network topologies of practical relevance.
-  keyword: Bloom filter, CAN-based sensor networks, complex systems, Controller Area
-    Network (CAN), controller area networks, Cyber-Physical Action Language (CPAL),
-    Cyber-Physical Systems, data structures, delivery reliability requirements, event
-    generation rates, event notification, Industrial Internet of Things (IIoT), industrial
-    plants, Industrial plants, Industry 4.0, Informatics, Maintenance engineering,
-    network topologies, preventive maintenance, protocol extension, protocols, Protocols,
-    reactive maintenance, real-time systems, robotized cells, Safety, standard Controller
-    Area Network messaging, suitable event notification mechanism, telecommunication
-    computing, telecommunication network reliability, telecommunication network topology,
-    Transceivers, wired sensor networks, wireless sensor networks, Wireless sensor
-    networks
+  keyword: Informatics, Cyber-Physical Systems, real-time systems, protocols, data
+    structures, Safety, wireless sensor networks, industrial plants, controller area
+    networks, Protocols, Industry 4.0, telecommunication computing, Wireless sensor
+    networks, Controller Area Network (CAN), Industrial plants, Maintenance engineering,
+    Transceivers, Bloom filter, CAN-based sensor networks, complex systems, Cyber-Physical
+    Action Language (CPAL), delivery reliability requirements, event generation rates,
+    event notification, Industrial Internet of Things (IIoT), network topologies,
+    preventive maintenance, protocol extension, reactive maintenance, robotized cells,
+    standard Controller Area Network messaging, suitable event notification mechanism,
+    telecommunication network reliability, telecommunication network topology, wired
+    sensor networks
   DOI: 10.1109/TII.2019.2904082
   ISSN: '1941-0050'
 
