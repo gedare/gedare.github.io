@@ -39,6 +39,44 @@ This project investigates security protocols and mechanisms that maintain safe o
       exposes and the vulnerabilities that may be exploited remotely.
 
 ### Papers
+{% assign mypubs = site.data.pubs.references | reverse %}
+{% for pub in mypubs %}
+{%- assign keywords = pub.keyword | split: ", " -%}
+{%- if "automotive security" in keywords -%}
+* &nbsp;
+{%- for author in pub.author -%}
+{%- if author.family == 'Bloom' -%}
+**{{ author.given }} {{ author.family }}**, &nbsp;
+{%- else -%}
+{{ author.given }} {{ author.family }}, &nbsp;
+{%- endif -%}
+{%- endfor -%}
+&nbsp; *
+{%- if pub.URL -%} [{{ pub.title }}]({{ pub.URL }})
+{%- elsif pub.DOI -%} [{{ pub.title }}](https://dx.doi.org/{{ pub.DOI }})
+{%- else -%} {{ pub.title }}
+{%- endif -%}
+*,
+{%- if pub.container-title -%} &nbsp; in {{ pub.container-title }},{%- endif -%}
+{%- if pub.volume -%} &nbsp; vol. {{ pub.volume }},{%- endif -%}
+{%- if pub.issue -%} &nbsp; iss. {{ pub.issue }},{%- endif -%}
+{%- if pub.page -%} &nbsp; pp. {{ pub.page }},{%- endif -%}
+{%- if pub.publisher -%} &nbsp; {{ pub.publisher }},{%- endif -%}
+{%- if pub.issued.month -%}
+{%- assign midx = issue.month | plus: -1 -%}
+&nbsp; {{ months[midx] }}
+{%- endif -%}
+{%- if issue.year -%} &nbsp; {{ issue.year }}{%- endif -%}
+.
+{%- assign pdffile = "./pdf/" | append: pub.id | append: ".pdf" | remove: ":" -%}
+&nbsp; [&#91; pdf &#93;]({{pdffile}}) 
+
+{%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+{% endfor %}
+
+
 * C. Young, J. Zambreno, H. Olufowobi, and <b>G. Bloom</b>.
   <i>Survey of Automotive Controller Area Network Intrusion Detection Systems</i>,
       accepted to appear in IEEE Design &amp; Test, SI: Secure Automotive Systems 17, 2019.
