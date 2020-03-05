@@ -28,8 +28,8 @@ federal grants from the
 Department of Homeland Security,
 National Science Foundation, and
 Office of Naval Research, and
-and by industry gifts from
-Leidos, Northrop Grumman, Texas Instruments, and Xilinx.
+by industry gifts from
+Northrop Grumman, Texas Instruments, Leidos, and Xilinx.
 
 See more on my [research page](./research.html) and
 [CV (PDF)](./vitae-gedare.pdf)
