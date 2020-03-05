@@ -42,7 +42,7 @@ This project investigates security protocols and mechanisms that maintain safe o
 {% assign mypubs = site.data.pubs.references | reverse %}
 {% for pub in mypubs %}
 {%- assign keywords = pub.keyword | split: ", " -%}
-{%- if "automotive security" in keywords -%}
+{% if keywords contains "automotive security" %}
 * &nbsp;
 {%- for author in pub.author -%}
 {%- if author.family == 'Bloom' -%}
@@ -71,9 +71,7 @@ This project investigates security protocols and mechanisms that maintain safe o
 {%- assign pdffile = "./pdf/" | append: pub.id | append: ".pdf" | remove: ":" -%}
 &nbsp; [&#91; pdf &#93;]({{pdffile}}) 
 
-{%- endif -%}
-{%- endfor -%}
-{%- endif -%}
+{% endif %}
 {% endfor %}
 
 
