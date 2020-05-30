@@ -1,0 +1,146 @@
+
+#- name: 
+#  url: 
+#  pic: 
+#  project: 
+#  degree: 
+#  first_employment: 
+
+PhD:
+- name: Habeeb Olufowobi
+  url: https://dipupo.github.io/index/
+  pic: img/HabeebOlufowobi.jpg
+  project: Fail-Operational Intrusion Detection System (FO-IDS)&colon; A Mechanism for Securing Automotive In-Vehicle Networks
+  degree: Ph.D. C.S. 2019
+  first_employment:
+
+- name: Ebelechukwu Nwafor
+  url: https://ebelenwaf.github.io 
+  pic: img/EbelechukwuNwafor.jpg
+  project: Trace-Based Data Provenance for Cyber-Physical Systems
+  degree: Ph.D. C.S. 2018 
+  first_employment: Villanova University
+
+MS:
+
+Undergraduate:
+- name: Saurav Aryal
+  url: https://saurav-k-aryal.github.io
+  pic: img/SauravAryal.jpg
+  project: Machine Learning for Automotive Intrusion Detection
+  degree: B.S. C.S. 2018
+  first_employment: Grad school, PhD Howard Univ.
+
+- name: Elise Blackmon
+  url: https://www.linkedin.com/in/elise-blackmon-a89a4884
+  pic: img/EliseBlackmon.jpg
+  project: Satellite Cybersecurity
+  degree: B.S. E.E. 2017
+  first_employment: Reynolds American
+
+- name: Andre Campbell 
+  url: 
+  pic: img/AndreCampbell.jpg
+  project: Trace-Based Provenance
+  degree: B.S. C.S. 2019
+  first_employment: Google
+
+- name: Andriana Burgess
+  url: https://www.linkedin.com/in/andriana-burgess-7418b1115
+  pic: img/AndrianaBurgess.jpg
+  project: Block Programming for Internet-of-Things
+  degree: B.S. C.S. 2019
+  first_employment: Capital One
+
+- name: D'Mariee Hanson
+  url: 
+  pic: img/DmarieeHanson.jpg
+  project: Block Programming for the IoT
+  degree: B.S. C.S. 2018
+  first_employment: 
+
+- name: Portia Herndon
+  url: 
+  pic: img/PortiaHerndon.jpg
+  project: Satellite Cybersecurity
+  degree: B.S. C.S. 2017
+  first_employment: Booz Allen Hamilton
+
+- name: David Hill
+  url: https://www.linkedin.com/in/david-hill-b22b96127/
+  pic: img/DavidHill.jpg
+  project: Trace-Based Provenance, Automotive Security
+  degree: B.S. C.S. 2019
+  first_employment: Grad school, UVA MS
+
+- name: Cynthia Jules
+  url: 
+  pic: img/CynthiaJules.jpg
+  project: Spoofing Facial Recognition
+  degree: B.S. C.S. 2019
+  first_employment: 
+
+- name: Hannah Leonard
+  url: 
+  pic: img/HannahLeonard.jpg
+  project: Spoofing Facial Recognition
+  degree: B.S. C.S. 2020
+  first_employment: 
+
+- name: Keenah Mays
+  url: 
+  pic: img/KeenahMays.jpg
+  project: Block Programaming for Internet-of-Things
+  degree: B.S. C.S. 2019
+  first_employment: Capital One
+
+- name: Angel Mitchell
+  url: 
+  pic: img/AngelMitchell.jpg
+  project: Block Programming for the IoT
+  degree: B.S. C.S. 2018
+  first_employment: Comcast
+
+- name: Safiyyah Mitchell
+  url: 
+  pic: img/SafiyyahMitchell.jpg
+  project: Block Programming for the IoT
+  degree: B.S. C.S. 2018
+  first_employment: CareFirst BlueCross BlueShield
+
+- name: Abiola Oke
+  url: https://www.linkedin.com/in/abiola-oke-918248a9/ 
+  pic: img/AbioleOke.png
+  project: Block Programming for the IoT
+  degree: B.S. C.S. 2018
+  first_employment: Microsoft
+
+- name: Samuel Raymond
+  url: https://www.linkedin.com/in/samuel-raymond-b87781108/ 
+  pic: img/SamuelRaymond.jpg
+  project: Block Programming for the IoT
+  degree: B.S. C.S. 2018
+  first_employment: Lockheed Martin
+
+- name: Gaylon Robinson
+  url:  
+  pic: img/GaylonRobinson.jpg
+  project: Automotive Security
+  degree: B.S. C.S. 2020
+  first_employment: Raytheon
+
+- name: Pratyush Thapa
+  url: 
+  pic: img/PratyushThapa.jpg
+  project: Automotive Security
+  degree: B.S. C.S. 2019
+  first_employment: Microsoft
+
+- name: Samman Thapa
+  url: https://www.linkedin.com/in/sammanbikramthapa/ 
+  pic: img/SammanThapa.jpg
+  project: RTEMS Priority Inheritance Protocol
+  degree: B.S. C.S. 2018
+  first_employment: Dynamic Signal 
+
+
