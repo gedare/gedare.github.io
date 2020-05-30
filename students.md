@@ -13,6 +13,9 @@ order: 5
   *Fail-Operational Intrusion Detection System (FO-IDS):
   A Mechanism for Securing Automotive In-Vehicle Networks.*
 
+# Current Postdoctoral Scholars
+* Sena Hounsinou *(CPS Security)*
+
 # Current Ph.D. Students
 
 * Prajjwal Dangal *(CPS Security)*
