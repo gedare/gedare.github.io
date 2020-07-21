@@ -1518,6 +1518,7 @@ references:
     given: Gedare
   issued:
   - year: '2019'
+    month: '11'
   title: Controller Area Network Intrusion Prevention System Leveraging Fault Recovery
   container-title: Proceedings of the ACM Workshop on Cyber-Physical Systems Security
     & Privacy
