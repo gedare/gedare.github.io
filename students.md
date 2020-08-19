@@ -62,7 +62,7 @@ This page is [also available with pictures](./students-img.html).
 {{ p.name }}
 {%- if p.url -%}</a>{%- endif -%}
 {%- if p.degree -%}, &nbsp; {{ p.degree }} {%- endif -%}
-First employment: {{ p.first_employment }}.
+&nbsp; First employment: {{ p.first_employment }}.
 </li>
 {% endfor %}
 </ul>
