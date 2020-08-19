@@ -31,12 +31,12 @@ With these simulators I have used bare-metal, the Linux kernel,
 [RTEMS](http://www.rtems.org/) real-time operating system to evaluate
 my research.
 
+# Automotive Cyber Security
 <table>
 <tr>
-  <td><img src="img/NSF_4-Color_bitmap_Logo.png"></td>
-  <td># Automotive Cyber Security</td>
+  <td><img src="img/NSF_4-Color_bitmap_Logo.png" alt="National Science Foundation" style="width:150px;" /></td>
+  <td>Supported in part by NSF CNS 1646317 and CNS 2011620.</td>
 </tr>
-<tr><td>Supported in part by NSF CNS 1646317 and CNS 2011620.</td></tr>
 </table>
 
 
