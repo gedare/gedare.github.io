@@ -1,6 +1,5 @@
 ---
 title: Students
-nav_title: Students
 layout: default
 order: 5
 ---
