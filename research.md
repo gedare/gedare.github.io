@@ -33,9 +33,9 @@ my research.
 
 # Automotive Cyber Security
 <table>
-<tr style="border: 0px;">
-  <td><img src="img/NSF_4-Color_bitmap_Logo.png" alt="National Science Foundation" style="width:100px;" /></td>
-  <td>Supported in part by NSF CNS 1646317 and CNS 2011620.</td>
+<tr>
+  <td style="border: 0px;"><img src="img/NSF_4-Color_bitmap_Logo.png" alt="National Science Foundation" style="width:100px;" /></td>
+  <td style="border: 0px;">Supported in part by NSF CNS 1646317 and CNS 2011620.</td>
 </tr>
 </table>
 
