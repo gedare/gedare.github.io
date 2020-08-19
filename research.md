@@ -32,8 +32,8 @@ With these simulators I have used bare-metal, the Linux kernel,
 my research.
 
 # Automotive Cyber Security
-<table style="border: 0px;">
-<tr>
+<table>
+<tr style="border: 0px;">
   <td><img src="img/NSF_4-Color_bitmap_Logo.png" alt="National Science Foundation" style="width:100px;" /></td>
   <td>Supported in part by NSF CNS 1646317 and CNS 2011620.</td>
 </tr>
