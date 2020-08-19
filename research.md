@@ -35,10 +35,12 @@ my research.
 <table>
 <tr>
   <td style="border: 0px;"><img src="img/NSF_4-Color_bitmap_Logo.png" alt="National Science Foundation" style="width:100px;" /></td>
-  <td style="border: 0px;">Supported in part by NSF 
-  [CNS 1646317](https://www.nsf.gov/awardsearch/showAward?AWD_ID=1646317)
+  <td style="border: 0px;">Supported in part by NSF
+  <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1646317">
+  CNS 1646317</a>
   and
-  [CNS 2011620](https://www.nsf.gov/awardsearch/showAward?AWD_ID=2011620).
+  <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2011620">
+  CNS 2011620</a>
   </td>
 </tr>
 </table>
