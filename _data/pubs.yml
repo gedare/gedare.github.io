@@ -56,8 +56,8 @@ references:
     granularity (every single function in its own unit of isolation). The overhead
     is easily reduced by using trace-driven analysis to combine functions into coarser-grained
     groups that share permissions.
-  keyword: architectural support for security, fine-grained protection, isolation,
-    memory protection, software security
+  keyword: isolation, memory protection, architectural support for security, fine-grained
+    protection, software security
   URL: http://portal.acm.org/citation.cfm?id=1655077.1655082&coll=Portal&dl=GUIDE&CFID=68319311&CFTOKEN=97545801
   DOI: 10.1145/1655077.1655082
   ISBN: '978-1-60558-782-0'
@@ -173,8 +173,8 @@ references:
     to enable developers to recreate the violation for the purpose of debugging and
     further development. Taken together, the purpose of the architecture we propose
     is to enable executing untrusted CBS code on trusted hardware.'
-  keyword: architectural support for security, fine-grained protection, isolation,
-    memory protection, software security
+  keyword: isolation, memory protection, architectural support for security, fine-grained
+    protection, software security
   DOI: http://doi.ieeecomputersociety.org/10.1109/CSE.2009.56
   ISBN: '978-0-7695-3823-5'
 
@@ -251,10 +251,10 @@ references:
     hardware containers. The goal of this work is to foster discussion about our proposals
     for automation tools: to date we know of no solutions for extracting the metadata
     (permissions) required for fine-grained memory access control.'
-  keyword: access control, authorisation, Automation, automation tool, Containers,
-    fine-grained memory access control, Hardware, hardware container, hardware reference
-    monitor, memory access permission, memory region, Monitoring, sandbox memory reference,
-    security manifest, software, software developer, software development management
+  keyword: Monitoring, software, Automation, Hardware, access control, authorisation,
+    software developer, automation tool, Containers, fine-grained memory access control,
+    hardware container, hardware reference monitor, memory access permission, memory
+    region, sandbox memory reference, security manifest, software development management
   DOI: 10.1109/SafeConfig.2011.6111677
   ISBN: '978-1-4673-0401-6'
 
@@ -299,7 +299,7 @@ references:
     and Dijkstra’s algorithm for GPS navigation. Our results indicate that HWDSs can
     reduce the WCET of applications even when a HWDS is shared by multiple data structures
     or when data structure sizes exceed HWDS size constraints.'
-  keyword: hardware data structures, priority queue, schedulability
+  keyword: priority queue, schedulability, hardware data structures
   URL: http://doi.acm.org/10.1145/2380356.2380382
   DOI: 10.1145/2380356.2380382
   ISBN: '978-1-4503-1425-1'
@@ -351,12 +351,12 @@ references:
     our architecture using a cycle-accurate simulator of a complex out-of-order pipeline
     and evaluate our solution using open-source benchmarks and synthetic micro benchmarks
     designed specifically to stress our system.
-  keyword: architectural support for security, complex out-of-order pipeline, Containers,
-    Context, cycle-accurate simulator, fine-grained memory protection mechanism, fine-grained
-    protection, isolation, memory access control, memory protection, modern software
-    engineering, open-source benchmarks, page table, Permission, Pipelines, random-access
-    storage, single protection domain, software, software components, Software engineering,
-    software security, Switches, synthetic microbenchmarks
+  keyword: software, Context, Software engineering, Pipelines, isolation, memory protection,
+    architectural support for security, fine-grained protection, software security,
+    Permission, Containers, page table, complex out-of-order pipeline, cycle-accurate
+    simulator, fine-grained memory protection mechanism, memory access control, modern
+    software engineering, open-source benchmarks, random-access storage, single protection
+    domain, software components, Switches, synthetic microbenchmarks
   DOI: 10.1109/DSD.2012.89
 
 - id: bloom_chapter_2012
@@ -537,7 +537,7 @@ references:
     this framework can be used by researchers to integrate their own scheduling algorithm
     into RTEMS and test it using a scheduling simulator before deploying it on target
     hardware.
-  keyword: RTEMS, scheduling
+  keyword: scheduling, RTEMS
   URL: http://doi.acm.org/10.1145/2597457.2597459
   DOI: 10.1145/2597457.2597459
   ISSN: '1551-3688'
@@ -580,7 +580,7 @@ references:
     access requests. These results suggest that distributed systems using RBAC could
     use HWDS-based access enforcement to increase session throughput or to decrease
     the number of access enforcement servers without losing performance.
-  keyword: access control, enforcement, hardware data structures
+  keyword: access control, hardware data structures, enforcement
   URL: http://doi.acm.org/10.1145/2613087.2613096
   DOI: 10.1145/2613087.2613096
   ISBN: '978-1-4503-2939-2'
@@ -666,15 +666,15 @@ references:
     memory mapping manager and scheduler). Additionally, we evaluate the performance
     of SuperGlue in a web-server application. Results show that SuperGlue improves
     system reliability with only a small performance degradation of 11.84%.
-  keyword: code generation, commodity hardware isolation, component-based operating
-    system, dependable system design, embedded systems, fault injection campaign,
-    fault mitigation, fault tolerance, Fault tolerant systems, Hardware, IDL-based
-    system-level fault tolerance, instruction sets, interface description language,
-    interface-directed fault recovery, interface-driven recovery, low-level system
-    services, microrebooting, object-oriented programming, operating systems (computers),
-    program compilers, recovery code system, servers, software fault tolerance, specification
-    languages, SuperGlue, system reliability, transient analysis, transient faults,
-    Web-server application
+  keyword: fault tolerance, software fault tolerance, Hardware, servers, transient
+    analysis, embedded systems, program compilers, object-oriented programming, code
+    generation, instruction sets, operating systems (computers), commodity hardware
+    isolation, component-based operating system, dependable system design, fault injection
+    campaign, fault mitigation, Fault tolerant systems, IDL-based system-level fault
+    tolerance, interface description language, interface-directed fault recovery,
+    interface-driven recovery, low-level system services, microrebooting, recovery
+    code system, specification languages, SuperGlue, system reliability, transient
+    faults, Web-server application
   DOI: 10.1109/DSN.2016.29
 
 - id: bloom_fab_2010
@@ -728,13 +728,12 @@ references:
     We call our approach the Morph Onion-encryption Replication PRR HAL, or MORPH.
     MORPH aims to provide a stable interface for embedded systems developers to use
     in deploying applications that are resilient to hardware Trojans.
-  keyword: arbitrated voting, cryptography, design-time Trojans, embedded systems,
-    embedded systems developers, fabrication-time trojans, Field programmable gate
-    arrays, FPGA SoC architecture, HAL, Hardware, hardware abstraction layer, hardware
-    Trojans, IP networks, MORPH, morph onion-encryption replication PRR HAL, on-chip
-    resource morphing, Partial Runtime reconfiguration, PRR, root-of-trust, secret
-    leaking, secure systems, system-on-chip, Trojan horses, trusted computing, trusted
-    software
+  keyword: cryptography, Hardware, trusted computing, IP networks, system-on-chip,
+    embedded systems, Trojan horses, Field programmable gate arrays, hardware Trojans,
+    secure systems, Partial Runtime reconfiguration, arbitrated voting, design-time
+    Trojans, embedded systems developers, fabrication-time trojans, FPGA SoC architecture,
+    HAL, hardware abstraction layer, MORPH, morph onion-encryption replication PRR
+    HAL, on-chip resource morphing, PRR, root-of-trust, secret leaking, trusted software
   DOI: 10.1109/HST.2015.7140235
 
 - id: bloom_lockdown:_2016
@@ -772,7 +771,7 @@ references:
     component-based microkernel OS. Initial performance results for quarantine show
     that about 98% of the overhead comes from the cost of copying memory to the new
     protection domain.
-  keyword: access control, confinement, microkernel, protection
+  keyword: protection, access control, confinement, microkernel
   URL: http://doi.acm.org/10.1145/2905760.2905764
   DOI: 10.1145/2905760.2905764
   ISBN: '978-1-4503-4295-7'
@@ -816,7 +815,7 @@ references:
     a factor of 2.5 throughput speedup while using less processing time than Apache
     on Linux, and that the system can intentionally control system throughput through
     intelligent memory allocation.
-  keyword: garbage collection, memory management, shared memory, zero-copy
+  keyword: memory management, shared memory, garbage collection, zero-copy
   URL: http://doi.acm.org/10.1145/2926697.2926703
   DOI: 10.1145/2926697.2926703
   ISBN: '978-1-4503-4317-6'
@@ -861,7 +860,7 @@ references:
   page: '15-21'
   volume: '15'
   issue: '1'
-  keyword: avionics, Deos, FACE, paravirtualization, POSIX, RTEMS
+  keyword: POSIX, paravirtualization, avionics, RTEMS, Deos, FACE
   URL: http://doi.acm.org/10.1145/3199610.3199612
   DOI: 10.1145/3199610.3199612
   ISSN: '1551-3688'
@@ -896,11 +895,11 @@ references:
     CAN, a recent proposal for extending this protocol, termed CAN XR, is considered.
     Moreover, the adoption of Bloom filters to cope with rare events in very large
     systems has also been evaluated.
-  keyword: access protocols, asynchronous medium access control mechanism, Bloom filters,
-    CAN XR, controller area networks, data structures, distributed medium access control
-    mechanism, Electronic mail, event-driven systems, in-frame replies, Media Access
-    Protocol, optimized event notification, Payloads, Proposals, protocol, Real-time
-    systems, Timing
+  keyword: data structures, controller area networks, Payloads, Electronic mail, access
+    protocols, Real-time systems, asynchronous medium access control mechanism, Bloom
+    filters, CAN XR, distributed medium access control mechanism, event-driven systems,
+    in-frame replies, Media Access Protocol, optimized event notification, Proposals,
+    protocol, Timing
   DOI: 10.1109/WFCS.2017.7991963
 
 - id: bloom_supporting_2017
@@ -934,13 +933,13 @@ references:
     bus. The feasibility of the approach is then shown through experimental evaluation
     and by confirming its applicability to a shared key generation protocol proposed
     in literature.
-  keyword: arbitrary binary Boolean functions, Boolean functions, CAN data-link layer,
-    CAN protocol security-oriented enhancements, CAN XR, CAN-based automotive systems,
-    CAN-based networks, computer network security, controller area network, Controller
-    area network (CAN), controller area networks, cryptographic protocols, Cryptographic
-    protocols, Electronic mail, Network security, Observers, Payloads, physical bus
-    segregation, Protocols, Security, security protocols, shared key generation protocol,
-    Standards
+  keyword: computer network security, Boolean functions, security protocols, Security,
+    cryptographic protocols, controller area networks, Payloads, Electronic mail,
+    Protocols, Network security, Cryptographic protocols, Standards, CAN XR, arbitrary
+    binary Boolean functions, CAN data-link layer, CAN protocol security-oriented
+    enhancements, CAN-based automotive systems, CAN-based networks, controller area
+    network, Controller area network (CAN), Observers, physical bus segregation, shared
+    key generation protocol
   DOI: 10.1109/ICIT.2017.7915557
 
 - id: young_towards_2016
@@ -1051,8 +1050,8 @@ references:
     System (PAIoTS), a provenance collection framework for IoT devices. We evaluate
     the effectiveness of our framework by developing a prototype system for proof
     of concept.
-  keyword: Cloud computing, Computational modeling, Data models, History, Internet
-    of Things, Security, Temperature sensors
+  keyword: Computational modeling, Internet of Things, Security, Data models, Temperature
+    sensors, History, Cloud computing
   DOI: 10.1109/UIC-ATC.2017.8397531
 
 - id: bloom_design_2018
@@ -1094,9 +1093,8 @@ references:
     communication protocols and identify common I/O design patterns for IIoT applications
     with an emphasis on data flow in edge devices, which, in the industrial control
     system (ICS) setting, are most often involved in process control or monitoring.'
-  keyword: Cloud computing, Design Patterns, IIoT, Industrial Internet of Things,
-    Industries, Industry 4.0, Internet of Things, Security, Sensors, Wireless sensor
-    networks
+  keyword: Internet of Things, Security, IIoT, Industry 4.0, Sensors, Cloud computing,
+    Wireless sensor networks, Design Patterns, Industrial Internet of Things, Industries
   DOI: 10.1109/WFCS.2018.8402353
 
 - id: tessler_work--progress:_2017
@@ -1132,12 +1130,12 @@ references:
     into the RTEMS operating system. The hope is this work serves as further motivation
     to bring the positive perspective of caches to physical processors and operating
     systems.'
-  keyword: anticipating execution, ARM, BUNDLE scheduling, cache conflict reduction,
-    cache contention reduction, Cache memory, Cache Memory, cache storage, gem5 simulator,
-    Hardware, hardware modifications, Indexes, instruction caches, Instruction sets,
-    interrupts, multi-threading, Multithreading, operating system kernels, physical
-    processors, real-time multi-threaded scheduling, real-time multithreaded tasks,
-    Registers, RTEMS operating system, scheduling, Scheduling algorithms, Static Analysis,
+  keyword: Hardware, Indexes, cache storage, multi-threading, operating system kernels,
+    scheduling, Registers, interrupts, ARM, Scheduling algorithms, anticipating execution,
+    BUNDLE scheduling, cache conflict reduction, cache contention reduction, Cache
+    memory, Cache Memory, gem5 simulator, hardware modifications, instruction caches,
+    Instruction sets, Multithreading, physical processors, real-time multi-threaded
+    scheduling, real-time multithreaded tasks, RTEMS operating system, Static Analysis,
     thread-aware scheduling algorithm
   DOI: 10.1109/RTAS.2017.30
 
@@ -1179,10 +1177,10 @@ references:
     using SDNs (d) scalable authentication and remote attestation mechanisms for IoT
     devices and (e) threat modeling and risk/maturity assessment frameworks for the
     domain.'
-  keyword: authentication mechanism, Cryptography, data integrity, data provenance,
-    Internet of Things, IoT devices, IoT domain, IoT security, IoT solutions/services,
-    message authentication, Quality of service, Reliability, remote attestation mechanism,
-    Resilience, security solutions, sensor fusion, sensor information, Software, transport
+  keyword: data integrity, sensor fusion, Resilience, message authentication, Internet
+    of Things, security solutions, data provenance, Cryptography, Software, IoT domain,
+    IoT devices, Reliability, IoT security, authentication mechanism, IoT solutions/services,
+    Quality of service, remote attestation mechanism, sensor information, transport
     mechanisms
   DOI: 10.1109/EMSOFT.2018.8537206
 
@@ -1222,8 +1220,8 @@ references:
     communications. We identify threats and attacks enabled by smart transportation
     and intelligent transportation systems, and survey methods for providing security
     and privacy.
-  keyword: automotive security, Connected cars, Cybersecurity, Intelligent transportation
-    system, Smart transportation, V2I, V2V
+  keyword: Cybersecurity, Connected cars, Intelligent transportation system, Smart
+    transportation, V2I, V2V, automotive security
   URL: http://www.sciencedirect.com/science/article/pii/B9780128150320000160
   DOI: 10.1016/B978-0-12-815032-0.00016-0
   ISBN: '978-0-12-815032-0'
@@ -1266,8 +1264,8 @@ references:
     with very limited computational resources. Test results with the proposed method
     against two different vehicles and a frequency domain analysis are also presented
     in the paper.
-  keyword: automotive anomaly detection, automotive security, controller area network,
-    frequency detection
+  keyword: controller area network, automotive anomaly detection, frequency detection,
+    automotive security
   URL: http://doi.acm.org/10.1145/3309171.3309179
   DOI: 10.1145/3309171.3309179
   ISBN: '978-1-4503-6180-4'
@@ -1348,12 +1346,12 @@ references:
     intrusion detection system (IDS) using anomaly-based supervised learning with
     the real-time model as input. We evaluate IDS performance with real CAN logs collected
     from a sedan car.
-  keyword: anomaly-based supervised learning, automobiles, automotive controller area
-    network, automotive security, CAN, Classification algorithms, Computational modeling,
-    controller area networks, Delays, Intrusion Detection, Jitter, real-time modeling,
-    Real-time systems, Response Time Analysis, security of data, sedan car, specification-based
-    intrusion detection system, supervised learning, Time factors, Timing Model, traffic
-    information systems, vehicular network security
+  keyword: security of data, Classification algorithms, Computational modeling, Jitter,
+    automobiles, Delays, controller area networks, CAN, Real-time systems, Time factors,
+    anomaly-based supervised learning, automotive controller area network, Intrusion
+    Detection, real-time modeling, Response Time Analysis, sedan car, specification-based
+    intrusion detection system, supervised learning, Timing Model, traffic information
+    systems, vehicular network security, automotive security
   DOI: 10.1109/RTSS.2018.00030
 
 - id: nasri_pitfalls_2019
@@ -1393,11 +1391,11 @@ references:
     applications. Our results show that, in many cases, schedule randomization either
     has no security benefits or can even increase the success rate of the attacker
     depending on the priority relation between the attacker and victim tasks.
-  keyword: cyber physical systems, deterministic isolation-based defenses, fixed-priority
-    scheduling algorithm, random forests, random functions, real-time systems, Real-time
-    systems security, schedule randomization, schedule randomization-based defenses,
-    schedule-based attack, schedule-based attacks, schedule-randomization techniques,
-    scheduling, security of data, victim task
+  keyword: security of data, real-time systems, cyber physical systems, scheduling,
+    deterministic isolation-based defenses, fixed-priority scheduling algorithm, random
+    forests, random functions, Real-time systems security, schedule randomization,
+    schedule randomization-based defenses, schedule-based attack, schedule-based attacks,
+    schedule-randomization techniques, victim task
   DOI: 10.1109/RTAS.2019.00017
 
 - id: agarwal_comparison_2019
@@ -1421,7 +1419,7 @@ references:
   page: '39-44'
   volume: '16'
   issue: '3'
-  keyword: benchmarking, filesystems, RTEMS
+  keyword: benchmarking, RTEMS, filesystems
   URL: https://doi.org/10.1145/3373400.3373406
   DOI: 10.1145/3373400.3373406
 
@@ -1450,11 +1448,11 @@ references:
     attacks; consequently, they are of paramount importance to automotive security.
     This article surveys the state of the art in IDS, with special emphasis on techniques
     for detecting attacks on CAN modules. -Sandip Ray, University of Florida'
-  keyword: automotive controller area network intrusion detection systems, automotive
-    engineering, Automotive engineering, automotive security, Computer hacking, Controller
-    area network, controller area networks, Engines, IDS, in-vehicle network, Intrusion
-    detection, intrusion detection system, malicious attacks, Monitoring, security
-    attacks, security of data, Timing
+  keyword: Intrusion detection, Monitoring, security of data, intrusion detection
+    system, malicious attacks, IDS, security attacks, Engines, controller area networks,
+    in-vehicle network, Controller area network, Computer hacking, Automotive engineering,
+    Timing, automotive security, automotive controller area network intrusion detection
+    systems, automotive engineering
   DOI: 10.1109/MDAT.2019.2899062
   ISSN: '2168-2364'
 
@@ -1493,17 +1491,17 @@ references:
     the combined use of Bloom filters is also envisaged to increase flexibility. Results
     show that the latter approaches are advantageous in a range of event generation
     rates and network topologies of practical relevance.
-  keyword: Bloom filter, CAN-based sensor networks, complex systems, Controller Area
-    Network (CAN), controller area networks, Cyber-Physical Action Language (CPAL),
-    Cyber-Physical Systems, data structures, delivery reliability requirements, event
-    generation rates, event notification, Industrial Internet of Things (IIoT), industrial
-    plants, Industrial plants, Industry 4.0, Informatics, Maintenance engineering,
-    network topologies, preventive maintenance, protocol extension, protocols, Protocols,
-    reactive maintenance, real-time systems, robotized cells, Safety, standard Controller
-    Area Network messaging, suitable event notification mechanism, telecommunication
-    computing, telecommunication network reliability, telecommunication network topology,
-    Transceivers, wired sensor networks, wireless sensor networks, Wireless sensor
-    networks
+  keyword: Informatics, Cyber-Physical Systems, real-time systems, protocols, data
+    structures, Safety, wireless sensor networks, industrial plants, controller area
+    networks, Protocols, Industry 4.0, telecommunication computing, Wireless sensor
+    networks, Controller Area Network (CAN), Industrial plants, Maintenance engineering,
+    Transceivers, Bloom filter, CAN-based sensor networks, complex systems, Cyber-Physical
+    Action Language (CPAL), delivery reliability requirements, event generation rates,
+    event notification, Industrial Internet of Things (IIoT), network topologies,
+    preventive maintenance, protocol extension, reactive maintenance, robotized cells,
+    standard Controller Area Network messaging, suitable event notification mechanism,
+    telecommunication network reliability, telecommunication network topology, wired
+    sensor networks
   DOI: 10.1109/TII.2019.2904082
   ISSN: '1941-0050'
 
@@ -1518,7 +1516,6 @@ references:
     given: Gedare
   issued:
   - year: '2019'
-    month: '11'
   title: Controller Area Network Intrusion Prevention System Leveraging Fault Recovery
   container-title: Proceedings of the ACM Workshop on Cyber-Physical Systems Security
     & Privacy
@@ -1527,7 +1524,7 @@ references:
   publisher-place: New York, NY, USA
   page: '63-73'
   note: 'event-place: London, United Kingdom'
-  keyword: automotive security, can, data injection, intrusion detection systems,
+  keyword: intrusion detection systems, can, data injection, automotive security,
     intrusion prevention system, reboot recovery
   URL: https://doi.org/10.1145/3338499.3357360
   DOI: 10.1145/3338499.3357360
@@ -1570,15 +1567,16 @@ references:
     from the open-source dataset, SAIDuCANT observes at most one false positive before
     detecting an attack whereas other detection approaches using CAN timing features
     detect on average more than a hundred false positives before a real attack occurs.
-  keyword: attack scenarios, automobiles, Automotive engineering, CAN bus, controller
-    area network timing, controller area networks, cybersecurity attacks, data injection
-    attacks, embedded devices, in-vehicle network, Intrusion detection, intrusion
-    detection system, learning (artificial intelligence), low false positive rates,
-    open-source CAN dataset, open-source dataset, physical access, physical attacks,
-    Protocols, real-time model parameters, real-time systems, Real-time systems, remote
-    access, SAIDuCANT, security of data, security protocol, specification-based automotive
-    intrusion detection, specification-based intrusion detection system, Time factors,
-    Timing, timing features, timing model, traditionally-closed vehicular system
+  keyword: attack scenarios, automobiles, Automotive engineering, automotive security,
+    CAN bus, controller area network timing, controller area networks, cybersecurity
+    attacks, data injection attacks, embedded devices, in-vehicle network, Intrusion
+    detection, intrusion detection system, learning (artificial intelligence), low
+    false positive rates, open-source CAN dataset, open-source dataset, physical access,
+    physical attacks, Protocols, real-time model parameters, real-time systems, Real-time
+    systems, remote access, SAIDuCANT, security of data, security protocol, specification-based
+    automotive intrusion detection, specification-based intrusion detection system,
+    Time factors, Timing, timing features, timing model, traditionally-closed vehicular
+    system
   DOI: 10.1109/TVT.2019.2961344
   ISSN: '1939-9359'
 
@@ -1612,13 +1610,14 @@ references:
     Standard. We reached our goal with under 10,000 source lines of code (SLOC) written
     to integrate RTEMS into Deos and implement any additional POSIX application programming
     interfaces (APIs) and tests needed for certification.
-  keyword: aerospace computing, application program interfaces, ARINC 653, ARINC 653-compliant
-    Deos, avionics, avionics industry, avionics standard, Deos, FACE, FACE Operating
-    System Segment Safety Base profile, FACE Technical Standard, future airborne capability
-    environment, Future Airborne Capability Environment, Open Group, open source real
-    time operating system, operating systems (computers), POSIX, POSIX 1003.1, POSIX
-    application programming interfaces, PSE52, PSE53, PSE54, public domain software,
-    real-time systems, realtime POSIX, RTEMS, RTOS, software standards, user interfaces
+  keyword: real-time systems, POSIX, RTOS, operating systems (computers), aerospace
+    computing, avionics, RTEMS, public domain software, application program interfaces,
+    Deos, FACE, Future Airborne Capability Environment, ARINC 653, ARINC 653-compliant
+    Deos, avionics industry, avionics standard, FACE Operating System Segment Safety
+    Base profile, FACE Technical Standard, future airborne capability environment,
+    Open Group, open source real time operating system, POSIX 1003.1, POSIX application
+    programming interfaces, PSE52, PSE53, PSE54, realtime POSIX, software standards,
+    user interfaces
   DOI: 10.1109/ISORC49007.2020.00023
 
 - id: dangal_towards_2020
@@ -1643,11 +1642,10 @@ references:
     (2) risk of financial and safety harms due to security breaches. In this paper,
     we propose a private cloud in the loop ICS architecture for real-time analytics
     that can bridge the gap between low data utilization and security hardening.'
-  keyword: actuators, cloud computing, control stations, data rich information poor
-    syndrome, DRIP syndrome, financial safety harms, ICS community, industrial, industrial
-    control, industrial control system, industrial security, industrial setting, loop
-    ICS architecture, low data utilization, production engineering computing, real-time,
-    real-time analytics, security, security breaches, security hardening, security
-    of data
+  keyword: industrial control, security, security of data, actuators, real-time, cloud
+    computing, production engineering computing, control stations, data rich information
+    poor syndrome, DRIP syndrome, financial safety harms, ICS community, industrial,
+    industrial control system, industrial security, industrial setting, loop ICS architecture,
+    low data utilization, real-time analytics, security breaches, security hardening
   DOI: 10.1109/ISORC49007.2020.00036
 ...
