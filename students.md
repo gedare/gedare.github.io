@@ -10,61 +10,82 @@ This page is [also available with pictures](./students-img.html).
 # Current Students
 
 ## Post-Doctoral Scholars
+<ul>
 {% for p in site.data.people.current.PostDoc %}
-1. {%- if p.url -%}<a href="{{ p.url }}">{%- endif -%}
+<li> {%- if p.url -%}<a href="{{ p.url }}">{%- endif -%}
 {{ p.name }}, 
 {%- if p.url -%}</a>{%- endif -%}
-{{ p.degree }}
+{%- if p.degree -%}, &nbsp; {{ p.degree }} {%- endif -%}
+</li>
 {% endfor %}
+</ul>
 
 ## PhD Students
+<ul>
 {% for p in site.data.people.current.PhD %}
-1. {%- if p.url -%}<a href="{{ p.url }}">{%- endif -%}
+<li> {%- if p.url -%}<a href="{{ p.url }}">{%- endif -%}
 {{ p.name }}, 
 {%- if p.url -%}</a>{%- endif -%}
-{{ p.degree }}
+{%- if p.degree -%}, &nbsp; {{ p.degree }} {%- endif -%}
+</li>
 {% endfor %}
+</ul>
 
 ## MS Students
+<ul>
 {% for p in site.data.people.current.MS %}
-1. {%- if p.url -%}<a href="{{ p.url }}">{%- endif -%}
+<li> {%- if p.url -%}<a href="{{ p.url }}">{%- endif -%}
 {{ p.name }}, 
 {%- if p.url -%}</a>{%- endif -%}
-{{ p.degree }}
+{%- if p.degree -%}, &nbsp; {{ p.degree }} {%- endif -%}
+</li>
 {% endfor %}
+</ul>
 
 ## Undergraduate Students
+<ul>
 {% for p in site.data.people.current.Undergraduate %}
-1. {%- if p.url -%}<a href="{{ p.url }}">{%- endif -%}
+<li> {%- if p.url -%}<a href="{{ p.url }}">{%- endif -%}
 {{ p.name }}, 
 {%- if p.url -%}</a>{%- endif -%}
-{{ p.degree }}
+{%- if p.degree -%}, &nbsp; {{ p.degree }} {%- endif -%}
+</li>
 {% endfor %}
+</ul>
 
 # Alumni
 
 ## PhD Students
+<ul>
 {% for p in site.data.people.past.PhD %}
-1. {%- if p.url -%}<a href="{{ p.url }}">{%- endif -%}
+<li> {%- if p.url -%}<a href="{{ p.url }}">{%- endif -%}
 {{ p.name }}, 
 {%- if p.url -%}</a>{%- endif -%}
-{{ p.degree }}. First employment: {{ p.first_employment }}.
+{%- if p.degree -%}, &nbsp; {{ p.degree }} {%- endif -%}
+First employment: {{ p.first_employment }}.
+</li>
 {% endfor %}
+</ul>
 
 ## MS Students
+<ul>
 {% for p in site.data.people.past.MS %}
-1. {%- if p.url -%}<a href="{{ p.url }}">{%- endif -%}
+<li> {%- if p.url -%}<a href="{{ p.url }}">{%- endif -%}
 {{ p.name }}, 
 {%- if p.url -%}</a>{%- endif -%}
-{{ p.degree }}
+{%- if p.degree -%}, &nbsp; {{ p.degree }} {%- endif -%}
+</li>
 {% endfor %}
+</ul>
 
 ## Undergraduate Students
+<ul>
 {% for p in site.data.people.past.Undergraduate %}
-1. {%- if p.url -%}<a href="{{ p.url }}">{%- endif -%}
+<li> {%- if p.url -%}<a href="{{ p.url }}">{%- endif -%}
 {{ p.name }}, 
 {%- if p.url -%}</a>{%- endif -%}
-{{ p.degree }}
+{%- if p.degree -%}, &nbsp; {{ p.degree }} {%- endif -%}
+</li>
 {% endfor %}
-
+</ul>
 
