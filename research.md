@@ -31,7 +31,14 @@ With these simulators I have used bare-metal, the Linux kernel,
 [RTEMS](http://www.rtems.org/) real-time operating system to evaluate
 my research.
 
-# Automotive Cyber Security
+<table>
+<tr>
+  <td><img src="img/NSF_4-Color_bitmap_Logo.png"></td>
+  <td># Automotive Cyber Security</td>
+</tr>
+<tr><td>Supported in part by NSF CNS 1646317 and CNS 2011620.</td></tr>
+</table>
+
 
 This project investigates security protocols and mechanisms that maintain safe operations for network-connected and autonomous automotive vehicles. I am currently pursuing two broad directions:
 1. Develop algorithms and methods for an in-vehicle network
@@ -233,4 +240,15 @@ does not indicate loss of privacy.
   </div>
 </div>
 -->
+
+## Disclaimers
+
+  * The opinions, findings, and conclusions or recommendations expressed are
+    those of the author(s) and do not necessarily reflect the views of the
+    National Science Foundation.
+
+  * Any opinions, findings, and conclusions or recommendations expressed in
+    this material are those of the authors and should not be interpreted as
+    necessarily representing the official policies, either expressed or
+    implied, of the U.S.  Department of Homeland Security.
 
