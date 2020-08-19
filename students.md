@@ -5,8 +5,6 @@ layout: default
 order: 5
 ---
 
-This page is [also available with pictures](./students-img.html).
-
 # Current Students
 
 ## Post-Doctoral Scholars
