@@ -22,13 +22,6 @@ PostDoc:
   first_employment:
 
 PhD:
-- name: Abiola Ogundeko
-  url: 
-  pic: img/AbiolaOgundeko.jpg
-  project: 
-  degree: 
-  first_employment:
-
 - name: Prajjwal Dangal
   url: 
   pic: img/PrajjwalDangal.jpg
@@ -43,13 +36,6 @@ PhD:
   degree: 
   first_employment:
 
-- name: Chun-Hao James Peng
-  url: 
-  pic: img/JamesPeng.jpg
-  project: 
-  degree: 
-  first_employment:
-
 - name: Mark Stidd
   url: 
   pic: img/MarkStidd.jpg
@@ -57,13 +43,70 @@ PhD:
   degree: 
   first_employment:
 
-MS:
+- name: Abiola Ogundeko
+  url: 
+  pic: img/AbiolaOgundeko.jpg
+  project: 
+  degree: 
+  first_employment:
+
+- name: Chun-Hao James Peng
+  url: 
+  pic: img/JamesPeng.jpg
+  project: 
+  degree: 
+  first_employment:
+
+- name: Timothy Montgomery 
+  url: 
+  pic: 
+  project: 
+  degree: 
+  first_employment:
+
+- name: Ijeoma Olawale
+  url: 
+  pic: 
+  project: 
+  degree: 
+  first_employment:
+
+- name: Doug Healy
+  url: 
+  pic: 
+  project: 
+  degree: 
+  first_employment:
+
+- name: Farhad Mofidi
+  url: 
+  pic: 
+  project: 
+  degree: 
+  first_employment:
+
+- name: Rodney Jones
+  url: 
+  pic: 
+  project: 
+  degree: 
+  first_employment:
+
 - name: Katrina Rosemond
   url: 
   pic: img/KatrinaRosemond.jpg
   project: 
   degree: 
   first_employment:
+
+- name: Vijay Kumar Banerjee
+  url: 
+  pic: 
+  project: 
+  degree: 
+  first_employment:
+
+MS:
 
 - name: Mark Pizzolatto
   url: 
@@ -79,6 +122,12 @@ MS:
   degree: 
   first_employment:
 
+- name: Andrew Nielsen
+  url: 
+  pic: 
+  project: 
+  degree: 
+  first_employment:
 
 
 Undergraduate:
