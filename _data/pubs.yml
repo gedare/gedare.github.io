@@ -1648,4 +1648,45 @@ references:
     industrial control system, industrial security, industrial setting, loop ICS architecture,
     low data utilization, real-time analytics, security breaches, security hardening
   DOI: 10.1109/ISORC49007.2020.00036
+
+- id: ezeobi_reverse_2020
+  type: article-journal
+  author:
+  - family: Ezeobi
+    given: Uchenna
+  - family: Olufowobi
+    given: Habeeb
+  - family: Young
+    given: Clinton
+  - family: Zambreno
+    given: Joseph
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: '2020'
+  title: Reverse Engineering Controller Area Network Messages using Unsupervised Machine
+    Learning
+  container-title: IEEE Consumer Electronics Magazine
+  page: '1-1'
+  note: 'Conference Name: IEEE Consumer Electronics Magazine'
+  abstract: The smart city landscape is rife with opportunities for mobility and economic
+    optimization, but also presents many security concerns spanning the range of components
+    and systems in the smart ecosystem. One key enabler for this ecosystem is smart
+    transportation and transit, which is foundationally built upon connected vehicles.
+    Ensuring vehicular security, while necessary to guarantee passenger and pedestrian
+    safety, is itself challenging due to the broad attack surfaces of modern automotive
+    systems. A single car contains dozens to hundreds of small embedded computing
+    devices known as electronic control units (ECUs) executing 100s of millions of
+    lines of code; the inherent complexity of this tightly-integrated cyber-physical
+    system (CPS) is one of the key problems that frustrate effective security. We
+    describe an approach to help reduce the complexity of security analyses by leveraging
+    unsupervised machine learning to learn clusters of messages passed between ECUs
+    that correlate with changes in the CPS state of a vehicle as it moves throughout
+    the world. Our approach can help to improve the security of vehicles in a smart
+    city, and can leverage smart city infrastructure to further enrich and refine
+    the quality of the machine learning output.
+  keyword: Clustering algorithms, Complexity theory, Ecosystems, Machine learning,
+    Reverse engineering, Security, Smart cities
+  DOI: 10.1109/MCE.2020.3023538
+  ISSN: '2162-2256'
 ...
