@@ -1313,8 +1313,8 @@ references:
     the parameters required for the change-point algorithm to reduce false alarm rate
     and detection delay. Using real dataset generated from a car in normal operation,
     we evaluate our detection approach on three different kinds of attack scenarios.
-  keyword: automotive security, can, change-point detection, cusum, data injection,
-    intrusion detection, sequential methods
+  keyword: intrusion detection, can, change-point detection, cusum, data injection,
+    sequential methods, automotive security
   URL: http://doi.acm.org/10.1145/3309171.3309178
   DOI: 10.1145/3309171.3309178
   ISBN: '978-1-4503-6180-4'
@@ -1567,15 +1567,15 @@ references:
     from the open-source dataset, SAIDuCANT observes at most one false positive before
     detecting an attack whereas other detection approaches using CAN timing features
     detect on average more than a hundred false positives before a real attack occurs.
-  keyword: attack scenarios, automobiles, Automotive engineering, automotive security,
-    CAN bus, controller area network timing, controller area networks, cybersecurity
-    attacks, data injection attacks, embedded devices, in-vehicle network, Intrusion
-    detection, intrusion detection system, learning (artificial intelligence), low
-    false positive rates, open-source CAN dataset, open-source dataset, physical access,
-    physical attacks, Protocols, real-time model parameters, real-time systems, Real-time
-    systems, remote access, SAIDuCANT, security of data, security protocol, specification-based
-    automotive intrusion detection, specification-based intrusion detection system,
-    Time factors, Timing, timing features, timing model, traditionally-closed vehicular
+  keyword: Intrusion detection, security of data, intrusion detection system, real-time
+    systems, data injection attacks, physical attacks, automobiles, learning (artificial
+    intelligence), CAN bus, controller area networks, in-vehicle network, security
+    protocol, Protocols, Automotive engineering, Real-time systems, Timing, Time factors,
+    specification-based intrusion detection system, timing model, automotive security,
+    attack scenarios, controller area network timing, cybersecurity attacks, embedded
+    devices, low false positive rates, open-source CAN dataset, open-source dataset,
+    physical access, real-time model parameters, remote access, SAIDuCANT, specification-based
+    automotive intrusion detection, timing features, traditionally-closed vehicular
     system
   DOI: 10.1109/TVT.2019.2961344
   ISSN: '1939-9359'
@@ -1685,8 +1685,81 @@ references:
     the world. Our approach can help to improve the security of vehicles in a smart
     city, and can leverage smart city infrastructure to further enrich and refine
     the quality of the machine learning output.
+  keyword: Security, Complexity theory, Clustering algorithms, Smart cities, Machine
+    learning, Ecosystems, Reverse engineering
+  DOI: 10.1109/MCE.2020.3023538
+  ISSN: '2162-2256'
+
+- id: ezeobi_reverse_2020-1
+  type: article-journal
+  author:
+  - family: Ezeobi
+    given: Uchenna
+  - family: Olufowobi
+    given: Habeeb
+  - family: Young
+    given: Clinton
+  - family: Zambreno
+    given: Joseph
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: '2020'
+  title: Reverse Engineering Controller Area Network Messages using Unsupervised Machine
+    Learning
+  container-title: IEEE Consumer Electronics Magazine
+  page: '1-1'
+  note: 'Conference Name: IEEE Consumer Electronics Magazine'
+  abstract: The smart city landscape is rife with opportunities for mobility and economic
+    optimization, but also presents many security concerns spanning the range of components
+    and systems in the smart ecosystem. One key enabler for this ecosystem is smart
+    transportation and transit, which is foundationally built upon connected vehicles.
+    Ensuring vehicular security, while necessary to guarantee passenger and pedestrian
+    safety, is itself challenging due to the broad attack surfaces of modern automotive
+    systems. A single car contains dozens to hundreds of small embedded computing
+    devices known as electronic control units (ECUs) executing 100s of millions of
+    lines of code; the inherent complexity of this tightly-integrated cyber-physical
+    system (CPS) is one of the key problems that frustrate effective security. We
+    describe an approach to help reduce the complexity of security analyses by leveraging
+    unsupervised machine learning to learn clusters of messages passed between ECUs
+    that correlate with changes in the CPS state of a vehicle as it moves throughout
+    the world. Our approach can help to improve the security of vehicles in a smart
+    city, and can leverage smart city infrastructure to further enrich and refine
+    the quality of the machine learning output.
   keyword: Clustering algorithms, Complexity theory, Ecosystems, Machine learning,
     Reverse engineering, Security, Smart cities
   DOI: 10.1109/MCE.2020.3023538
   ISSN: '2162-2256'
+
+- id: bloom_real-time_2020
+  type: book
+  author:
+  - family: Bloom
+    given: Gedare
+  - family: Sherrill
+    given: Joel
+  - family: Hu
+    given: Tingting
+  - family: Bertolotti
+    given: Ivan Cibrario
+  - family: Sherrill
+    given: Joel
+  - family: Hu
+    given: Tingting
+  - family: Bertolotti
+    given: Ivan Cibrario
+  issued:
+  - year: '2020'
+    month: '11'
+  accessed:
+  - year: '2020'
+    month: '10'
+    day: '14'
+  title: Real-Time Systems Development with RTEMS and Multicore Processors
+  publisher: CRC Press
+  abstract: The proliferation of multicore processors in the embedded market for Internet-of-Things
+    (IoT) and Cyber-Physical Systems (CPS) makes developing real-time
+  URL: https://www.taylorfrancis.com/books/9781351255790
+  DOI: 10.1201/9781351255790
+  ISBN: '978-1-351-25579-0'
 ...
