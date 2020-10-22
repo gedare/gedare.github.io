@@ -1,9 +1,15 @@
 
 events:
+- date: 2020-10-22
+  type: event
+  title: EPICS Collaborator Meeting
+  description: I presented ongoing research at the [EPICS collaboration fall
+  meeting 2020](https://indico.fhi-berlin.mpg.de/event/52/) held virtually.
+
 - date: 2019-10-17
   type: event
   title: EWiLi Workshop
-  description: I'm organizing [EWiLi 2019](https://sites.google.com/view/ewili2019/) the
+  description: I organized [EWiLi 2019](https://sites.google.com/view/ewili2019/) the
       9th Embedded Operating Systems Workshop, co-located with [ESWeek](https://esweek.org)
       in New York, NY. 
 
