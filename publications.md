@@ -18,7 +18,7 @@ to ask me for an author copy and I will try to oblige.*
 
 
 {% assign mypubs = site.data.pubs.references | reverse %}
-{% assign years = "2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020" | split: ' ' %}
+{% assign years = "2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021" | split: ' ' %}
 {% assign reverse-years = years | reverse %}
 {% assign months = "January February March April May June July August September October November December &nbsp; " | split: ' ' %}
 {% assign types = "thesis book chapter article-journal paper-conference" | split: ' ' %}
