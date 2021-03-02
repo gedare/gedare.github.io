@@ -1617,7 +1617,7 @@ references:
     Base profile, FACE Technical Standard, future airborne capability environment,
     Open Group, open source real time operating system, POSIX 1003.1, POSIX application
     programming interfaces, PSE52, PSE53, PSE54, realtime POSIX, software standards,
-    user interfaces
+    user interfaces, epics security
   DOI: 10.1109/ISORC49007.2020.00023
 
 - id: dangal_towards_2020
@@ -1646,7 +1646,8 @@ references:
     computing, production engineering computing, control stations, data rich information
     poor syndrome, DRIP syndrome, financial safety harms, ICS community, industrial,
     industrial control system, industrial security, industrial setting, loop ICS architecture,
-    low data utilization, real-time analytics, security breaches, security hardening
+    low data utilization, real-time analytics, security breaches, security hardening,
+    epics security
   DOI: 10.1109/ISORC49007.2020.00036
 
 - id: ezeobi_reverse_2020
@@ -1712,6 +1713,7 @@ references:
   publisher: CRC Press
   abstract: The proliferation of multicore processors in the embedded market for Internet-of-Things
     (IoT) and Cyber-Physical Systems (CPS) makes developing real-time
+  keyword: epics security
   URL: https://www.taylorfrancis.com/books/9781351255790
   DOI: 10.1201/9781351255790
   ISBN: 978-1-351-25579-0
@@ -1728,5 +1730,6 @@ references:
   title-short: WeepingCAN
   container-title: Workshop on Automotive and Autonomous Vehicle Security
   publisher: Internet Society
+  keyword: automotive security
   DOI: https://dx.doi.org/10.14722/autosec.2021.23002
 ...
