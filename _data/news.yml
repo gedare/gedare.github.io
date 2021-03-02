@@ -1,5 +1,15 @@
 
 events:
+- date: 2020-02-25
+  type: event
+  title: AutoSec Workshop
+  description: My paper WeepingCAN won *Best Paper Award* at the [3rd AutoSec Workshop](https://www.ndss-symposium.org/ndss-program/autosec-2021/) co-located with [NDSS](https://www.ndss-symposium.org/), held virtually.
+
+- date: 2020-02-15
+  type: event
+  title: RTEMS Training
+  description: I led a version of the RTEMS Open Class for students and professors from UCCS and some other universities.
+
 - date: 2020-10-22
   type: event
   title: EPICS Collaborator Meeting
