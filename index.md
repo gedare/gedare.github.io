@@ -39,6 +39,9 @@ See more on my [research page](./research.html) and
 See more on my
 [publications](./publications.html) page and
 [Google Scholar](https://scholar.google.com/citations?user=8ZBnSl4AAAAJ).
+* **G. Bloom**.
+  *WeepingCAN: A Stealthy CAN Bus-off Attack*,
+  Workshop on Automotive and Autonomous Vehicle Security, **AutoSec '21 (Best Paper)**.
 * H. Olufowobi, C. Young, J. Zambreno, and **G. Bloom**.
   *SAIDuCANT: Specification-based Automotive Intrusion Detection using Controller Area Network (CAN) Timing*,
   IEEE Transactions on Vehicular Technology, **IEEE TVT (JIF: 5.339)**
@@ -50,18 +53,9 @@ See more on my
   *SuperGlue: IDL-Based, System-Level Fault Tolerance for Embedded Systems*,
   Proceedings of the 46th IEEE/IFIP International Conference on Dependable Systems and Networks,
   **DSN '16 (22% acceptance)**
-  [PDF](./pdf/SonBlo16A.pdf)
-  [bibtex](./bib/SonBlo16A.bib)
-* **G. Bloom** and R. Simha.
-  *Hardware-Enhanced Distributed Access Enforcement for Role-Based Access Control*,
-  Proceedings of the 19th ACM Symposium on Access Control Models and Technologies, **SACMAT '14 (29% acceptance)**
-  [PDF](./pdf/BloSim14A.pdf)
-  [bibtex](./bib/BloSim14A.bib)
 * **G. Bloom**, G. Parmer, B. Narahari, and R. Simha.
   *Shared Hardware Data Structures for Hard Real-Time Systems*,
   12th International Conference on Embedded Software, **EMSOFT '12 (24% acceptance)**,
-  [PDF](./pdf/BloPar12A.pdf)
-  [bibtex](./bib/BloPar12A.bib)
 
 # Teaching
 
