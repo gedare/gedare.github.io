@@ -3,7 +3,7 @@ events:
 - date: 2020-02-25
   type: event
   title: AutoSec Workshop
-  description: My paper WeepingCAN won *Best Paper Award* at the [3rd AutoSec Workshop](https://www.ndss-symposium.org/ndss-program/autosec-2021/) co-located with [NDSS](https://www.ndss-symposium.org/), held virtually.
+  description: My paper WeepingCAN won *Best Paper Award* at the [3rd AutoSec Workshop](https://www.ndss-symposium.org/ndss-program/autosec-2021/) co-located with [NDSS](https://www.ndss-symposium.org/), held virtually. You can [watch my presentation on YouTube](https://youtu.be/akAD0NTXRYs).
 
 - date: 2020-02-15
   type: event
