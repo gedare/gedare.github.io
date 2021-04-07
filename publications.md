@@ -47,8 +47,9 @@ to ask me for an author copy and I will try to oblige.*
 {%- endfor -%}
 &nbsp; *
 {%- if pub.URL -%} [{{ pub.title }}]({{ pub.URL }})
-{%- elsif pub.DOI -%} [{{ pub.title }}](https://dx.doi.org/{{ pub.DOI }})
 {%- else -%} {{ pub.title }}
+{%- endif -%}
+{%- if pub.DOI -%} [{{ DOI: pub.DOI }}](https://dx.doi.org/{{ pub.DOI }})
 {%- endif -%}
 *,
 {%- if pub.container-title -%} &nbsp; in {{ pub.container-title }},{%- endif -%}
