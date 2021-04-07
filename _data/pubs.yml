@@ -1732,4 +1732,50 @@ references:
   publisher: Internet Society
   keyword: automotive security
   DOI: https://dx.doi.org/10.14722/autosec.2021.23002
+
+- id: marshall_precise_2021
+  type: article-journal
+  author:
+  - family: Marshall
+    given: James
+  - family: Gifford
+    given: Robert
+  - family: Bloom
+    given: Gedare
+  - family: Parmer
+    given: Gabriel
+  - family: Simha
+    given: Rahul
+  issued:
+  - year: 2021
+    month: 3
+  accessed:
+  - year: 2021
+    month: 4
+    day: 6
+  title: Precise Cache Profiling for Studying Radiation Effects
+  container-title: ACM Transactions on Embedded Computing Systems
+  page: 25:1-25:25
+  volume: '20'
+  issue: '3'
+  abstract: Increased access to space has led to an increase in the usage of commodity
+    processors in radiation environments. These processors are vulnerable to transient
+    faults such as single event upsets that may cause bit-flips in processor components.
+    Caches in particular are vulnerable due to their relatively large area, yet are
+    often omitted from fault injection testing because many processors do not provide
+    direct access to cache contents and they are often not fully modeled by simulators.
+    The performance benefits of caches make disabling them undesirable, and the presence
+    of error correcting codes is insufficient to correct for increasingly common multiple
+    bit upsets. This work explores building a program’s cache profile by collecting
+    cache usage information at an instruction granularity via commonly available on-chip
+    debugging interfaces. The profile provides a tighter bound than cache utilization
+    for cache vulnerability estimates (50% for several benchmarks). This can be applied
+    to reduce the number of fault injections required to characterize behavior by
+    at least two-thirds for the benchmarks we examine. The profile enables future
+    work in hardware fault injection for caches that avoids the biases of existing
+    techniques.
+  keyword: Cache faults, cache profiling, single event upset
+  URL: https://doi.org/10.1145/3442339
+  DOI: 10.1145/3442339
+  ISSN: 1539-9087
 ...

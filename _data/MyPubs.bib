@@ -713,3 +713,20 @@ Keywords: Trojan circuit, design for hardware trust, memory protection, control 
 	year = {2021},
 	keywords = {automotive security}
 }
+
+@article{marshall_precise_2021,
+	title = {Precise {Cache} {Profiling} for {Studying} {Radiation} {Effects}},
+	volume = {20},
+	issn = {1539-9087},
+	url = {https://doi.org/10.1145/3442339},
+	doi = {10.1145/3442339},
+	abstract = {Increased access to space has led to an increase in the usage of commodity processors in radiation environments. These processors are vulnerable to transient faults such as single event upsets that may cause bit-flips in processor components. Caches in particular are vulnerable due to their relatively large area, yet are often omitted from fault injection testing because many processors do not provide direct access to cache contents and they are often not fully modeled by simulators. The performance benefits of caches make disabling them undesirable, and the presence of error correcting codes is insufficient to correct for increasingly common multiple bit upsets. This work explores building a program’s cache profile by collecting cache usage information at an instruction granularity via commonly available on-chip debugging interfaces. The profile provides a tighter bound than cache utilization for cache vulnerability estimates (50\% for several benchmarks). This can be applied to reduce the number of fault injections required to characterize behavior by at least two-thirds for the benchmarks we examine. The profile enables future work in hardware fault injection for caches that avoids the biases of existing techniques.},
+	number = {3},
+	urldate = {2021-04-06},
+	journal = {ACM Transactions on Embedded Computing Systems},
+	author = {Marshall, James and Gifford, Robert and Bloom, Gedare and Parmer, Gabriel and Simha, Rahul},
+	month = mar,
+	year = {2021},
+	keywords = {Cache faults, cache profiling, single event upset},
+	pages = {25:1--25:25}
+}
