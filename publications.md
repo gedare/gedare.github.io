@@ -49,14 +49,13 @@ to ask me for an author copy and I will try to oblige.*
 {%- if pub.URL -%} [{{ pub.title }}]({{ pub.URL }})
 {%- else -%} {{ pub.title }}
 {%- endif -%}
-{%- if pub.DOI -%} [{{ DOI: pub.DOI }}](https://dx.doi.org/{{ pub.DOI }})
-{%- endif -%}
 *,
 {%- if pub.container-title -%} &nbsp; in {{ pub.container-title }},{%- endif -%}
 {%- if pub.volume -%} &nbsp; vol. {{ pub.volume }},{%- endif -%}
 {%- if pub.issue -%} &nbsp; iss. {{ pub.issue }},{%- endif -%}
 {%- if pub.page -%} &nbsp; pp. {{ pub.page }},{%- endif -%}
 {%- if pub.publisher -%} &nbsp; {{ pub.publisher }},{%- endif -%}
+{%- if pub.DOI -%} [DOI: {{ pub.DOI }}](https://dx.doi.org/{{ pub.DOI }}),{%- endif -%}
 {%- if pub.issued.month -%}
 {%- assign midx = issue.month | plus: -1 -%}
 &nbsp; {{ months[midx] }}
