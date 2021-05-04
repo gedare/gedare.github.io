@@ -8,7 +8,7 @@ order: 1
 # Gedare Bloom
 
 Assistant Professor   
-Director, [Embedded Systems Security Lab](https://www.embedded-systems-security-lab.com/)
+Director, [Embedded Systems Security Lab](https://www.embedded-systems-security-lab.com/) 
 Department of Computer Science  
 University of Colorado at Colorado Springs  
 gbloom uccs edu 
