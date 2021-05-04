@@ -35,12 +35,13 @@ my research.
 <table>
 <tr>
   <td style="border: 0px;"><img src="img/NSF_4-Color_bitmap_Logo.png" alt="National Science Foundation" style="width:100px;" /></td>
-  <td style="border: 0px;">Supported in part by NSF
+  <td style="border: 0px;">NSF
   <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=1646317">
   CNS 1646317</a>
   and
   <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2011620">
-  CNS 2011620</a>
+  CNS 2011620</a>.
+  <a href="https://rcl.ece.iastate.edu/projects/CAN-Security">Project Webpage</a>
   </td>
 </tr>
 </table>
