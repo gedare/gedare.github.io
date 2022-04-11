@@ -1778,4 +1778,456 @@ references:
   URL: https://doi.org/10.1145/3442339
   DOI: 10.1145/3442339
   ISSN: 1539-9087
+
+- id: duby_detecting_2022
+  type: paper-conference
+  author:
+  - family: Duby
+    given: Adam
+  - family: Taylor
+    given: Teryl
+  - family: Bloom
+    given: Gedare
+  - family: Zhuang
+    given: Yanyan
+  issued:
+  - year: 2022
+    month: 1
+  title: Detecting and Classifying Self-Deleting Windows Malware Using Prefetch Files
+  container-title: 2022 IEEE 12th Annual Computing and Communication Workshop and
+    Conference (CCWC)
+  page: 0745-0751
+  abstract: Malware detection and analysis can be a burdensome task for incident responders.
+    As such, research has turned to machine learning to automate malware detection
+    and malware family classification. Existing work extracts and engineers static
+    and dynamic features from the malware sample to train classifiers. Despite promising
+    results, such techniques assume that the analyst has access to the malware executable
+    file. Self-deleting malware invalidates this assumption and requires analysts
+    to find forensic evidence of malware execution for further analysis. In this paper,
+    we present and evaluate an approach to detecting malware that executed on a Windows
+    target and further classify the malware into its associated family to provide
+    semantic insight. Specifically, we engineer features from the Windows prefetch
+    file, a file system forensic artifact that archives process information. Results
+    show that it is possible to detect the malicious artifact with 99% accuracy; furthermore,
+    classifying the malware into a fine-grained family has comparable performance
+    to techniques that require access to the original executable. We also provide
+    a thorough security discussion of the proposed approach against adversarial diversity.
+  keyword: Malware, Conferences, Prefetching, Semantics, Feature extraction, forensics,
+    Machine learning, Forensics, Malware analysis, malware classification, prefetch
+  DOI: 10.1109/CCWC54503.2022.9720874
+
+- id: banerjee_tragedy_2022
+  type: paper-conference
+  author:
+  - family: Banerjee
+    given: Vijay
+  - family: Rabinowitz
+    given: Ryan
+  - family: Stidd
+    given: Mark
+  - family: Lewis
+    given: Rory
+  - family: Brown
+    given: Philip N.
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2022
+    month: 1
+  title: The Tragedy of the Miners
+  container-title: 2022 IEEE 19th Annual Consumer Communications Networking Conference
+    (CCNC)
+  page: 760-765
+  note: 'ISSN: 2331-9860'
+  abstract: In a network of mining pools that secure Bitcoin-like blockchains, it
+    is known that a self-interested mining pool can dishonestly siphon off another
+    pool’s mining rewards by executing a block withholding (BWH) attack. In this paper,
+    we show that a BWH attack is always unprofitable for an initial startup period
+    which is at least one difficulty retarget interval (approximately 14 days for
+    Bitcoin). Furthermore, we prove that the payback period to recoup this initial
+    startup cost is always at least as long as the initial unprofitable startup interval,
+    and we show numerically that it can be substantially longer. Thus, the decision
+    of whether or not to execute a BWH attack is not a dominant strategy, and the
+    so called Miner’s Dilemma is not in fact a dilemma.
+  keyword: Costs, Transient analysis, Bitcoin, Blockchains
+  DOI: 10.1109/CCNC49033.2022.9700705
+
+- id: lawrence_shining_2022
+  type: paper-conference
+  author:
+  - family: Lawrence
+    given: Heather
+  - family: Ezeobi
+    given: Uchenna
+  - family: Bloom
+    given: Gedare
+  - family: Zhuang
+    given: Yanyan
+  issued:
+  - year: 2022
+    month: 1
+  title: Shining New Light on Useful Features for Network Intrusion Detection Algorithms
+  container-title: 2022 IEEE 19th Annual Consumer Communications Networking Conference
+    (CCNC)
+  page: 369-377
+  note: 'ISSN: 2331-9860'
+  abstract: Network intrusion detection systems (NIDS) today must quickly provide
+    visibility into anomalous behavior on a growing amount of data. Meanwhile different
+    data models have evolved over time, each providing a different set of features
+    to classify attacks. Defenders have limited time to retrain classifiers, while
+    the scale of data and feature mismatch between data models can affect the ability
+    to periodically retrain. Much work has focused on classification accuracy yet
+    feature selection is a key part of machine learning that, when optimized, reduces
+    the training time and can increase accuracy by removing poorly performing features
+    that introduce noise. With a larger feature space, the pursuit of more features
+    is not as valuable as selecting better features. In this paper, we use an ensemble
+    approach of filter methods to rank features followed by a voting technique to
+    select a subset of features. We evaluate our approach using three datasets to
+    show that, across datasets and network topologies, similar features have a trivial
+    effect on classifier accuracy after removal. Our approach identifies poorly performing
+    features to remove in a classifier-agnostic manner that can significantly save
+    time for periodic retraining of production NIDS.
+  keyword: NIDS, Network topology, Training, Costs, Production, Feature extraction,
+    Machine learning, Network intrusion detection, Ensemble Feature Selection, Network
+    Intrusion Detection Systems
+  DOI: 10.1109/CCNC49033.2022.9700654
+
+- id: hounsinou_vulnerability_2021
+  type: paper-conference
+  author:
+  - family: Hounsinou
+    given: Sena
+  - family: Stidd
+    given: Mark
+  - family: Ezeobi
+    given: Uchenna
+  - family: Olufowobi
+    given: Habeeb
+  - family: Nasri
+    given: Mitra
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2021
+    month: 12
+  title: Vulnerability of Controller Area Network to Schedule-Based Attacks
+  container-title: 2021 IEEE Real-Time Systems Symposium (RTSS)
+  page: 495-507
+  note: 'ISSN: 2576-3172'
+  abstract: The secure functioning of automotive systems is vital to the safety of
+    their passengers and other roadway users. One of the critical functions for safety
+    is the controller area network (CAN), which interconnects the safety-critical
+    electronic control units (ECUs) in the majority of ground vehicles. Unfortunately
+    CAN is known to be vulnerable to several attacks. One such attack is the bus-off
+    attack, which can be used to cause a victim ECU to disconnect itself from the
+    CAN bus and, subsequently, for an attacker to masquerade as that ECU. A limitation
+    of the bus-off attack is that it requires the attacker to achieve tight synchronization
+    between the transmission of the victim and the attacker’s injected message. In
+    this paper, we introduce a schedule-based attack framework for the CAN bus-off
+    attack that uses the real-time schedule of the CAN bus to predict more attack
+    opportunities than previously known. We describe a ranking method for an attacker
+    to select and optimize its attack injections with respect to criteria such as
+    attack success rate, bus perturbation, or attack latency. The results show that
+    vulnerabilities of the CAN bus can be enhanced by schedulebased attacks.
+  keyword: Control systems, Safety, Schedules, Real-time systems, Synchronization,
+    Controller Area Network, Land vehicles, Bus-off Attack, Perturbation methods,
+    Schedule-Based Attack
+  DOI: 10.1109/RTSS52674.2021.00051
+
+- id: hounsinou_work--progress_2021
+  type: paper-conference
+  author:
+  - family: Hounsinou
+    given: Sena
+  - family: Banerjee
+    given: Vijay
+  - family: Peng
+    given: Chunhao
+  - family: Hasan
+    given: Monowar
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2021
+    month: 12
+  title: 'Work-in-Progress: Enabling Secure Boot for Real-Time Restart-Based Cyber-Physical
+    Systems'
+  title-short: Work-in-Progress
+  container-title: 2021 IEEE Real-Time Systems Symposium (RTSS)
+  page: 524-527
+  note: 'ISSN: 2576-3172'
+  abstract: Several cyber-physical systems use real-time restart-based embedded systems
+    with the Simplex architecture to provide safety guarantees against system faults.
+    Some approaches have been developed to protect such systems from security violations
+    too, but none of these approaches can prevent an adversary from modifying the
+    operating system or application code to execute an attack that persists even after
+    a reboot. In this work, we present a secure boot mechanism to restore real-time
+    restart-based embedded systems into a secure computing environment after every
+    restart. We analyze the delay introduced by the proposed security feature and
+    present preliminary results to demonstrate the viability of our approach using
+    an open-source bootloader and real-time operating system.
+  keyword: Safety, Delays, RTEMS, Computer architecture, Cyber-physical systems, Real-time
+    systems, Embedded systems, TEE, Codes, Secure Boot, U-Boot
+  DOI: 10.1109/RTSS52674.2021.00056
+
+- id: banerjee_modular_2021
+  type: paper-conference
+  author:
+  - family: Banerjee
+    given: Vijay
+  - family: Hounsinou
+    given: Sena
+  - family: Gerber
+    given: Harrison
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2021
+    month: 10
+  title: Modular Network Stacks in the Real- Time Executive for Multiprocessor Systems
+  container-title: 2021 Resilience Week (RWS)
+  page: 1-7
+  abstract: Real-Time Executive for Multiprocessor Systems (RTEMS) is a real-time
+    operating system used by the Experimental Physics and Industrial Control System
+    (EPICS) open-source software for high-precision scientific instruments such as
+    particle accelerators and telescopes. EPICS relies on the networking capabilities
+    of RTEMS for microcontrollers that need to meet real-time constraints. However,
+    the networking available in RTEMS either lacks the necessary drivers to be fully
+    operational or lacks security features required in modern networks. In this paper,
+    we introduce a modular networking architecture for RTEMS by separating the network
+    software implementation and device drivers from the RTEMS kernel to provide them
+    as a static library for applications to use. This networking-as-a-library concept
+    provides application developers with better capabilities to select the network
+    features needed for their target application and to keep their networking software
+    undated and secure.
+  keyword: RTEMS, Microcontrollers, Libraries, Security, Physics, Real-time systems,
+    EPICS, FreeBSD, libBSD, Linear particle accelerator, lwIP, Modular Networking
+    Stack, Networking, TCP/IP, Telescopes
+  DOI: 10.1109/RWS52686.2021.9611788
+
+- id: lowe-power_gem5_2020
+  type: article-journal
+  author:
+  - family: Lowe-Power
+    given: Jason
+  - family: Ahmad
+    given: Abdul Mutaal
+  - family: Akram
+    given: Ayaz
+  - family: Alian
+    given: Mohammad
+  - family: Amslinger
+    given: Rico
+  - family: Andreozzi
+    given: Matteo
+  - family: Armejach
+    given: Adrià
+  - family: Asmussen
+    given: Nils
+  - family: Beckmann
+    given: Brad
+  - family: Bharadwaj
+    given: Srikant
+  - family: Black
+    given: Gabe
+  - family: Bloom
+    given: Gedare
+  - family: Bruce
+    given: Bobby R.
+  - family: Carvalho
+    given: Daniel Rodrigues
+  - family: Castrillon
+    given: Jeronimo
+  - family: Chen
+    given: Lizhong
+  - family: Derumigny
+    given: Nicolas
+  - family: Diestelhorst
+    given: Stephan
+  - family: Elsasser
+    given: Wendy
+  - family: Escuin
+    given: Carlos
+  - family: Fariborz
+    given: Marjan
+  - family: Farmahini-Farahani
+    given: Amin
+  - family: Fotouhi
+    given: Pouya
+  - family: Gambord
+    given: Ryan
+  - family: Gandhi
+    given: Jayneel
+  - family: Gope
+    given: Dibakar
+  - family: Grass
+    given: Thomas
+  - family: Gutierrez
+    given: Anthony
+  - family: Hanindhito
+    given: Bagus
+  - family: Hansson
+    given: Andreas
+  - family: Haria
+    given: Swapnil
+  - family: Harris
+    given: Austin
+  - family: Hayes
+    given: Timothy
+  - family: Herrera
+    given: Adrian
+  - family: Horsnell
+    given: Matthew
+  - family: Jafri
+    given: Syed Ali Raza
+  - family: Jagtap
+    given: Radhika
+  - family: Jang
+    given: Hanhwi
+  - family: Jeyapaul
+    given: Reiley
+  - family: Jones
+    given: Timothy M.
+  - family: Jung
+    given: Matthias
+  - family: Kannoth
+    given: Subash
+  - family: Khaleghzadeh
+    given: Hamidreza
+  - family: Kodama
+    given: Yuetsu
+  - family: Krishna
+    given: Tushar
+  - family: Marinelli
+    given: Tommaso
+  - family: Menard
+    given: Christian
+  - family: Mondelli
+    given: Andrea
+  - family: Moreto
+    given: Miquel
+  - family: Mück
+    given: Tiago
+  - family: Naji
+    given: Omar
+  - family: Nathella
+    given: Krishnendra
+  - family: Nguyen
+    given: Hoa
+  - family: Nikoleris
+    given: Nikos
+  - family: Olson
+    given: Lena E.
+  - family: Orr
+    given: Marc
+  - family: Pham
+    given: Binh
+  - family: Prieto
+    given: Pablo
+  - family: Reddy
+    given: Trivikram
+  - family: Roelke
+    given: Alec
+  - family: Samani
+    given: Mahyar
+  - family: Sandberg
+    given: Andreas
+  - family: Setoain
+    given: Javier
+  - family: Shingarov
+    given: Boris
+  - family: Sinclair
+    given: Matthew D.
+  - family: Ta
+    given: Tuan
+  - family: Thakur
+    given: Rahul
+  - family: Travaglini
+    given: Giacomo
+  - family: Upton
+    given: Michael
+  - family: Vaish
+    given: Nilay
+  - family: Vougioukas
+    given: Ilias
+  - family: Wang
+    given: William
+  - family: Wang
+    given: Zhengrong
+  - family: Wehn
+    given: Norbert
+  - family: Weis
+    given: Christian
+  - family: Wood
+    given: David A.
+  - family: Yoon
+    given: Hongil
+  - family: Zulian
+    given: Éder F.
+  issued:
+  - year: 2020
+    month: 9
+  accessed:
+  - year: 2022
+    month: 1
+    day: 13
+  title: 'The gem5 Simulator: Version 20.0+'
+  title-short: The gem5 Simulator
+  container-title: arXiv:2007.03152 \[cs\]
+  note: 'arXiv: 2007.03152'
+  abstract: The open-source and community-supported gem5 simulator is one of the most
+    popular tools for computer architecture research. This simulation infrastructure
+    allows researchers to model modern computer hardware at the cycle level, and it
+    has enough fidelity to boot unmodified Linux-based operating systems and run full
+    applications for multiple architectures including x86, Arm, and RISC-V. The gem5
+    simulator has been under active development over the last nine years since the
+    original gem5 release. In this time, there have been over 7500 commits to the
+    codebase from over 250 unique contributors which have improved the simulator by
+    adding new features, fixing bugs, and increasing the code quality. In this paper,
+    we give and overview of gem5’s usage and features, describe the current state
+    of the gem5 simulator, and enumerate the major changes since the initial release
+    of gem5. We also discuss how the gem5 simulator has transitioned to a formal governance
+    model to enable continued improvement and community support for the next 20 years
+    of computer architecture research.
+  keyword: Computer Science - Hardware Architecture
+  URL: http://arxiv.org/abs/2007.03152
+
+- id: dubey_strong_2021
+  type: paper-conference
+  author:
+  - family: Dubey
+    given: Richi
+  - family: Banerjee
+    given: Vijay
+  - family: Hounsinou
+    given: Sena
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2021
+    month: 9
+  accessed:
+  - year: 2021
+    month: 10
+    day: 13
+  title: 'Strong APA scheduling in a real-time operating system: Work-in-progress'
+  title-short: Strong APA scheduling in a real-time operating system
+  container-title: Proceedings of the 2021 International Conference on Embedded Software
+  collection-title: EMSOFT ’21
+  publisher: Association for Computing Machinery
+  publisher-place: New York, NY, USA
+  page: 47-48
+  abstract: Arbitrary processor affinities are used in multiprocessor systems to specify
+    the processors on which a task can be scheduled. However, affinity constraints
+    can prevent some high priority real-time tasks from being scheduled, while lower
+    priority tasks execute. This paper presents an implementation and evaluation of
+    the Strong Arbitrary Processor Affinity scheduling on a real-time operating system,
+    an approach that not only respects user-defined affinities, but also supports
+    migration of a higher priority task to allow execution of a task limited by affinity
+    constraints. Results show an improvement in response and turnaround times of higher
+    priority tasks.
+  keyword: RTOS, RTEMS, APA scheduling, SMP
+  URL: https://doi.org/10.1145/3477244.3477623
+  DOI: 10.1145/3477244.3477623
+  ISBN: 978-1-4503-8712-5
 ...
