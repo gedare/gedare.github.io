@@ -11,7 +11,7 @@ Assistant Professor
 Director, [Embedded Systems Security Lab](https://www.embedded-systems-security-lab.com/) 
 Department of Computer Science  
 University of Colorado at Colorado Springs  
-gbloom uccs edu 
+gbloom at uccs edu 
 
 # Education
 
@@ -25,8 +25,9 @@ I investigate security problems in real-time embedded systems
 and apply solutions across the hardware-software interface.
 My research has been supported by
 federal grants from the
+National Science Foundation,
 Department of Homeland Security,
-National Science Foundation, and
+National Security Agency, and
 Office of Naval Research, and
 by industry gifts from
 Northrop Grumman, Texas Instruments, Leidos, and Xilinx.
@@ -39,6 +40,9 @@ See more on my [research page](./research.html) and
 See more on my
 [publications](./publications.html) page and
 [Google Scholar](https://scholar.google.com/citations?user=8ZBnSl4AAAAJ).
+* S. Hounsinou, M. Stidd, U. Ezeobi, H. Olufowobi, M. Nasri, and **G. Bloom**.
+  *Vulnerability of Controller Area Network to Schedule-Based Attacks*,
+  42nd IEEE Real-Time Systems Symposium, **RTSS'21 (29% acceptance)**
 * **G. Bloom**.
   *WeepingCAN: A Stealthy CAN Bus-off Attack*,
   Workshop on Automotive and Autonomous Vehicle Security, **AutoSec '21 (Best Paper)**.
@@ -49,10 +53,6 @@ See more on my
   *On the Limitations and Vulnerabilities of Schedule Randomization against Schedule-Based Attacks*,
   25th IEEE Real-Time and Embedded Technology and Applications Symposium,
   **RTAS'19 (25% acceptance)**
-* J. Song, **G. Bloom**, and G. Parmer.
-  *SuperGlue: IDL-Based, System-Level Fault Tolerance for Embedded Systems*,
-  Proceedings of the 46th IEEE/IFIP International Conference on Dependable Systems and Networks,
-  **DSN '16 (22% acceptance)**
 * **G. Bloom**, G. Parmer, B. Narahari, and R. Simha.
   *Shared Hardware Data Structures for Hard Real-Time Systems*,
   12th International Conference on Embedded Software, **EMSOFT '12 (24% acceptance)**,
@@ -64,6 +64,7 @@ architecture, operating systems, real-time embedded systems, and security.
 
 See more on my [teaching page](./teaching.html)
 
+<!--
 # News and Events
 
 {% assign evts = site.data.news.events | sort:"date" | reverse %} 
@@ -74,4 +75,5 @@ See more on my [teaching page](./teaching.html)
 {%- else -%} **{{ event.title }}** {%- endif -%}
 &nbsp; {{ event.description}}
 {%- endfor -%}
+-->
 
