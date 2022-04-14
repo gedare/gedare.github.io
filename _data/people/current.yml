@@ -22,51 +22,9 @@ PostDoc:
   first_employment:
 
 PhD:
-- name: Prajjwal Dangal
-  url: 
-  pic: img/PrajjwalDangal.jpg
-  project: 
-  degree: 
-  first_employment:
-
 - name: Uchenna Ezeobi
   url: https://www.linkedin.com/in/uchenna-ezeobi-50766b58/
   pic: img/UchennaEzeobi.jpg
-  project: 
-  degree: 
-  first_employment:
-
-- name: Mark Stidd
-  url: 
-  pic: img/MarkStidd.jpg
-  project: 
-  degree: 
-  first_employment:
-
-- name: Abiola Ogundeko
-  url: 
-  pic: img/AbiolaOgundeko.jpg
-  project: 
-  degree: 
-  first_employment:
-
-- name: Chun-Hao James Peng
-  url: 
-  pic: img/JamesPeng.jpg
-  project: 
-  degree: 
-  first_employment:
-
-- name: Timothy Montgomery 
-  url: 
-  pic: 
-  project: 
-  degree: 
-  first_employment:
-
-- name: Ijeoma Olawale
-  url: 
-  pic: 
   project: 
   degree: 
   first_employment:
@@ -106,44 +64,17 @@ PhD:
   degree: 
   first_employment:
 
-MS:
-
-- name: Mark Pizzolatto
-  url: 
-  pic: img/MarkPizzolatto.jpg
-  project: 
-  degree: 
-  first_employment:
-
-- name: Justis Hsieh
-  url: 
-  pic: img/JustisHsieh.jpg
-  project: 
-  degree: 
-  first_employment:
-
-- name: Andrew Nielsen
+- name: Omolade Ikumapayi
   url: 
   pic: 
   project: 
   degree: 
   first_employment:
 
+MS:
+
 
 Undergraduate:
-- name: John Henry Clark
-  url: 
-  pic: img/JohnHenryClark.jpg
-  project: Automotive Security
-  degree: 
-  first_employment:
-
-- name: Seamus Downey 
-  url: 
-  pic: img/SeamusDowney.jpg
-  project: Automotive Security
-  degree: 
-  first_employment:
 
 
 

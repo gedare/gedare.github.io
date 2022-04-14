@@ -22,6 +22,47 @@ PhD:
   first_employment: Villanova University
 
 MS:
+- name: Abiola Ogundeko
+  url: 
+  pic: img/AbiolaOgundeko.jpg
+  project: 
+  degree: 
+  first_employment:
+
+- name: Ijeoma Olawale
+  url: 
+  pic: 
+  project: 
+  degree: 
+  first_employment:
+
+- name: Mark Pizzolatto
+  url: 
+  pic: img/MarkPizzolatto.jpg
+  project: 
+  degree: 
+  first_employment:
+
+- name: Prajjwal Dangal
+  url: 
+  pic: img/PrajjwalDangal.jpg
+  project: 
+  degree: 
+  first_employment: PearlDiver
+
+- name: Justis Hsieh
+  url: 
+  pic: img/JustisHsieh.jpg
+  project: 
+  degree: 
+  first_employment:
+
+- name: Andrew Nielsen
+  url: 
+  pic: 
+  project: 
+  degree: 
+  first_employment:
 
 Undergraduate:
 - name: Saurav Aryal
@@ -38,6 +79,13 @@ Undergraduate:
   degree: B.S. E.E. 2017
   first_employment: Reynolds American
 
+- name: Andriana Burgess
+  url: https://www.linkedin.com/in/andriana-burgess-7418b1115
+  pic: img/AndrianaBurgess.jpg
+  project: Block Programming for Internet-of-Things
+  degree: B.S. C.S. 2019
+  first_employment: Capital One
+
 - name: Andre Campbell 
   url: 
   pic: img/AndreCampbell.jpg
@@ -45,12 +93,26 @@ Undergraduate:
   degree: B.S. C.S. 2019
   first_employment: Google
 
-- name: Andriana Burgess
-  url: https://www.linkedin.com/in/andriana-burgess-7418b1115
-  pic: img/AndrianaBurgess.jpg
-  project: Block Programming for Internet-of-Things
-  degree: B.S. C.S. 2019
-  first_employment: Capital One
+- name: John Henry Clark
+  url: 
+  pic: img/JohnHenryClark.jpg
+  project: Automotive Security
+  degree: 
+  first_employment:
+
+- name: Seamus Downey 
+  url: 
+  pic: img/SeamusDowney.jpg
+  project: Automotive Security
+  degree: 
+  first_employment:
+
+- name: Harrison Gerber
+  url: 
+  pic: 
+  project: ICS Emulation
+  degree: 
+  first_employment:
 
 - name: D'Mariee Hanson
   url: 
@@ -143,4 +205,10 @@ Undergraduate:
   degree: B.S. C.S. 2018
   first_employment: Dynamic Signal 
 
+- name: Alex Urquhart
+  url: 
+  pic: 
+  project: ICS Fuzzing and Malware
+  degree: 
+  first_employment:
 
