@@ -53,6 +53,17 @@ order: 5
 
 # Alumni
 
+## Post-Doctoral Scholars
+<ul>
+{% for p in site.data.people.past.PostDoc %}
+<li> {%- if p.url -%}<a href="{{ p.url }}">{%- endif -%}
+{{ p.name }}
+{%- if p.url -%}</a>{%- endif -%}
+&nbsp; First employment: {{ p.first_employment }}.
+</li>
+{% endfor %}
+</ul>
+
 ## PhD Students
 <ul>
 {% for p in site.data.people.past.PhD %}

@@ -5,6 +5,14 @@
 #  project: 
 #  degree: 
 #  first_employment: 
+#
+PostDoc:
+- name: Sena Hounsinou
+  url:
+  pic: img/SenaHounsinou.jpg
+  project:
+  degree: Ph.D. ECE 2018
+  first_employment:
 
 PhD:
 - name: Habeeb Olufowobi
