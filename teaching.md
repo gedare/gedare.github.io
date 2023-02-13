@@ -21,8 +21,8 @@ See my [CV (PDF)](./vitae-gedare.pdf) for more.
 ## University of Colorado Colorado Springs
 * Cybersecurity for All, Spring '22.
 * System Security, Spring '20, '21. '23.
-* Computer Architecture (Undergraduate), Fall '19, '20, '21.
-* Computer Architecture (Graduate), Fall '19, '20, '21.
+* Computer Architecture (Undergraduate), Fall '19, '20, '21, '22.
+* Computer Architecture (Graduate), Fall '19, '20, '21, '22.
 
 ## Howard University (Assistant Professor)
 * Computer Organization I, Fall 2015, Fall 2016, Spring 2018.
