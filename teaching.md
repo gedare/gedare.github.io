@@ -18,9 +18,9 @@ See my [CV (PDF)](./vitae-gedare.pdf) for more.
 
 # Teaching Experience
 
-## University of Colorado Colorado Springs (Assistant Professor)
+## University of Colorado Colorado Springs
 * Cybersecurity for All, Spring '22.
-* System Security, Spring '20, '21.
+* System Security, Spring '20, '21. '23.
 * Computer Architecture (Undergraduate), Fall '19, '20, '21.
 * Computer Architecture (Graduate), Fall '19, '20, '21.
 
