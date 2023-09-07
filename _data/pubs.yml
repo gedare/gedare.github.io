@@ -1,5 +1,409 @@
 ---
 references:
+- id: bloom_information_2009
+  type: paper-conference
+  author:
+  - family: Bloom
+    given: Gedare
+  - family: Popoveniuc
+    given: Stefan
+  issued:
+  - year: 2009
+    month: 7
+  title: Information Leakage in Mix Networks with Randomized Partial Checking
+  container-title: International Conference on Information Security and Privacy
+
+- id: leontie_hardware-enforced_2009
+  type: paper-conference
+  author:
+  - family: Leontie
+    given: Eugen
+  - family: Bloom
+    given: Gedare
+  - family: Narahari
+    given: Bhagirath
+  - family: Simha
+    given: Rahul
+  - family: Zambreno
+    given: Joseph
+  issued:
+  - year: 2009
+  accessed:
+  - year: 2009
+    month: 12
+    day: 14
+  title: Hardware-enforced fine-grained isolation of untrusted code
+  container-title: Proceedings of the first ACM workshop on Secure execution of untrusted
+    code
+  publisher: ACM
+  publisher-place: Chicago, Illinois, USA
+  page: 11-18
+  abstract: We present a novel combination of hardware (architecture) and software
+    (compiler) techniques to support the safe execution of untrusted code. While other
+    efforts focus on isolating processes, our approach isolates code and data at a
+    function (as in, C function) level, to enable fine-grained protection within a
+    process as needed for downloaded plugins, libraries, andmodifications of open-source
+    projects. Our solution also enforces timing restrictions to detect denial of service
+    from untrusted code, and supports protection of dynamically allocated memory.
+    Because bookkeeping data can become substantial (permission tables that at their
+    finest granularity describe which memory words may be accessed by which functions),
+    our solution employs a stack-structured bookkeeping mechanism that tracks the
+    flow of execution and automatically dispenses with bookkeeping data when no longer
+    needed. This approach also enables an architectural optimization to handle permissions
+    for dynamically allocated memory, allowing heap blocks to be appropriately shared
+    across the trust boundary. Tested across a suite of benchmarks, our solution had
+    a worst case 12% overhead and 3.5% average overhead at the finest level of code
+    granularity (every single function in its own unit of isolation). The overhead
+    is easily reduced by using trace-driven analysis to combine functions into coarser-grained
+    groups that share permissions.
+  keyword: isolation, memory protection, architectural support for security, fine-grained
+    protection, software security
+  URL: http://portal.acm.org/citation.cfm?id=1655077.1655082&coll=Portal&dl=GUIDE&CFID=68319311&CFTOKEN=97545801
+  DOI: 10.1145/1655077.1655082
+  ISBN: 978-1-60558-782-0
+
+- id: leontie_compiler-hardware_2010
+  type: article-journal
+  author:
+  - family: Leontie
+    given: Eugen
+  - family: Bloom
+    given: Gedare
+  - family: Gelbart
+    given: Olga
+  - family: Narahari
+    given: Bhagirath
+  - family: Simha
+    given: Rahul
+  issued:
+  - year: 2010
+    month: 2
+  title: A Compiler-Hardware Technique for Protecting Against Buffer Overflow Attacks
+  container-title: Journal of Information Assurance and Security
+  page: 1-8
+  volume: '5'
+  issue: '1'
+
+- id: bloom_providing_2009
+  type: article-journal
+  author:
+  - family: Bloom
+    given: Gedare
+  - family: Narahari
+    given: Bhagirath
+  - family: Simha
+    given: Rahul
+  - family: Zambreno
+    given: Joseph
+  issued:
+  - year: 2009
+    month: 10
+  accessed:
+  - year: 2009
+    month: 4
+    day: 13
+  title: Providing secure execution environments with a last line of defense against
+    Trojan circuit attacks
+  container-title: Computers & Security
+  page: 660-669
+  volume: '28'
+  issue: '7'
+  abstract: 'Integrated circuits (ICs) are often produced in foundries that lack effective
+    security controls. In these foundries, sophisticated attackers are able to insert
+    malicious Trojan circuits that are easily hidden in the large, complex circuitry
+    that comprises modern ICs. These so-called Trojan circuits are capable of launching
+    attacks directly in hardware, or, more deviously, can facilitate software attacks.
+    Current defense against Trojan circuits consists of statistical detection techniques
+    to find such circuits before product deployment. The fact that statistical detection
+    can result in false negatives raises the obvious questions: can attacks be detected
+    post-deployment, and is secure execution nonetheless possible using chips with
+    undetected Trojan circuits? In this paper we present the Secure Heartbeat And
+    Dual-Encryption (SHADE) architecture, a compiler–hardware solution for detecting
+    and preventing a subset of Trojan circuit attacks in deployed systems. Two layers
+    of hardware encryption are combined with a heartbeat of off-chip accesses to provide
+    a secure execution environment using untrusted hardware. The SHADE system is designed
+    to complement pre-deployment detection techniques and to add a final, last-chance
+    layer of security. Keywords: Trojan circuit; Dual-encryption; HW/SW co-design;
+    IC trust; Information assurance'
+  keyword: Dual-encryption, HW/SW co-design, IC trust, Information assurance, Trojan
+    circuit
+  URL: http://dx.doi.org/10.1016/j.cose.2009.03.002
+  DOI: 10.1016/j.cose.2009.03.002
+
+- id: leontie_hardware_2009
+  type: paper-conference
+  author:
+  - family: Leontie
+    given: Eugen
+  - family: Bloom
+    given: Gedare
+  - family: Narahari
+    given: Bhagirath
+  - family: Simha
+    given: Rahul
+  - family: Zambreno
+    given: Joseph
+  issued:
+  - year: 2009
+  title: 'Hardware Containers for Software Components: A Trusted Platform for COTS-Based
+    Systems'
+  title-short: Hardware Containers for Software Components
+  container-title: Computational Science and Engineering, IEEE International Conference
+    on
+  publisher: IEEE Computer Society
+  publisher-place: Los Alamitos, CA, USA
+  page: 830-836
+  volume: '2'
+  abstract: 'Much of modern software development consists of assembling together existing
+    software components and writing the glue code that integrates them into a unified
+    application. The term COTS-Based System (CBS) is often used to describe such applications,
+    for which the components assembled are understood to be Commercial-Off-The-Shelf
+    (COTS) components written by a multitude of independent third parties. The manner
+    of assembly in CBS includes full-source components that are integrated at compile-time,
+    pure-binary libraries incorporated at load-time, and plugins that are loaded into
+    the application at execution time by the user.Because components have access to
+    system resources, applications may crash due to faulty components or may be compromised
+    by malicious components. In this paper, we ask the question: can hardware support
+    the development and deployment of CBS by providing applications with a trusted
+    platform for managing components and their interactions?We present an architecture
+    that places each CBS component in a hardware-enforced container. The hardware
+    then detects improper usage of system resources (unauthorized memory accesses
+    or denial-of-service) and enables applications to undertake a hardware-supervised
+    recovery procedure. Furthermore, the hardware also maintains a violation record
+    to enable developers to recreate the violation for the purpose of debugging and
+    further development. Taken together, the purpose of the architecture we propose
+    is to enable executing untrusted CBS code on trusted hardware.'
+  keyword: isolation, memory protection, architectural support for security, fine-grained
+    protection, software security
+  DOI: http://doi.ieeecomputersociety.org/10.1109/CSE.2009.56
+  ISBN: 978-0-7695-3823-5
+
+- id: bloom_os_2009
+  type: paper-conference
+  author:
+  - family: Bloom
+    given: Gedare
+  - family: Narahari
+    given: Bhagirath
+  - family: Simha
+    given: Rahul
+  issued:
+  - year: 2009
+  title: OS support for detecting Trojan circuit attacks
+  container-title: Hardware-Oriented Security and Trust, IEEE International Workshop
+    on
+  publisher: IEEE Computer Society
+  publisher-place: Los Alamitos, CA, USA
+  page: 100-103
+  abstract: Rapid advances in integrated circuit (IC) development predicted by Moore’s
+    Law lead to increasingly complex, hard to verify IC designs. Design insiders or
+    adversaries employed at untrusted locations can insert malicious Trojan circuits
+    capable of launching attacks in hardware or supporting software-based attacks.
+    In this paper, we provide a method for detecting Trojan circuit denial-of-service
+    attacks using a simple, verifiable hardware guard external to the complex CPU.
+    The operating system produces liveness checks, embedded in the software clock,
+    to which the guard can respond. We also present a novel method for the OS to detect
+    a hardware-software (HW/SW) Trojan privilege escalation attack by using OS-generated
+    checks to test if the CPU hardware is enforcing memory protection (MP). Our implementation
+    of fine-grained periodic checking of MP enforcement incurs only 2.2% overhead
+    using SPECint 2006.
+  DOI: 10.1109/HST.2009.5224959
+  ISBN: 978-1-4244-4805-0
+
+- id: bloom_real-time_2010
+  type: paper-conference
+  author:
+  - family: Bloom
+    given: Gedare
+  - family: Parmer
+    given: Gabriel
+  - family: Narahari
+    given: Bhagirath
+  - family: Simha
+    given: Rahul
+  issued:
+  - year: 2010
+    month: 12
+  title: Real-Time Scheduling with Hardware Data Structures
+  container-title: Work-in-Progress Session. IEEE Real-Time Systems Symposium
+
+- id: leontie_automation_2011
+  type: paper-conference
+  author:
+  - family: Leontie
+    given: E.
+  - family: Bloom
+    given: G.
+  - family: Simha
+    given: R.
+  issued:
+  - year: 2011
+    month: 10
+  title: Automation for creating and configuring security manifests for hardware containers
+  container-title: 2011 4th Symposium on Configuration Analytics and Automation (SAFECONFIG)
+  publisher: IEEE
+  page: 1-2
+  abstract: 'Hardware containers provide fine-grained memory access control to isolate
+    memory regions and sandbox memory references between components of an application.
+    A hardware reference monitor enforces a security manifest of memory access permissions
+    for the currently executing component. In this paper we discuss how automation
+    tools can help software developers to create the security manifest that configures
+    hardware containers. The goal of this work is to foster discussion about our proposals
+    for automation tools: to date we know of no solutions for extracting the metadata
+    (permissions) required for fine-grained memory access control.'
+  keyword: Monitoring, software, Automation, Hardware, access control, authorisation,
+    software developer, automation tool, Containers, fine-grained memory access control,
+    hardware container, hardware reference monitor, memory access permission, memory
+    region, sandbox memory reference, security manifest, software development management
+  DOI: 10.1109/SafeConfig.2011.6111677
+  ISBN: 978-1-4673-0401-6
+
+- id: bloom_shared_2012
+  type: paper-conference
+  author:
+  - family: Bloom
+    given: Gedare
+  - family: Parmer
+    given: Gabriel
+  - family: Narahari
+    given: Bhagirath
+  - family: Simha
+    given: Rahul
+  issued:
+  - year: 2012
+  accessed:
+  - year: 2012
+    month: 11
+    day: 24
+  title: Shared hardware data structures for hard real-time systems
+  container-title: Proceedings of the tenth ACM international conference on Embedded
+    software
+  collection-title: EMSOFT ’12
+  publisher: ACM
+  publisher-place: Tampere, Finland
+  page: 133-142
+  abstract: 'Hardware support can reduce the time spent operating on data structures
+    by exploiting circuit-level parallelism. Such hardware data structures (HWDSs)
+    can reduce the latency and jitter of data structure operations, which can benefit
+    real-time systems by reducing worst-case execution times (WCETs). For example,
+    a hardware priority queue (HWPQ) can enqueue and dequeue prioritized items in
+    constant time with low variance; the best software implementations are in logarithmic-time
+    asymptotic complexity for at least one of the enqueue or dequeue operations. The
+    main problems with HWDSs are the limited size of hardware and the complexity of
+    sharing it. In this paper we show that software support can help circumvent the
+    size and sharing limitations of hardware so that applications can benefit from
+    a HWDS. We evaluate our work by showing how the choice of software or hardware
+    affects schedulability of task sets that use multiple priority queues of varying
+    sizes. We model task behavior on two applications that are important in real-time
+    and embedded domains: the grey-weighted distance transform for topology mapping
+    and Dijkstra’s algorithm for GPS navigation. Our results indicate that HWDSs can
+    reduce the WCET of applications even when a HWDS is shared by multiple data structures
+    or when data structure sizes exceed HWDS size constraints.'
+  keyword: priority queue, schedulability, hardware data structures
+  URL: http://doi.acm.org/10.1145/2380356.2380382
+  DOI: 10.1145/2380356.2380382
+  ISBN: 978-1-4503-1425-1
+
+- id: bloom_operating_2013
+  type: thesis
+  author:
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2013
+    month: 1
+  accessed:
+  - year: 2013
+    month: 12
+    day: 6
+  title: Operating System Support for Shared Hardware Data Structures
+  publisher: The George Washington University
+  genre: PhD thesis
+  keyword: Computer science Operating System Support for Shared Hardware Data Structures
+    THE GEORGE WASHINGTON UNIVERSITY Bhagirath Narahari, Rahul Simha Bloom, Gedare
+  URL: http://gradworks.umi.com/35/46/3546645.html
+
+- id: leontie_no_2012
+  type: paper-conference
+  author:
+  - family: Leontie
+    given: E.
+  - family: Bloom
+    given: G.
+  - family: Narahari
+    given: B.
+  - family: Simha
+    given: R.
+  issued:
+  - year: 2012
+  title: 'No Principal Too Small: Memory Access Control for Fine-Grained Protection
+    Domains'
+  title-short: No Principal Too Small
+  container-title: 2012 15th Euromicro Conference on Digital System Design (DSD)
+  page: 163-170
+  note: '00002'
+  abstract: Modern programs comprise multiple threads of execution inside a single
+    principal – the process – with a single protection domain, usually a page table.
+    We propose a hardware enforced, fine-grained memory protection mechanism to divide
+    the process into smaller principals and multiple protection domains. Our approach
+    supports modern software engineering better than traditional processes by enabling
+    developers to align software components with protection mechanisms. We implemented
+    our architecture using a cycle-accurate simulator of a complex out-of-order pipeline
+    and evaluate our solution using open-source benchmarks and synthetic micro benchmarks
+    designed specifically to stress our system.
+  keyword: software, Context, Software engineering, Pipelines, isolation, memory protection,
+    architectural support for security, fine-grained protection, software security,
+    Permission, Containers, page table, complex out-of-order pipeline, cycle-accurate
+    simulator, fine-grained memory protection mechanism, memory access control, modern
+    software engineering, open-source benchmarks, random-access storage, single protection
+    domain, software components, Switches, synthetic microbenchmarks
+  DOI: 10.1109/DSD.2012.89
+
+- id: bloom_chapter_2012
+  type: chapter
+  author:
+  - family: Bloom
+    given: Gedare
+  - family: Leontie
+    given: Eugen
+  - family: Narahari
+    given: Bhagirath
+  - family: Simha
+    given: Rahul
+  issued:
+  - year: 2012
+  accessed:
+  - year: 2012
+    month: 2
+    day: 15
+  title: 'Chapter 12 - Hardware and Security: Vulnerabilities and Solutions'
+  title-short: Chapter 12 - Hardware and Security
+  container-title: Handbook on Securing Cyber-Physical Critical Infrastructure
+  publisher: Morgan Kaufmann
+  publisher-place: Boston
+  page: 305-331
+  note: '00000'
+  abstract: 'This chapter explores cyber-physical system security as it relates to
+    computer hardware. Cyber-physical systems must ensure that physical compromises
+    do not automatically lead to cyber compromises. Attacks on the processor supply
+    chain represent a serious threat to cyber-physical systems – more so than servers
+    and desktops – because critical control systems rely on hardware’s trustworthiness,
+    without which catastrophe would result: trains, planes, and automobiles crashing,
+    satellites failing, unmanned robots running amok – think of any real-time or embedded
+    system and you will find a piece of hardware whose correctness and security is
+    assumed implicitly. We discuss supply chain security for the design and fabrication
+    of processor hardware in Section 12.2. Physical compromise of fielded devices
+    offers an attacker with unique opportunities for studying, copying, and corrupting
+    components of a cyber-physical system. If the hardware does not protect itself
+    and its software, then little can be done against a sufficiently motivated and
+    resourceful attack. In Section 12.3, we examine how hardware helps make software
+    secure and consider in particular the challenging aspects of computer security
+    for devices that are not physically secured.Keywords: Trojan circuit, design for
+    hardware trust, memory protection, control flow integrity, secure coprocessing,
+    encrypted execution, and data.'
+  URL: http://www.sciencedirect.com/science/article/pii/B9780124158153000121
+  ISBN: 978-0-12-415815-3
+
 - id: leontie_hardware_2013
   type: paper-conference
   author:
@@ -133,255 +537,10 @@ references:
     this framework can be used by researchers to integrate their own scheduling algorithm
     into RTEMS and test it using a scheduling simulator before deploying it on target
     hardware.
-  keyword: RTEMS, scheduling
+  keyword: scheduling, RTEMS
   URL: http://doi.acm.org/10.1145/2597457.2597459
   DOI: 10.1145/2597457.2597459
   ISSN: 1551-3688
-
-- id: leontie_hardware_2009
-  type: paper-conference
-  author:
-  - family: Leontie
-    given: Eugen
-  - family: Bloom
-    given: Gedare
-  - family: Narahari
-    given: Bhagirath
-  - family: Simha
-    given: Rahul
-  - family: Zambreno
-    given: Joseph
-  issued:
-  - year: 2009
-  title: 'Hardware Containers for Software Components: A Trusted Platform for COTS-Based
-    Systems'
-  title-short: Hardware Containers for Software Components
-  container-title: Computational Science and Engineering, IEEE International Conference
-    on
-  publisher: IEEE Computer Society
-  publisher-place: Los Alamitos, CA, USA
-  page: 830-836
-  volume: '2'
-  abstract: 'Much of modern software development consists of assembling together existing
-    software components and writing the glue code that integrates them into a unified
-    application. The term COTS-Based System (CBS) is often used to describe such applications,
-    for which the components assembled are understood to be Commercial-Off-The-Shelf
-    (COTS) components written by a multitude of independent third parties. The manner
-    of assembly in CBS includes full-source components that are integrated at compile-time,
-    pure-binary libraries incorporated at load-time, and plugins that are loaded into
-    the application at execution time by the user.Because components have access to
-    system resources, applications may crash due to faulty components or may be compromised
-    by malicious components. In this paper, we ask the question: can hardware support
-    the development and deployment of CBS by providing applications with a trusted
-    platform for managing components and their interactions?We present an architecture
-    that places each CBS component in a hardware-enforced container. The hardware
-    then detects improper usage of system resources (unauthorized memory accesses
-    or denial-of-service) and enables applications to undertake a hardware-supervised
-    recovery procedure. Furthermore, the hardware also maintains a violation record
-    to enable developers to recreate the violation for the purpose of debugging and
-    further development. Taken together, the purpose of the architecture we propose
-    is to enable executing untrusted CBS code on trusted hardware.'
-  keyword: architectural support for security, fine-grained protection, isolation,
-    memory protection, software security
-  DOI: http://doi.ieeecomputersociety.org/10.1109/CSE.2009.56
-  ISBN: 978-0-7695-3823-5
-
-- id: bloom_os_2009
-  type: paper-conference
-  author:
-  - family: Bloom
-    given: Gedare
-  - family: Narahari
-    given: Bhagirath
-  - family: Simha
-    given: Rahul
-  issued:
-  - year: 2009
-  title: OS support for detecting Trojan circuit attacks
-  container-title: Hardware-Oriented Security and Trust, IEEE International Workshop
-    on
-  publisher: IEEE Computer Society
-  publisher-place: Los Alamitos, CA, USA
-  page: 100-103
-  abstract: Rapid advances in integrated circuit (IC) development predicted by Moore’s
-    Law lead to increasingly complex, hard to verify IC designs. Design insiders or
-    adversaries employed at untrusted locations can insert malicious Trojan circuits
-    capable of launching attacks in hardware or supporting software-based attacks.
-    In this paper, we provide a method for detecting Trojan circuit denial-of-service
-    attacks using a simple, verifiable hardware guard external to the complex CPU.
-    The operating system produces liveness checks, embedded in the software clock,
-    to which the guard can respond. We also present a novel method for the OS to detect
-    a hardware-software (HW/SW) Trojan privilege escalation attack by using OS-generated
-    checks to test if the CPU hardware is enforcing memory protection (MP). Our implementation
-    of fine-grained periodic checking of MP enforcement incurs only 2.2% overhead
-    using SPECint 2006.
-  DOI: 10.1109/HST.2009.5224959
-  ISBN: 978-1-4244-4805-0
-
-- id: leontie_hardware-enforced_2009
-  type: paper-conference
-  author:
-  - family: Leontie
-    given: Eugen
-  - family: Bloom
-    given: Gedare
-  - family: Narahari
-    given: Bhagirath
-  - family: Simha
-    given: Rahul
-  - family: Zambreno
-    given: Joseph
-  issued:
-  - year: 2009
-  accessed:
-  - year: 2009
-    month: 12
-    day: 14
-  title: Hardware-enforced fine-grained isolation of untrusted code
-  container-title: Proceedings of the first ACM workshop on Secure execution of untrusted
-    code
-  publisher: ACM
-  publisher-place: Chicago, Illinois, USA
-  page: 11-18
-  abstract: We present a novel combination of hardware (architecture) and software
-    (compiler) techniques to support the safe execution of untrusted code. While other
-    efforts focus on isolating processes, our approach isolates code and data at a
-    function (as in, C function) level, to enable fine-grained protection within a
-    process as needed for downloaded plugins, libraries, andmodifications of open-source
-    projects. Our solution also enforces timing restrictions to detect denial of service
-    from untrusted code, and supports protection of dynamically allocated memory.
-    Because bookkeeping data can become substantial (permission tables that at their
-    finest granularity describe which memory words may be accessed by which functions),
-    our solution employs a stack-structured bookkeeping mechanism that tracks the
-    flow of execution and automatically dispenses with bookkeeping data when no longer
-    needed. This approach also enables an architectural optimization to handle permissions
-    for dynamically allocated memory, allowing heap blocks to be appropriately shared
-    across the trust boundary. Tested across a suite of benchmarks, our solution had
-    a worst case 12% overhead and 3.5% average overhead at the finest level of code
-    granularity (every single function in its own unit of isolation). The overhead
-    is easily reduced by using trace-driven analysis to combine functions into coarser-grained
-    groups that share permissions.
-  keyword: architectural support for security, fine-grained protection, isolation,
-    memory protection, software security
-  URL: http://portal.acm.org/citation.cfm?id=1655077.1655082&coll=Portal&dl=GUIDE&CFID=68319311&CFTOKEN=97545801
-  DOI: 10.1145/1655077.1655082
-  ISBN: 978-1-60558-782-0
-
-- id: leontie_compiler-hardware_2010
-  type: article-journal
-  author:
-  - family: Leontie
-    given: Eugen
-  - family: Bloom
-    given: Gedare
-  - family: Gelbart
-    given: Olga
-  - family: Narahari
-    given: Bhagirath
-  - family: Simha
-    given: Rahul
-  issued:
-  - year: 2010
-    month: 2
-  title: A Compiler-Hardware Technique for Protecting Against Buffer Overflow Attacks
-  container-title: Journal of Information Assurance and Security
-  page: 1-8
-  volume: '5'
-  issue: '1'
-
-- id: bloom_providing_2009
-  type: article-journal
-  author:
-  - family: Bloom
-    given: Gedare
-  - family: Narahari
-    given: Bhagirath
-  - family: Simha
-    given: Rahul
-  - family: Zambreno
-    given: Joseph
-  issued:
-  - year: 2009
-    month: 10
-  accessed:
-  - year: 2009
-    month: 4
-    day: 13
-  title: Providing secure execution environments with a last line of defense against
-    Trojan circuit attacks
-  container-title: Computers & Security
-  page: 660-669
-  volume: '28'
-  issue: '7'
-  abstract: 'Integrated circuits (ICs) are often produced in foundries that lack effective
-    security controls. In these foundries, sophisticated attackers are able to insert
-    malicious Trojan circuits that are easily hidden in the large, complex circuitry
-    that comprises modern ICs. These so-called Trojan circuits are capable of launching
-    attacks directly in hardware, or, more deviously, can facilitate software attacks.
-    Current defense against Trojan circuits consists of statistical detection techniques
-    to find such circuits before product deployment. The fact that statistical detection
-    can result in false negatives raises the obvious questions: can attacks be detected
-    post-deployment, and is secure execution nonetheless possible using chips with
-    undetected Trojan circuits? In this paper we present the Secure Heartbeat And
-    Dual-Encryption (SHADE) architecture, a compiler–hardware solution for detecting
-    and preventing a subset of Trojan circuit attacks in deployed systems. Two layers
-    of hardware encryption are combined with a heartbeat of off-chip accesses to provide
-    a secure execution environment using untrusted hardware. The SHADE system is designed
-    to complement pre-deployment detection techniques and to add a final, last-chance
-    layer of security. Keywords: Trojan circuit; Dual-encryption; HW/SW co-design;
-    IC trust; Information assurance'
-  keyword: Dual-encryption, HW/SW co-design, IC trust, Information assurance, Trojan
-    circuit
-  URL: http://dx.doi.org/10.1016/j.cose.2009.03.002
-  DOI: 10.1016/j.cose.2009.03.002
-
-- id: bloom_real-time_2010
-  type: paper-conference
-  author:
-  - family: Bloom
-    given: Gedare
-  - family: Parmer
-    given: Gabriel
-  - family: Narahari
-    given: Bhagirath
-  - family: Simha
-    given: Rahul
-  issued:
-  - year: 2010
-    month: 12
-  title: Real-Time Scheduling with Hardware Data Structures
-  container-title: Work-in-Progress Session. IEEE Real-Time Systems Symposium
-
-- id: leontie_automation_2011
-  type: paper-conference
-  author:
-  - family: Leontie
-    given: E.
-  - family: Bloom
-    given: G.
-  - family: Simha
-    given: R.
-  issued:
-  - year: 2011
-    month: 10
-  title: Automation for creating and configuring security manifests for hardware containers
-  container-title: 2011 4th Symposium on Configuration Analytics and Automation (SAFECONFIG)
-  publisher: IEEE
-  page: 1-2
-  abstract: 'Hardware containers provide fine-grained memory access control to isolate
-    memory regions and sandbox memory references between components of an application.
-    A hardware reference monitor enforces a security manifest of memory access permissions
-    for the currently executing component. In this paper we discuss how automation
-    tools can help software developers to create the security manifest that configures
-    hardware containers. The goal of this work is to foster discussion about our proposals
-    for automation tools: to date we know of no solutions for extracting the metadata
-    (permissions) required for fine-grained memory access control.'
-  keyword: Monitoring, authorisation, access control, Hardware, Containers, software,
-    Automation, automation tool, fine-grained memory access control, hardware container,
-    hardware reference monitor, memory access permission, memory region, sandbox memory
-    reference, security manifest, software developer, software development management
-  DOI: 10.1109/SafeConfig.2011.6111677
-  ISBN: 978-1-4673-0401-6
 
 - id: bloom_hardware-enhanced_2014
   type: paper-conference
@@ -421,302 +580,10 @@ references:
     access requests. These results suggest that distributed systems using RBAC could
     use HWDS-based access enforcement to increase session throughput or to decrease
     the number of access enforcement servers without losing performance.
-  keyword: access control, enforcement, hardware data structures
+  keyword: access control, hardware data structures, enforcement
   URL: http://doi.acm.org/10.1145/2613087.2613096
   DOI: 10.1145/2613087.2613096
   ISBN: 978-1-4503-2939-2
-
-- id: bloom_shared_2012
-  type: paper-conference
-  author:
-  - family: Bloom
-    given: Gedare
-  - family: Parmer
-    given: Gabriel
-  - family: Narahari
-    given: Bhagirath
-  - family: Simha
-    given: Rahul
-  issued:
-  - year: 2012
-  accessed:
-  - year: 2012
-    month: 11
-    day: 24
-  title: Shared hardware data structures for hard real-time systems
-  container-title: Proceedings of the tenth ACM international conference on Embedded
-    software
-  collection-title: EMSOFT ’12
-  publisher: ACM
-  publisher-place: Tampere, Finland
-  page: 133-142
-  abstract: 'Hardware support can reduce the time spent operating on data structures
-    by exploiting circuit-level parallelism. Such hardware data structures (HWDSs)
-    can reduce the latency and jitter of data structure operations, which can benefit
-    real-time systems by reducing worst-case execution times (WCETs). For example,
-    a hardware priority queue (HWPQ) can enqueue and dequeue prioritized items in
-    constant time with low variance; the best software implementations are in logarithmic-time
-    asymptotic complexity for at least one of the enqueue or dequeue operations. The
-    main problems with HWDSs are the limited size of hardware and the complexity of
-    sharing it. In this paper we show that software support can help circumvent the
-    size and sharing limitations of hardware so that applications can benefit from
-    a HWDS. We evaluate our work by showing how the choice of software or hardware
-    affects schedulability of task sets that use multiple priority queues of varying
-    sizes. We model task behavior on two applications that are important in real-time
-    and embedded domains: the grey-weighted distance transform for topology mapping
-    and Dijkstra’s algorithm for GPS navigation. Our results indicate that HWDSs can
-    reduce the WCET of applications even when a HWDS is shared by multiple data structures
-    or when data structure sizes exceed HWDS size constraints.'
-  keyword: hardware data structures, priority queue, schedulability
-  URL: http://doi.acm.org/10.1145/2380356.2380382
-  DOI: 10.1145/2380356.2380382
-  ISBN: 978-1-4503-1425-1
-
-- id: bloom_operating_2013
-  type: thesis
-  author:
-  - family: Bloom
-    given: Gedare
-  issued:
-  - year: 2013
-    month: 1
-  accessed:
-  - year: 2013
-    month: 12
-    day: 6
-  title: Operating System Support for Shared Hardware Data Structures
-  publisher: The George Washington University
-  genre: PhD thesis
-  keyword: Computer science Operating System Support for Shared Hardware Data Structures
-    THE GEORGE WASHINGTON UNIVERSITY Bhagirath Narahari, Rahul Simha Bloom, Gedare
-  URL: http://gradworks.umi.com/35/46/3546645.html
-
-- id: leontie_no_2012
-  type: paper-conference
-  author:
-  - family: Leontie
-    given: E.
-  - family: Bloom
-    given: G.
-  - family: Narahari
-    given: B.
-  - family: Simha
-    given: R.
-  issued:
-  - year: 2012
-  title: 'No Principal Too Small: Memory Access Control for Fine-Grained Protection
-    Domains'
-  title-short: No Principal Too Small
-  container-title: 2012 15th Euromicro Conference on Digital System Design (DSD)
-  page: 163-170
-  note: '00002'
-  abstract: Modern programs comprise multiple threads of execution inside a single
-    principal – the process – with a single protection domain, usually a page table.
-    We propose a hardware enforced, fine-grained memory protection mechanism to divide
-    the process into smaller principals and multiple protection domains. Our approach
-    supports modern software engineering better than traditional processes by enabling
-    developers to align software components with protection mechanisms. We implemented
-    our architecture using a cycle-accurate simulator of a complex out-of-order pipeline
-    and evaluate our solution using open-source benchmarks and synthetic micro benchmarks
-    designed specifically to stress our system.
-  keyword: Context, architectural support for security, complex out-of-order pipeline,
-    Containers, cycle-accurate simulator, fine-grained memory protection mechanism,
-    fine-grained protection, isolation, memory access control, memory protection,
-    modern software engineering, open-source benchmarks, page table, Permission, Pipelines,
-    random-access storage, single protection domain, software, software components,
-    Software engineering, software security, Switches, synthetic microbenchmarks
-  DOI: 10.1109/DSD.2012.89
-
-- id: bloom_chapter_2012
-  type: chapter
-  author:
-  - family: Bloom
-    given: Gedare
-  - family: Leontie
-    given: Eugen
-  - family: Narahari
-    given: Bhagirath
-  - family: Simha
-    given: Rahul
-  issued:
-  - year: 2012
-  accessed:
-  - year: 2012
-    month: 2
-    day: 15
-  title: 'Chapter 12 - Hardware and Security: Vulnerabilities and Solutions'
-  title-short: Chapter 12 - Hardware and Security
-  container-title: Handbook on Securing Cyber-Physical Critical Infrastructure
-  publisher: Morgan Kaufmann
-  publisher-place: Boston
-  page: 305-331
-  note: '00000'
-  abstract: 'This chapter explores cyber-physical system security as it relates to
-    computer hardware. Cyber-physical systems must ensure that physical compromises
-    do not automatically lead to cyber compromises. Attacks on the processor supply
-    chain represent a serious threat to cyber-physical systems – more so than servers
-    and desktops – because critical control systems rely on hardware’s trustworthiness,
-    without which catastrophe would result: trains, planes, and automobiles crashing,
-    satellites failing, unmanned robots running amok – think of any real-time or embedded
-    system and you will find a piece of hardware whose correctness and security is
-    assumed implicitly. We discuss supply chain security for the design and fabrication
-    of processor hardware in Section 12.2. Physical compromise of fielded devices
-    offers an attacker with unique opportunities for studying, copying, and corrupting
-    components of a cyber-physical system. If the hardware does not protect itself
-    and its software, then little can be done against a sufficiently motivated and
-    resourceful attack. In Section 12.3, we examine how hardware helps make software
-    secure and consider in particular the challenging aspects of computer security
-    for devices that are not physically secured.Keywords: Trojan circuit, design for
-    hardware trust, memory protection, control flow integrity, secure coprocessing,
-    encrypted execution, and data.'
-  URL: http://www.sciencedirect.com/science/article/pii/B9780124158153000121
-  ISBN: 978-0-12-415815-3
-
-- id: cederman_rtems_2015
-  type: paper-conference
-  author:
-  - family: Cederman
-    given: Daniel
-  - family: Hellström
-    given: Daniel
-  - family: Sherrill
-    given: Joel
-  - family: Bloom
-    given: Gedare
-  - family: Patte
-    given: Mathieu
-  - family: Zulianello
-    given: Marco
-  issued:
-  - year: 2015
-    month: 5
-  title: RTEMS SMP and MTAPI for Efficient Multi-Core Space Applications on LEON3/LEON4
-    Processors
-  container-title: Data Systems In Aerospace
-  publisher-place: Barcelona, Spain
-
-- id: young_towards_2016
-  type: paper-conference
-  author:
-  - family: Young
-    given: Clinton
-  - family: Zambreno
-    given: Joseph
-  - family: Bloom
-    given: Gedare
-  issued:
-  - year: 2016
-    month: 11
-  title: Towards a Fail-Operational Intrusion Detection System for In-Vehicle Networks
-  container-title: Proceedings of the Workshop on Security and Dependability of Critical
-    Embedded Real-Time Systems (CERTS)
-  abstract: The landscape of automotive in-vehicle networks is changing driven by
-    the vast options for infotainment features and progress toward fully-autonomous
-    vehicles. However, the security of automotive networks is lagging behind feature-driven
-    technologies, and new vulnerabilities are constantly being discovered. In this
-    paper, we introduce a road map towards a security solution for in-vehicle networks
-    that can detect anomalous and failed states of the network and adaptively respond
-    in real-time to maintain a fail-operational system.
-  keyword: automotive security
-
-- id: bloom_supporting_2017
-  type: paper-conference
-  author:
-  - family: Bloom
-    given: G.
-  - family: Cena
-    given: G.
-  - family: Bertolotti
-    given: I. C.
-  - family: Hu
-    given: T.
-  - family: Valenzano
-    given: A.
-  issued:
-  - year: 2017
-    month: 3
-  title: Supporting security protocols on CAN-based networks
-  container-title: 2017 IEEE International Conference on Industrial Technology (ICIT)
-  page: 1334-1339
-  abstract: The ever-increasing variety of services built on top of the Controller
-    Area Network (CAN), along with the recent discovery of vulnerabilities in CAN-based
-    automotive systems (some of them demonstrated in practice), stimulated a renewed
-    attention to security-oriented enhancements of the CAN protocol. The issue is
-    further compounded nowadays because, unlike in the past, security can no longer
-    be enforced by physical bus segregation. This paper describes how CAN XR, a recently
-    proposed extension of the CAN data-link layer, can effectively support the distributed
-    calculation of arbitrary binary Boolean functions, which are the foundation of
-    most security protocols, without necessarily disclosing their operands on the
-    bus. The feasibility of the approach is then shown through experimental evaluation
-    and by confirming its applicability to a shared key generation protocol proposed
-    in literature.
-  keyword: cryptographic protocols, Protocols, Electronic mail, Security, computer
-    network security, arbitrary binary Boolean functions, Boolean functions, CAN data-link
-    layer, CAN protocol security-oriented enhancements, CAN XR, CAN-based automotive
-    systems, CAN-based networks, controller area network, Controller area network
-    (CAN), controller area networks, Cryptographic protocols, Network security, Observers,
-    Payloads, physical bus segregation, security protocols, shared key generation
-    protocol, Standards
-  DOI: 10.1109/ICIT.2017.7915557
-
-- id: bloom_optimized_2017
-  type: paper-conference
-  author:
-  - family: Bloom
-    given: G.
-  - family: Cena
-    given: G.
-  - family: Bertolotti
-    given: I. C.
-  - family: Hu
-    given: T.
-  - family: Valenzano
-    given: A.
-  issued:
-  - year: 2017
-    month: 5
-  title: Optimized event notification in CAN through in-frame replies and Bloom filters
-  container-title: 2017 IEEE 13th International Workshop on Factory Communication
-    Systems (WFCS)
-  page: 1-10
-  abstract: Thanks to its distributed and asynchronous medium access control mechanism,
-    CAN is the ideal choice for interconnecting devices in event-driven systems. When
-    timing requirements of applications are not particularly demanding, as in the
-    case of, e.g., reactive and proactive maintenance, constraints on event delivery
-    can be relaxed, so that their notification may rely on best-effort approaches.
-    In this paper, a number of techniques are taken into account for notifying events
-    in such a kind of systems, and their performance has been evaluated. Besides conventional
-    CAN, a recent proposal for extending this protocol, termed CAN XR, is considered.
-    Moreover, the adoption of Bloom filters to cope with rare events in very large
-    systems has also been evaluated.
-  keyword: Electronic mail, Real-time systems, CAN XR, controller area networks, Payloads,
-    access protocols, asynchronous medium access control mechanism, Bloom filters,
-    data structures, distributed medium access control mechanism, event-driven systems,
-    in-frame replies, Media Access Protocol, optimized event notification, Proposals,
-    protocol, Timing
-  DOI: 10.1109/WFCS.2017.7991963
-
-- id: bloom_aligning_2018
-  type: article-journal
-  author:
-  - family: Bloom
-    given: Gedare
-  - family: Sherrill
-    given: Joel
-  - family: Gilliland
-    given: Gary
-  issued:
-  - year: 2018
-    month: 3
-  title: Aligning Deos and RTEMS with the FACE Safety Base Operating System Profile
-  container-title: SIGBED Rev.
-  page: 15-21
-  volume: '15'
-  issue: '1'
-  keyword: avionics, Deos, FACE, paravirtualization, POSIX, RTEMS
-  URL: http://doi.acm.org/10.1145/3199610.3199612
-  DOI: 10.1145/3199610.3199612
-  ISSN: 1551-3688
 
 - id: felbinger_test_2015
   type: paper-conference
@@ -799,15 +666,15 @@ references:
     memory mapping manager and scheduler). Additionally, we evaluate the performance
     of SuperGlue in a web-server application. Results show that SuperGlue improves
     system reliability with only a small performance degradation of 11.84%.
-  keyword: program compilers, fault tolerance, embedded systems, Hardware, code generation,
-    commodity hardware isolation, component-based operating system, dependable system
-    design, fault injection campaign, fault mitigation, Fault tolerant systems, IDL-based
-    system-level fault tolerance, instruction sets, interface description language,
-    interface-directed fault recovery, interface-driven recovery, low-level system
-    services, microrebooting, object-oriented programming, operating systems (computers),
-    recovery code system, servers, software fault tolerance, specification languages,
-    SuperGlue, system reliability, transient analysis, transient faults, Web-server
-    application
+  keyword: fault tolerance, software fault tolerance, Hardware, servers, transient
+    analysis, embedded systems, program compilers, object-oriented programming, code
+    generation, instruction sets, operating systems (computers), commodity hardware
+    isolation, component-based operating system, dependable system design, fault injection
+    campaign, fault mitigation, Fault tolerant systems, IDL-based system-level fault
+    tolerance, interface description language, interface-directed fault recovery,
+    interface-driven recovery, low-level system services, microrebooting, recovery
+    code system, specification languages, SuperGlue, system reliability, transient
+    faults, Web-server application
   DOI: 10.1109/DSN.2016.29
 
 - id: bloom_fab_2010
@@ -861,12 +728,12 @@ references:
     We call our approach the Morph Onion-encryption Replication PRR HAL, or MORPH.
     MORPH aims to provide a stable interface for embedded systems developers to use
     in deploying applications that are resilient to hardware Trojans.
-  keyword: trusted computing, IP networks, arbitrated voting, cryptography, design-time
-    Trojans, embedded systems, embedded systems developers, fabrication-time trojans,
-    Field programmable gate arrays, FPGA SoC architecture, HAL, Hardware, hardware
-    abstraction layer, hardware Trojans, MORPH, morph onion-encryption replication
-    PRR HAL, on-chip resource morphing, Partial Runtime reconfiguration, PRR, root-of-trust,
-    secret leaking, secure systems, system-on-chip, Trojan horses, trusted software
+  keyword: cryptography, Hardware, trusted computing, IP networks, system-on-chip,
+    embedded systems, Trojan horses, Field programmable gate arrays, hardware Trojans,
+    secure systems, Partial Runtime reconfiguration, arbitrated voting, design-time
+    Trojans, embedded systems developers, fabrication-time trojans, FPGA SoC architecture,
+    HAL, hardware abstraction layer, MORPH, morph onion-encryption replication PRR
+    HAL, on-chip resource morphing, PRR, root-of-trust, secret leaking, trusted software
   DOI: 10.1109/HST.2015.7140235
 
 - id: bloom_lockdown:_2016
@@ -904,7 +771,7 @@ references:
     component-based microkernel OS. Initial performance results for quarantine show
     that about 98% of the overhead comes from the cost of copying memory to the new
     protection domain.
-  keyword: access control, confinement, microkernel, protection
+  keyword: protection, access control, confinement, microkernel
   URL: http://doi.acm.org/10.1145/2905760.2905764
   DOI: 10.1145/2905760.2905764
   ISBN: 978-1-4503-4295-7
@@ -948,185 +815,416 @@ references:
     a factor of 2.5 throughput speedup while using less processing time than Apache
     on Linux, and that the system can intentionally control system throughput through
     intelligent memory allocation.
-  keyword: garbage collection, memory management, shared memory, zero-copy
+  keyword: memory management, shared memory, garbage collection, zero-copy
   URL: http://doi.acm.org/10.1145/2926697.2926703
   DOI: 10.1145/2926697.2926703
   ISBN: 978-1-4503-4317-6
 
-- id: olufowobi_controller_2019
+- id: cederman_rtems_2015
   type: paper-conference
   author:
-  - family: Olufowobi
-    given: Habeeb
-  - family: Hounsinou
-    given: Sena
+  - family: Cederman
+    given: Daniel
+  - family: Hellström
+    given: Daniel
+  - family: Sherrill
+    given: Joel
   - family: Bloom
     given: Gedare
+  - family: Patte
+    given: Mathieu
+  - family: Zulianello
+    given: Marco
   issued:
-  - year: 2019
-  title: Controller Area Network Intrusion Prevention System Leveraging Fault Recovery
-  container-title: Proceedings of the ACM Workshop on Cyber-Physical Systems Security
-    & Privacy
-  collection-title: CPS-SPC’19
-  publisher: Association for Computing Machinery
-  publisher-place: New York, NY, USA
-  page: 63-73
-  note: 'event-place: London, United Kingdom'
-  keyword: intrusion detection systems, automotive security, can, data injection,
-    intrusion prevention system, reboot recovery
-  URL: https://doi.org/10.1145/3338499.3357360
-  DOI: 10.1145/3338499.3357360
-  ISBN: 978-1-4503-6831-5
+  - year: 2015
+    month: 5
+  title: RTEMS SMP and MTAPI for Efficient Multi-Core Space Applications on LEON3/LEON4
+    Processors
+  container-title: Data Systems In Aerospace
+  publisher-place: Barcelona, Spain
 
-- id: bloom_event_2019
+- id: bloom_aligning_2018
   type: article-journal
   author:
   - family: Bloom
     given: Gedare
-  - family: Cena
-    given: Gianluca
-  - family: Bertolotti
-    given: Ivan Cibrario
-  - family: Hu
-    given: Tingting
-  - family: Navet
-    given: Nicolas
-  - family: Valenzano
-    given: Adriano
+  - family: Sherrill
+    given: Joel
+  - family: Gilliland
+    given: Gary
   issued:
-  - year: 2019
-    month: 10
-  title: Event Notification in CAN-Based Sensor Networks
-  container-title: IEEE Transactions on Industrial Informatics
-  page: 5613-5625
+  - year: 2018
+    month: 3
+  title: Aligning Deos and RTEMS with the FACE Safety Base Operating System Profile
+  container-title: SIGBED Rev.
+  page: 15-21
   volume: '15'
-  issue: '10'
-  abstract: Preventive and reactive maintenance require the collection of an ever-increasing
-    amount of information from industrial plants and other complex systems such as
-    those based on robotized cells, a need that can be fulfilled by means of a suitable
-    event notification mechanism. At the same time, timing and delivery reliability
-    requirements in those scenarios are typically less demanding than those in other
-    cases, thus enabling the adoption of best-effort notification approaches. This
-    paper presents, evaluates, and compares some of those approaches, based on either
-    standard Controller Area Network (CAN) messaging or a recently proposed protocol
-    extension called CAN with eXtensible in-frame Reply (CAN XR). In the second case,
-    the combined use of Bloom filters is also envisaged to increase flexibility. Results
-    show that the latter approaches are advantageous in a range of event generation
-    rates and network topologies of practical relevance.
-  keyword: Protocols, Cyber-Physical Systems, protocols, controller area networks,
-    data structures, Wireless sensor networks, real-time systems, Safety, wireless
-    sensor networks, Informatics, Industry 4.0, industrial plants, Controller Area
-    Network (CAN), Bloom filter, CAN-based sensor networks, complex systems, Cyber-Physical
-    Action Language (CPAL), delivery reliability requirements, event generation rates,
-    event notification, Industrial Internet of Things (IIoT), Industrial plants, Maintenance
-    engineering, network topologies, preventive maintenance, protocol extension, reactive
-    maintenance, robotized cells, standard Controller Area Network messaging, suitable
-    event notification mechanism, telecommunication computing, telecommunication network
-    reliability, telecommunication network topology, Transceivers, wired sensor networks
-  DOI: 10.1109/TII.2019.2904082
-  ISSN: 1941-0050
+  issue: '1'
+  keyword: POSIX, paravirtualization, avionics, RTEMS, Deos, FACE
+  URL: http://doi.acm.org/10.1145/3199610.3199612
+  DOI: 10.1145/3199610.3199612
+  ISSN: 1551-3688
 
-- id: young_survey_2019
-  type: article-journal
+- id: bloom_optimized_2017
+  type: paper-conference
+  author:
+  - family: Bloom
+    given: G.
+  - family: Cena
+    given: G.
+  - family: Bertolotti
+    given: I. C.
+  - family: Hu
+    given: T.
+  - family: Valenzano
+    given: A.
+  issued:
+  - year: 2017
+    month: 5
+  title: Optimized event notification in CAN through in-frame replies and Bloom filters
+  container-title: 2017 IEEE 13th International Workshop on Factory Communication
+    Systems (WFCS)
+  page: 1-10
+  abstract: Thanks to its distributed and asynchronous medium access control mechanism,
+    CAN is the ideal choice for interconnecting devices in event-driven systems. When
+    timing requirements of applications are not particularly demanding, as in the
+    case of, e.g., reactive and proactive maintenance, constraints on event delivery
+    can be relaxed, so that their notification may rely on best-effort approaches.
+    In this paper, a number of techniques are taken into account for notifying events
+    in such a kind of systems, and their performance has been evaluated. Besides conventional
+    CAN, a recent proposal for extending this protocol, termed CAN XR, is considered.
+    Moreover, the adoption of Bloom filters to cope with rare events in very large
+    systems has also been evaluated.
+  keyword: data structures, controller area networks, Payloads, Electronic mail, access
+    protocols, Real-time systems, asynchronous medium access control mechanism, Bloom
+    filters, CAN XR, distributed medium access control mechanism, event-driven systems,
+    in-frame replies, Media Access Protocol, optimized event notification, Proposals,
+    protocol, Timing
+  DOI: 10.1109/WFCS.2017.7991963
+
+- id: bloom_supporting_2017
+  type: paper-conference
+  author:
+  - family: Bloom
+    given: G.
+  - family: Cena
+    given: G.
+  - family: Bertolotti
+    given: I. C.
+  - family: Hu
+    given: T.
+  - family: Valenzano
+    given: A.
+  issued:
+  - year: 2017
+    month: 3
+  title: Supporting security protocols on CAN-based networks
+  container-title: 2017 IEEE International Conference on Industrial Technology (ICIT)
+  page: 1334-1339
+  abstract: The ever-increasing variety of services built on top of the Controller
+    Area Network (CAN), along with the recent discovery of vulnerabilities in CAN-based
+    automotive systems (some of them demonstrated in practice), stimulated a renewed
+    attention to security-oriented enhancements of the CAN protocol. The issue is
+    further compounded nowadays because, unlike in the past, security can no longer
+    be enforced by physical bus segregation. This paper describes how CAN XR, a recently
+    proposed extension of the CAN data-link layer, can effectively support the distributed
+    calculation of arbitrary binary Boolean functions, which are the foundation of
+    most security protocols, without necessarily disclosing their operands on the
+    bus. The feasibility of the approach is then shown through experimental evaluation
+    and by confirming its applicability to a shared key generation protocol proposed
+    in literature.
+  keyword: computer network security, Boolean functions, security protocols, Security,
+    cryptographic protocols, controller area networks, Payloads, Electronic mail,
+    Protocols, Network security, Cryptographic protocols, Standards, CAN XR, arbitrary
+    binary Boolean functions, CAN data-link layer, CAN protocol security-oriented
+    enhancements, CAN-based automotive systems, CAN-based networks, controller area
+    network, Controller area network (CAN), Observers, physical bus segregation, shared
+    key generation protocol
+  DOI: 10.1109/ICIT.2017.7915557
+
+- id: young_towards_2016
+  type: paper-conference
   author:
   - family: Young
     given: Clinton
   - family: Zambreno
     given: Joseph
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2016
+    month: 11
+  title: Towards a Fail-Operational Intrusion Detection System for In-Vehicle Networks
+  container-title: Proceedings of the Workshop on Security and Dependability of Critical
+    Embedded Real-Time Systems (CERTS)
+  abstract: The landscape of automotive in-vehicle networks is changing driven by
+    the vast options for infotainment features and progress toward fully-autonomous
+    vehicles. However, the security of automotive networks is lagging behind feature-driven
+    technologies, and new vulnerabilities are constantly being discovered. In this
+    paper, we introduce a road map towards a security solution for in-vehicle networks
+    that can detect anomalous and failed states of the network and adaptively respond
+    in real-time to maintain a fail-operational system.
+  keyword: automotive security
+
+- id: nwafor_anomaly-based_2018
+  type: paper-conference
+  author:
+  - family: Nwafor
+    given: Ebelechukwu
+  - family: Campbell
+    given: Andre
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2018
+    month: 4
+  title: Anomaly-based Intrusion Detection of IoT Device Sensor Data using Provenance
+    Graphs
+  container-title: 1st International Workshop on Security and Privacy for the Internet-of-Things
+  publisher-place: Orlando, Florida, USA
+
+- id: armbrust_spatial_2014
+  type: paper-conference
+  author:
+  - family: Armbrust
+    given: Eric
+  - family: Song
+    given: Jiguo
+  - family: Bloom
+    given: Gedare
+  - family: Parmer
+    given: Gabriel
+  issued:
+  - year: 2014
+  title: On Spatial Isolation for Mixed Criticality, Embedded Systems
+  container-title: Proc. 2nd Workshop on Mixed Criticality Systems (WMC), RTSS
+  page: 15-20
+
+- id: marshall_n-modular_2016
+  type: paper-conference
+  author:
+  - family: Marshall
+    given: James
+  - family: Parmer
+    given: Gabriel
+  - family: Simha
+    given: Rahul
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2016
+  title: 'N-Modular Redundant Real-Time Middleware: Design and Implementation'
+  title-short: N-Modular Redundant Real-Time Middleware
+  container-title: EWiLi 2016
+
+- id: nwafor_towards_2017
+  type: paper-conference
+  author:
+  - family: Nwafor
+    given: E.
+  - family: Campbell
+    given: A.
+  - family: Hill
+    given: D.
+  - family: Bloom
+    given: G.
+  issued:
+  - year: 2017
+    month: 8
+  title: Towards a provenance collection framework for Internet of Things devices
+  container-title: 2017 IEEE SmartWorld, Ubiquitous Intelligence Computing, Advanced
+    Trusted Computed, Scalable Computing Communications, Cloud Big Data Computing,
+    Internet of People and Smart City Innovation (SmartWorld/SCALCOM/UIC/ATC/CBDCom/IOP/SCI)
+  page: 1-6
+  abstract: The Internet of Things (IoT) offers immense benefits by enabling devices
+    to leverage networked resources thereby making intelligent decisions. The numerous
+    heterogeneous connected devices that exist throughout the IoT system creates new
+    security and privacy concerns. Some of these concerns can be overcome through
+    trust, transparency, and integrity, which can be achieved with data provenance.
+    Data provenance, also known as data lineage, provides a history of transformations
+    that occurs on a data object from the time it was created to its current state.
+    Data provenance has been explored in the areas of scientific computing, business,
+    forensic analysis, and intrusion detection. Data provenance can help in detecting
+    and mitigating malicious cyber attacks. In this paper, we explore the integration
+    of provenance within the IoT. We introduce Provenance Aware Internet of Things
+    System (PAIoTS), a provenance collection framework for IoT devices. We evaluate
+    the effectiveness of our framework by developing a prototype system for proof
+    of concept.
+  keyword: Computational modeling, Internet of Things, Security, Data models, Temperature
+    sensors, History, Cloud computing
+  DOI: 10.1109/UIC-ATC.2017.8397531
+
+- id: bloom_design_2018
+  type: paper-conference
+  author:
+  - family: Bloom
+    given: G.
+  - family: Alsulami
+    given: B.
+  - family: Nwafor
+    given: E.
+  - family: Bertolotti
+    given: I. C.
+  issued:
+  - year: 2018
+    month: 6
+  title: Design patterns for the industrial Internet of Things
+  container-title: 2018 14th IEEE International Workshop on Factory Communication
+    Systems (WFCS)
+  page: 1-10
+  abstract: 'The Internet of Things (IoT) is a vast collection of interconnected sensors,
+    devices, and services that share data and information over the Internet with the
+    objective of leveraging multiple information sources to optimize related systems.
+    The technologies associated with the IoT have significantly improved the quality
+    of many existing applications by reducing costs, improving functionality, increasing
+    access to resources, and enhancing automation. The adoption of IoT by industries
+    has led to the next industrial revolution: Industry 4.0. The rise of the Industrial
+    IoT (IIoT) promises to enhance factory management, process optimization, worker
+    safety, and more. However, the rollout of the IIoT is not without significant
+    issues, and many of these act as major barriers that prevent fully achieving the
+    vision of Industry 4.0. One major area of concern is the security and privacy
+    of the massive datasets that are captured and stored, which may leak information
+    about intellectual property, trade secrets, and other competitive knowledge. As
+    a way forward toward solving security and privacy concerns, we aim in this paper
+    to identify common input-output (I/O) design patterns that exist in applications
+    of the IIoT. These design patterns enable constructing an abstract model representation
+    of data flow semantics used by such applications, and therefore better understand
+    how to secure the information related to IIoT operations. In this paper, we describe
+    communication protocols and identify common I/O design patterns for IIoT applications
+    with an emphasis on data flow in edge devices, which, in the industrial control
+    system (ICS) setting, are most often involved in process control or monitoring.'
+  keyword: Internet of Things, Security, IIoT, Industry 4.0, Sensors, Cloud computing,
+    Wireless sensor networks, Design Patterns, Industrial Internet of Things, Industries
+  DOI: 10.1109/WFCS.2018.8402353
+
+- id: tessler_work--progress:_2017
+  type: paper-conference
+  author:
+  - family: Tessler
+    given: C.
+  - family: Bloom
+    given: G.
+  - family: Fisher
+    given: N.
+  issued:
+  - year: 2017
+    month: 4
+  title: 'Work-in-Progress: Reducing Cache Conflicts via Interrupts and BUNDLE Scheduling'
+  title-short: Work-in-Progress
+  container-title: 2017 IEEE Real-Time and Embedded Technology and Applications Symposium
+    (RTAS)
+  page: 125-128
+  abstract: 'In "BUNDLE: Real-Time Multi-Threaded Scheduling to Reduce Cache Contention"
+    Tessler and Fisher present a positive perspective of instruction caches for hard
+    real-time multithreaded tasks. The thread-aware scheduling algorithm limits the
+    execution of threads to sets of instructions that cannot result in cache conflicts.
+    Identification of these sets result in conflict free regions which are used to
+    identify scheduling groups called bundles in the BUNDLE scheduling algorithm.
+    Placement of a thread in a particular bundle depends on, what the authors call,
+    "anticipating execution". However, they do not define a complete mechanism to
+    anticipate execution. In this work, we propose a method to anticipate execution
+    that modifies cache hardware and introduces a new interrupt raised prior to a
+    cache conflict. This new interrupt is combined with (a slightly modified version
+    of) the BUNDLE scheduling algorithm. The intent is to implement these hardware
+    modifications for ARM on the gem5 simulator with the scheduling algorithm integrated
+    into the RTEMS operating system. The hope is this work serves as further motivation
+    to bring the positive perspective of caches to physical processors and operating
+    systems.'
+  keyword: Hardware, Indexes, cache storage, multi-threading, operating system kernels,
+    scheduling, Registers, interrupts, ARM, Scheduling algorithms, anticipating execution,
+    BUNDLE scheduling, cache conflict reduction, cache contention reduction, Cache
+    memory, Cache Memory, gem5 simulator, hardware modifications, instruction caches,
+    Instruction sets, Multithreading, physical processors, real-time multi-threaded
+    scheduling, real-time multithreaded tasks, RTEMS operating system, Static Analysis,
+    thread-aware scheduling algorithm
+  DOI: 10.1109/RTAS.2017.30
+
+- id: mohan_special_2018
+  type: paper-conference
+  author:
+  - family: Mohan
+    given: S.
+  - family: Asplund
+    given: M.
+  - family: Bloom
+    given: G.
+  - family: Sadeghi
+    given: A.
+  - family: Ibrahim
+    given: A.
+  - family: Salajageh
+    given: N.
+  - family: Griffioen
+    given: P.
+  - family: Sinipoli
+    given: B.
+  issued:
+  - year: 2018
+    month: 9
+  title: 'Special Session: The Future of IoT Security'
+  title-short: Special Session
+  container-title: 2018 International Conference on Embedded Software (EMSOFT)
+  page: 1-7
+  abstract: 'The Internet-of-Things (IoT) is a large and complex domain. These systems
+    are often constructed using a very diverse set of hardware, software and protocols.
+    This, combined with the ever increasing number of IoT solutions/services that
+    are rushed to market means that most such systems are rife with security holes.
+    Recent incidents (e.g., the Mirai botnet) further highlight such security issues.
+    With emerging technologies such as blockchain and software-defined networks (SDNs),
+    new security solutions are possible in the IoT domain. In this paper we will explore
+    future trends in IoT security: (a) the use of blockchains in IoT security, (b)
+    data provenance for sensor information, (c) reliable and secure transport mechanisms
+    using SDNs (d) scalable authentication and remote attestation mechanisms for IoT
+    devices and (e) threat modeling and risk/maturity assessment frameworks for the
+    domain.'
+  keyword: data integrity, sensor fusion, Resilience, message authentication, Internet
+    of Things, security solutions, data provenance, Cryptography, Software, IoT domain,
+    IoT devices, Reliability, IoT security, authentication mechanism, IoT solutions/services,
+    Quality of service, remote attestation mechanism, sensor information, transport
+    mechanisms
+  DOI: 10.1109/EMSOFT.2018.8537206
+
+- id: olufowobi_chapter_2019
+  type: chapter
+  author:
   - family: Olufowobi
     given: Habeeb
   - family: Bloom
     given: Gedare
+  editor:
+  - family: Rawat
+    given: Danda B.
+  - family: Ghafoor
+    given: Kayhan Zrar
   issued:
   - year: 2019
-    month: 12
-  title: Survey of Automotive Controller Area Network Intrusion Detection Systems
-  container-title: IEEE Design Test
-  page: 48-55
-  volume: '36'
-  issue: '6'
-  abstract: 'Editor’s note: Control Area Network (CAN) is one of the most popular
-    targets for malicious attacks and exploitations in modern automotive systems.
-    The goal of intrusion detection systems (IDS) is to identify and mitigate security
-    attacks; consequently, they are of paramount importance to automotive security.
-    This article surveys the state of the art in IDS, with special emphasis on techniques
-    for detecting attacks on CAN modules. -Sandip Ray, University of Florida'
-  keyword: Monitoring, security of data, security attacks, controller area networks,
-    Timing, Intrusion detection, intrusion detection system, malicious attacks, IDS,
-    Computer hacking, Controller area network, in-vehicle network, Engines, Automotive
-    engineering, automotive security, automotive controller area network intrusion
-    detection systems, automotive engineering
-  DOI: 10.1109/MDAT.2019.2899062
-  ISSN: 2168-2364
-
-- id: agarwal_comparison_2019
-  type: article-journal
-  author:
-  - family: Agarwal
-    given: Udit Kumar
-  - family: Ashokbhai
-    given: Vara Punit
-  - family: Bloom
-    given: Gedare
-  - family: Mauderer
-    given: Christian
-  - family: Sherrill
-    given: Joel
-  issued:
+    month: 1
+  accessed:
   - year: 2019
-    month: 11
-  title: Comparison of File Systems in RTEMS
-  container-title: SIGBED Rev.
-  page: 39-44
-  volume: '16'
-  issue: '3'
-  keyword: RTEMS, benchmarking, filesystems
-  URL: https://doi.org/10.1145/3373400.3373406
-  DOI: 10.1145/3373400.3373406
-
-- id: nasri_pitfalls_2019
-  type: paper-conference
-  author:
-  - family: Nasri
-    given: Mitra
-  - family: Chantem
-    given: Thidapat
-  - family: Bloom
-    given: Gedare
-  - family: Gerdes
-    given: Ryan M.
-  issued:
-  - year: 2019
-    month: 4
-  title: On the Pitfalls and Vulnerabilities of Schedule Randomization Against Schedule-Based
-    Attacks
-  container-title: 2019 IEEE Real-Time and Embedded Technology and Applications Symposium
-    (RTAS)
-  page: 103-116
-  note: 'ISSN: 1545-3421'
-  abstract: Schedule randomization is one of the recently introduced security defenses
-    against schedule-based attacks, i.e., attacks whose success depends on a particular
-    ordering between the execution window of an attacker and a victim task within
-    the system. It falls into the category of information hiding (as opposed to deterministic
-    isolation-based defenses) and is designed to reduce the attacker’s ability to
-    infer the future schedule. This paper aims to investigate the limitations and
-    vulnerabilities of schedule randomization-based defenses in real-time systems.
-    We first provide definitions, categorization, and examples of schedule-based attacks,
-    and then discuss the challenges of employing schedule randomization in real-time
-    systems. Further, we provide a preliminary security test to determine whether
-    a certain timing relation between the attacker and victim tasks will never happen
-    in systems scheduled by a fixed-priority scheduling algorithm. Finally, we compare
-    fixed-priority scheduling against schedule-randomization techniques in terms of
-    the success rate of various schedule-based attacks for both synthetic and real-world
-    applications. Our results show that, in many cases, schedule randomization either
-    has no security benefits or can even increase the success rate of the attacker
-    depending on the priority relation between the attacker and victim tasks.
-  keyword: security of data, scheduling, real-time systems, cyber physical systems,
-    deterministic isolation-based defenses, fixed-priority scheduling algorithm, random
-    forests, random functions, Real-time systems security, schedule randomization,
-    schedule randomization-based defenses, schedule-based attack, schedule-based attacks,
-    schedule-randomization techniques, victim task
-  DOI: 10.1109/RTAS.2019.00017
+    month: 3
+    day: 5
+  title: 'Chapter 16 - Connected Cars: Automotive Cybersecurity and Privacy for Smart
+    Cities'
+  title-short: Chapter 16 - Connected Cars
+  container-title: Smart Cities Cybersecurity and Privacy
+  publisher: Elsevier
+  page: 227-240
+  abstract: This chapter examines the cybersecurity and privacy of the twin notions
+    of smart transportation and intelligent transportation systems with a focus on
+    the role of personal automobiles. Smart transportation encompasses the individual
+    and joint capabilities of connected cars, or more generally, vehicles, and so
+    comprises the internal workings of autonomous vehicles and the complex interdependencies
+    introduced by vehicle-to-vehicle communications. An intelligent transportation
+    system introduces smart technology to civil transportation infrastructure, and
+    the connected car further creates the opportunity for vehicle-to-infrastructure
+    communications. We identify threats and attacks enabled by smart transportation
+    and intelligent transportation systems, and survey methods for providing security
+    and privacy.
+  keyword: Cybersecurity, Connected cars, Intelligent transportation system, Smart
+    transportation, V2I, V2V, automotive security
+  URL: http://www.sciencedirect.com/science/article/pii/B9780128150320000160
+  DOI: 10.1016/B978-0-12-815032-0.00016-0
+  ISBN: 978-0-12-815032-0
 
 - id: young_automotive_2019
   type: paper-conference
@@ -1166,8 +1264,8 @@ references:
     with very limited computational resources. Test results with the proposed method
     against two different vehicles and a frequency domain analysis are also presented
     in the paper.
-  keyword: controller area network, automotive security, automotive anomaly detection,
-    frequency detection
+  keyword: controller area network, automotive anomaly detection, frequency detection,
+    automotive security
   URL: http://doi.acm.org/10.1145/3309171.3309179
   DOI: 10.1145/3309171.3309179
   ISBN: 978-1-4503-6180-4
@@ -1215,8 +1313,8 @@ references:
     the parameters required for the change-point algorithm to reduce false alarm rate
     and detection delay. Using real dataset generated from a car in normal operation,
     we evaluate our detection approach on three different kinds of attack scenarios.
-  keyword: intrusion detection, automotive security, can, data injection, change-point
-    detection, cusum, sequential methods
+  keyword: intrusion detection, can, change-point detection, cusum, data injection,
+    sequential methods, automotive security
   URL: http://doi.acm.org/10.1145/3309171.3309178
   DOI: 10.1145/3309171.3309178
   ISBN: 978-1-4503-6180-4
@@ -1248,287 +1346,189 @@ references:
     intrusion detection system (IDS) using anomaly-based supervised learning with
     the real-time model as input. We evaluate IDS performance with real CAN logs collected
     from a sedan car.
-  keyword: Computational modeling, security of data, Delays, Real-time systems, controller
-    area networks, Jitter, automobiles, Classification algorithms, CAN, Time factors,
-    automotive security, Intrusion Detection, anomaly-based supervised learning, automotive
-    controller area network, real-time modeling, Response Time Analysis, sedan car,
-    specification-based intrusion detection system, supervised learning, Timing Model,
-    traffic information systems, vehicular network security
+  keyword: security of data, Classification algorithms, Computational modeling, Jitter,
+    automobiles, Delays, controller area networks, CAN, Real-time systems, Time factors,
+    anomaly-based supervised learning, automotive controller area network, Intrusion
+    Detection, real-time modeling, Response Time Analysis, sedan car, specification-based
+    intrusion detection system, supervised learning, Timing Model, traffic information
+    systems, vehicular network security, automotive security
   DOI: 10.1109/RTSS.2018.00030
 
-- id: tessler_work--progress:_2017
+- id: nasri_pitfalls_2019
   type: paper-conference
   author:
-  - family: Tessler
-    given: C.
+  - family: Nasri
+    given: Mitra
+  - family: Chantem
+    given: Thidapat
   - family: Bloom
-    given: G.
-  - family: Fisher
-    given: N.
+    given: Gedare
+  - family: Gerdes
+    given: Ryan M.
   issued:
-  - year: 2017
+  - year: 2019
     month: 4
-  title: 'Work-in-Progress: Reducing Cache Conflicts via Interrupts and BUNDLE Scheduling'
-  title-short: Work-in-Progress
-  container-title: 2017 IEEE Real-Time and Embedded Technology and Applications Symposium
+  title: On the Pitfalls and Vulnerabilities of Schedule Randomization Against Schedule-Based
+    Attacks
+  container-title: 2019 IEEE Real-Time and Embedded Technology and Applications Symposium
     (RTAS)
-  page: 125-128
-  abstract: 'In "BUNDLE: Real-Time Multi-Threaded Scheduling to Reduce Cache Contention"
-    Tessler and Fisher present a positive perspective of instruction caches for hard
-    real-time multithreaded tasks. The thread-aware scheduling algorithm limits the
-    execution of threads to sets of instructions that cannot result in cache conflicts.
-    Identification of these sets result in conflict free regions which are used to
-    identify scheduling groups called bundles in the BUNDLE scheduling algorithm.
-    Placement of a thread in a particular bundle depends on, what the authors call,
-    "anticipating execution". However, they do not define a complete mechanism to
-    anticipate execution. In this work, we propose a method to anticipate execution
-    that modifies cache hardware and introduces a new interrupt raised prior to a
-    cache conflict. This new interrupt is combined with (a slightly modified version
-    of) the BUNDLE scheduling algorithm. The intent is to implement these hardware
-    modifications for ARM on the gem5 simulator with the scheduling algorithm integrated
-    into the RTEMS operating system. The hope is this work serves as further motivation
-    to bring the positive perspective of caches to physical processors and operating
-    systems.'
-  keyword: Hardware, scheduling, Registers, multi-threading, operating system kernels,
-    cache storage, interrupts, Indexes, anticipating execution, ARM, BUNDLE scheduling,
-    cache conflict reduction, cache contention reduction, Cache memory, Cache Memory,
-    gem5 simulator, hardware modifications, instruction caches, Instruction sets,
-    Multithreading, physical processors, real-time multi-threaded scheduling, real-time
-    multithreaded tasks, RTEMS operating system, Scheduling algorithms, Static Analysis,
-    thread-aware scheduling algorithm
-  DOI: 10.1109/RTAS.2017.30
+  page: 103-116
+  note: 'ISSN: 1545-3421'
+  abstract: Schedule randomization is one of the recently introduced security defenses
+    against schedule-based attacks, i.e., attacks whose success depends on a particular
+    ordering between the execution window of an attacker and a victim task within
+    the system. It falls into the category of information hiding (as opposed to deterministic
+    isolation-based defenses) and is designed to reduce the attacker’s ability to
+    infer the future schedule. This paper aims to investigate the limitations and
+    vulnerabilities of schedule randomization-based defenses in real-time systems.
+    We first provide definitions, categorization, and examples of schedule-based attacks,
+    and then discuss the challenges of employing schedule randomization in real-time
+    systems. Further, we provide a preliminary security test to determine whether
+    a certain timing relation between the attacker and victim tasks will never happen
+    in systems scheduled by a fixed-priority scheduling algorithm. Finally, we compare
+    fixed-priority scheduling against schedule-randomization techniques in terms of
+    the success rate of various schedule-based attacks for both synthetic and real-world
+    applications. Our results show that, in many cases, schedule randomization either
+    has no security benefits or can even increase the success rate of the attacker
+    depending on the priority relation between the attacker and victim tasks.
+  keyword: security of data, real-time systems, cyber physical systems, scheduling,
+    deterministic isolation-based defenses, fixed-priority scheduling algorithm, random
+    forests, random functions, Real-time systems security, schedule randomization,
+    schedule randomization-based defenses, schedule-based attack, schedule-based attacks,
+    schedule-randomization techniques, victim task
+  DOI: 10.1109/RTAS.2019.00017
 
-- id: mohan_special_2018
-  type: paper-conference
+- id: agarwal_comparison_2019
+  type: article-journal
   author:
-  - family: Mohan
-    given: S.
-  - family: Asplund
-    given: M.
+  - family: Agarwal
+    given: Udit Kumar
+  - family: Ashokbhai
+    given: Vara Punit
   - family: Bloom
-    given: G.
-  - family: Sadeghi
-    given: A.
-  - family: Ibrahim
-    given: A.
-  - family: Salajageh
-    given: N.
-  - family: Griffioen
-    given: P.
-  - family: Sinipoli
-    given: B.
+    given: Gedare
+  - family: Mauderer
+    given: Christian
+  - family: Sherrill
+    given: Joel
   issued:
-  - year: 2018
-    month: 9
-  title: 'Special Session: The Future of IoT Security'
-  title-short: Special Session
-  container-title: 2018 International Conference on Embedded Software (EMSOFT)
-  page: 1-7
-  abstract: 'The Internet-of-Things (IoT) is a large and complex domain. These systems
-    are often constructed using a very diverse set of hardware, software and protocols.
-    This, combined with the ever increasing number of IoT solutions/services that
-    are rushed to market means that most such systems are rife with security holes.
-    Recent incidents (e.g., the Mirai botnet) further highlight such security issues.
-    With emerging technologies such as blockchain and software-defined networks (SDNs),
-    new security solutions are possible in the IoT domain. In this paper we will explore
-    future trends in IoT security: (a) the use of blockchains in IoT security, (b)
-    data provenance for sensor information, (c) reliable and secure transport mechanisms
-    using SDNs (d) scalable authentication and remote attestation mechanisms for IoT
-    devices and (e) threat modeling and risk/maturity assessment frameworks for the
-    domain.'
-  keyword: Internet of Things, Reliability, IoT devices, message authentication, data
-    integrity, sensor fusion, Resilience, data provenance, security solutions, Cryptography,
-    Software, IoT domain, authentication mechanism, IoT security, IoT solutions/services,
-    Quality of service, remote attestation mechanism, sensor information, transport
-    mechanisms
-  DOI: 10.1109/EMSOFT.2018.8537206
+  - year: 2019
+    month: 11
+  title: Comparison of File Systems in RTEMS
+  container-title: SIGBED Rev.
+  page: 39-44
+  volume: '16'
+  issue: '3'
+  keyword: benchmarking, RTEMS, filesystems
+  URL: https://doi.org/10.1145/3373400.3373406
+  DOI: 10.1145/3373400.3373406
 
-- id: olufowobi_chapter_2019
-  type: chapter
+- id: young_survey_2019
+  type: article-journal
   author:
+  - family: Young
+    given: Clinton
+  - family: Zambreno
+    given: Joseph
   - family: Olufowobi
     given: Habeeb
   - family: Bloom
     given: Gedare
-  editor:
-  - family: Rawat
-    given: Danda B.
-  - family: Ghafoor
-    given: Kayhan Zrar
   issued:
   - year: 2019
-    month: 1
-  accessed:
-  - year: 2019
-    month: 3
-    day: 5
-  title: 'Chapter 16 - Connected Cars: Automotive Cybersecurity and Privacy for Smart
-    Cities'
-  title-short: Chapter 16 - Connected Cars
-  container-title: Smart Cities Cybersecurity and Privacy
-  publisher: Elsevier
-  page: 227-240
-  abstract: This chapter examines the cybersecurity and privacy of the twin notions
-    of smart transportation and intelligent transportation systems with a focus on
-    the role of personal automobiles. Smart transportation encompasses the individual
-    and joint capabilities of connected cars, or more generally, vehicles, and so
-    comprises the internal workings of autonomous vehicles and the complex interdependencies
-    introduced by vehicle-to-vehicle communications. An intelligent transportation
-    system introduces smart technology to civil transportation infrastructure, and
-    the connected car further creates the opportunity for vehicle-to-infrastructure
-    communications. We identify threats and attacks enabled by smart transportation
-    and intelligent transportation systems, and survey methods for providing security
-    and privacy.
-  keyword: Cybersecurity, automotive security, Connected cars, Intelligent transportation
-    system, Smart transportation, V2I, V2V
-  URL: http://www.sciencedirect.com/science/article/pii/B9780128150320000160
-  DOI: 10.1016/B978-0-12-815032-0.00016-0
-  ISBN: 978-0-12-815032-0
+    month: 12
+  title: Survey of Automotive Controller Area Network Intrusion Detection Systems
+  container-title: IEEE Design Test
+  page: 48-55
+  volume: '36'
+  issue: '6'
+  abstract: 'Editor’s note: Control Area Network (CAN) is one of the most popular
+    targets for malicious attacks and exploitations in modern automotive systems.
+    The goal of intrusion detection systems (IDS) is to identify and mitigate security
+    attacks; consequently, they are of paramount importance to automotive security.
+    This article surveys the state of the art in IDS, with special emphasis on techniques
+    for detecting attacks on CAN modules. -Sandip Ray, University of Florida'
+  keyword: Intrusion detection, Monitoring, security of data, intrusion detection
+    system, malicious attacks, IDS, security attacks, Engines, controller area networks,
+    in-vehicle network, Controller area network, Computer hacking, Automotive engineering,
+    Timing, automotive security, automotive controller area network intrusion detection
+    systems, automotive engineering
+  DOI: 10.1109/MDAT.2019.2899062
+  ISSN: 2168-2364
 
-- id: bloom_information_2009
-  type: paper-conference
+- id: bloom_event_2019
+  type: article-journal
   author:
   - family: Bloom
     given: Gedare
-  - family: Popoveniuc
-    given: Stefan
-  issued:
-  - year: 2009
-    month: 7
-  title: Information Leakage in Mix Networks with Randomized Partial Checking
-  container-title: International Conference on Information Security and Privacy
-
-- id: marshall_n-modular_2016
-  type: paper-conference
-  author:
-  - family: Marshall
-    given: James
-  - family: Parmer
-    given: Gabriel
-  - family: Simha
-    given: Rahul
-  - family: Bloom
-    given: Gedare
-  issued:
-  - year: 2016
-  title: 'N-Modular Redundant Real-Time Middleware: Design and Implementation'
-  title-short: N-Modular Redundant Real-Time Middleware
-  container-title: EWiLi 2016
-
-- id: bloom_design_2018
-  type: paper-conference
-  author:
-  - family: Bloom
-    given: G.
-  - family: Alsulami
-    given: B.
-  - family: Nwafor
-    given: E.
+  - family: Cena
+    given: Gianluca
   - family: Bertolotti
-    given: I. C.
+    given: Ivan Cibrario
+  - family: Hu
+    given: Tingting
+  - family: Navet
+    given: Nicolas
+  - family: Valenzano
+    given: Adriano
   issued:
-  - year: 2018
-    month: 6
-  title: Design patterns for the industrial Internet of Things
-  container-title: 2018 14th IEEE International Workshop on Factory Communication
-    Systems (WFCS)
-  page: 1-10
-  abstract: 'The Internet of Things (IoT) is a vast collection of interconnected sensors,
-    devices, and services that share data and information over the Internet with the
-    objective of leveraging multiple information sources to optimize related systems.
-    The technologies associated with the IoT have significantly improved the quality
-    of many existing applications by reducing costs, improving functionality, increasing
-    access to resources, and enhancing automation. The adoption of IoT by industries
-    has led to the next industrial revolution: Industry 4.0. The rise of the Industrial
-    IoT (IIoT) promises to enhance factory management, process optimization, worker
-    safety, and more. However, the rollout of the IIoT is not without significant
-    issues, and many of these act as major barriers that prevent fully achieving the
-    vision of Industry 4.0. One major area of concern is the security and privacy
-    of the massive datasets that are captured and stored, which may leak information
-    about intellectual property, trade secrets, and other competitive knowledge. As
-    a way forward toward solving security and privacy concerns, we aim in this paper
-    to identify common input-output (I/O) design patterns that exist in applications
-    of the IIoT. These design patterns enable constructing an abstract model representation
-    of data flow semantics used by such applications, and therefore better understand
-    how to secure the information related to IIoT operations. In this paper, we describe
-    communication protocols and identify common I/O design patterns for IIoT applications
-    with an emphasis on data flow in edge devices, which, in the industrial control
-    system (ICS) setting, are most often involved in process control or monitoring.'
-  keyword: Internet of Things, Security, Sensors, Wireless sensor networks, IIoT,
-    Industry 4.0, Cloud computing, Design Patterns, Industrial Internet of Things,
-    Industries
-  DOI: 10.1109/WFCS.2018.8402353
+  - year: 2019
+    month: 10
+  title: Event Notification in CAN-Based Sensor Networks
+  container-title: IEEE Transactions on Industrial Informatics
+  page: 5613-5625
+  volume: '15'
+  issue: '10'
+  abstract: Preventive and reactive maintenance require the collection of an ever-increasing
+    amount of information from industrial plants and other complex systems such as
+    those based on robotized cells, a need that can be fulfilled by means of a suitable
+    event notification mechanism. At the same time, timing and delivery reliability
+    requirements in those scenarios are typically less demanding than those in other
+    cases, thus enabling the adoption of best-effort notification approaches. This
+    paper presents, evaluates, and compares some of those approaches, based on either
+    standard Controller Area Network (CAN) messaging or a recently proposed protocol
+    extension called CAN with eXtensible in-frame Reply (CAN XR). In the second case,
+    the combined use of Bloom filters is also envisaged to increase flexibility. Results
+    show that the latter approaches are advantageous in a range of event generation
+    rates and network topologies of practical relevance.
+  keyword: Informatics, Cyber-Physical Systems, real-time systems, protocols, data
+    structures, Safety, wireless sensor networks, industrial plants, controller area
+    networks, Protocols, Industry 4.0, telecommunication computing, Wireless sensor
+    networks, Controller Area Network (CAN), Industrial plants, Maintenance engineering,
+    Transceivers, Bloom filter, CAN-based sensor networks, complex systems, Cyber-Physical
+    Action Language (CPAL), delivery reliability requirements, event generation rates,
+    event notification, Industrial Internet of Things (IIoT), network topologies,
+    preventive maintenance, protocol extension, reactive maintenance, robotized cells,
+    standard Controller Area Network messaging, suitable event notification mechanism,
+    telecommunication network reliability, telecommunication network topology, wired
+    sensor networks
+  DOI: 10.1109/TII.2019.2904082
+  ISSN: 1941-0050
 
-- id: nwafor_towards_2017
+- id: olufowobi_controller_2019
   type: paper-conference
   author:
-  - family: Nwafor
-    given: E.
-  - family: Campbell
-    given: A.
-  - family: Hill
-    given: D.
-  - family: Bloom
-    given: G.
-  issued:
-  - year: 2017
-    month: 8
-  title: Towards a provenance collection framework for Internet of Things devices
-  container-title: 2017 IEEE SmartWorld, Ubiquitous Intelligence Computing, Advanced
-    Trusted Computed, Scalable Computing Communications, Cloud Big Data Computing,
-    Internet of People and Smart City Innovation (SmartWorld/SCALCOM/UIC/ATC/CBDCom/IOP/SCI)
-  page: 1-6
-  abstract: The Internet of Things (IoT) offers immense benefits by enabling devices
-    to leverage networked resources thereby making intelligent decisions. The numerous
-    heterogeneous connected devices that exist throughout the IoT system creates new
-    security and privacy concerns. Some of these concerns can be overcome through
-    trust, transparency, and integrity, which can be achieved with data provenance.
-    Data provenance, also known as data lineage, provides a history of transformations
-    that occurs on a data object from the time it was created to its current state.
-    Data provenance has been explored in the areas of scientific computing, business,
-    forensic analysis, and intrusion detection. Data provenance can help in detecting
-    and mitigating malicious cyber attacks. In this paper, we explore the integration
-    of provenance within the IoT. We introduce Provenance Aware Internet of Things
-    System (PAIoTS), a provenance collection framework for IoT devices. We evaluate
-    the effectiveness of our framework by developing a prototype system for proof
-    of concept.
-  keyword: Computational modeling, Internet of Things, Security, Data models, Temperature
-    sensors, Cloud computing, History
-  DOI: 10.1109/UIC-ATC.2017.8397531
-
-- id: armbrust_spatial_2014
-  type: paper-conference
-  author:
-  - family: Armbrust
-    given: Eric
-  - family: Song
-    given: Jiguo
-  - family: Bloom
-    given: Gedare
-  - family: Parmer
-    given: Gabriel
-  issued:
-  - year: 2014
-  title: On Spatial Isolation for Mixed Criticality, Embedded Systems
-  container-title: Proc. 2nd Workshop on Mixed Criticality Systems (WMC), RTSS
-  page: 15-20
-
-- id: nwafor_anomaly-based_2018
-  type: paper-conference
-  author:
-  - family: Nwafor
-    given: Ebelechukwu
-  - family: Campbell
-    given: Andre
+  - family: Olufowobi
+    given: Habeeb
+  - family: Hounsinou
+    given: Sena
   - family: Bloom
     given: Gedare
   issued:
-  - year: 2018
-    month: 4
-  title: Anomaly-based Intrusion Detection of IoT Device Sensor Data using Provenance
-    Graphs
-  container-title: 1st International Workshop on Security and Privacy for the Internet-of-Things
-  publisher-place: Orlando, Florida, USA
+  - year: 2019
+  title: Controller Area Network Intrusion Prevention System Leveraging Fault Recovery
+  container-title: Proceedings of the ACM Workshop on Cyber-Physical Systems Security
+    & Privacy
+  collection-title: CPS-SPC’19
+  publisher: Association for Computing Machinery
+  publisher-place: New York, NY, USA
+  page: 63-73
+  note: 'event-place: London, United Kingdom'
+  keyword: intrusion detection systems, can, data injection, automotive security,
+    intrusion prevention system, reboot recovery
+  URL: https://doi.org/10.1145/3338499.3357360
+  DOI: 10.1145/3338499.3357360
+  ISBN: 978-1-4503-6831-5
 
 - id: olufowobi_saiducant_2020
   type: article-journal
@@ -1567,11 +1567,11 @@ references:
     from the open-source dataset, SAIDuCANT observes at most one false positive before
     detecting an attack whereas other detection approaches using CAN timing features
     detect on average more than a hundred false positives before a real attack occurs.
-  keyword: Protocols, security of data, Real-time systems, controller area networks,
-    Timing, real-time systems, Intrusion detection, physical attacks, intrusion detection
-    system, automobiles, data injection attacks, CAN bus, in-vehicle network, security
-    protocol, Time factors, Automotive engineering, learning (artificial intelligence),
-    automotive security, timing model, specification-based intrusion detection system,
+  keyword: Intrusion detection, security of data, intrusion detection system, real-time
+    systems, data injection attacks, physical attacks, automobiles, learning (artificial
+    intelligence), CAN bus, controller area networks, in-vehicle network, security
+    protocol, Protocols, Automotive engineering, Real-time systems, Timing, Time factors,
+    specification-based intrusion detection system, timing model, automotive security,
     attack scenarios, controller area network timing, cybersecurity attacks, embedded
     devices, low false positive rates, open-source CAN dataset, open-source dataset,
     physical access, real-time model parameters, remote access, SAIDuCANT, specification-based
@@ -1580,32 +1580,75 @@ references:
   DOI: 10.1109/TVT.2019.2961344
   ISSN: 1939-9359
 
-- id: bloom_real-time_2020
-  type: book
+- id: bloom_harmonizing_2020
+  type: paper-conference
   author:
   - family: Bloom
     given: Gedare
   - family: Sherrill
     given: Joel
-  - family: Hu
-    given: Tingting
-  - family: Bertolotti
-    given: Ivan Cibrario
   issued:
   - year: 2020
-    month: 11
-  accessed:
+    month: 5
+  title: Harmonizing ARINC 653 and Realtime POSIX for Conformance to the FACE Technical
+    Standard
+  container-title: 2020 IEEE 23rd International Symposium on Real-Time Distributed
+    Computing (ISORC)
+  page: 98-105
+  note: 'ISSN: 2375-5261'
+  abstract: The avionics industry is converging toward the next generation of software
+    standards produced by The Open Group via the Future Airborne Capability Environment
+    (FACE) consortium and related FACE Technical Standard. The standard combines ARINC
+    653, a previous avionics standard, with subsets of POSIX 1003.1 that are closely
+    aligned with the POSIX realtime profiles PSE52, PSE53, and PSE54. In this paper,
+    we describe our approach to design, implement, and certify a system with FACE
+    Conformance to the FACE Operating System Segment Safety Base profile. Our approach
+    integrates the ARINC 653-compliant Deos with RTEMS, an open-source real-time operating
+    system (RTOS). Our goal in combining Deos/RTEMS was to achieve certification of
+    FACE Conformance in a low-cost manner by relying on existing, mature software
+    that already provides the majority of the functionality required by the FACE Technical
+    Standard. We reached our goal with under 10,000 source lines of code (SLOC) written
+    to integrate RTEMS into Deos and implement any additional POSIX application programming
+    interfaces (APIs) and tests needed for certification.
+  keyword: real-time systems, POSIX, RTOS, operating systems (computers), aerospace
+    computing, avionics, RTEMS, public domain software, application program interfaces,
+    Deos, FACE, Future Airborne Capability Environment, ARINC 653, ARINC 653-compliant
+    Deos, avionics industry, avionics standard, FACE Operating System Segment Safety
+    Base profile, FACE Technical Standard, future airborne capability environment,
+    Open Group, open source real time operating system, POSIX 1003.1, POSIX application
+    programming interfaces, PSE52, PSE53, PSE54, realtime POSIX, software standards,
+    user interfaces, epics security
+  DOI: 10.1109/ISORC49007.2020.00023
+
+- id: dangal_towards_2020
+  type: paper-conference
+  author:
+  - family: Dangal
+    given: Prajjwal
+  - family: Bloom
+    given: Gedare
+  issued:
   - year: 2020
-    month: 10
-    day: 14
-  title: Real-Time Systems Development with RTEMS and Multicore Processors
-  publisher: CRC Press
-  abstract: The proliferation of multicore processors in the embedded market for Internet-of-Things
-    (IoT) and Cyber-Physical Systems (CPS) makes developing real-time
-  keyword: epics security
-  URL: https://www.taylorfrancis.com/books/9781351255790
-  DOI: 10.1201/9781351255790
-  ISBN: 978-1-351-25579-0
+    month: 5
+  title: Towards Industrial Security Through Real-time Analytics
+  container-title: 2020 IEEE 23rd International Symposium on Real-Time Distributed
+    Computing (ISORC)
+  page: 156-157
+  note: 'ISSN: 2375-5261'
+  abstract: 'Industrial control system (ICS) denotes a system consisting of actuators,
+    control stations, and network that manages processes and functions in an industrial
+    setting. The ICS community faces two major problems to keep pace with the broader
+    trends of Industry 4.0: (1) a data rich, information poor (DRIP) syndrome, and
+    (2) risk of financial and safety harms due to security breaches. In this paper,
+    we propose a private cloud in the loop ICS architecture for real-time analytics
+    that can bridge the gap between low data utilization and security hardening.'
+  keyword: industrial control, security, security of data, actuators, real-time, cloud
+    computing, production engineering computing, control stations, data rich information
+    poor syndrome, DRIP syndrome, financial safety harms, ICS community, industrial,
+    industrial control system, industrial security, industrial setting, loop ICS architecture,
+    low data utilization, real-time analytics, security breaches, security hardening,
+    epics security
+  DOI: 10.1109/ISORC49007.2020.00036
 
 - id: ezeobi_reverse_2020
   type: article-journal
@@ -1643,80 +1686,37 @@ references:
     the world. Our approach can help to improve the security of vehicles in a smart
     city, and can leverage smart city infrastructure to further enrich and refine
     the quality of the machine learning output.
-  keyword: Security, Smart cities, Complexity theory, Clustering algorithms, Machine
+  keyword: Security, Complexity theory, Clustering algorithms, Smart cities, Machine
     learning, Ecosystems, Reverse engineering
   DOI: 10.1109/MCE.2020.3023538
   ISSN: 2162-2256
 
-- id: dangal_towards_2020
-  type: paper-conference
-  author:
-  - family: Dangal
-    given: Prajjwal
-  - family: Bloom
-    given: Gedare
-  issued:
-  - year: 2020
-    month: 5
-  title: Towards Industrial Security Through Real-time Analytics
-  container-title: 2020 IEEE 23rd International Symposium on Real-Time Distributed
-    Computing (ISORC)
-  page: 156-157
-  note: 'ISSN: 2375-5261'
-  abstract: 'Industrial control system (ICS) denotes a system consisting of actuators,
-    control stations, and network that manages processes and functions in an industrial
-    setting. The ICS community faces two major problems to keep pace with the broader
-    trends of Industry 4.0: (1) a data rich, information poor (DRIP) syndrome, and
-    (2) risk of financial and safety harms due to security breaches. In this paper,
-    we propose a private cloud in the loop ICS architecture for real-time analytics
-    that can bridge the gap between low data utilization and security hardening.'
-  keyword: production engineering computing, security of data, security, cloud computing,
-    industrial control, real-time, actuators, control stations, data rich information
-    poor syndrome, DRIP syndrome, financial safety harms, ICS community, industrial,
-    industrial control system, industrial security, industrial setting, loop ICS architecture,
-    low data utilization, real-time analytics, security breaches, security hardening,
-    epics security
-  DOI: 10.1109/ISORC49007.2020.00036
-
-- id: bloom_harmonizing_2020
-  type: paper-conference
+- id: bloom_real-time_2020
+  type: book
   author:
   - family: Bloom
     given: Gedare
   - family: Sherrill
     given: Joel
+  - family: Hu
+    given: Tingting
+  - family: Bertolotti
+    given: Ivan Cibrario
   issued:
   - year: 2020
-    month: 5
-  title: Harmonizing ARINC 653 and Realtime POSIX for Conformance to the FACE Technical
-    Standard
-  container-title: 2020 IEEE 23rd International Symposium on Real-Time Distributed
-    Computing (ISORC)
-  page: 98-105
-  note: 'ISSN: 2375-5261'
-  abstract: The avionics industry is converging toward the next generation of software
-    standards produced by The Open Group via the Future Airborne Capability Environment
-    (FACE) consortium and related FACE Technical Standard. The standard combines ARINC
-    653, a previous avionics standard, with subsets of POSIX 1003.1 that are closely
-    aligned with the POSIX realtime profiles PSE52, PSE53, and PSE54. In this paper,
-    we describe our approach to design, implement, and certify a system with FACE
-    Conformance to the FACE Operating System Segment Safety Base profile. Our approach
-    integrates the ARINC 653-compliant Deos with RTEMS, an open-source real-time operating
-    system (RTOS). Our goal in combining Deos/RTEMS was to achieve certification of
-    FACE Conformance in a low-cost manner by relying on existing, mature software
-    that already provides the majority of the functionality required by the FACE Technical
-    Standard. We reached our goal with under 10,000 source lines of code (SLOC) written
-    to integrate RTEMS into Deos and implement any additional POSIX application programming
-    interfaces (APIs) and tests needed for certification.
-  keyword: application program interfaces, avionics, Deos, FACE, POSIX, RTEMS, operating
-    systems (computers), real-time systems, aerospace computing, RTOS, public domain
-    software, Future Airborne Capability Environment, ARINC 653, ARINC 653-compliant
-    Deos, avionics industry, avionics standard, FACE Operating System Segment Safety
-    Base profile, FACE Technical Standard, future airborne capability environment,
-    Open Group, open source real time operating system, POSIX 1003.1, POSIX application
-    programming interfaces, PSE52, PSE53, PSE54, realtime POSIX, software standards,
-    user interfaces, epics security
-  DOI: 10.1109/ISORC49007.2020.00023
+    month: 11
+  accessed:
+  - year: 2020
+    month: 10
+    day: 14
+  title: Real-Time Systems Development with RTEMS and Multicore Processors
+  publisher: CRC Press
+  abstract: The proliferation of multicore processors in the embedded market for Internet-of-Things
+    (IoT) and Cyber-Physical Systems (CPS) makes developing real-time
+  keyword: epics security
+  URL: https://www.taylorfrancis.com/books/9781351255790
+  DOI: 10.1201/9781351255790
+  ISBN: 978-1-351-25579-0
 
 - id: bloom_weepingcan_2021
   type: paper-conference
@@ -1779,44 +1779,231 @@ references:
   DOI: 10.1145/3442339
   ISSN: 1539-9087
 
-- id: dubey_strong_2021
+- id: duby_detecting_2022
   type: paper-conference
   author:
-  - family: Dubey
-    given: Richi
+  - family: Duby
+    given: Adam
+  - family: Taylor
+    given: Teryl
+  - family: Bloom
+    given: Gedare
+  - family: Zhuang
+    given: Yanyan
+  issued:
+  - year: 2022
+    month: 1
+  title: Detecting and Classifying Self-Deleting Windows Malware Using Prefetch Files
+  container-title: 2022 IEEE 12th Annual Computing and Communication Workshop and
+    Conference (CCWC)
+  page: 0745-0751
+  abstract: Malware detection and analysis can be a burdensome task for incident responders.
+    As such, research has turned to machine learning to automate malware detection
+    and malware family classification. Existing work extracts and engineers static
+    and dynamic features from the malware sample to train classifiers. Despite promising
+    results, such techniques assume that the analyst has access to the malware executable
+    file. Self-deleting malware invalidates this assumption and requires analysts
+    to find forensic evidence of malware execution for further analysis. In this paper,
+    we present and evaluate an approach to detecting malware that executed on a Windows
+    target and further classify the malware into its associated family to provide
+    semantic insight. Specifically, we engineer features from the Windows prefetch
+    file, a file system forensic artifact that archives process information. Results
+    show that it is possible to detect the malicious artifact with 99% accuracy; furthermore,
+    classifying the malware into a fine-grained family has comparable performance
+    to techniques that require access to the original executable. We also provide
+    a thorough security discussion of the proposed approach against adversarial diversity.
+  keyword: Malware, Conferences, Prefetching, Semantics, Feature extraction, forensics,
+    Machine learning, Forensics, Malware analysis, malware classification, prefetch
+  DOI: 10.1109/CCWC54503.2022.9720874
+
+- id: banerjee_tragedy_2022
+  type: paper-conference
+  author:
   - family: Banerjee
     given: Vijay
+  - family: Rabinowitz
+    given: Ryan
+  - family: Stidd
+    given: Mark
+  - family: Lewis
+    given: Rory
+  - family: Brown
+    given: Philip N.
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2022
+    month: 1
+  title: The Tragedy of the Miners
+  container-title: 2022 IEEE 19th Annual Consumer Communications Networking Conference
+    (CCNC)
+  page: 760-765
+  note: 'ISSN: 2331-9860'
+  abstract: In a network of mining pools that secure Bitcoin-like blockchains, it
+    is known that a self-interested mining pool can dishonestly siphon off another
+    pool’s mining rewards by executing a block withholding (BWH) attack. In this paper,
+    we show that a BWH attack is always unprofitable for an initial startup period
+    which is at least one difficulty retarget interval (approximately 14 days for
+    Bitcoin). Furthermore, we prove that the payback period to recoup this initial
+    startup cost is always at least as long as the initial unprofitable startup interval,
+    and we show numerically that it can be substantially longer. Thus, the decision
+    of whether or not to execute a BWH attack is not a dominant strategy, and the
+    so called Miner’s Dilemma is not in fact a dilemma.
+  keyword: Costs, Transient analysis, Bitcoin, Blockchains
+  DOI: 10.1109/CCNC49033.2022.9700705
+
+- id: lawrence_shining_2022
+  type: paper-conference
+  author:
+  - family: Lawrence
+    given: Heather
+  - family: Ezeobi
+    given: Uchenna
+  - family: Bloom
+    given: Gedare
+  - family: Zhuang
+    given: Yanyan
+  issued:
+  - year: 2022
+    month: 1
+  title: Shining New Light on Useful Features for Network Intrusion Detection Algorithms
+  container-title: 2022 IEEE 19th Annual Consumer Communications Networking Conference
+    (CCNC)
+  page: 369-377
+  note: 'ISSN: 2331-9860'
+  abstract: Network intrusion detection systems (NIDS) today must quickly provide
+    visibility into anomalous behavior on a growing amount of data. Meanwhile different
+    data models have evolved over time, each providing a different set of features
+    to classify attacks. Defenders have limited time to retrain classifiers, while
+    the scale of data and feature mismatch between data models can affect the ability
+    to periodically retrain. Much work has focused on classification accuracy yet
+    feature selection is a key part of machine learning that, when optimized, reduces
+    the training time and can increase accuracy by removing poorly performing features
+    that introduce noise. With a larger feature space, the pursuit of more features
+    is not as valuable as selecting better features. In this paper, we use an ensemble
+    approach of filter methods to rank features followed by a voting technique to
+    select a subset of features. We evaluate our approach using three datasets to
+    show that, across datasets and network topologies, similar features have a trivial
+    effect on classifier accuracy after removal. Our approach identifies poorly performing
+    features to remove in a classifier-agnostic manner that can significantly save
+    time for periodic retraining of production NIDS.
+  keyword: NIDS, Network topology, Training, Costs, Production, Feature extraction,
+    Machine learning, Network intrusion detection, Ensemble Feature Selection, Network
+    Intrusion Detection Systems
+  DOI: 10.1109/CCNC49033.2022.9700654
+
+- id: hounsinou_vulnerability_2021
+  type: paper-conference
+  author:
   - family: Hounsinou
     given: Sena
+  - family: Stidd
+    given: Mark
+  - family: Ezeobi
+    given: Uchenna
+  - family: Olufowobi
+    given: Habeeb
+  - family: Nasri
+    given: Mitra
   - family: Bloom
     given: Gedare
   issued:
   - year: 2021
-    month: 9
-  accessed:
+    month: 12
+  title: Vulnerability of Controller Area Network to Schedule-Based Attacks
+  container-title: 2021 IEEE Real-Time Systems Symposium (RTSS)
+  page: 495-507
+  note: 'ISSN: 2576-3172'
+  abstract: The secure functioning of automotive systems is vital to the safety of
+    their passengers and other roadway users. One of the critical functions for safety
+    is the controller area network (CAN), which interconnects the safety-critical
+    electronic control units (ECUs) in the majority of ground vehicles. Unfortunately
+    CAN is known to be vulnerable to several attacks. One such attack is the bus-off
+    attack, which can be used to cause a victim ECU to disconnect itself from the
+    CAN bus and, subsequently, for an attacker to masquerade as that ECU. A limitation
+    of the bus-off attack is that it requires the attacker to achieve tight synchronization
+    between the transmission of the victim and the attacker’s injected message. In
+    this paper, we introduce a schedule-based attack framework for the CAN bus-off
+    attack that uses the real-time schedule of the CAN bus to predict more attack
+    opportunities than previously known. We describe a ranking method for an attacker
+    to select and optimize its attack injections with respect to criteria such as
+    attack success rate, bus perturbation, or attack latency. The results show that
+    vulnerabilities of the CAN bus can be enhanced by schedulebased attacks.
+  keyword: Control systems, Safety, Schedules, Real-time systems, Synchronization,
+    Controller Area Network, Land vehicles, Bus-off Attack, Perturbation methods,
+    Schedule-Based Attack
+  DOI: 10.1109/RTSS52674.2021.00051
+
+- id: hounsinou_work--progress_2021
+  type: paper-conference
+  author:
+  - family: Hounsinou
+    given: Sena
+  - family: Banerjee
+    given: Vijay
+  - family: Peng
+    given: Chunhao
+  - family: Hasan
+    given: Monowar
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2021
+    month: 12
+  title: 'Work-in-Progress: Enabling Secure Boot for Real-Time Restart-Based Cyber-Physical
+    Systems'
+  title-short: Work-in-Progress
+  container-title: 2021 IEEE Real-Time Systems Symposium (RTSS)
+  page: 524-527
+  note: 'ISSN: 2576-3172'
+  abstract: Several cyber-physical systems use real-time restart-based embedded systems
+    with the Simplex architecture to provide safety guarantees against system faults.
+    Some approaches have been developed to protect such systems from security violations
+    too, but none of these approaches can prevent an adversary from modifying the
+    operating system or application code to execute an attack that persists even after
+    a reboot. In this work, we present a secure boot mechanism to restore real-time
+    restart-based embedded systems into a secure computing environment after every
+    restart. We analyze the delay introduced by the proposed security feature and
+    present preliminary results to demonstrate the viability of our approach using
+    an open-source bootloader and real-time operating system.
+  keyword: Safety, Delays, RTEMS, Computer architecture, Cyber-physical systems, Real-time
+    systems, Embedded systems, TEE, Codes, Secure Boot, U-Boot
+  DOI: 10.1109/RTSS52674.2021.00056
+
+- id: banerjee_modular_2021
+  type: paper-conference
+  author:
+  - family: Banerjee
+    given: Vijay
+  - family: Hounsinou
+    given: Sena
+  - family: Gerber
+    given: Harrison
+  - family: Bloom
+    given: Gedare
+  issued:
   - year: 2021
     month: 10
-    day: 13
-  title: 'Strong APA scheduling in a real-time operating system: Work-in-progress'
-  title-short: Strong APA scheduling in a real-time operating system
-  container-title: Proceedings of the 2021 International Conference on Embedded Software
-  collection-title: EMSOFT ’21
-  publisher: Association for Computing Machinery
-  publisher-place: New York, NY, USA
-  page: 47-48
-  abstract: Arbitrary processor affinities are used in multiprocessor systems to specify
-    the processors on which a task can be scheduled. However, affinity constraints
-    can prevent some high priority real-time tasks from being scheduled, while lower
-    priority tasks execute. This paper presents an implementation and evaluation of
-    the Strong Arbitrary Processor Affinity scheduling on a real-time operating system,
-    an approach that not only respects user-defined affinities, but also supports
-    migration of a higher priority task to allow execution of a task limited by affinity
-    constraints. Results show an improvement in response and turnaround times of higher
-    priority tasks.
-  keyword: RTEMS, RTOS, APA scheduling, SMP
-  URL: https://doi.org/10.1145/3477244.3477623
-  DOI: 10.1145/3477244.3477623
-  ISBN: 978-1-4503-8712-5
+  title: Modular Network Stacks in the Real- Time Executive for Multiprocessor Systems
+  container-title: 2021 Resilience Week (RWS)
+  page: 1-7
+  abstract: Real-Time Executive for Multiprocessor Systems (RTEMS) is a real-time
+    operating system used by the Experimental Physics and Industrial Control System
+    (EPICS) open-source software for high-precision scientific instruments such as
+    particle accelerators and telescopes. EPICS relies on the networking capabilities
+    of RTEMS for microcontrollers that need to meet real-time constraints. However,
+    the networking available in RTEMS either lacks the necessary drivers to be fully
+    operational or lacks security features required in modern networks. In this paper,
+    we introduce a modular networking architecture for RTEMS by separating the network
+    software implementation and device drivers from the RTEMS kernel to provide them
+    as a static library for applications to use. This networking-as-a-library concept
+    provides application developers with better capabilities to select the network
+    features needed for their target application and to keep their networking software
+    undated and secure.
+  keyword: RTEMS, Microcontrollers, Libraries, Security, Physics, Real-time systems,
+    EPICS, FreeBSD, libBSD, Linear particle accelerator, lwIP, Modular Networking
+    Stack, Networking, TCP/IP, Telescopes
+  DOI: 10.1109/RWS52686.2021.9611788
 
 - id: lowe-power_gem5_2020
   type: article-journal
@@ -2005,196 +2192,401 @@ references:
   keyword: Computer Science - Hardware Architecture
   URL: http://arxiv.org/abs/2007.03152
 
-- id: banerjee_modular_2021
+- id: dubey_strong_2021
   type: paper-conference
   author:
+  - family: Dubey
+    given: Richi
   - family: Banerjee
     given: Vijay
   - family: Hounsinou
     given: Sena
-  - family: Gerber
-    given: Harrison
   - family: Bloom
     given: Gedare
   issued:
   - year: 2021
+    month: 9
+  accessed:
+  - year: 2021
     month: 10
-  title: Modular Network Stacks in the Real- Time Executive for Multiprocessor Systems
-  container-title: 2021 Resilience Week (RWS)
-  page: 1-7
-  abstract: Real-Time Executive for Multiprocessor Systems (RTEMS) is a real-time
-    operating system used by the Experimental Physics and Industrial Control System
-    (EPICS) open-source software for high-precision scientific instruments such as
-    particle accelerators and telescopes. EPICS relies on the networking capabilities
-    of RTEMS for microcontrollers that need to meet real-time constraints. However,
-    the networking available in RTEMS either lacks the necessary drivers to be fully
-    operational or lacks security features required in modern networks. In this paper,
-    we introduce a modular networking architecture for RTEMS by separating the network
-    software implementation and device drivers from the RTEMS kernel to provide them
-    as a static library for applications to use. This networking-as-a-library concept
-    provides application developers with better capabilities to select the network
-    features needed for their target application and to keep their networking software
-    undated and secure.
-  keyword: Libraries, Security, Real-time systems, RTEMS, Microcontrollers, Physics,
-    EPICS, FreeBSD, libBSD, Linear particle accelerator, lwIP, Modular Networking
-    Stack, Networking, TCP/IP, Telescopes
-  DOI: 10.1109/RWS52686.2021.9611788
+    day: 13
+  title: 'Strong APA scheduling in a real-time operating system: Work-in-progress'
+  title-short: Strong APA scheduling in a real-time operating system
+  container-title: Proceedings of the 2021 International Conference on Embedded Software
+  collection-title: EMSOFT ’21
+  publisher: Association for Computing Machinery
+  publisher-place: New York, NY, USA
+  page: 47-48
+  abstract: Arbitrary processor affinities are used in multiprocessor systems to specify
+    the processors on which a task can be scheduled. However, affinity constraints
+    can prevent some high priority real-time tasks from being scheduled, while lower
+    priority tasks execute. This paper presents an implementation and evaluation of
+    the Strong Arbitrary Processor Affinity scheduling on a real-time operating system,
+    an approach that not only respects user-defined affinities, but also supports
+    migration of a higher priority task to allow execution of a task limited by affinity
+    constraints. Results show an improvement in response and turnaround times of higher
+    priority tasks.
+  keyword: RTOS, RTEMS, APA scheduling, SMP
+  URL: https://doi.org/10.1145/3477244.3477623
+  DOI: 10.1145/3477244.3477623
+  ISBN: 978-1-4503-8712-5
 
-- id: hounsinou_work--progress_2021
+- id: seaton_competitive_2023
   type: paper-conference
   author:
+  - family: Seaton
+    given: Joshua H.
   - family: Hounsinou
     given: Sena
+  - family: Bloom
+    given: Gedare
+  - family: Brown
+    given: Philip N.
+  issued:
+  - year: 2023
+    month: 5
+  title: Competitive Information Provision Among Internet Routing Nodes
+  container-title: 2023 American Control Conference (ACC)
+  page: 1074-1079
+  note: 'ISSN: 2378-5861'
+  abstract: In proposed path-aware designs for the Internet, end hosts can select
+    which path their packets use. What criteria should the end hosts use to select
+    paths? Recent work has proposed path-aware access control frameworks in which
+    routing nodes publicly report their knowledge of the security postures of other
+    nodes; end hosts can then base their routing choices on these reports. However,
+    nothing is known regarding the nodes’ incentives to report their knowledge truthfully.
+    In this paper, we consider the case in which each network node is strategic, and
+    seeks to craft its public reports to manipulate traffic patterns in its own favor.
+    In the context of a simple selfish routing problem with two strategic nodes, we
+    show that for a wide swath of the parameter space, each node has a dominant reporting
+    strategy, meaning that its individually optimal strategy does not depend on the
+    strategy of the other node. These dominant strategies are generally not truthful.
+    At the resulting dominant-strategy Nash equilibrium, we show that the expected
+    social cost is (often considerably) higher than that achieved when both nodes
+    are completely truthful. Nonetheless, we prove that these equilibrium reporting
+    strategies are never perverse, meaning that their resulting social cost is never
+    worse than if traffic were uninformed as to network state.
+  keyword: Traffic control, Nash equilibrium, Internet, Access control, Costs, Routing
+  DOI: 10.23919/ACC55779.2023.10156591
+
+- id: meadows_sidecar-based_2023
+  type: paper-conference
+  author:
+  - family: Meadows
+    given: Catherine
+  - family: Hounsinou
+    given: Sena
+  - family: Wood
+    given: Timothy
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2023
+    month: 5
+  accessed:
+  - year: 2023
+    month: 9
+    day: 7
+  title: Sidecar-based Path-aware Security for Microservices
+  container-title: Proceedings of the 28th ACM Symposium on Access Control Models
+    and Technologies
+  collection-title: SACMAT ’23
+  publisher: Association for Computing Machinery
+  publisher-place: New York, NY, USA
+  page: 157-162
+  abstract: Microservice architectures decompose web applications into loosely-coupled,
+    distributed components that interact with each other to provide an overall service.
+    While this popular software architecture paradigm has many advantages in development
+    and deployment, it also introduces a wider attack surface that is vulnerable to
+    both internal and external attackers. Potentially malicious third-party services
+    or software packages, as well as increased communication endpoints, introduce
+    a wide array of security concerns. To improve the resiliency of microservice-based
+    applications, many of which store sensitive data, we propose a novel, path-based
+    anomaly detection and access control infrastructure that requires no modifications
+    to existing software. We propose leveraging trusted proxies deployed alongside
+    each service for request inspection, anomaly detection and signed token propagation
+    for end-user path validation. Our approach reduces the trusted computing base
+    away from the microservices to a smaller set of components that allow for less
+    trust and a smaller attack surface.
+  keyword: microservice security, node.js, service-oriented architecture
+  URL: https://dl.acm.org/doi/10.1145/3589608.3594742
+  DOI: 10.1145/3589608.3594742
+  ISBN: '9798400701733'
+
+- id: mofidi_l-ids_2023
+  type: paper-conference
+  author:
+  - family: Mofidi
+    given: Farhad
+  - family: Hounsinou
+    given: Sena
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2023
+    month: 5
+  accessed:
+  - year: 2023
+    month: 9
+    day: 7
+  title: 'L-IDS: A lightweight hardware-assisted IDS for IoT systems to detect ransomware
+    attacks'
+  title-short: L-IDS
+  container-title: Proceedings of the 8th ACM/IEEE Conference on Internet of Things
+    Design and Implementation
+  collection-title: IoTDI ’23
+  publisher: Association for Computing Machinery
+  publisher-place: New York, NY, USA
+  page: 464-465
+  abstract: In recent years, ransomware has evolved to target Internet of things (IoT)
+    devices, such as medical equipment and thermostats. Traditional ransomware detection
+    methods may not be effective for resource-constrained IoT devices as IoT-based
+    ransomware is geared towards impairing functionality rather than accessing data.
+    Therefore, this article proposes L-IDS, a lightweight hardware-assisted intrusion
+    detection system that combines hardware-assisted security, such as Trusted Execution
+    Environment, with machine learning algorithms to detect and mitigate ransomware
+    inside an IoT system with fewer resources. The proposed approach can more effectively
+    protect IoT systems from ransomware attacks and requires less resources than traditional
+    security scanning methods.
+  keyword: Internet of Things, Intrusion Detection System, Trusted Execution Environment,
+    Machine Learning, Ransomware, Hardware-assisted security, IoT Ransomware
+  URL: https://dl.acm.org/doi/10.1145/3576842.3589170
+  DOI: 10.1145/3576842.3589170
+  ISBN: '9798400700378'
+
+- id: ikumapayi_work_2023
+  type: paper-conference
+  author:
+  - family: Ikumapayi
+    given: Omolade
+  - family: Olufowobi
+    given: Habeeb
+  - family: Daily
+    given: Jeremy
+  - family: Hu
+    given: Tingting
+  - family: Bertolotti
+    given: Ivan Cibrario
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2023
+    month: 5
+  title: 'Work in Progress: Schedulability Analysis of CAN and CAN FD Authentication'
+  title-short: Work in Progress
+  container-title: 2023 IEEE 29th Real-Time and Embedded Technology and Applications
+    Symposium (RTAS)
+  page: 349-352
+  note: 'ISSN: 2642-7346'
+  abstract: Ensuring the data integrity of messages transmitted over the Controller
+    Area Network (CAN) bus and other vehicular networks is achieved through the implementation
+    of cryptographic authentication protocols. However, these protocols raise concerns
+    about a significant increase in response time due to the restrictions on CAN frame
+    size and bandwidth. This paper presents a comprehensive analysis of the impact
+    on response time of CAN and CAN Flexible Data-rate (CAN FD) messages with the
+    implementation of cryptographic message authentication codes (MACs) and the periodic
+    transmission of these codes. Our evaluation is based on a randomized schedulability
+    experiment to provide insights into the overhead incurred by adding authentication
+    to the frame payloads.
+  keyword: Authentication, Protocols, Real-time systems, Bandwidth, Time factors,
+    Data integrity, Response Time Analysis, Controller Area Network, Codes, CAN FD
+  DOI: 10.1109/RTAS58335.2023.00038
+
+- id: ikumapayi_canasta_2023
+  type: article-journal
+  author:
+  - family: Ikumapayi
+    given: Omolade
+  - family: Olufowobi
+    given: Habeeb
+  - family: Daily
+    given: Jeremy
+  - family: Hu
+    given: Tingting
+  - family: Bertolotti
+    given: Ivan Cibrario
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2023
+    month: 8
+  title: 'CANASTA: Controller Area Network Authentication Schedulability Timing Analysis'
+  title-short: CANASTA
+  container-title: IEEE Transactions on Vehicular Technology
+  page: 10024-10036
+  volume: '72'
+  issue: '8'
+  note: 'Conference Name: IEEE Transactions on Vehicular Technology'
+  abstract: The Controller Area Network (CAN) dominates in-vehicle networking systems
+    in modern vehicles. CAN was designed with low-latency and reliability as key features.
+    Authenticity of a CAN frame was not considered in the design, thus, most in-vehicle
+    network nodes inherently trust received messages as coming from a legitimate source.
+    As a result, it is trivial to program (or hack) a network node to spoof traffic.
+    Authentication is challenging for CAN and related protocols, such as SAE J1939,
+    due to limited frame sizes and high bus utilization. Adding a message authentication
+    code (MAC) as a separate message can unduly stress the real-time delivery of safety-critical
+    messages. Although this stressor is well-known, the impact of authentication protocols
+    on real-time message delivery in CAN has not yet been thoroughly examined. In
+    this paper, we provide the first comprehensive analysis of real-time schedulability
+    analysis applied to authentication schemes for CAN, CAN Flexible Data-rate (CAN
+    FD), and CAN extra long payload (CAN XL). We formulate the response time analysis
+    for addition of MACs and periodic transmission of MACs, and we examine their impact
+    on two case studies and through evaluation with randomized schedulability experiments
+    over a wide range of message sets.
+  keyword: response time analysis, Payloads, Controller area network, Authentication,
+    Protocols, Real-time systems, Time factors, Task analysis, Message authentication,
+    CAN FD, CAN XL
+  DOI: 10.1109/TVT.2023.3258746
+  ISSN: 1939-9359
+
+- id: banerjee_secure_2022
+  type: paper-conference
+  author:
   - family: Banerjee
     given: Vijay
-  - family: Peng
-    given: Chunhao
+  - family: Hounsinou
+    given: Sena
+  - family: Olufowobi
+    given: Habeeb
   - family: Hasan
     given: Monowar
   - family: Bloom
     given: Gedare
   issued:
-  - year: 2021
-    month: 12
-  title: 'Work-in-Progress: Enabling Secure Boot for Real-Time Restart-Based Cyber-Physical
-    Systems'
-  title-short: Work-in-Progress
-  container-title: 2021 IEEE Real-Time Systems Symposium (RTSS)
-  page: 524-527
-  note: 'ISSN: 2576-3172'
-  abstract: Several cyber-physical systems use real-time restart-based embedded systems
-    with the Simplex architecture to provide safety guarantees against system faults.
-    Some approaches have been developed to protect such systems from security violations
-    too, but none of these approaches can prevent an adversary from modifying the
-    operating system or application code to execute an attack that persists even after
-    a reboot. In this work, we present a secure boot mechanism to restore real-time
-    restart-based embedded systems into a secure computing environment after every
-    restart. We analyze the delay introduced by the proposed security feature and
-    present preliminary results to demonstrate the viability of our approach using
-    an open-source bootloader and real-time operating system.
-  keyword: Delays, Real-time systems, RTEMS, Cyber-physical systems, Safety, Computer
-    architecture, Embedded systems, TEE, Secure Boot, Codes, U-Boot
-  DOI: 10.1109/RTSS52674.2021.00056
+  - year: 2022
+    month: 11
+  accessed:
+  - year: 2023
+    month: 2
+    day: 13
+  title: Secure Reboots for Real-Time Cyber-Physical Systems
+  container-title: Proceedings of the 4th Workshop on CPS & IoT Security and Privacy
+  collection-title: CPSIoTSec’22
+  publisher: Association for Computing Machinery
+  publisher-place: New York, NY, USA
+  page: 27-33
+  abstract: Cyber-Physical Systems (CPS) such as industrial control systems, automobiles,
+    and medical devices often consist of applications with real-time properties. Due
+    to the safety-critical nature of the application domain, multiple security and
+    fault tolerance approaches have been studied and used in safety-critical CPS.
+    One of the popular approaches for CPS safety is the Simplex architecture, which
+    has also been used recently to strengthen the security of the CPS. The simplex
+    architecture supports the integration of safe controllers for dependable systems,
+    and when combined with periodic restarts, the architecture can reset the CPS into
+    a safe state after each restart. However, these restart-based systems do not protect
+    the system against attacks that persist beyond a restart. Such attacks can be
+    mitigated using secure boot, which is a widely used approach for securing general
+    computing systems but is not used in real-time systems due to the overhead of
+    the boot process. This paper presents an analytical framework and derives feasibility
+    conditions to enable secure reboots in real-time applications. The schedulability
+    conditions presented can be used to design and integrate secure reboot into Simplex-based
+    CPS. Our analysis shows that secure boot adds a deterministic and low-performance
+    overhead, which can be as low as 0.08%.
+  keyword: real-time systems, cyber-physical systems, secure boot
+  URL: https://doi.org/10.1145/3560826.3563384
+  DOI: 10.1145/3560826.3563384
+  ISBN: 978-1-4503-9876-3
 
-- id: hounsinou_vulnerability_2021
-  type: paper-conference
+- id: agbaje_survey_2022
+  type: article-journal
   author:
-  - family: Hounsinou
-    given: Sena
-  - family: Stidd
-    given: Mark
-  - family: Ezeobi
-    given: Uchenna
-  - family: Olufowobi
-    given: Habeeb
-  - family: Nasri
-    given: Mitra
+  - family: Agbaje
+    given: Paul
+  - family: Anjum
+    given: Afia
+  - family: Mitra
+    given: Arkajyoti
+  - family: Oseghale
+    given: Emmanuel
   - family: Bloom
     given: Gedare
+  - family: Olufowobi
+    given: Habeeb
   issued:
-  - year: 2021
+  - year: 2022
     month: 12
-  title: Vulnerability of Controller Area Network to Schedule-Based Attacks
-  container-title: 2021 IEEE Real-Time Systems Symposium (RTSS)
-  page: 495-507
-  note: 'ISSN: 2576-3172'
-  abstract: The secure functioning of automotive systems is vital to the safety of
-    their passengers and other roadway users. One of the critical functions for safety
-    is the controller area network (CAN), which interconnects the safety-critical
-    electronic control units (ECUs) in the majority of ground vehicles. Unfortunately
-    CAN is known to be vulnerable to several attacks. One such attack is the bus-off
-    attack, which can be used to cause a victim ECU to disconnect itself from the
-    CAN bus and, subsequently, for an attacker to masquerade as that ECU. A limitation
-    of the bus-off attack is that it requires the attacker to achieve tight synchronization
-    between the transmission of the victim and the attacker’s injected message. In
-    this paper, we introduce a schedule-based attack framework for the CAN bus-off
-    attack that uses the real-time schedule of the CAN bus to predict more attack
-    opportunities than previously known. We describe a ranking method for an attacker
-    to select and optimize its attack injections with respect to criteria such as
-    attack success rate, bus perturbation, or attack latency. The results show that
-    vulnerabilities of the CAN bus can be enhanced by schedulebased attacks.
-  keyword: Synchronization, Real-time systems, Safety, Control systems, Schedules,
-    Controller Area Network, Land vehicles, Bus-off Attack, Perturbation methods,
-    Schedule-Based Attack
-  DOI: 10.1109/RTSS52674.2021.00051
+  title: Survey of Interoperability Challenges in the Internet of Vehicles
+  container-title: IEEE Transactions on Intelligent Transportation Systems
+  page: 22838-22861
+  volume: '23'
+  issue: '12'
+  note: 'Conference Name: IEEE Transactions on Intelligent Transportation Systems'
+  abstract: The Internet of Vehicles (IoV) is an active area for innovation and an
+    essential tool in achieving smart cities through the integration of vehicles with
+    the Internet of Things (IoT). IoV is a distributed network that aids in handling
+    the data generated by vehicular sensors and vehicle-to-everything communication
+    (V2X), thus enabling novel applications such as autonomous driving and platooning
+    while increasing safety and energy efficiency. In IoV, the sensors and the interdependent
+    devices relay critical information for the efficient implementation of real-time
+    applications in the ecosystem. Despite all these advancements, a vital challenge
+    is establishing smooth communication among interconnected devices, concretely,
+    interoperability in the IoV—a deceptively simple notion that is not yet fully
+    addressed to achieve a fully integrated ecosystem. This is mainly because the
+    networked domains, such as home, grid, and health care, are developed in silos,
+    operating independently with diverse processes and protocols. Hence, seamless
+    exchange of information is yet to be achieved across the ecosystem, hindering
+    the maximization of the full promise of IoV. In this paper, we provide an in-depth
+    analysis of the present state of interoperability and comprehensively survey the
+    challenges in IoV. We present a taxonomy of interoperability approaches, review
+    solutions that prior work have proposed, and provide insights on how to address
+    the current challenges. Finally, we identify open problems that persist and future
+    directions for research.
+  keyword: Semantics, Vehicle dynamics, intelligent transportation system, Real-time
+    systems, Standards, smart city, Ecosystems, Internet of Vehicles, interoperability,
+    Interoperability
+  DOI: 10.1109/TITS.2022.3194413
+  ISSN: 1558-0016
 
-- id: lawrence_shining_2022
-  type: paper-conference
+- id: lawrence_cupid_2022
+  type: article-journal
   author:
   - family: Lawrence
     given: Heather
   - family: Ezeobi
     given: Uchenna
-  - family: Bloom
-    given: Gedare
+  - family: Tauil
+    given: Orly
+  - family: Nosal
+    given: Jacob
+  - family: Redwood
+    given: Owen
   - family: Zhuang
     given: Yanyan
-  issued:
-  - year: 2022
-    month: 1
-  title: Shining New Light on Useful Features for Network Intrusion Detection Algorithms
-  container-title: 2022 IEEE 19th Annual Consumer Communications Networking Conference
-    (CCNC)
-  page: 369-377
-  note: 'ISSN: 2331-9860'
-  abstract: Network intrusion detection systems (NIDS) today must quickly provide
-    visibility into anomalous behavior on a growing amount of data. Meanwhile different
-    data models have evolved over time, each providing a different set of features
-    to classify attacks. Defenders have limited time to retrain classifiers, while
-    the scale of data and feature mismatch between data models can affect the ability
-    to periodically retrain. Much work has focused on classification accuracy yet
-    feature selection is a key part of machine learning that, when optimized, reduces
-    the training time and can increase accuracy by removing poorly performing features
-    that introduce noise. With a larger feature space, the pursuit of more features
-    is not as valuable as selecting better features. In this paper, we use an ensemble
-    approach of filter methods to rank features followed by a voting technique to
-    select a subset of features. We evaluate our approach using three datasets to
-    show that, across datasets and network topologies, similar features have a trivial
-    effect on classifier accuracy after removal. Our approach identifies poorly performing
-    features to remove in a classifier-agnostic manner that can significantly save
-    time for periodic retraining of production NIDS.
-  keyword: Costs, Training, Network topology, NIDS, Production, Feature extraction,
-    Machine learning, Network intrusion detection, Ensemble Feature Selection, Network
-    Intrusion Detection Systems
-  DOI: 10.1109/CCNC49033.2022.9700654
-
-- id: banerjee_tragedy_2022
-  type: paper-conference
-  author:
-  - family: Banerjee
-    given: Vijay
-  - family: Rabinowitz
-    given: Ryan
-  - family: Stidd
-    given: Mark
-  - family: Lewis
-    given: Rory
-  - family: Brown
-    given: Philip N.
   - family: Bloom
     given: Gedare
   issued:
   - year: 2022
-    month: 1
-  title: The Tragedy of the Miners
-  container-title: 2022 IEEE 19th Annual Consumer Communications Networking Conference
-    (CCNC)
-  page: 760-765
-  note: 'ISSN: 2331-9860'
-  abstract: In a network of mining pools that secure Bitcoin-like blockchains, it
-    is known that a self-interested mining pool can dishonestly siphon off another
-    pool’s mining rewards by executing a block withholding (BWH) attack. In this paper,
-    we show that a BWH attack is always unprofitable for an initial startup period
-    which is at least one difficulty retarget interval (approximately 14 days for
-    Bitcoin). Furthermore, we prove that the payback period to recoup this initial
-    startup cost is always at least as long as the initial unprofitable startup interval,
-    and we show numerically that it can be substantially longer. Thus, the decision
-    of whether or not to execute a BWH attack is not a dominant strategy, and the
-    so called Miner’s Dilemma is not in fact a dilemma.
-  keyword: Costs, Transient analysis, Bitcoin, Blockchains
-  DOI: 10.1109/CCNC49033.2022.9700705
+    month: 8
+  accessed:
+  - year: 2023
+    month: 2
+    day: 13
+  title: 'CUPID: A labeled dataset with Pentesting for evaluation of network intrusion
+    detection'
+  title-short: CUPID
+  container-title: Journal of Systems Architecture
+  page: '102621'
+  volume: '129'
+  abstract: Reproducibility of network intrusion detection research necessitates widely
+    available datasets that represent real-world scenarios. One of the key omissions
+    of existing datasets used in empirical evaluations of network intrusions is the
+    lack of human-generated traffic with accurate labels to distinguish benign and
+    malicious behavior. Using an emulated network environment with a vulnerable web
+    application, we collected baseline traffic, human-generated normal user traffic,
+    automated attacks, and the attacks of ten human penetration testers of varying
+    abilities. We preprocessed this collected data to produce a new dataset named
+    the Colorado University Pentesting Intrusion Dataset (CUPID). The attacks span
+    from reconnaissance activities to delivery of an exploit payload. To our knowledge,
+    this is the first collection that provides labeled, Institutional Review Board-approved,
+    benign and attacker data that is publicly available. The CUPID dataset can be
+    used to train and test the limits of classification-based machine learning algorithms
+    used for network intrusion detection systems.
+  keyword: Network intrusion detection, Feature selection
+  URL: https://www.sciencedirect.com/science/article/pii/S1383762122001515
+  DOI: 10.1016/j.sysarc.2022.102621
+  ISSN: 1383-7621
 
-- id: duby_detecting_2022
+- id: duby_evaluating_2022
   type: paper-conference
   author:
   - family: Duby
@@ -2207,50 +2599,31 @@ references:
     given: Yanyan
   issued:
   - year: 2022
-    month: 1
-  title: Detecting and Classifying Self-Deleting Windows Malware Using Prefetch Files
-  container-title: 2022 IEEE 12th Annual Computing and Communication Workshop and
-    Conference (CCWC)
-  page: 0745-0751
-  abstract: Malware detection and analysis can be a burdensome task for incident responders.
-    As such, research has turned to machine learning to automate malware detection
-    and malware family classification. Existing work extracts and engineers static
-    and dynamic features from the malware sample to train classifiers. Despite promising
-    results, such techniques assume that the analyst has access to the malware executable
-    file. Self-deleting malware invalidates this assumption and requires analysts
-    to find forensic evidence of malware execution for further analysis. In this paper,
-    we present and evaluate an approach to detecting malware that executed on a Windows
-    target and further classify the malware into its associated family to provide
-    semantic insight. Specifically, we engineer features from the Windows prefetch
-    file, a file system forensic artifact that archives process information. Results
-    show that it is possible to detect the malicious artifact with 99% accuracy; furthermore,
-    classifying the malware into a fine-grained family has comparable performance
-    to techniques that require access to the original executable. We also provide
-    a thorough security discussion of the proposed approach against adversarial diversity.
-  keyword: Prefetching, Malware, Conferences, Semantics, forensics, Feature extraction,
-    Machine learning, Forensics, Malware analysis, malware classification, prefetch
-  DOI: 10.1109/CCWC54503.2022.9720874
-
-- id: agbaje_framework_2022
-  type: paper-conference
-  author:
-  - family: Agbaje
-    given: Paul
-  - family: Anjum
-    given: Afia
-  - family: Mitra
-    given: Arkajyoti
-  - family: Bloom
-    given: Gedare
-  - family: Olufowobi
-    given: Habeeb
-  issued:
-  - year: 2022
-    month: 4
-  title: A Framework for Consistent and Repeatable Controller Area Network IDS Evaluation
-  container-title: Workshop on Automotive and Autonomous Vehicle Security
-  publisher: Internet Society
-  keyword: automotive security
+    month: 7
+  title: Evaluating Feature Robustness for Windows Malware Family Classification
+  container-title: 2022 International Conference on Computer Communications and Networks
+    (ICCCN)
+  page: 1-10
+  note: 'ISSN: 2637-9430'
+  abstract: Machine learning approaches to classify malware by family save analysts
+    valuable time during incident response. A key challenge for these approaches is
+    selecting features that are robust against concept drift, which describes the
+    change in malware over time. In this paper, we evaluate a dynamic feature set
+    based on Windows handles (e.g., files, registry keys) for malware family classification.
+    Specifically, we examine the features’ vulnerabilities and evaluate their robustness
+    against concept drift. We curated a novel dataset that simulates the manipulations
+    that attackers may invoke on malware samples. We demonstrate improved robustness
+    to concept drift over traditional API call-based features by training machine
+    learning classifiers on malware collected in the wild, and testing the classifiers
+    against samples that underwent manipulations. Further, we investigate time decay
+    due to concept drift using temporally consistent evaluations that do not assume
+    access to newer information. The evaluation shows that our features are robust
+    against malware obfuscation. Furthermore, we empirically demonstrate how malware
+    labeling conventions (malware type or family) can affect results, and make recommendations
+    for dataset construction.
+  keyword: Malware, Robustness, Training, Time factors, forensics, Machine learning,
+    Malware analysis, malware classification, Labeling, Windows
+  DOI: 10.1109/ICCCN54977.2022.9868914
 
 - id: seaton_poster_2022
   type: paper-conference
@@ -2297,96 +2670,8 @@ references:
   DOI: 10.1145/3532105.3535036
   ISBN: 978-1-4503-9357-7
 
-- id: duby_evaluating_2022
+- id: agbaje_framework_2022
   type: paper-conference
-  author:
-  - family: Duby
-    given: Adam
-  - family: Taylor
-    given: Teryl
-  - family: Bloom
-    given: Gedare
-  - family: Zhuang
-    given: Yanyan
-  issued:
-  - year: 2022
-    month: 7
-  title: Evaluating Feature Robustness for Windows Malware Family Classification
-  container-title: 2022 International Conference on Computer Communications and Networks
-    (ICCCN)
-  page: 1-10
-  note: 'ISSN: 2637-9430'
-  abstract: Machine learning approaches to classify malware by family save analysts
-    valuable time during incident response. A key challenge for these approaches is
-    selecting features that are robust against concept drift, which describes the
-    change in malware over time. In this paper, we evaluate a dynamic feature set
-    based on Windows handles (e.g., files, registry keys) for malware family classification.
-    Specifically, we examine the features’ vulnerabilities and evaluate their robustness
-    against concept drift. We curated a novel dataset that simulates the manipulations
-    that attackers may invoke on malware samples. We demonstrate improved robustness
-    to concept drift over traditional API call-based features by training machine
-    learning classifiers on malware collected in the wild, and testing the classifiers
-    against samples that underwent manipulations. Further, we investigate time decay
-    due to concept drift using temporally consistent evaluations that do not assume
-    access to newer information. The evaluation shows that our features are robust
-    against malware obfuscation. Furthermore, we empirically demonstrate how malware
-    labeling conventions (malware type or family) can affect results, and make recommendations
-    for dataset construction.
-  keyword: forensics, Labeling, Machine learning, Malware, Malware analysis, malware
-    classification, Robustness, Time factors, Training, Windows
-  DOI: 10.1109/ICCCN54977.2022.9868914
-
-- id: lawrence_cupid_2022
-  type: article-journal
-  author:
-  - family: Lawrence
-    given: Heather
-  - family: Ezeobi
-    given: Uchenna
-  - family: Tauil
-    given: Orly
-  - family: Nosal
-    given: Jacob
-  - family: Redwood
-    given: Owen
-  - family: Zhuang
-    given: Yanyan
-  - family: Bloom
-    given: Gedare
-  issued:
-  - year: 2022
-    month: 8
-  accessed:
-  - year: 2023
-    month: 2
-    day: 13
-  title: 'CUPID: A labeled dataset with Pentesting for evaluation of network intrusion
-    detection'
-  title-short: CUPID
-  container-title: Journal of Systems Architecture
-  page: '102621'
-  volume: '129'
-  abstract: Reproducibility of network intrusion detection research necessitates widely
-    available datasets that represent real-world scenarios. One of the key omissions
-    of existing datasets used in empirical evaluations of network intrusions is the
-    lack of human-generated traffic with accurate labels to distinguish benign and
-    malicious behavior. Using an emulated network environment with a vulnerable web
-    application, we collected baseline traffic, human-generated normal user traffic,
-    automated attacks, and the attacks of ten human penetration testers of varying
-    abilities. We preprocessed this collected data to produce a new dataset named
-    the Colorado University Pentesting Intrusion Dataset (CUPID). The attacks span
-    from reconnaissance activities to delivery of an exploit payload. To our knowledge,
-    this is the first collection that provides labeled, Institutional Review Board-approved,
-    benign and attacker data that is publicly available. The CUPID dataset can be
-    used to train and test the limits of classification-based machine learning algorithms
-    used for network intrusion detection systems.
-  keyword: Feature selection, Network intrusion detection
-  URL: https://www.sciencedirect.com/science/article/pii/S1383762122001515
-  DOI: 10.1016/j.sysarc.2022.102621
-  ISSN: 1383-7621
-
-- id: agbaje_survey_2022
-  type: article-journal
   author:
   - family: Agbaje
     given: Paul
@@ -2394,92 +2679,15 @@ references:
     given: Afia
   - family: Mitra
     given: Arkajyoti
-  - family: Oseghale
-    given: Emmanuel
   - family: Bloom
     given: Gedare
   - family: Olufowobi
     given: Habeeb
   issued:
   - year: 2022
-    month: 12
-  title: Survey of Interoperability Challenges in the Internet of Vehicles
-  container-title: IEEE Transactions on Intelligent Transportation Systems
-  page: 22838-22861
-  volume: '23'
-  issue: '12'
-  note: 'Conference Name: IEEE Transactions on Intelligent Transportation Systems'
-  abstract: The Internet of Vehicles (IoV) is an active area for innovation and an
-    essential tool in achieving smart cities through the integration of vehicles with
-    the Internet of Things (IoT). IoV is a distributed network that aids in handling
-    the data generated by vehicular sensors and vehicle-to-everything communication
-    (V2X), thus enabling novel applications such as autonomous driving and platooning
-    while increasing safety and energy efficiency. In IoV, the sensors and the interdependent
-    devices relay critical information for the efficient implementation of real-time
-    applications in the ecosystem. Despite all these advancements, a vital challenge
-    is establishing smooth communication among interconnected devices, concretely,
-    interoperability in the IoV—a deceptively simple notion that is not yet fully
-    addressed to achieve a fully integrated ecosystem. This is mainly because the
-    networked domains, such as home, grid, and health care, are developed in silos,
-    operating independently with diverse processes and protocols. Hence, seamless
-    exchange of information is yet to be achieved across the ecosystem, hindering
-    the maximization of the full promise of IoV. In this paper, we provide an in-depth
-    analysis of the present state of interoperability and comprehensively survey the
-    challenges in IoV. We present a taxonomy of interoperability approaches, review
-    solutions that prior work have proposed, and provide insights on how to address
-    the current challenges. Finally, we identify open problems that persist and future
-    directions for research.
-  keyword: Ecosystems, intelligent transportation system, Internet of Vehicles, interoperability,
-    Interoperability, Real-time systems, Semantics, smart city, Standards, Vehicle
-    dynamics
-  DOI: 10.1109/TITS.2022.3194413
-  ISSN: 1558-0016
-
-- id: banerjee_secure_2022
-  type: paper-conference
-  author:
-  - family: Banerjee
-    given: Vijay
-  - family: Hounsinou
-    given: Sena
-  - family: Olufowobi
-    given: Habeeb
-  - family: Hasan
-    given: Monowar
-  - family: Bloom
-    given: Gedare
-  issued:
-  - year: 2022
-    month: 11
-  accessed:
-  - year: 2023
-    month: 2
-    day: 13
-  title: Secure Reboots for Real-Time Cyber-Physical Systems
-  container-title: Proceedings of the 4th Workshop on CPS & IoT Security and Privacy
-  collection-title: CPSIoTSec’22
-  publisher: Association for Computing Machinery
-  publisher-place: New York, NY, USA
-  page: 27-33
-  abstract: Cyber-Physical Systems (CPS) such as industrial control systems, automobiles,
-    and medical devices often consist of applications with real-time properties. Due
-    to the safety-critical nature of the application domain, multiple security and
-    fault tolerance approaches have been studied and used in safety-critical CPS.
-    One of the popular approaches for CPS safety is the Simplex architecture, which
-    has also been used recently to strengthen the security of the CPS. The simplex
-    architecture supports the integration of safe controllers for dependable systems,
-    and when combined with periodic restarts, the architecture can reset the CPS into
-    a safe state after each restart. However, these restart-based systems do not protect
-    the system against attacks that persist beyond a restart. Such attacks can be
-    mitigated using secure boot, which is a widely used approach for securing general
-    computing systems but is not used in real-time systems due to the overhead of
-    the boot process. This paper presents an analytical framework and derives feasibility
-    conditions to enable secure reboots in real-time applications. The schedulability
-    conditions presented can be used to design and integrate secure reboot into Simplex-based
-    CPS. Our analysis shows that secure boot adds a deterministic and low-performance
-    overhead, which can be as low as 0.08%.
-  keyword: cyber-physical systems, real-time systems, secure boot
-  URL: https://doi.org/10.1145/3560826.3563384
-  DOI: 10.1145/3560826.3563384
-  ISBN: 978-1-4503-9876-3
+    month: 4
+  title: A Framework for Consistent and Repeatable Controller Area Network IDS Evaluation
+  container-title: Workshop on Automotive and Autonomous Vehicle Security
+  publisher: Internet Society
+  keyword: automotive security
 ...
