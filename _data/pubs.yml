@@ -2783,17 +2783,6 @@ references:
   URL: https://ieeexplore.ieee.org/abstract/document/10427870
   DOI: 10.1109/CCWC60891.2024.10427870
 
-- id: noauthor_cimalir_nodate
-  type: no-type
-  accessed:
-  - year: 2024
-    month: 5
-    day: 16
-  title: 'Cimalir: Cross-Platform IoT Malware Clustering using Intermediate Representation
-    IEEE Conference Publication IEEE Xplore'
-  title-short: Cimalir
-  URL: https://ieeexplore-ieee-org.uccs.idm.oclc.org/abstract/document/10427663
-
 - id: knapp_should_2024
   type: paper-conference
   author:
@@ -2879,4 +2868,50 @@ references:
     Industries, autonomous vehicle, platoon, topology, Topology
   URL: https://ieeexplore.ieee.org/abstract/document/10454750
   DOI: 10.1109/CCNC51664.2024.10454750
+
+- id: rahat_cimalir_2024
+  type: paper-conference
+  author:
+  - family: Rahat
+    given: Minhajul Alam
+  - family: Banerjee
+    given: Vijay
+  - family: Bloom
+    given: Gedare
+  - family: Zhuang
+    given: Yanyan
+  issued:
+  - year: 2024
+    month: 1
+  accessed:
+  - year: 2024
+    month: 5
+    day: 16
+  title: 'Cimalir: Cross-Platform IoT Malware Clustering using Intermediate Representation'
+  title-short: Cimalir
+  container-title: 2024 IEEE 14th Annual Computing and Communication Workshop and
+    Conference (CCWC)
+  page: 0460-0466
+  abstract: The widespread adoption of Internet-of-Things (IoT) devices has significantly
+    increased the interconnectivity of everyday activities. Malware on IoT devices
+    directly jeopardize the security and privacy of their users, and device heterogeneity
+    poses significant challenges in malware analysis. This paper presents Cimalir,
+    which uses an automated approach for clustering malware that leverages an intermediate
+    representation (IR) of low-level assembly code across different architectures.
+    Cimalir uses a staged analysis approach that first filters binary images using
+    set-based similarity of function attributes before applying call graph analysis.
+    Additionally, Cimalir employs a string based technique to distinguish different
+    malware families that exhibit a substantial level of shared code use. Cimalir
+    has a low runtime complexity as evidenced by a linear relationship between execution
+    time and the number of functions in the binary images under analysis. Experimental
+    results show that Cimalir yields improved clustering results compared to the state-of-the-art
+    binary analysis tool, BinDiff, when applied to malware binaries compiled for different
+    instruction sets. Cimalir results in a DBCV score of 0.75 and Silhouette Score
+    of 0.812 when clustering malware families from the CUBE-MALIOT-2021 dataset. In
+    comparison, BinDiff achieves scores of 0.54 and 0.616, respectively. This indicates
+    Cimalir’s superior performance compared to BinDiff.
+  keyword: Malware, Runtime, Internet of Things, Security, Privacy, IoT, malware,
+    Instruction sets, Codes, intermediate representation
+  URL: https://ieeexplore.ieee.org/abstract/document/10427663
+  DOI: 10.1109/CCWC60891.2024.10427663
 ...
