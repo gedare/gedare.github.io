@@ -128,11 +128,11 @@ and Base. This software was all proprietary, although I do retain the right
 to produce derivative works in most cases.
 
 # Particulate Matter Segregation
-As an industry-funded undergraduate research project, Justin Ter Avest and I
+As an industry-funded undergraduate research project, a colleague  and I
 implemented a
 [Monte Carlo simulation of particulate matter segregation](http://www.sciencedirect.com/science/article/pii/0032591086850057)
 in Unified Parallel C (UPC). I implemented the back-end physics engine and
-collision detection algorithms, and Justin implemented the graphics and
+collision detection algorithms, and Daphne implemented the graphics and
 networking subsystems.  The code is not currently available; I have it
 archived, but I am not certain about my intellectual property rights to it. At
 any rate, I doubt anyone would find it terribly useful, but if you are curious
