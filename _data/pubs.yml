@@ -2690,4 +2690,193 @@ references:
   container-title: Workshop on Automotive and Autonomous Vehicle Security
   publisher: Internet Society
   keyword: automotive security
+
+- id: agbaje_weeping_2024
+  type: article-journal
+  author:
+  - family: Agbaje
+    given: Paul
+  - family: Olufowobi
+    given: Habeeb
+  - family: Hounsinou
+    given: Sena
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2024
+  accessed:
+  - year: 2024
+    month: 5
+    day: 16
+  title: 'From Weeping to Wailing: A Transitive Stealthy Bus-Off Attack'
+  title-short: From Weeping to Wailing
+  container-title: IEEE Transactions on Intelligent Transportation Systems
+  page: 1-15
+  note: 'Conference Name: IEEE Transactions on Intelligent Transportation Systems'
+  abstract: The integration of the Internet of Things (IoT) devices and solutions
+    into passenger vehicles has transformed cars into a complex system with intelligence
+    and a platform for extending information technology possibilities. These devices
+    communicate through in-vehicle networks that use the controller area network (CAN)
+    as a de facto standard for the safety-critical functionality of the vehicles.
+    One creative exploit against CAN is the bus-off attack, which uses the fault tolerance
+    capabilities of the CAN bus to coerce a victim electronic control unit (ECU) into
+    the bus-off state from which it is not allowed to access the bus. As a result,
+    the victim ECU is unable to send or receive messages. The WeepingCAN attack is
+    a stealthy variation of the bus-off attack that reduces its observability and
+    therefore the effectiveness of detection-based mitigation. In this paper, we introduce
+    three software-based improvements that greatly increase both the efficiency and
+    effectiveness of the WeepingCAN attack. First, we introduce a novel zero-phase
+    approach for synchronizing the attack. Second, we discover an alternative approach
+    to disable retransmissions, which is a key capability of WeepingCAN, that allows
+    the attack to be conducted from more ECUs than before. Third, we identify a transitive
+    attack strategy that enables an attacker to target many more ECUs than originally
+    possible. We evaluate our improvements experimentally using a CAN benchmark and
+    find that the zero-phase synchronization improves the attack success rate from
+    75% to over 90% and the transitive attack strategy enables all the ECUs in the
+    benchmark to be attacked.
+  keyword: Security, Controller area network, Software, Standards, Synchronization,
+    Feature extraction, bus-off, Intelligent transportation systems, Threat modeling,
+    WeepingCAN
+  URL: https://ieeexplore.ieee.org/abstract/document/10480916
+  DOI: 10.1109/TITS.2024.3377179
+  ISSN: 1558-0016
+
+- id: mofidi_l-ids_2024
+  type: paper-conference
+  author:
+  - family: Mofidi
+    given: Farhad
+  - family: Hounsinou
+    given: Sena G
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2024
+    month: 1
+  accessed:
+  - year: 2024
+    month: 5
+    day: 16
+  title: 'L-IDS: A Multi-Layered Approach to Ransomware Detection in IoT'
+  title-short: L-IDS
+  container-title: 2024 IEEE 14th Annual Computing and Communication Workshop and
+    Conference (CCWC)
+  page: 0387-0396
+  abstract: Ransomware is increasingly targeting Internet of Things (IoT) devices,
+    and the resource constraints of these devices make detecting and mitigating such
+    attacks a significant challenge. Unlike traditional ransomware attacks, ransomware
+    in IoT-based attacks aims to affect functionality rather than the availability
+    of data, thus defeating traditional detection methods. To address this issue,
+    this article introduces a lightweight intrusion detection system, L-IDS. It is
+    designed based on the principle of defense in depth and combines multilayer controls,
+    hardware-enhanced TEE such as TrustZone, with machine learning (ML) algorithms.
+    L-IDS can effectively detect and mitigate ransomware attacks inside IoT systems
+    with low resources compared to traditional security scanning methods. By integrating
+    TEE, L-IDS will enhance the security and protection of IoT devices, while ML algorithms
+    will help detect ransomware attacks more efficiently and accurately. Overall,
+    the proposed approach provides a promising solution for protecting IoT systems
+    against ransomware attacks, especially for resource-constrained devices.
+  keyword: Intrusion detection, Monitoring, Internet of Things, Security, Machine
+    learning algorithms, Intrusion Detection System, Trusted Execution Environment,
+    Machine Learning, Ransomware, Hardware-assisted security, IoT Ransomware, Nonhomogeneous
+    media
+  URL: https://ieeexplore.ieee.org/abstract/document/10427870
+  DOI: 10.1109/CCWC60891.2024.10427870
+
+- id: noauthor_cimalir_nodate
+  type: no-type
+  accessed:
+  - year: 2024
+    month: 5
+    day: 16
+  title: 'Cimalir: Cross-Platform IoT Malware Clustering using Intermediate Representation
+    IEEE Conference Publication IEEE Xplore'
+  title-short: Cimalir
+  URL: https://ieeexplore-ieee-org.uccs.idm.oclc.org/abstract/document/10427663
+
+- id: knapp_should_2024
+  type: paper-conference
+  author:
+  - family: Knapp
+    given: Austen
+  - family: Wamuo
+    given: Emmanuel
+  - family: Rahat
+    given: Minhajul Alam
+  - family: Torres-Arias
+    given: Santiago
+  - family: Bloom
+    given: Gedare
+  - family: Zhuang
+    given: Yanyan
+  issued:
+  - year: 2024
+    month: 1
+  accessed:
+  - year: 2024
+    month: 5
+    day: 16
+  title: 'Should Smart Homes Be Afraid of Evil Maids? : Identifying Vulnerabilities
+    in IoT Device Firmware'
+  title-short: Should Smart Homes Be Afraid of Evil Maids?
+  container-title: 2024 IEEE 14th Annual Computing and Communication Workshop and
+    Conference (CCWC)
+  page: 0467-0473
+  abstract: The Internet of Things (IoT) revolution has transformed everyday consumer
+    objects into interconnected, intelligent devices. Due to historically weak security
+    designs, these devices are susceptible to compromises with far-reaching consequences.
+    This paper aims to evaluate the current state of IoT device firmware security
+    and assess the effectiveness of existing methods in safeguarding sensitive data.
+    We conducted a manual analysis of 16 IoT devices, revealing a range of firmware
+    management techniques, each varying in their effectiveness against an evil maid
+    attack scenario. Out of the 16 devices, only 2 showed evidence of encrypting data
+    at rest, despite 10 having crypto-enabled hardware. Additionally, 9 out of 16
+    devices possessed secure boot-enabled hardware, but 4 of them did not properly
+    utilize or implement secure boot. Consequently, 13 devices were identified as
+    vulnerable to sensitive data compromise, and 11 were at risk of firmware modification
+    attacks. To address these critical security gaps, this study proposes a method
+    for analyzing data-at-rest encryption and secure boot status in IoT devices. In
+    this paper we shed light on the prevailing security shortcomings and provide practical
+    analysis techniques to foster improved IoT device security and user data protection.
+  keyword: Data Encryption, Hardware, Microprogramming, Encryption, Internet of Things,
+    Smart homes, Performance evaluation, Secure Boot, Data protection, Firmware Analysis
+  URL: https://ieeexplore.ieee.org/abstract/document/10427780
+  DOI: 10.1109/CCWC60891.2024.10427780
+
+- id: hendrix_platoon_2024
+  type: paper-conference
+  author:
+  - family: Hendrix
+    given: Constance
+  - family: Bloom
+    given: Gedare
+  issued:
+  - year: 2024
+    month: 1
+  accessed:
+  - year: 2024
+    month: 5
+    day: 16
+  title: Platoon Vulnerability due to Network Topology and Targeted Vehicle
+  container-title: 2024 IEEE 21st Consumer Communications & Networking Conference
+    (CCNC)
+  page: 771-776
+  note: 'ISSN: 2331-9860'
+  abstract: Vehicle platooning is a key application for intelligent transportation
+    systems that brings the joint problem of maintaining safety and security as prioritized
+    requirements. The complex and dynamic electromagnetic environment coupled with
+    sophisticated adversarial threats motivate better understanding of platoon control
+    resilience from traditional faults, disturbances, and attack injects. An open
+    problem for this understanding is the impact that information flow (communication
+    network) topologies have on the attack and defense strategies for vehicular platoons.
+    As the topology changes, vulnerability amongst platoon members and their individual
+    contributions to the overall platoon security also change. This paper evaluates
+    the impact of member-specific targeting informed by topology and demonstrates
+    that targeting one member over another can be advantageous to the attacker. Furthermore,
+    we present a taxonomy to identify topologies by key characteristics as an option
+    for an industry standard.
+  keyword: security, Taxonomy, Network topology, Safety, Vehicle dynamics, Security,
+    Industries, autonomous vehicle, platoon, topology, Topology
+  URL: https://ieeexplore.ieee.org/abstract/document/10454750
+  DOI: 10.1109/CCNC51664.2024.10454750
 ...

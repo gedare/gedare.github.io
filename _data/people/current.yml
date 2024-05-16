@@ -30,6 +30,13 @@ PhD:
   degree: 
   first_employment:
 
+- name: Constance Hendrix
+  url: 
+  pic: 
+  project: 
+  degree: 
+  first_employment:
+
 - name: Mark Stidd
   url: 
   pic: 
@@ -71,12 +78,12 @@ MS:
 
 Undergraduate:
 
-- name: Connor Gurule
-  url: 
-  pic: 
-  project: 
-  degree: 
-  first_employment:
+#- name: 
+#  url: 
+#  pic: 
+#  project: 
+#  degree: 
+#  first_employment:
 
 
 

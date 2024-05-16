@@ -12,7 +12,7 @@ PostDoc:
   pic: img/SenaHounsinou.jpg
   project:
   degree: Ph.D. ECE 2018
-  first_employment:
+  first_employment: Metro State University (Assistant Prof.)
 
 PhD:
 - name: Habeeb Olufowobi
@@ -20,14 +20,14 @@ PhD:
   pic: img/HabeebOlufowobi.jpg
   project: Fail-Operational Intrusion Detection System (FO-IDS)&colon; A Mechanism for Securing Automotive In-Vehicle Networks
   degree: Ph.D. C.S. 2019
-  first_employment: University of Texas at Arlington
+  first_employment: University of Texas at Arlington (Assistant Prof.)
 
 - name: Ebelechukwu Nwafor
   url: https://ebelenwaf.github.io 
   pic: img/EbelechukwuNwafor.jpg
   project: Trace-Based Data Provenance for Cyber-Physical Systems
   degree: Ph.D. C.S. 2018 
-  first_employment: Villanova University
+  first_employment: Villanova University (Assistant Prof.)
 
 MS:
 - name: Abiola Ogundeko
@@ -73,6 +73,13 @@ MS:
   first_employment:
 
 Undergraduate:
+- name: Sam Adamson
+  url: 
+  pic: 
+  project: 
+  degree: B.S. Computer Science 2024
+  first_employment:
+
 - name: Saurav Aryal
   url: https://saurav-k-aryal.github.io
   pic: img/SauravAryal.jpg
@@ -101,6 +108,14 @@ Undergraduate:
   degree: B.S. C.S. 2019
   first_employment: Google
 
+- name: Elise Clark
+  url: 
+  pic: 
+  project: 
+  degree:
+  first_employment:
+
+
 - name: John Henry Clark
   url: 
   pic: img/JohnHenryClark.jpg
@@ -120,6 +135,13 @@ Undergraduate:
   pic: 
   project: ICS Emulation
   degree: B.I. Security 2022
+  first_employment:
+
+- name: Connor Gurule
+  url: 
+  pic: 
+  project: 
+  degree: B.I. Security 2023
   first_employment:
 
 - name: D'Mariee Hanson
