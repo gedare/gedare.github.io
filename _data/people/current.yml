@@ -16,13 +16,6 @@ Director:
 PostDoc:
 
 PhD:
-- name: Uchenna Ezeobi
-  url: https://www.linkedin.com/in/uchenna-ezeobi-50766b58/
-  pic: img/UchennaEzeobi.jpg
-  project: 
-  degree: 
-  first_employment:
-
 - name: Doug Healy
   url: 
   pic: 
@@ -37,23 +30,9 @@ PhD:
   degree: 
   first_employment:
 
-- name: Mark Stidd
-  url: 
-  pic: 
-  project: 
-  degree: 
-  first_employment:
-
 - name: Katrina Rosemond
   url: 
   pic: img/KatrinaRosemond.jpg
-  project: 
-  degree: 
-  first_employment:
-
-- name: Vijay Kumar Banerjee
-  url: 
-  pic: 
   project: 
   degree: 
   first_employment:
@@ -72,6 +51,12 @@ PhD:
   degree: 
   first_employment:
 
+- name: Joseph Bedzra
+  url: 
+  pic: 
+  project: 
+  degree: 
+  first_employment:
 
 MS:
 

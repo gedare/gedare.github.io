@@ -15,6 +15,20 @@ PostDoc:
   first_employment: Metro State University (Assistant Prof.)
 
 PhD:
+- name: Vijay Kumar Banerjee
+  url: 
+  pic: 
+  project: Timing Side-Channels in Real-Time Embedded Systems
+  degree: Ph.D. CS 2025
+  first_employment:
+
+- name: Uchenna Ezeobi
+  url: https://www.linkedin.com/in/uchenna-ezeobi-50766b58/
+  pic: img/UchennaEzeobi.jpg
+  project: Vulnerability Discovery for Industrial Control System (ICS) Network Protocols Using Fuzzing
+  degree: Ph.D. CS 2024
+  first_employment: Meta (Software Engineer)
+
 - name: Habeeb Olufowobi
   url: https://dipupo.github.io/index/
   pic: img/HabeebOlufowobi.jpg
