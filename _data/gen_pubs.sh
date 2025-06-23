@@ -1,4 +1,4 @@
 #!/bin/bash
 
-pandoc-citeproc -y MyPubs.bib > pubs.yml
+pandoc --citeproc MyPubs.bib > pubs.yml
 
