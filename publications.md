@@ -5,17 +5,18 @@ layout: default
 order: 4
 ---
 
-This page is presented in reverse chronological order. 
-Please refer to my [Research](./research.html) page for a more
-cohesive and organized approach that highlights my publications in the context
-of the specific research problems that they address.
-See also my 
+See my 
 [Google Scholar](https://scholar.google.com/citations?user=8ZBnSl4AAAAJ)
 page.
+Please refer to my [Research](./research.html) page for an
+organized approach that highlights my publications in the context
+of some of the specific research problems that they address.
+
+
+<!--
+
 *Some pdf links are broken because I cannot redistribute the text; feel free
 to ask me for an author copy and I will try to oblige.*
-
-
 
 {% assign mypubs = site.data.pubs.references | reverse %}
 {% assign years = "2009 2010 2011 2012 2013 2014 2015 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025" | split: ' ' %}
@@ -81,4 +82,5 @@ other copyright holders. All persons copying this information are expected to
 adhere to the terms and constraints invoked by each author's copyright. In most
 cases, these works **may not be reposted** without the explicit permission
 of the copyright holder.
+-->
 
